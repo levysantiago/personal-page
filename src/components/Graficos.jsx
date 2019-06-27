@@ -1,0 +1,24 @@
+import React, { Component } from "react";
+import Grafico from "./Grafico";
+
+class Graficos extends Component {
+  render() {
+    return (
+      <div class="container row">
+        <Grafico title="C/C++" percent="80" color="#a6a6a6" />
+        <Grafico title="Java" percent="70" color="#ff5757" />
+        <Grafico title="Python" percent="70" color="#5271ff" />
+        <Grafico title="PHP" percent="60" color="#8c52ff" />
+        <Grafico title="Javascript" percent="50" color="#fad12c" />
+        <Grafico title="Solidity" percent="40" color="#545454" />
+        <Grafico title="R" percent="40" color="#38b6ff" />
+        <Grafico title="C#" percent="30" color="#89449d" />
+        <Grafico title="CSS" percent="80" color="#5271ff" />
+        <Grafico title="HTML" percent="80" color="#ff914d" />
+        <Grafico title="SQL" percent="80" color="#b85518" />
+      </div>
+    );
+  }
+}
+
+export default Graficos;

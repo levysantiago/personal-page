@@ -1,4 +1,168 @@
-body {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open Sans Condensed");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #353535;
+}
+
+.myblockquote {
+  border-left-color: grey;
+}
+
+.citation {
+  font-family: "Open Sans Condensed";
+  font-style: italic;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main-nav > div > ul a {
+  color: white;
+}
+
+nav > div > ul a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #424242;
+}
+
+footer nav > div > ul a {
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+img.materialboxed {
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+  color: rgba(32, 21, 18, 0.6);
+  font-family: "Quicksand";
+  font-size: 15px;
+  line-height: 1.7em;
+}
+
+h1,
+h2 {
+  color: #424242;
+}
+
+html,
+body,
+#main-header {
+  height: 100%;
+  width: 100%;
+}
+
+header,
+.hellow-title {
+  margin-bottom: 50px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#main-header h1 {
+  font-size: 60px;
+  margin-top: 100px;
+  font-family: "Raleway", sans-serif;
+}
+
+.headerImageFont {
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+
+header .parallax-container,
+header .parallax {
+  height: 100%;
+}
+
+div.card-content > span.card-title {
+  font-size: 18px;
+  color: #0d47a1;
+}
+
+.dateText {
+  color: gray;
+  font-size: 10px;
+}
+
+.divider {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.multiline-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main-header {
+  margin: 0px;
+}
+
+.img-footer {
+  margin-right: 20px;
+  width: 70px;
+}
+
+nav > div > ul {
+  float: right;
+}
+
+.outros {
+  border-color: #f8f8f8;
+  border-style: solid;
+  font-family: "Raleway", sans-serif;
+}
+
+#main-header label {
+  margin-top: 380px;
+  margin-left: 10px;
+}
+
+#main-header label a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-header h1 {
+    font-size: 35px;
+  }
+
+  #main-header label {
+    font-size: 12px;
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav > div > ul a {
+    font-size: 14px;
+  }
+
+  nav > div > ul {
+    float: none;
+  }
+
+  .outros {
+    border-color: #f8f8f8;
+    border-style: solid;
+    font-family: "Raleway", sans-serif;
+  }
 }
