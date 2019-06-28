@@ -10,7 +10,7 @@ class Grafico extends Component {
       datasets: [
         {
           data: [percent, 100 - percent],
-          backgroundColor: [color, "#f4f4f4"]
+          backgroundColor: [color, "#ffffff"]
           //hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"]
         }
       ]
@@ -32,7 +32,7 @@ class Grafico extends Component {
     };
 
     return (
-      <div class="col s4 m2">
+      <div className="col s4 m2">
         <Doughnut data={data} options={options} width="10" height="15" />
       </div>
     );

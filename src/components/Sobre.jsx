@@ -7,7 +7,7 @@ class Sobre extends Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
         <h2>Sobre</h2>
         <article>
           <p>
@@ -32,14 +32,6 @@ class Sobre extends Component {
           <p>
             Tenho experiência em Programação Web, Internet das Coisas,
             Ontologias, Blockchain e outras áreas e tecnologias.
-          </p>
-          <br />
-          <p>
-            A imagem abaixo demonstra as linguagens de programação as quais
-            adquiri experiência até hoje. As porcentagens representam o quanto
-            tenho de experiência e conhecimento em cada uma das linguagens. É
-            uma forma controversa, uma vez que conhecimento não se quantifica,
-            porém é direta e compreensível.
           </p>
           <br />
         </article>
