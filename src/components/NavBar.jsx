@@ -22,16 +22,16 @@ class NavBar extends Component {
             </a>
             <ul className="right hide-on-med-and-down">
               <li>
-                <a href="./index.html">Principal</a>
+                <a href="./index">Principal</a>
               </li>
               <li>
-                <a href="./publicacoes.html">Publicações</a>
+                <a href="./publicacoes">Publicações</a>
               </li>
               <li>
-                <a href="./projetos.html">Projetos</a>
+                <a href="./projetos">Projetos</a>
               </li>
               <li>
-                <a href="./hellowtips.html">HellowTips</a>
+                <a href="./hellowtips">HellowTips</a>
               </li>
             </ul>
           </div>
@@ -39,22 +39,22 @@ class NavBar extends Component {
 
         <ul className="sidenav" id="mobile-demo">
           <li>
-            <a className="waves-effect waves-teal" href="./index.html">
+            <a className="waves-effect waves-teal" href="./index">
               Principal
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="./publicacoes.html">
+            <a className="waves-effect waves-teal" href="./publicacoes">
               Publicações
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="./projetos.html">
+            <a className="waves-effect waves-teal" href="./projetos">
               Projetos
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="./hellowtips.html">
+            <a className="waves-effect waves-teal" href="./hellowtips">
               HellowTips
             </a>
           </li>

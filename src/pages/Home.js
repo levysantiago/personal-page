@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import MyParallax from "./components/MyParallax";
-import Contents from "./components/Contents";
-import Sobre from "./components/Sobre";
-import Graficos from "./components/Graficos";
-import Artigos from "./components/Artigos";
-import Projetos from "./components/Projetos";
+import MyParallax from "../components/MyParallax";
+import Contents from "../components/Contents";
+import Sobre from "../components/Sobre";
+import Graficos from "../components/Graficos";
+import Artigos from "../components/Artigos";
+import Projetos from "../components/Projetos";
 
-const greyContentBlock = { backgroundColor: "#f0f2f4", padding: "10px" };
-const contentBlock = { backgroundColor: "#ffffff", padding: "10px" };
-
-class App extends Component {
+class Home extends Component {
   state = {
     contents: [
       {
@@ -64,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
