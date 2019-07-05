@@ -8,7 +8,7 @@ class Sobre extends Component {
   render() {
     return (
       <div className="row">
-        <h2>Sobre</h2>
+        {/*<h2>Sobre</h2>*/}
         <article>
           <p>
             Eu sou Levy. Sou originariamente brasileiro. Considero-me uma pessoa

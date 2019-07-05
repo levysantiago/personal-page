@@ -12,15 +12,15 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <nav id="main-nav" class="transparent z-depth-0">
-          <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <nav id="main-nav" className="transparent z-depth-0">
+          <div className="nav-wrapper">
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
               <img
                 src={require("../imgs/menu-white.png")}
                 alt="Plano de Fundo da página"
               />
             </a>
-            <ul class="right hide-on-med-and-down">
+            <ul className="right hide-on-med-and-down">
               <li>
                 <a href="./index.html">Principal</a>
               </li>
@@ -39,22 +39,22 @@ class NavBar extends Component {
 
         <ul className="sidenav" id="mobile-demo">
           <li>
-            <a class="waves-effect waves-teal" href="./index.html">
+            <a className="waves-effect waves-teal" href="./index.html">
               Principal
             </a>
           </li>
           <li>
-            <a class="waves-effect waves-teal" href="./publicacoes.html">
+            <a className="waves-effect waves-teal" href="./publicacoes.html">
               Publicações
             </a>
           </li>
           <li>
-            <a class="waves-effect waves-teal" href="./projetos.html">
+            <a className="waves-effect waves-teal" href="./projetos.html">
               Projetos
             </a>
           </li>
           <li>
-            <a class="waves-effect waves-teal" href="./hellowtips.html">
+            <a className="waves-effect waves-teal" href="./hellowtips.html">
               HellowTips
             </a>
           </li>

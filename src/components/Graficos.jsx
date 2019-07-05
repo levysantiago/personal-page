@@ -5,7 +5,7 @@ class Graficos extends Component {
   render() {
     return (
       <div>
-        <h2>Linguagens</h2>
+        {/*<h2>Linguagens</h2>*/}
 
         <p>
           Os gráficos abaixo demonstram as linguagens de programação as quais

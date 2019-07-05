@@ -7,7 +7,7 @@ class Artigos extends Component {
 
     return (
       <div className="row">
-        <h2>Publicações</h2>
+        {/*<h2>Publicações</h2>*/}
         <Card
           title="I2oTology - Tracking-Oriented Ontology"
           date="22 / 12 / 2018"

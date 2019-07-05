@@ -16,13 +16,13 @@ class MyParallax extends Component {
 
           <div id="main-header" style={{ height: "500px" }}>
             {/* My Name */}
-            <h1 class="white-text center-align">Levy M. S. Santiago</h1>
+            <h1 className="white-text center-align">Levy M. S. Santiago</h1>
 
             {/* Image font */}
-            <label class="white-text left">
+            <label className="white-text left">
               {"Foto de "}
               <a
-                class="white-text center-align"
+                className="white-text center-align"
                 href="https://unsplash.com/photos/TkEPQPWr2sY"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +31,7 @@ class MyParallax extends Component {
               </a>
               {"em "}
               <a
-                class="white-text center-align"
+                className="white-text center-align"
                 href="https://unsplash.com/"
                 target="_blank"
                 rel="noopener noreferrer"

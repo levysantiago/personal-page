@@ -33,7 +33,7 @@ class Grafico extends Component {
 
     return (
       <div className="col s4 m2">
-        <Doughnut data={data} options={options} width="10" height="15" />
+        <Doughnut data={data} options={options} width={10} height={15} />
       </div>
     );
   }

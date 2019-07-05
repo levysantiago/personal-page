@@ -7,7 +7,7 @@ class Projetos extends Component {
 
     return (
       <div className="row">
-        <h2>Projetos</h2>
+        {/*<h2>Projetos</h2>*/}
         <Card
           title="ta5ks"
           type="project"
