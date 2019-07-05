@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class NavBar extends Component {
   componentDidMount() {
     var elem = document.querySelector(".sidenav");
-    var instance = window.M.Sidenav.init(elem, {
+    window.M.Sidenav.init(elem, {
       edge: "left",
       inDuration: 250
     });
@@ -15,7 +15,10 @@ class NavBar extends Component {
         <nav id="main-nav" class="transparent z-depth-0">
           <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-              <img src={require("../imgs/menu-white.png")} />
+              <img
+                src={require("../imgs/menu-white.png")}
+                alt="Plano de Fundo da página"
+              />
             </a>
             <ul class="right hide-on-med-and-down">
               <li>

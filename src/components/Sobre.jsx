@@ -18,7 +18,11 @@ class Sobre extends Component {
           <br />
           <p>
             Hoje sou graduando do curso de Ciência da Computação na UESC -{" "}
-            <a href="http://www.uesc.br/" target="_blank">
+            <a
+              href="http://www.uesc.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Universidade Estadual de Santa Cruz
             </a>
             . Faço parte do grupo LIF - Laboratório de Internet do Futuro, um

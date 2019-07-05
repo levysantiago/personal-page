@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class Card extends Component {
   getComponentByType() {
     const { title, link, date, type } = this.props;
-    if (type == "project") {
+    if (type === "project") {
       const { abstract } = this.props;
       return (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <div className="card hoverable small">
             <div className="card-content">
               <span className="card-title truncate">{title}</span>
@@ -41,7 +41,7 @@ class Card extends Component {
             </p>
           </div>
           <div className="card-action">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noopener noreferrer">
               Read
             </a>
           </div>

@@ -25,6 +25,7 @@ class MyParallax extends Component {
                 class="white-text center-align"
                 href="https://unsplash.com/photos/TkEPQPWr2sY"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {"Mark Solarski "}
               </a>
@@ -33,6 +34,7 @@ class MyParallax extends Component {
                 class="white-text center-align"
                 href="https://unsplash.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Unsplash
               </a>
