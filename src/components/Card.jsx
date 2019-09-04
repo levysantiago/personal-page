@@ -50,7 +50,7 @@ class Card extends Component {
           </div>
           <div className="card-action">
             <a href={link} target="_blank" rel="noopener noreferrer">
-              Read
+              Ler
             </a>
           </div>
         </div>

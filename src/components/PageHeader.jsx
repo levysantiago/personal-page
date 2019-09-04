@@ -16,8 +16,12 @@ class PageHeader extends Component {
   getInstagramComponent(title) {
     if (title.includes("Hellow")) {
       return (
-        <div style={instagramStyle}>
-          <a href="https://www.instagram.com/hellow_tips/" target="_blank">
+        <div className="col s6 m2 offset-s3 offset-m5" style={instagramStyle}>
+          <a
+            href="https://www.instagram.com/hellow_tips/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="center"
               src={require("../imgs/instagram.png")}
@@ -48,8 +52,10 @@ class PageHeader extends Component {
 
         {this.getInstagramComponent(title)}
 
-        <p style={descriptionStyle}>{description}</p>
-        {this.printDescription2()}
+        <div className="col s12">
+          <p style={descriptionStyle}>{description}</p>
+          {this.printDescription2()}
+        </div>
       </div>
     );
   }
