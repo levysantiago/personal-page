@@ -3,10 +3,12 @@ import MyParallax from "../components/MyParallax";
 import Contents from "../components/Contents";
 import Sobre from "../components/Sobre";
 import Graficos from "../components/Graficos";
-import Artigos from "../components/Artigos";
-import Projetos from "../components/Projetos";
+import ListArticles from "../components/ListArticles";
+import ListProjects from "../components/ListProjects";
+import Blockquote from "../components/Blockquote";
+import dict from "../language/pt"
 
-class Home extends Component {
+class HomePage extends Component {
   state = {
     contents: [
       {
@@ -33,12 +35,12 @@ class Home extends Component {
       {
         id: 3,
         title: "Publicações",
-        tag: <Artigos />
+        tag: <ListArticles home />
       },
       {
         id: 4,
         title: "Projetos",
-        tag: <Projetos />,
+        tag: <ListProjects home />,
         typed: true
       }
     ];
@@ -56,9 +58,12 @@ class Home extends Component {
       <div>
         <MyParallax />
         <Contents contents={contents} />
+        <div className="container">
+            <Blockquote phrase={dict.blockquotes.one.phrase} author={dict.blockquotes.one.author} />
+        </div>
       </div>
     );
   }
 }
 
-export default Home;
+export default HomePage;

@@ -4,12 +4,20 @@ class Card extends Component {
   getComponentByType() {
     const { title, link, date, type } = this.props;
     if (type === "project") {
-      const { abstract } = this.props;
+      const { abstract, small, truncate } = this.props;
+      let size = "medium";
+      if (small) {
+        size = "small";
+      }
+      let trunc = "";
+      if (truncate) {
+        trunc = "truncate";
+      }
       return (
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <div className="card hoverable small">
+          <div className={"card hoverable " + size}>
             <div className="card-content">
-              <span className="card-title truncate">{title}</span>
+              <span className={"card-title " + trunc}>{title}</span>
               <p className="dateText">{date}</p>
               <p>{abstract}</p>
             </div>

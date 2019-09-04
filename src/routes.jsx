@@ -1,12 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Articles from "./pages/Articles";
+import HomePage from "./pages/HomePage";
+import ArticlesPage from "./pages/ArticlesPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import HellowPage from "./pages/HellowPage";
 
 const Routes = (
   <Router>
-    <Route path="/" exact strict component={Home} />
-    <Route path="/publicacoes" exact strict component={Articles} />
+    <Route path="/" exact strict component={HomePage} />
+    <Route path="/publicacoes" exact strict component={ArticlesPage} />
+    <Route path="/projetos" exact strict component={ProjectsPage} />
+    <Route path="/hellowtips" exact strict component={HellowPage} />
   </Router>
 );
 
