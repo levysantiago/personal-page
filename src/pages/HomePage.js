@@ -6,7 +6,8 @@ import Graficos from "../components/Graficos";
 import ListArticles from "../components/ListArticles";
 import ListProjects from "../components/ListProjects";
 import Blockquote from "../components/Blockquote";
-import dict from "../language/pt"
+import dict from "../language/pt";
+import Footer from "../components/Footer";
 
 class HomePage extends Component {
   state = {
@@ -59,8 +60,12 @@ class HomePage extends Component {
         <MyParallax />
         <Contents contents={contents} />
         <div className="container">
-            <Blockquote phrase={dict.blockquotes.one.phrase} author={dict.blockquotes.one.author} />
+          <Blockquote
+            phrase={dict.blockquotes.one.phrase}
+            author={dict.blockquotes.one.author}
+          />
         </div>
+        <Footer />
       </div>
     );
   }
