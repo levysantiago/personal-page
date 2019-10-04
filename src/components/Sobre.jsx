@@ -17,7 +17,7 @@ class Sobre extends Component {
           </p>
           <br />
           <p>
-            Hoje sou graduando do curso de Ciência da Computação na UESC -{" "}
+            Hoje sou bacharelado em Ciência da Computação na UESC -{" "}
             <a
               href="http://www.uesc.br/"
               target="_blank"
