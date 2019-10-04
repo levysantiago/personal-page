@@ -36,12 +36,12 @@ class HomePage extends Component {
       {
         id: 3,
         title: "Publicações",
-        tag: <ListArticles home />
+        tag: <ListArticles home list={dict.articles.slice(0, 2)} />
       },
       {
         id: 4,
         title: "Projetos",
-        tag: <ListProjects home />,
+        tag: <ListProjects home list={dict.projects.slice(0, 2)} />,
         typed: true
       }
     ];

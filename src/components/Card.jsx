@@ -1,38 +1,55 @@
 import React, { Component } from "react";
 
 class Card extends Component {
+  getImage(link) {
+    if (link.includes("github")) {
+      return require("../imgs/github.jpg");
+    } else {
+      return require("../imgs/website.jpg");
+    }
+  }
+
   getComponentByType() {
     const { title, link, date, type } = this.props;
+    const scrolled = {
+      overflowY: "scroll",
+      overflowX: "hidden",
+      height: 250,
+      padding: 5
+    };
+
     if (type === "project") {
       const { abstract, small, truncate } = this.props;
       let size = "medium";
+      let doScroll = scrolled;
       if (small) {
         size = "small";
+        doScroll = {};
       }
       let trunc = "";
       if (truncate) {
         trunc = "truncate";
       }
       return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <div className={"card hoverable " + size}>
-            <div className="card-content">
-              <span className={"card-title " + trunc}>{title}</span>
-              <p className="dateText">{date}</p>
-              <p>{abstract}</p>
-            </div>
-            <div className="card-action">
+        <div className={"card hoverable " + size} style={{ overflow: "auto" }}>
+          <div className="card-content">
+            <span className={"card-title " + trunc}>{title}</span>
+            <p className="dateText">{date}</p>
+            <p style={doScroll}>{abstract}</p>
+          </div>
+          <div className="card-action">
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <img
                 width="90px"
-                src={require("../imgs/github.jpg")}
+                src={this.getImage(link)}
                 alt="Link para o github do projeto"
               />
-            </div>
+            </a>
           </div>
-        </a>
+        </div>
       );
     } else {
-      const { place, proceeding } = this.props;
+      const { place, proceeding, year } = this.props;
       return (
         <div className="card hoverable">
           <div className="card-content">
@@ -42,7 +59,7 @@ class Card extends Component {
               <b>Local:</b> {place}
             </p>
             <p>
-              <b>Ano:</b> 2018
+              <b>Ano:</b> {year}
             </p>
             <p className="truncate">
               <b>Em:</b> {proceeding}

@@ -3,7 +3,8 @@ import NavBar from "../components/NavBar";
 import ListArticles from "../components/ListArticles";
 import PageHeader from "../components/PageHeader";
 import Blockquote from "../components/Blockquote";
-import dict from "../language/pt"
+import Footer from "../components/Footer";
+import dict from "../language/pt";
 
 class ArticlesPage extends Component {
   render() {
@@ -18,9 +19,13 @@ class ArticlesPage extends Component {
             parte do grupo LIF - Laboratório de Internet do Futuro."
           />
 
-          <ListArticles long={"12"} />
-          <Blockquote phrase={dict.blockquotes.two.phrase} author={dict.blockquotes.two.author} />
+          <ListArticles long={"12"} list={dict.articles} />
+          <Blockquote
+            phrase={dict.blockquotes.two.phrase}
+            author={dict.blockquotes.two.author}
+          />
         </div>
+        <Footer />
       </div>
     );
   }

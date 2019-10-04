@@ -30,7 +30,7 @@ class NavBar extends Component {
       <div>
         <nav id="main-nav" className="transparent z-depth-0">
           <div className="nav-wrapper">
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+            <a href="/#" data-target="mobile-demo" className="sidenav-trigger">
               <img
                 src={require("../imgs/" + this.getMenuIcon(blackStyle))}
                 alt="Plano de Fundo da página"

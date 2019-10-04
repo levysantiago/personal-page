@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import dict from "../language/pt";
 
 class ListProjects extends Component {
   moreProjectsComponent(home) {
@@ -16,7 +15,7 @@ class ListProjects extends Component {
   }
 
   render() {
-    const { home } = this.props;
+    const { home, list } = this.props;
     let small = false;
     let truncate = false;
     if (home) {
@@ -26,7 +25,7 @@ class ListProjects extends Component {
     return (
       <div className="row">
         {/*<h2>Projetos</h2>*/}
-        {dict.projects.map(p => (
+        {list.map(p => (
           <Card
             key={p.key}
             title={p.title}

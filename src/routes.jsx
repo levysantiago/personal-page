@@ -6,7 +6,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import HellowPage from "./pages/HellowPage";
 
 const Routes = (
-  <Router basename="/pages">
+  <Router>
     <Route path="/" exact strict component={HomePage} />
     <Route path="/publicacoes" exact strict component={ArticlesPage} />
     <Route path="/projetos" exact strict component={ProjectsPage} />

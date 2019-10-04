@@ -3,7 +3,8 @@ import NavBar from "../components/NavBar";
 import ListProjects from "../components/ListProjects";
 import PageHeader from "../components/PageHeader";
 import Blockquote from "../components/Blockquote";
-import dict from "../language/pt"
+import Footer from "../components/Footer";
+import dict from "../language/pt";
 
 class ProjectsPage extends Component {
   state = {
@@ -31,9 +32,13 @@ class ProjectsPage extends Component {
             contém o link para a página que o descreve."
           />
 
-          <ListProjects />
-          <Blockquote phrase={dict.blockquotes.three.phrase} author={dict.blockquotes.three.author} />
+          <ListProjects list={dict.projects} />
+          <Blockquote
+            phrase={dict.blockquotes.three.phrase}
+            author={dict.blockquotes.three.author}
+          />
         </div>
+        <Footer />
       </div>
     );
   }

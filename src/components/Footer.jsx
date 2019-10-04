@@ -38,7 +38,11 @@ class Footer extends Component {
                     src={require("../imgs/github-circle.jpg")}
                     alt="Usuário github"
                   />
-                  <a href="https://github.com/levysantiago" target="_blank">
+                  <a
+                    href="https://github.com/levysantiago"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     levysantiago
                   </a>
                 </div>

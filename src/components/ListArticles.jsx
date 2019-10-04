@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import dict from "../language/pt";
 
 class ListArticles extends Component {
   moreArticlesComponent(home) {
@@ -16,12 +15,12 @@ class ListArticles extends Component {
   }
 
   render() {
-    const { long, home } = this.props;
+    const { long, home, list } = this.props;
 
     return (
       <div className="row">
         {/*<h2>Publicações</h2>*/}
-        {dict.articles.map(a => (
+        {list.map(a => (
           <Card
             key={a.key}
             title={a.title}
@@ -29,6 +28,7 @@ class ListArticles extends Component {
             place={a.place}
             proceeding={a.proceeding}
             link={a.link}
+            year={a.year}
             long={long}
           />
         ))}
