@@ -11,16 +11,16 @@ class Footer extends Component {
               <h4 className="grey-text text-darken-3">Sobre</h4>
               <ul>
                 <p className="text-lighten-4">
-                  Eu sou Levy. Hoje sou graduando do curso de Ciência da
-                  Computação na UESC. E esta é a minha página pessoal onde
-                  apresento as publicações, projetos e outros trabalhos.
+                  Eu sou Levy. Hoje sou bacharelado em Ciência da Computação na
+                  UESC. Esta é a minha página pessoal onde apresento as
+                  publicações, projetos e outros trabalhos.
                 </p>
               </ul>
             </div>
             <div className="col l6 offset-l2 m6 s12">
               <h4 className="grey-text text-darken-3">Contato</h4>
               <div className="row">
-                <div className="col s1 m2 valign-wrapper">
+                <div className="col s12 valign-wrapper">
                   <img
                     className="img-footer"
                     src={require("../imgs/email.jpg")}
@@ -32,7 +32,7 @@ class Footer extends Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col s1 m2 valign-wrapper">
+                <div className="col s12 valign-wrapper">
                   <img
                     className="img-footer"
                     src={require("../imgs/github-circle.jpg")}
@@ -44,6 +44,22 @@ class Footer extends Component {
                     rel="noopener noreferrer"
                   >
                     levysantiago
+                  </a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col s12 valign-wrapper">
+                  <img
+                    className="img-footer"
+                    src={require("../imgs/linkedin.jpg")}
+                    alt="Usuário linkedin"
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/levy-santiago-88a807162/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Levy Santiago
                   </a>
                 </div>
               </div>
