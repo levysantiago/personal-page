@@ -3,6 +3,10 @@ import { Parallax } from "react-parallax";
 import NavBar from "./NavBar";
 
 class MyParallax extends Component {
+  rounded_image_style = {
+    marginTop: 100
+  };
+
   render() {
     return (
       <div>
@@ -15,6 +19,13 @@ class MyParallax extends Component {
           <NavBar />
 
           <div id="main-header" style={{ height: "500px" }}>
+            <img
+              className="center z-depth-2 responsive-img circle"
+              style={this.rounded_image_style}
+              src={require("../imgs/levy.jpg")}
+              width={200}
+              alt="Avatar"
+            />
             {/* My Name */}
             <h1 className="white-text center-align">Levy M. S. Santiago</h1>
 
