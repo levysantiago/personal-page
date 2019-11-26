@@ -10,10 +10,10 @@ class Contents extends Component {
           title={c.title}
           content={c.content}
           tag={c.tag}
-          //titleColor="#000000"
-          contentColor="#e8e8e8"
-          //background="linear-gradient(to bottom left, #00838f 0%, #3333cc 100%)"
-          backgroundColor="#f0f2f4"
+          titleColor="#ffffff"
+          contentColor="#ffffff"
+          background="linear-gradient(to bottom left, #00838f 0%, #1d455b 100%)"
+          //backgroundColor="#1d455b" //"#10455b" //"#f0f2f4"
         />
       );
     } else {

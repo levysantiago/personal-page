@@ -67,7 +67,10 @@ class Footer extends Component {
           </div>
         </div>
 
-        <div className="footer-copyright blue-grey darken-3 hide-on-small">
+        <div
+          className="footer-copyright hide-on-small"
+          style={{ backgroundColor: "#062630" }}
+        >
           <nav className="transparent z-depth-0">
             <div className="nav-wrapper">
               <ul className="right">

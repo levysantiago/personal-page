@@ -6,7 +6,11 @@ class ListProjects extends Component {
     if (home) {
       return (
         <div className="col s12">
-          <a href="/projetos" className="center">
+          <a
+            href="/projetos"
+            className="center"
+            style={{ textDecoration: "underline", color: "white" }}
+          >
             Veja mais projetos aqui >
           </a>
         </div>

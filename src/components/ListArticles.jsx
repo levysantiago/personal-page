@@ -6,7 +6,11 @@ class ListArticles extends Component {
     if (home) {
       return (
         <div className="col s12">
-          <a href="/publicacoes" className="center">
+          <a
+            href="/publicacoes"
+            className="center"
+            style={{ textDecoration: "underline" }}
+          >
             Veja mais publicações aqui >
           </a>
         </div>

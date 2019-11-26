@@ -7,7 +7,7 @@ class Graficos extends Component {
       <div>
         {/*<h2>Linguagens</h2>*/}
 
-        <p>
+        <p style={{ color: "white" }}>
           Os gráficos abaixo demonstram as linguagens de programação as quais
           adquiri experiência até hoje. As porcentagens representam o quanto
           tenho de experiência e conhecimento em cada uma das linguagens. É uma

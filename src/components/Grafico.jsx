@@ -23,6 +23,7 @@ class Grafico extends Component {
       },
       title: {
         display: true,
+        fontColor: "white",
         text: title
       },
       animation: {
