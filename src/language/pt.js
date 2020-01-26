@@ -2,6 +2,17 @@ module.exports = {
   articles: [
     {
       key: 1,
+      title: "IoTCocoa - an IoT platform to assist gourmet cocoa production",
+
+      year: "2019",
+      place:
+        "IEEE LatinAmerican Conference on Communications (LATINCOM), Salvador",
+      proceeding:
+        "IEEE Latin-American Conference on Communications (LATINCOM), p. 1",
+      link: "https://ieeexplore.ieee.org/document/8937903"
+    },
+    {
+      key: 1,
       title: "I2oTology - Tracking-Oriented Ontology",
 
       year: "2018",
