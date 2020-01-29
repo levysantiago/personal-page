@@ -53,8 +53,8 @@ class NavBar extends Component {
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/hellowtips">
-                  HellowTips
+                <a style={this.blackLinkStyle(blackStyle)} href="/blog">
+                  Blog
                 </a>
               </li>
             </ul>

@@ -119,6 +119,18 @@ module.exports = {
     { key: 2, img: "dicas2.jpg" },
     { key: 1, img: "dicas1.jpg" }
   ],
+  posts: [
+    {
+      "/travels": [
+        { key: 1, img: "semcomp.jpg", title: "Semcomp 2019", content: "asd" }
+      ]
+    },
+    {
+      "/personalgrowth": [
+        { key: 1, img: "personal_growth.png", title: "Travels", content: "asd" }
+      ]
+    }
+  ],
   blockquotes: {
     one: {
       phrase:
