@@ -2,36 +2,29 @@ module.exports = {
   articles: [
     {
       key: 1,
-      title: "IoTCocoa - an IoT platform to assist gourmet cocoa production",
+      title:
+        "Analise de softwares de virtualização de objetos eletrônicos para utilização em projetos de ensino que utilizem o conceito de Internet das Coisas: Protoboard Virtual e Plataforma Arduíno.",
 
-      year: "2019",
+      year: "2017",
       place:
-        "IEEE LatinAmerican Conference on Communications (LATINCOM), Salvador",
+        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
       proceeding:
-        "IEEE Latin-American Conference on Communications (LATINCOM), p. 1",
-      link: "https://ieeexplore.ieee.org/document/8937903"
-    },
-    {
-      key: 1,
-      title: "I2oTology - Tracking-Oriented Ontology",
-
-      year: "2018",
-      place: "XI Seminar on Ontology Research in Brazil, São Paulo",
-      proceeding:
-        "Proceedings of the XI Seminar on Ontology Research in Brazil and II Doctoral and Masters Consortium on Ontologies",
-      link: "http://ceur-ws.org/Vol-2228/short5.pdf"
+        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
+      link:
+        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
     },
     {
       key: 2,
       title:
-        "I2oTegrator: a Service-Oriented IoT Middleware for Intelligent Object Management",
+        "Redes Sociais na educação - Revisão de softwares de Redes Sociais como ferramentas educaionais",
 
-      year: "2018",
+      year: "2017",
       place:
-        "2018 IEEE Symposium on Computers and Communications (ISCC), Natal",
+        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
       proceeding:
-        "2018 IEEE Symposium on Computers and Communications (ISCC), p. 00174",
-      link: "https://ieeexplore.ieee.org/document/8538541"
+        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
+      link:
+        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
     },
     {
       key: 3,
@@ -47,28 +40,35 @@ module.exports = {
     {
       key: 4,
       title:
-        "Redes Sociais na educação - Revisão de softwares de Redes Sociais como ferramentas educaionais",
+        "I2oTegrator: a Service-Oriented IoT Middleware for Intelligent Object Management",
 
-      year: "2017",
+      year: "2018",
       place:
-        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
+        "2018 IEEE Symposium on Computers and Communications (ISCC), Natal",
       proceeding:
-        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
-      link:
-        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
+        "2018 IEEE Symposium on Computers and Communications (ISCC), p. 00174",
+      link: "https://ieeexplore.ieee.org/document/8538541"
     },
     {
       key: 5,
-      title:
-        "Analise de softwares de virtualização de objetos eletrônicos para utilização em projetos de ensino que utilizem o conceito de Internet das Coisas: Protoboard Virtual e Plataforma Arduíno.",
+      title: "I2oTology - Tracking-Oriented Ontology",
 
-      year: "2017",
-      place:
-        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
+      year: "2018",
+      place: "XI Seminar on Ontology Research in Brazil, São Paulo",
       proceeding:
-        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
-      link:
-        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
+        "Proceedings of the XI Seminar on Ontology Research in Brazil and II Doctoral and Masters Consortium on Ontologies",
+      link: "http://ceur-ws.org/Vol-2228/short5.pdf"
+    },
+    {
+      key: 6,
+      title: "IoTCocoa - an IoT platform to assist gourmet cocoa production",
+
+      year: "2019",
+      place:
+        "IEEE LatinAmerican Conference on Communications (LATINCOM), Salvador",
+      proceeding:
+        "IEEE Latin-American Conference on Communications (LATINCOM), p. 1",
+      link: "https://ieeexplore.ieee.org/document/8937903"
     }
   ],
 
@@ -118,18 +118,6 @@ module.exports = {
     { key: 3, img: "dicas4.jpg" },
     { key: 2, img: "dicas2.jpg" },
     { key: 1, img: "dicas1.jpg" }
-  ],
-  posts: [
-    {
-      "/travels": [
-        { key: 1, img: "semcomp.jpg", title: "Semcomp 2019", content: "asd" }
-      ]
-    },
-    {
-      "/personalgrowth": [
-        { key: 1, img: "personal_growth.png", title: "Travels", content: "asd" }
-      ]
-    }
   ],
   blockquotes: {
     one: {
