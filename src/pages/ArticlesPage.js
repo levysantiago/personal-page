@@ -19,7 +19,7 @@ class ArticlesPage extends Component {
             parte do grupo LIF - Laboratório de Internet do Futuro."
           />
 
-          <ListArticles long={"12"} list={dict.articles} />
+          <ListArticles long={"12"} list={dict.articles.reverse()} />
           <Blockquote
             phrase={dict.blockquotes.two.phrase}
             author={dict.blockquotes.two.author}

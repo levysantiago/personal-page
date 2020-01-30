@@ -32,7 +32,7 @@ class ProjectsPage extends Component {
             contém o link para a página que o descreve."
           />
 
-          <ListProjects list={dict.projects} />
+          <ListProjects list={dict.projects.reverse()} />
           <Blockquote
             phrase={dict.blockquotes.three.phrase}
             author={dict.blockquotes.three.author}
