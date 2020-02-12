@@ -8,6 +8,7 @@ class MyParallax extends Component {
   };
 
   render() {
+    const { lang } = this.props;
     return (
       <div>
         <Parallax
@@ -16,7 +17,7 @@ class MyParallax extends Component {
           bgImageAlt="the cat"
           strength={200}
         >
-          <NavBar />
+          <NavBar lang={lang} />
 
           <div id="main-header" style={{ height: "500px" }}>
             <img

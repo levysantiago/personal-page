@@ -6,7 +6,8 @@ import Graficos from "../components/Graficos";
 import ListArticles from "../components/ListArticles";
 import ListProjects from "../components/ListProjects";
 import Blockquote from "../components/Blockquote";
-import dict from "../language/pt";
+import dict from "../language/info";
+import lang from "../language/en";
 import Footer from "../components/Footer";
 
 class HomePage extends Component {
@@ -24,21 +25,22 @@ class HomePage extends Component {
     let contents = [
       {
         id: 1,
-        title: "Sobre",
-        tag: <Sobre />
+        title: lang.about.title,
+        tag: <Sobre lang={lang} />
       },
       {
         id: 2,
-        title: "Linguagens",
-        tag: <Graficos />,
+        title: lang.languages.title,
+        tag: <Graficos lang={lang} />,
         typed: true
       },
       {
         id: 3,
-        title: "Publicações",
+        title: lang.articles.title,
         tag: (
           <ListArticles
             home
+            lang={lang}
             list={dict.articles
               .slice(Math.max(dict.articles.length - 2, 0))
               .reverse()}
@@ -47,10 +49,11 @@ class HomePage extends Component {
       },
       {
         id: 4,
-        title: "Projetos",
+        title: lang.projects.title,
         tag: (
           <ListProjects
             home
+            lang={lang}
             list={dict.projects
               .slice(Math.max(dict.projects.length - 2, 0))
               .reverse()}
@@ -71,7 +74,7 @@ class HomePage extends Component {
     const { contents } = this.state;
     return (
       <div>
-        <MyParallax />
+        <MyParallax lang={lang} />
         <Contents contents={contents} />
         <div className="container">
           <Blockquote
@@ -79,7 +82,7 @@ class HomePage extends Component {
             author={dict.blockquotes.one.author}
           />
         </div>
-        <Footer />
+        <Footer lang={lang} />
       </div>
     );
   }

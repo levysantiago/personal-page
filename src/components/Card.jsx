@@ -49,25 +49,25 @@ class Card extends Component {
         </div>
       );
     } else {
-      const { place, proceeding, year } = this.props;
+      const { place, proceeding, year, lang } = this.props;
       return (
         <div className="card hoverable">
           <div className="card-content">
             <span className="card-title truncate">{title}</span>
             <p className="dateText">{date}</p>
             <p className="truncate">
-              <b>Local:</b> {place}
+              <b>{lang.constants.place}:</b> {place}
             </p>
             <p>
-              <b>Ano:</b> {year}
+              <b>{lang.constants.year}:</b> {year}
             </p>
             <p className="truncate">
-              <b>Em:</b> {proceeding}
+              <b>{lang.constants.in}:</b> {proceeding}
             </p>
           </div>
           <div className="card-action">
             <a href={link} target="_blank" rel="noopener noreferrer">
-              Ler
+              {lang.constants.read}
             </a>
           </div>
         </div>

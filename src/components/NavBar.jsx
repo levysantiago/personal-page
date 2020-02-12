@@ -25,7 +25,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const { blackStyle } = this.props;
+    const { blackStyle, lang } = this.props;
     return (
       <div>
         <nav id="main-nav" className="transparent z-depth-0">
@@ -39,22 +39,22 @@ class NavBar extends Component {
             <ul className="right hide-on-med-and-down">
               <li>
                 <a style={this.blackLinkStyle(blackStyle)} href="/">
-                  Principal
+                  {lang.menu.home}
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/publicacoes">
-                  Publicações
+                <a style={this.blackLinkStyle(blackStyle)} href="/articles">
+                  {lang.menu.articles}
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/projetos">
-                  Projetos
+                <a style={this.blackLinkStyle(blackStyle)} href="/projects">
+                  {lang.menu.projects}
                 </a>
               </li>
               <li>
                 <a style={this.blackLinkStyle(blackStyle)} href="/hellowtips">
-                  HellowTips
+                  {lang.menu.hellowtips}
                 </a>
               </li>
             </ul>
@@ -64,22 +64,22 @@ class NavBar extends Component {
         <ul className="sidenav" id="mobile-demo">
           <li>
             <a className="waves-effect waves-teal" href="/">
-              Principal
+              {lang.menu.home}
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/publicacoes">
-              Publicações
+            <a className="waves-effect waves-teal" href="/articles">
+              {lang.menu.articles}
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/projetos">
-              Projetos
+            <a className="waves-effect waves-teal" href="/projects">
+              {lang.menu.projects}
             </a>
           </li>
           <li>
             <a className="waves-effect waves-teal" href="/hellowtips">
-              HellowTips
+              {lang.menu.hellowtips}
             </a>
           </li>
         </ul>
