@@ -32,9 +32,9 @@ const lang = {
           >
             Federal University of Bahia
           </a>{" "}
-          (2020 - 2022) . I am part of two research groups: the LIF (Internet of
-          Future Laboratory) and GAUDI (Algorithms and Distributed Computing
-          Group). The LIF is a group started at UESC and GAUDI at UFBA. Both
+          (2020 - 2022). I am part of two research groups: the LIF - Internet of
+          Future Laboratory and GAUDI - Algorithms and Distributed Computing
+          Group. The LIF is a group started at UESC and GAUDI at UFBA. Both
           involves students and teachers. Many of my projects and publications
           were developed with these groups.
         </p>
@@ -83,7 +83,7 @@ const lang = {
   articlespage: {
     title: "Articles",
     description:
-      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group - Internet of the Future Laboratory."
+      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group - Internet of the Future Laboratory and GAUDI - Algorithms and Distributed Computing Group."
   },
   projectspage: {
     title: "Projects",
