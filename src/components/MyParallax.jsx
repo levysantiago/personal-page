@@ -32,7 +32,7 @@ class MyParallax extends Component {
 
             {/* Image font */}
             <label className="white-text left">
-              {"Foto de "}
+              {"Picture from "}
               <a
                 className="white-text center-align"
                 href="https://unsplash.com/photos/TkEPQPWr2sY"
@@ -41,7 +41,7 @@ class MyParallax extends Component {
               >
                 {"Mark Solarski "}
               </a>
-              {"em "}
+              {"in "}
               <a
                 className="white-text center-align"
                 href="https://unsplash.com/"
