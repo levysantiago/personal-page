@@ -5,7 +5,7 @@ const lang = {
    * HOME PAGE
    */
   about: {
-    title: "Sobre",
+    title: "About Me",
     description: (
       <article>
         <p>
