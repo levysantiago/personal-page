@@ -15,25 +15,25 @@ const lang = {
         </p>
         <br />
         <p>
-          Today I'm graduated in Computer Science at UESC -{" "}
+          Today I'm graduated in Computer Science at UESC (
           <a
             href="http://www.uesc.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Santa Cruz State University
-          </a>{" "}
-          (2015 - 2019) and currenty doing Master's degree course in
-          Computational Systems research area at UFBA -{" "}
+          </a>
+          ) (2015 - 2019) and currenty doing Master's degree course in
+          Computational Systems research area at UFBA (
           <a
             href="http://www.ufba.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Federal University of Bahia
-          </a>{" "}
-          (2020 - 2022). I am part of two research groups: the LIF - Internet of
-          Future Laboratory and GAUDI - Algorithms and Distributed Computing
+          </a>
+          ) (2020 - 2022). I am part of two research groups: the LIF - Internet
+          of Future Laboratory and GAUDI - Algorithms and Distributed Computing
           Group. The LIF is a group started at UESC and GAUDI at UFBA. Both
           involves students and teachers. Many of my projects and publications
           were developed with these groups.
@@ -83,7 +83,7 @@ const lang = {
   articlespage: {
     title: "Articles",
     description:
-      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group - Internet of the Future Laboratory and GAUDI - Algorithms and Distributed Computing Group."
+      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group (Internet of the Future Laboratory) and GAUDI (Algorithms and Distributed Computing Group)."
   },
   projectspage: {
     title: "Projects",
