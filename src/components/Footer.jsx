@@ -2,23 +2,20 @@ import React, { Component } from "react";
 
 class Footer extends Component {
   render() {
+    const { lang } = this.props;
     return (
       <footer className="page-footer white">
         <div className="divider"></div>
         <div className="container">
           <div className="row">
             <div className="col l4 m6 s12">
-              <h4 className="grey-text text-darken-3">Sobre</h4>
+              <h4 className="grey-text text-darken-3">{lang.footer.title}</h4>
               <ul>
-                <p className="text-lighten-4">
-                  Eu sou Levy. Hoje sou bacharelado em Ciência da Computação na
-                  UESC. Esta é a minha página pessoal onde apresento as
-                  publicações, projetos e outros trabalhos.
-                </p>
+                <p className="text-lighten-4">{lang.footer.description}</p>
               </ul>
             </div>
             <div className="col l6 offset-l2 m6 s12">
-              <h4 className="grey-text text-darken-3">Contato</h4>
+              <h4 className="grey-text text-darken-3">{lang.footer.contact}</h4>
               <div className="row">
                 <div className="col s12 valign-wrapper">
                   <img
@@ -75,16 +72,16 @@ class Footer extends Component {
             <div className="nav-wrapper">
               <ul className="right">
                 <li>
-                  <a href="/">Principal</a>
+                  <a href="/">{lang.menu.home}</a>
                 </li>
                 <li>
-                  <a href="/publicacoes">Publicações</a>
+                  <a href="/articles">{lang.menu.articles}</a>
                 </li>
                 <li>
-                  <a href="/projetos">Projetos</a>
+                  <a href="/projects">{lang.menu.projects}</a>
                 </li>
                 <li>
-                  <a href="/hellowtips">HellowTips</a>
+                  <a href="/hellowtips">{lang.menu.hellowtips}</a>
                 </li>
               </ul>
             </div>
