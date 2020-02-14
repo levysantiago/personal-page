@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CardImage from "../../components/CardImage";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
-import dict from "../../language/pt";
+import dict from "../../language/info";
 
 const storage = window.sessionStorage;
 
