@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import dict from "../language/pt";
+import dict from "../language/info";
 
 class ListTips extends Component {
   componentDidMount() {
