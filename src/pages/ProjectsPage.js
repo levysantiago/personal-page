@@ -4,7 +4,8 @@ import ListProjects from "../components/ListProjects";
 import PageHeader from "../components/PageHeader";
 import Blockquote from "../components/Blockquote";
 import Footer from "../components/Footer";
-import dict from "../language/pt";
+import dict from "../language/info";
+import lang from "../language/en";
 
 class ProjectsPage extends Component {
   state = {
@@ -22,14 +23,11 @@ class ProjectsPage extends Component {
   render() {
     return (
       <div>
-        <NavBar blackStyle={true} />
+        <NavBar blackStyle={true} lang={lang} />
         <div className="container row">
           <PageHeader
-            title="Projetos"
-            description="Nesta página são apresentados alguns dos projetos que desenvolvi
-            tanto para a faculdade quanto para projetos de bolsas de estudo e
-            pessoais. Grande parte destes se encontram no GitHub. Cada projeto
-            contém o link para a página que o descreve."
+            title={lang.projectspage.title}
+            description={lang.projectspage.description}
           />
 
           <ListProjects list={dict.projects.reverse()} />
@@ -38,7 +36,7 @@ class ProjectsPage extends Component {
             author={dict.blockquotes.three.author}
           />
         </div>
-        <Footer />
+        <Footer lang={lang} />
       </div>
     );
   }
