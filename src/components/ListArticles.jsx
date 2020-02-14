@@ -4,6 +4,7 @@ import Card from "./Card";
 class ListArticles extends Component {
   moreArticlesComponent(home) {
     if (home) {
+      const { lang } = this.props;
       return (
         <div className="col s12">
           <a
@@ -11,7 +12,7 @@ class ListArticles extends Component {
             className="center"
             style={{ textDecoration: "underline" }}
           >
-            Veja mais publicações aqui >
+            {lang.constants.moreArticles} >
           </a>
         </div>
       );
@@ -19,7 +20,7 @@ class ListArticles extends Component {
   }
 
   render() {
-    const { long, home, list } = this.props;
+    const { long, home, list, lang } = this.props;
 
     return (
       <div className="row">
@@ -34,6 +35,7 @@ class ListArticles extends Component {
             link={a.link}
             year={a.year}
             long={long}
+            lang={lang}
           />
         ))}
 
