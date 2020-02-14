@@ -8,7 +8,7 @@ class ListProjects extends Component {
       return (
         <div className="col s12">
           <a
-            href="/projetos"
+            href="/projects"
             className="center"
             style={{ textDecoration: "underline", color: "white" }}
           >
