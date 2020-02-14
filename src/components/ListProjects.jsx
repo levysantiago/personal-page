@@ -4,6 +4,7 @@ import Card from "./Card";
 class ListProjects extends Component {
   moreProjectsComponent(home) {
     if (home) {
+      const { lang } = this.props;
       return (
         <div className="col s12">
           <a
@@ -11,7 +12,7 @@ class ListProjects extends Component {
             className="center"
             style={{ textDecoration: "underline", color: "white" }}
           >
-            Veja mais projetos aqui >
+            {lang.constants.moreProjects} >
           </a>
         </div>
       );
@@ -19,7 +20,7 @@ class ListProjects extends Component {
   }
 
   render() {
-    const { home, list } = this.props;
+    const { home, list, lang } = this.props;
     let small = false;
     let truncate = false;
     if (home) {
@@ -39,6 +40,7 @@ class ListProjects extends Component {
             date={p.date}
             small={small}
             truncate={truncate}
+            lang={lang}
           />
         ))}
 
