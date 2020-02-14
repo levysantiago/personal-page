@@ -81,7 +81,7 @@ class Footer extends Component {
                   <a href="/projects">{lang.menu.projects}</a>
                 </li>
                 <li>
-                  <a href="/hellowtips">{lang.menu.hellowtips}</a>
+                  <a href="/blog">{lang.menu.blog}</a>
                 </li>
               </ul>
             </div>
