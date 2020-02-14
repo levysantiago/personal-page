@@ -10,8 +10,8 @@ import PostsList from "./pages/blog/PostsList";
 const Routes = (
   <Router>
     <Route path="/" exact strict component={HomePage} />
-    <Route path="/publicacoes" exact strict component={ArticlesPage} />
-    <Route path="/projetos" exact strict component={ProjectsPage} />
+    <Route path="/articles" exact strict component={ArticlesPage} />
+    <Route path="/projects" exact strict component={ProjectsPage} />
     <Route path="/hellowtips" exact strict component={HellowPage} />
     <Route path="/blog" exact strict component={BlogPage} />
     <Route path="/travels" exact strict component={PostsList} />

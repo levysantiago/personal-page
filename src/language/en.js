@@ -90,6 +90,10 @@ const lang = {
     description:
       "In this page are presented some of the projects that I developed for college, scholarships and for personal needs. Most of these are on GitHub. Each project contains the link to the page that describes it."
   },
+  blogpage: {
+    title: "My Blog",
+    description: "Description"
+  },
   hellowtipspage: {
     title: "Hellow Tips",
     description:
@@ -107,7 +111,8 @@ const lang = {
     home: "Home",
     articles: "Articles",
     projects: "Projects",
-    hellowtips: "Hellow Tips"
+    hellowtips: "Hellow Tips",
+    blog: "Blog"
   },
   /**
    * CONSTANTS

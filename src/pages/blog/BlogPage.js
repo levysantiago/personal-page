@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 import CardImage from "../../components/CardImage";
 import PageHeader from "../../components/PageHeader";
-import dict from "../../language/pt";
+import dict from "../../language/info";
+import lang from "../../language/en";
 import Footer from "../../components/Footer";
 
 const storage = window.sessionStorage;
@@ -15,7 +16,7 @@ class BlogPage extends Component {
   render() {
     return (
       <div>
-        <NavBar blackStyle={true} />
+        <NavBar blackStyle={true} lang={lang} />
         <div className="container row">
           <PageHeader title="My Blog" description="Description." />
 
@@ -39,7 +40,7 @@ class BlogPage extends Component {
             onPostClick={this.onPostClick}
           />
         </div>
-        <Footer />
+        <Footer lang={lang} />
       </div>
     );
   }
