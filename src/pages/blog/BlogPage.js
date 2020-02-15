@@ -9,8 +9,9 @@ import Footer from "../../components/Footer";
 const storage = window.sessionStorage;
 
 class BlogPage extends Component {
-  onPostClick = tag => {
+  onPostClick = (tag, title) => {
     storage.setItem("tag", tag);
+    storage.setItem("title", title);
   };
 
   render() {

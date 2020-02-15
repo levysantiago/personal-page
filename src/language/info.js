@@ -147,5 +147,13 @@ module.exports = {
         "People won't have time for you if you are always angry or complaining.",
       author: "Stephen Hawking"
     }
-  }
+  },
+  posts: [
+    {
+      "/travels": [
+        { key: 1, img: "semcomp.jpg", title: "Travels", content: "asd" },
+        { key: 2, img: "semcomp.jpg", title: "Travels", content: "asd" }
+      ]
+    }
+  ]
 };
