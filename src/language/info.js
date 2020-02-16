@@ -151,8 +151,8 @@ module.exports = {
   posts: [
     {
       "/travels": [
-        { key: 1, img: "semcomp.jpg", title: "Travels", content: "asd" },
-        { key: 2, img: "semcomp.jpg", title: "Travels", content: "asd" }
+        { key: 1, img: "semcomp.jpg", title: "Trip Title", content: "asd" },
+        { key: 2, img: "semcomp.jpg", title: "Trip Title 2", content: "asd" }
       ]
     }
   ]

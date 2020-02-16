@@ -41,6 +41,8 @@ class BlogPage extends Component {
             onPostClick={this.onPostClick}
           />
         </div>
+        <h4 className="red">Put some Blockquote here</h4>
+
         <Footer lang={lang} />
       </div>
     );

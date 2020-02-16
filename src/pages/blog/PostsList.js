@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CardImageChooser from "../../components/CardImageChooser";
+import CardImage from "../../components/CardImage";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
 import dict from "../../language/info";
@@ -18,18 +18,17 @@ class PostsList extends Component {
       <div>
         <NavBar blackStyle={true} lang={lang} />
         <div className="container row">
+          <h4 className="red">Put some breadcrumbs here</h4>
           <PageHeader title={pagetitle} description="Description." />
 
           {posts.map(
             p =>
               Object.keys(p)[0] === tag &&
               p[tag].map(pi => (
-                <CardImageChooser
+                <CardImage
                   key={pi.key}
-                  id={pi.key}
                   img={"travels/" + pi.img}
-                  title={pi.title}
-                  content={pi.content}
+                  content={pi.title}
                 />
               ))
           )}
