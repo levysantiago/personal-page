@@ -5,6 +5,7 @@ import PageHeader from "../../components/PageHeader";
 import dict from "../../language/info";
 import lang from "../../language/en";
 import Footer from "../../components/Footer";
+import Breadcrumbs from "../../components/Breadcrumb";
 
 const storage = window.sessionStorage;
 
@@ -13,12 +14,14 @@ class PostsList extends Component {
     const { posts } = dict;
     let tag = storage.getItem("tag");
     let pagetitle = storage.getItem("title");
+    let breadcrumb_links = JSON.parse(storage.getItem("breadcrumb_links"));
+    breadcrumb_links.push({ page: pagetitle, route: tag });
 
     return (
       <div>
         <NavBar blackStyle={true} lang={lang} />
         <div className="container row">
-          <h4 className="red">Put some breadcrumbs here</h4>
+          <Breadcrumbs links={breadcrumb_links} />
           <PageHeader title={pagetitle} description="Description." />
 
           {posts.map(

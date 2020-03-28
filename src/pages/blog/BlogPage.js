@@ -15,6 +15,16 @@ class BlogPage extends Component {
   };
 
   render() {
+    storage.setItem(
+      "breadcrumb_links",
+      JSON.stringify([
+        {
+          page: "Blog",
+          route: "/blog"
+        }
+      ])
+    );
+
     return (
       <div>
         <NavBar blackStyle={true} lang={lang} />
@@ -25,19 +35,19 @@ class BlogPage extends Component {
             img="travels.png"
             title="Travels"
             posts={dict.posts}
-            tag="/travels"
+            tag="/blog/travels"
             onPostClick={this.onPostClick}
           />
           <CardImage
             img="personal_growth.png"
             title="Personal Growth"
-            tag="/personalgrowth"
+            tag="/blog/personalgrowth"
             onPostClick={this.onPostClick}
           />
           <CardImage
             img="hellowtips_blog.png"
             title="HellowTips"
-            tag="/hellowtips"
+            tag="/blog/hellowtips"
             onPostClick={this.onPostClick}
           />
         </div>
