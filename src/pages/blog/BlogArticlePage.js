@@ -10,7 +10,11 @@ class BlogArticlePage extends Component {
       <div>
         <NavBar blackStyle={true} lang={lang} />
         <div className="container row">
-          <PageHeader title={"Title"} />
+          <PageHeader title={"Travels"} />
+          <h3 className="center">My article title</h3>
+          <p className="center" style={{ marginBottom: 40 }}>
+            April 05, 2019, Levy
+          </p>
           <p style={{ marginBottom: 20 }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             mollis dapibus justo quis tempus. Integer ultrices purus orci, eget

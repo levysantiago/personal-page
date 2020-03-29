@@ -4,6 +4,7 @@ import CardImage from "../../components/CardImage";
 import PageHeader from "../../components/PageHeader";
 import dict from "../../language/info";
 import lang from "../../language/en";
+import routes_dict from "../../language/routes_dict";
 import Footer from "../../components/Footer";
 
 const storage = window.sessionStorage;
@@ -20,7 +21,7 @@ class BlogPage extends Component {
       JSON.stringify([
         {
           page: "Blog",
-          route: "/blog"
+          route: routes_dict.home.blog.this
         }
       ])
     );
@@ -35,19 +36,19 @@ class BlogPage extends Component {
             img="travels.png"
             title="Travels"
             posts={dict.posts}
-            tag="/blog/travels"
+            tag={routes_dict.home.blog.travels.this}
             onPostClick={this.onPostClick}
           />
           <CardImage
             img="personal_growth.png"
             title="Personal Growth"
-            tag="/blog/personalgrowth"
+            tag={routes_dict.home.blog.personalgrowth.this}
             onPostClick={this.onPostClick}
           />
           <CardImage
             img="hellowtips_blog.png"
             title="HellowTips"
-            tag="/blog/hellowtips"
+            tag={routes_dict.home.blog.hellowtips.this}
             onPostClick={this.onPostClick}
           />
         </div>

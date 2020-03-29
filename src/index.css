@@ -8,6 +8,26 @@
   color: #353535;
 }
 
+.breadcrumb {
+  color: rgb(121, 121, 121);
+  font-size: 12px;
+}
+
+.breadcrumb:last-child {
+  font-weight: 500;
+  color: #424242;
+}
+
+.breadcrumb:before {
+  color: rgba(65, 65, 65, 0.2);
+  vertical-align: middle;
+}
+
+nav.clean {
+  background: none;
+  box-shadow: none;
+}
+
 .myblockquote {
   border-left-color: grey;
 }
