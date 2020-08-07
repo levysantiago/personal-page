@@ -8,7 +8,19 @@ module.exports = {
       hellowtips: { this: "/blog/hellowtips" },
       travels: { this: "/blog/travels" },
       personalgrowth: { this: "/blog/personalgrowth" },
-      article: { this: "/blog/article" }
-    }
-  }
+      article: { this: "/blog/article/:id" },
+    },
+  },
+
+  byroute: {
+    "/blog/travels": {
+      name: "Travels",
+    },
+    "/blog/personalgrowth": {
+      name: "Personal Growth",
+    },
+    "/blog/hellowtips": {
+      name: "Hellow Tips",
+    },
+  },
 };

@@ -1,49 +1,61 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import CardImage from "../../components/CardImage";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
-import dict from "../../language/info";
 import lang from "../../language/en";
-import routes_dict from "../../language/routes_dict";
 import blog_info from "../../language/blog_info";
+import info from "../../language/info";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumb";
+import blog_api from "../../lib/blogapi";
 
-const storage = window.sessionStorage;
+export default function PostsList() {
+  const [posts, setPosts] = useState([]);
+  const location = useLocation();
 
-class PostsList extends Component {
-  render() {
-    let tag = storage.getItem("tag");
-    let pagetitle = storage.getItem("title");
-    let breadcrumb_links = JSON.parse(storage.getItem("breadcrumb_links"));
-    breadcrumb_links.push({ page: pagetitle, route: tag });
-
-    let posts;
-    let key = 0;
-    if (tag === routes_dict.home.blog.travels.this) {
-      posts = blog_info.travels;
-    }
-    console.log(posts);
-
-    return (
-      <div>
-        <NavBar blackStyle={true} lang={lang} />
-        <div className="container row">
-          <Breadcrumbs links={breadcrumb_links} />
-          <PageHeader title={pagetitle} description="Description." />
-
-          {posts.map(p => (
-            <CardImage
-              key={key++}
-              img={"travels/" + p.image}
-              content={p.title}
-            />
-          ))}
-        </div>
-        <Footer lang={lang} />
-      </div>
-    );
+  const tag = location.pathname;
+  let card = info.cards.filter((card) => {
+    return card.route === tag;
+  });
+  if (card.length) {
+    card = card[0];
   }
-}
 
-export default PostsList;
+  const storage = window.sessionStorage;
+  let breadcrumb_links = JSON.parse(storage.getItem("breadcrumb_links"));
+  breadcrumb_links.push({ page: card.title, route: tag });
+
+  useEffect(() => {
+    //let _posts = blog_info[tag];
+    async function update() {
+      let _posts = await blog_api.getPosts();
+      console.log(_posts);
+      if (_posts) {
+        setPosts(_posts.items);
+      }
+    }
+
+    update();
+  }, [tag]);
+
+  return (
+    <div>
+      <NavBar blackStyle={true} lang={lang} />
+      <div className="container row">
+        <Breadcrumbs links={breadcrumb_links} />
+        <PageHeader title={card.title} description="Description." />
+
+        {posts.map((p, key) => (
+          <CardImage
+            key={key++}
+            tag={"/blog/article/" + p.id}
+            //img={"travels/" + p.image}
+            content={p.title}
+          />
+        ))}
+      </div>
+      <Footer lang={lang} />
+    </div>
+  );
+}
