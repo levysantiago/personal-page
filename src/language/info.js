@@ -6,10 +6,9 @@ module.exports = {
         "Analise de softwares de virtualização de objetos eletrônicos para utilização em projetos de ensino que utilizem o conceito de Internet das Coisas: Protoboard Virtual e Plataforma Arduíno.",
 
       year: "2017",
-      place:
-        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
+      place: "Cruz das Almas, Bahia, Brasil",
       proceeding:
-        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
+        "Anais Workshop da XVII Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
       link:
         "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
     },
@@ -19,10 +18,9 @@ module.exports = {
         "Redes Sociais na educação - Revisão de softwares de Redes Sociais como ferramentas educaionais",
 
       year: "2017",
-      place:
-        "XVII ESCOLA REGIONAL DE COMPUTAÇÃO BAHIA - ALAGOAS - SERGIPE, Cruz das Almas",
+      place: "Cruz das Almas, Bahia, Brasil",
       proceeding:
-        "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
+        "Anais Workshop da XVII Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
       link:
         "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
     },
@@ -32,9 +30,9 @@ module.exports = {
         "Avaliação de linguagens visuais de programação no ensino médio a partir da utilização do conceito de Robótica Pedagógica",
 
       year: "2017",
-      place: "VI Congresso Brasileiro de Informática na Educação, Recife",
+      place: "Recife, Pernambuco, Brasil",
       proceeding:
-        "Anais dos Workshops do Congresso Brasileiro de Informática na Educação (CBIE), p. 962-971",
+        "Anais dos Workshops do VI Congresso Brasileiro de Informática na Educação (CBIE), p. 962-971",
       link: "http://br-ie.org/pub/index.php/wcbie/article/view/7485",
     },
     {
@@ -43,8 +41,7 @@ module.exports = {
         "I2oTegrator: a Service-Oriented IoT Middleware for Intelligent Object Management",
 
       year: "2018",
-      place:
-        "2018 IEEE Symposium on Computers and Communications (ISCC), Natal",
+      place: "Natal, Rio Grande do Norte, Brasil",
       proceeding:
         "2018 IEEE Symposium on Computers and Communications (ISCC), p. 00174",
       link: "https://ieeexplore.ieee.org/document/8538541",
@@ -54,7 +51,7 @@ module.exports = {
       title: "I2oTology - Tracking-Oriented Ontology",
 
       year: "2018",
-      place: "XI Seminar on Ontology Research in Brazil, São Paulo",
+      place: "São Paulo, São Paulo, Brasil",
       proceeding:
         "Proceedings of the XI Seminar on Ontology Research in Brazil and II Doctoral and Masters Consortium on Ontologies",
       link: "http://ceur-ws.org/Vol-2228/short5.pdf",
@@ -64,11 +61,45 @@ module.exports = {
       title: "IoTCocoa - an IoT platform to assist gourmet cocoa production",
 
       year: "2019",
-      place:
-        "IEEE LatinAmerican Conference on Communications (LATINCOM), Salvador",
+      place: "Salvador, Bahia, Brasil",
       proceeding:
         "IEEE Latin-American Conference on Communications (LATINCOM), p. 1",
       link: "https://ieeexplore.ieee.org/document/8937903",
+    },
+    {
+      key: 7,
+      title:
+        "Usability evaluation of block programming tools in IoT contexts for initial engineering courses",
+      year: "2020",
+      place: "Bogota, Cundinamarca, Colombia",
+      proceeding: "IEEE World Conference on Engineering Education (EDUNINE)",
+      link: "https://ieeexplore.ieee.org/document/9149481",
+    },
+    {
+      key: 8,
+      title: "IoTalho: IoT Advancing Learning from High-tech Objects",
+      year: "2020",
+      place: "Bogota, Cundinamarca, Colombia",
+      proceeding: "IEEE World Conference on Engineering Education (EDUNINE)",
+      link: "https://ieeexplore.ieee.org/document/9149530",
+    },
+    {
+      key: 9,
+      title:
+        "Gamification-Supported Collaborative Learning: A Systematic Literature Review",
+      year: "2020",
+      place: "Bogota, Cundinamarca, Colombia",
+      proceeding: "IEEE World Conference on Engineering Education (EDUNINE)",
+      link: "https://ieeexplore.ieee.org/document/9149543",
+    },
+    {
+      key: 10,
+      title:
+        "Blockchain applied to academic environments as a way to ensure educational process quality control",
+      year: "2020",
+      place: "Bogota, Cundinamarca, Colombia",
+      proceeding: "IEEE World Conference on Engineering Education (EDUNINE)",
+      link: "https://ieeexplore.ieee.org/document/9149491",
     },
   ],
 
