@@ -14,10 +14,12 @@ module.exports = {
 
   byroute: {
     "/blog/travels": {
-      name: "Travels",
+      name: "Viagens",
+      nameen: "Travels",
     },
     "/blog/personalgrowth": {
-      name: "Personal Growth",
+      name: "Crescimento Pessoal",
+      nameen: "Personal Growth",
     },
     "/blog/hellowtips": {
       name: "Hellow Tips",

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import lang from "../../language/en";
+import lang from "../../language/pt";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
 import Footer from "../../components/Footer";
