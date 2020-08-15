@@ -27,7 +27,7 @@ export default function BlogPage() {
     <div>
       <NavBar blackStyle={true} lang={lang} />
       <div className="container row">
-        <PageHeader title="My Blog" description="Description." />
+        <PageHeader title="My Blog" description="" />
 
         {info.cards.map((item) => {
           return (
