@@ -5,7 +5,7 @@ class NavBar extends Component {
     var elem = document.querySelector(".sidenav");
     window.M.Sidenav.init(elem, {
       edge: "left",
-      inDuration: 250
+      inDuration: 250,
     });
   }
 
@@ -53,8 +53,8 @@ class NavBar extends Component {
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/hellowtips">
-                  {lang.menu.hellowtips}
+                <a style={this.blackLinkStyle(blackStyle)} href="/blog">
+                  {lang.menu.blog}
                 </a>
               </li>
             </ul>
@@ -78,8 +78,8 @@ class NavBar extends Component {
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/hellowtips">
-              {lang.menu.hellowtips}
+            <a className="waves-effect waves-teal" href="/blog">
+              {lang.menu.blog}
             </a>
           </li>
         </ul>

@@ -11,7 +11,11 @@ module.exports = {
       proceeding:
         "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
       link:
+<<<<<<< HEAD
         "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
+=======
+        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
+>>>>>>> dev
     },
     {
       key: 2,
@@ -24,7 +28,11 @@ module.exports = {
       proceeding:
         "Anais Workshop de Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
       link:
+<<<<<<< HEAD
         "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing"
+=======
+        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
+>>>>>>> dev
     },
     {
       key: 3,
@@ -35,7 +43,11 @@ module.exports = {
       place: "VI Congresso Brasileiro de Informática na Educação, Recife",
       proceeding:
         "Anais dos Workshops do Congresso Brasileiro de Informática na Educação (CBIE), p. 962-971",
+<<<<<<< HEAD
       link: "http://br-ie.org/pub/index.php/wcbie/article/view/7485"
+=======
+      link: "http://br-ie.org/pub/index.php/wcbie/article/view/7485",
+>>>>>>> dev
     },
     {
       key: 4,
@@ -47,7 +59,11 @@ module.exports = {
         "2018 IEEE Symposium on Computers and Communications (ISCC), Natal",
       proceeding:
         "2018 IEEE Symposium on Computers and Communications (ISCC), p. 00174",
+<<<<<<< HEAD
       link: "https://ieeexplore.ieee.org/document/8538541"
+=======
+      link: "https://ieeexplore.ieee.org/document/8538541",
+>>>>>>> dev
     },
     {
       key: 5,
@@ -57,7 +73,11 @@ module.exports = {
       place: "XI Seminar on Ontology Research in Brazil, São Paulo",
       proceeding:
         "Proceedings of the XI Seminar on Ontology Research in Brazil and II Doctoral and Masters Consortium on Ontologies",
+<<<<<<< HEAD
       link: "http://ceur-ws.org/Vol-2228/short5.pdf"
+=======
+      link: "http://ceur-ws.org/Vol-2228/short5.pdf",
+>>>>>>> dev
     },
     {
       key: 6,
@@ -68,8 +88,13 @@ module.exports = {
         "IEEE LatinAmerican Conference on Communications (LATINCOM), Salvador",
       proceeding:
         "IEEE Latin-American Conference on Communications (LATINCOM), p. 1",
+<<<<<<< HEAD
       link: "https://ieeexplore.ieee.org/document/8937903"
     }
+=======
+      link: "https://ieeexplore.ieee.org/document/8937903",
+    },
+>>>>>>> dev
   ],
 
   projects: [
@@ -80,7 +105,11 @@ module.exports = {
         "This is an application developed together with friends from college. It is an application that allows the creation and management of tasks. It was developed using Android Studio. Each task can be associated with a Project (or tag) that represents what the task refers to.",
       abstract2:
         "Este é um aplicativo desenvolvido junto com amigos da faculdade. É um aplicativo que permite a criação e gerenciamento de tarefas (tasks).Ele foi desenvolvido utilizando Android Studio.Cada tarefa pode ser associada com um Projeto(ou tag) que representa a que a tarefa se refere.",
+<<<<<<< HEAD
       link: "https://github.com/Levysantiago/ta5ks"
+=======
+      link: "https://github.com/Levysantiago/ta5ks",
+>>>>>>> dev
     },
     {
       key: 2,
@@ -89,7 +118,11 @@ module.exports = {
         "An educational game to help children learn element counting. The game implements a drag and drop interface that contributes to the child's motor coordination.",
       abstract2:
         "Um jogo educativo para ajudar as crianças no aprendizado de contagem de elementos.O jogo implementa uma interface de drag and drop que contribui para a cordenação motora da criança.",
+<<<<<<< HEAD
       link: "https://github.com/Levysantiago/MathKids"
+=======
+      link: "https://github.com/Levysantiago/MathKids",
+>>>>>>> dev
     },
     {
       key: 3,
@@ -98,7 +131,11 @@ module.exports = {
         "A system to assist the production of gourmet cocoa with blockchain support. The link shows a page where data were obtained from the fermentation process of a consignment of cocoa. The ambient temperature and humidity were controlled, as well as from inside the trough. The system has hardware that includes three relays to control a ventilation fount, heat fount and a trough mixer.",
       abstract2:
         "Um sistema para auxiliar a produção de cacau gourmet com suporte a blockchain. O link mostra uma página onde foram obtidos dados do processo de fermentação de uma remessa de cacau. Foram controladas a temperatura e humidade ambiente e também de dentro do cocho. O sistema conta com um hardware que comporta três reles para controlar uma fonte de ventilação, fonte de calor e misturador do coxo.",
+<<<<<<< HEAD
       link: "https://cacau.herokuapp.com/"
+=======
+      link: "https://cacau.herokuapp.com/",
+>>>>>>> dev
     },
     {
       key: 4,
@@ -107,8 +144,13 @@ module.exports = {
         "This was a Scientific Initiation project at the Santa Cruz State University (UESC) that aims to implement smart contracts for the Electronic Government (E-Gov). Three contracts were developed, one for the Vaccination Card, another for Immobile Registration and finally for Enrollment Proof. The only contract implemented for testing and integrated with Middleware was the Enrollment Proof contract, for which a page was created to show how the contract works through the Middleware.",
       abstract2:
         "Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov). Foram desenvolvidos três contratos, um para a Carteira de Vacinação, outro para Registro de Imóvel e por último para Comprovante de Matrícula. O único contrato implementado para teste e integrado com um Middleware foi o contrato para Comprovante de Matrícula, para este, foi criada uma página para mostrar a o funcionamento do contrato a partir do Middleware.",
+<<<<<<< HEAD
       link: "https://github.com/Levysantiago/smartcontracts-for-egov"
     }
+=======
+      link: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    },
+>>>>>>> dev
   ],
   hellowtips: [
     { key: 15, img: "dicas16.jpg" },
@@ -125,27 +167,78 @@ module.exports = {
     { key: 4, img: "dicas5.jpg" },
     { key: 3, img: "dicas4.jpg" },
     { key: 2, img: "dicas2.jpg" },
+<<<<<<< HEAD
     { key: 1, img: "dicas1.jpg" }
+=======
+    { key: 1, img: "dicas1.jpg" },
+>>>>>>> dev
   ],
   blockquotes: {
     one: {
       phrase:
         "Great things in business are never done by one person. They're done by a team of people.",
+<<<<<<< HEAD
       author: "Steve Jobs"
+=======
+      author: "Steve Jobs",
+>>>>>>> dev
     },
     two: {
       phrase:
         "It’s fine to celebrate success, but it is more important to heed the lessons of failure.",
+<<<<<<< HEAD
       author: "Bill Gates"
     },
     three: {
       phrase: "Codes are a puzzle. A game, just like any other game.",
       author: "Alan Turing"
+=======
+      author: "Bill Gates",
+    },
+    three: {
+      phrase: "Codes are a puzzle. A game, just like any other game.",
+      author: "Alan Turing",
+>>>>>>> dev
     },
     four: {
       phrase:
         "People won't have time for you if you are always angry or complaining.",
+<<<<<<< HEAD
       author: "Stephen Hawking"
     }
   }
+=======
+      author: "Stephen Hawking",
+    },
+    five: {
+      phrase:
+        "Enquanto não percebemos que possuímos algo, esse algo é inexistente.",
+      author: "Katsumi Tokuhisa",
+    },
+  },
+
+  cards: [
+    {
+      id: 1,
+      title: "Travels",
+      route: "/blog/travels",
+      img: "travels.png",
+      label: "viagens",
+    },
+    {
+      id: 2,
+      title: "Personal Growth",
+      route: "/blog/personalgrowth",
+      img: "personal_growth.png",
+      label: "crescimento-pessoal",
+    },
+    {
+      id: 3,
+      title: "Hellow Tips",
+      route: "/blog/hellowtips",
+      img: "hellowtips_blog.png",
+      label: "hellowtips",
+    },
+  ],
+>>>>>>> dev
 };

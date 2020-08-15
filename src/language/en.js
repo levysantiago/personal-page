@@ -48,7 +48,7 @@ const lang = {
         </p>
         <br />
       </article>
-    )
+    ),
   },
   languages: {
     title: "Languages",
@@ -62,7 +62,7 @@ const lang = {
           direct and understandable.
         </p>
       </article>
-    )
+    ),
   },
   articles: {
     title: "Articles",
@@ -70,7 +70,7 @@ const lang = {
       <article>
         <p style={{ color: "white" }}></p>
       </article>
-    )
+    ),
   },
   projects: {
     title: "Projects",
@@ -78,36 +78,41 @@ const lang = {
       <article>
         <p style={{ color: "white" }}></p>
       </article>
-    )
+    ),
   },
   articlespage: {
     title: "Articles",
     description:
-      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group (Internet of the Future Laboratory) and GAUDI (Algorithms and Distributed Computing Group)."
+      "This page presents published articles that I wrote with other authors. Most of these authors are part of the LIF group (Internet of the Future Laboratory) and GAUDI (Algorithms and Distributed Computing Group).",
   },
   projectspage: {
     title: "Projects",
     description:
-      "In this page are presented some of the projects that I developed for college, scholarships and for personal needs. Most of these are on GitHub. Each project contains the link to the page that describes it."
+      "In this page are presented some of the projects that I developed for college, scholarships and for personal needs. Most of these are on GitHub. Each project contains the link to the page that describes it.",
+  },
+  blogpage: {
+    title: "My Blog",
+    description: "Description",
   },
   hellowtipspage: {
     title: "Hellow Tips",
     description:
       'Hellow Tips is an Instagram page that I created in order to publish tips for any information related to programming, technology, and other concepts. The name "Tips" is self-explaining and "Hellow" comes from the phrase used in the first program of every programmer: "Hello World!".',
     description2:
-      "After I entered the Computer Science course, I realized that many people gave up immediately upon entering the course, as they believed that they would deal with subjects such as computer maintenance or the use of Excel, Word and other tools, and did not know what programming was. In 2017, more specifically in my 4th course's semester, when I already had a reasonable knowledge of the subjects, I decided to create Hellow Tips to publish programming tips, that way, people who want to be programmers understand the idea of programming and other technologies and concepts. Also those who are studying programming in a course and those who already are can improve their knowledge. Most of the posts are in Portuguese because I wanted to first attract my classmates and get feedback from them about the posts."
+      "After I entered the Computer Science course, I realized that many people gave up immediately upon entering the course, as they believed that they would deal with subjects such as computer maintenance or the use of Excel, Word and other tools, and did not know what programming was. In 2017, more specifically in my 4th course's semester, when I already had a reasonable knowledge of the subjects, I decided to create Hellow Tips to publish programming tips, that way, people who want to be programmers understand the idea of programming and other technologies and concepts. Also those who are studying programming in a course and those who already are can improve their knowledge. Most of the posts are in Portuguese because I wanted to first attract my classmates and get feedback from them about the posts.",
   },
   footer: {
     title: "About",
     contact: "Contact",
     description:
-      "I'm Levy. Today I'm graduated in Computer Science at UESC. This is my personal page where I present articles, projects and other works."
+      "I'm Levy. Today I'm graduated in Computer Science at UESC. This is my personal page where I present articles, projects and other works.",
   },
   menu: {
     home: "Home",
     articles: "Articles",
     projects: "Projects",
-    hellowtips: "Hellow Tips"
+    hellowtips: "Hellow Tips",
+    blog: "Blog",
   },
   /**
    * CONSTANTS
@@ -118,8 +123,8 @@ const lang = {
     in: "In",
     read: "Read",
     moreArticles: "See more articles here",
-    moreProjects: "See more projects here"
-  }
+    moreProjects: "See more projects here",
+  },
 };
 
 export default lang;

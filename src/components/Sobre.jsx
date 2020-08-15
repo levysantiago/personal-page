@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 class Sobre extends Component {
   /*textStyle = {
-    fontFamily: "Quicksand"
-  };*/
+      fontFamily: "Quicksand"
+    };*/
 
   render() {
     const { lang } = this.props;
