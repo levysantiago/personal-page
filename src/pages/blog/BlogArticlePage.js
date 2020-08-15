@@ -5,9 +5,31 @@ import PageHeader from "../../components/PageHeader";
 import Footer from "../../components/Footer";
 import blog_api from "../../lib/blogapi";
 import cryptography from "../../lib/criptography";
+import { useLocation } from "react-router-dom";
+import routes_dict from "../../language/routes_dict";
+import info from "../../language/info";
+import Breadcrumbs from "../../components/Breadcrumb";
 
 function BlogArticlePage({ match }) {
   const [article, setArticle] = useState(null);
+  const location = useLocation();
+
+  const tag = location.pathname;
+  const newtag = tag.split("/article")[0];
+  const title_object = newtag ? routes_dict.byroute[newtag] : "";
+
+  let card = info.cards.filter((card) => {
+    return card.route === newtag;
+  });
+  if (card.length) {
+    card = card[0];
+  }
+
+  const [breadcrumb_links, setBreadcrumb_links] = useState([
+    { page: "Blog", route: "/blog" },
+    { page: card.title, route: card.route },
+    { page: "Artigo", route: "#" },
+  ]);
 
   useEffect(() => {
     async function getArticle() {
@@ -27,18 +49,21 @@ function BlogArticlePage({ match }) {
         );
         _article.stringdate = `${mo} ${da}, ${ye}`;
         setArticle(_article);
+        // const breadcrumb = breadcrumb_links;
+        // breadcrumb.push({ page: _article.title, route: tag });
+        // setBreadcrumb_links(breadcrumb);
       }
     }
 
     getArticle();
   }, []);
 
-  console.log(article);
   return (
     <div>
       <NavBar blackStyle={true} lang={lang} />
       <div className="container row">
-        <PageHeader title={"Travels"} />
+        <Breadcrumbs links={breadcrumb_links} />
+        <PageHeader title={title_object.name} />
         {article ? (
           <>
             <h3 className="center">{article.title}</h3>

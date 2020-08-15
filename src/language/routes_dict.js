@@ -8,7 +8,7 @@ module.exports = {
       hellowtips: { this: "/blog/hellowtips" },
       travels: { this: "/blog/travels" },
       personalgrowth: { this: "/blog/personalgrowth" },
-      article: { this: "/blog/article/:id" },
+      article: { this: "*/article/:id" },
     },
   },
 

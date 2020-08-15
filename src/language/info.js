@@ -167,7 +167,7 @@ module.exports = {
       title: "Personal Growth",
       route: "/blog/personalgrowth",
       img: "personal_growth.png",
-      label: "crescimento pessoal",
+      label: "crescimento-pessoal",
     },
     {
       id: 3,

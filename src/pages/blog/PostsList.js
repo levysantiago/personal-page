@@ -48,13 +48,13 @@ export default function PostsList() {
       <NavBar blackStyle={true} lang={lang} />
       <div className="container row">
         <Breadcrumbs links={breadcrumb_links} />
-        <PageHeader title={card.title} description="Description." />
+        <PageHeader title={card.title} description="" />
 
         {posts
           ? posts.map((p, key) => (
               <CardImage
                 key={key}
-                tag={"/blog/article/" + cryptography.encrypt(p.id)}
+                tag={tag + "/article/" + cryptography.encrypt(p.id)}
                 //img={"travels/" + p.image}
                 content={p.title}
               />
