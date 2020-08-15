@@ -4,27 +4,54 @@ const { REACT_APP_BLOG_ID: BLOG_ID, REACT_APP_API_KEY: API_KEY } = process.env;
 
 const blog_api = {
   getPosts: async () => {
-    const res = await api.get(
-      "https://www.googleapis.com/blogger/v3/blogs/" +
-        BLOG_ID +
-        "/posts?key=" +
-        API_KEY
-    );
-
-    return res.data;
+    try {
+      const res = await api.get(
+        "https://www.googleapis.com/blogger/v3/blogs/" +
+          BLOG_ID +
+          "/posts?key=" +
+          API_KEY
+      );
+      return res.data;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
   },
 
   getArticle: async (articleId) => {
-    const res = await api.get(
-      "https://www.googleapis.com/blogger/v3/blogs/" +
-        BLOG_ID +
-        "/posts/" +
-        articleId +
-        "?key=" +
-        API_KEY
-    );
+    try {
+      const res = await api.get(
+        "https://www.googleapis.com/blogger/v3/blogs/" +
+          BLOG_ID +
+          "/posts/" +
+          articleId +
+          "?key=" +
+          API_KEY
+      );
 
-    return res.data;
+      return res.data;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  },
+
+  getPostsByLabel: async (label) => {
+    try {
+      const res = await api.get(
+        "https://www.googleapis.com/blogger/v3/blogs/" +
+          BLOG_ID +
+          "/posts/" +
+          "search?q=label:" +
+          label +
+          "&key=" +
+          API_KEY
+      );
+      return res.data;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
   },
 };
 

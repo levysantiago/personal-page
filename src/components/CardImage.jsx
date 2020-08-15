@@ -11,10 +11,10 @@ class CardImage extends Component {
 
     return (
       <div className="col s12 m4">
-        <a href={tag} onClick={() => onPostClick()}>
+        <a href={tag}>
           <div className="card hoverable">
             <div className="card-image">
-              {/* <img src={require("../imgs/" + img)} alt="icon" /> */}
+              {img ? <img src={require("../imgs/" + img)} alt="icon" /> : null}
               <span className="card-title">{title}</span>
             </div>
             <div className={"card-content " + hide}>

@@ -4,14 +4,16 @@ import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
 import Footer from "../../components/Footer";
 import blog_api from "../../lib/blogapi";
+import cryptography from "../../lib/criptography";
 
 function BlogArticlePage({ match }) {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
     async function getArticle() {
-      const articleId = match.params.id;
-      if (articleId) {
+      const articleIdEncrypted = match.params.id;
+      if (articleIdEncrypted) {
+        const articleId = cryptography.decrypt(articleIdEncrypted);
         const _article = await blog_api.getArticle(articleId);
         const date = new Date(_article.published);
         const ye = new Intl.DateTimeFormat("pt", { year: "numeric" }).format(

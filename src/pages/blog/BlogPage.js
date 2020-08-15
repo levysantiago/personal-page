@@ -6,6 +6,7 @@ import lang from "../../language/en";
 import routes_dict from "../../language/routes_dict";
 import info from "../../language/info";
 import Footer from "../../components/Footer";
+import Blockquote from "../../components/Blockquote";
 
 const storage = window.sessionStorage;
 
@@ -39,7 +40,13 @@ export default function BlogPage() {
           );
         })}
       </div>
-      <h4 className="red">Put some Blockquote here</h4>
+
+      <div className="container">
+        <Blockquote
+          phrase={info.blockquotes.five.phrase}
+          author={info.blockquotes.five.author}
+        />
+      </div>
 
       <Footer lang={lang} />
     </div>

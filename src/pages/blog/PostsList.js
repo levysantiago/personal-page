@@ -9,6 +9,7 @@ import info from "../../language/info";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumb";
 import blog_api from "../../lib/blogapi";
+import cryptography from "../../lib/criptography";
 
 export default function PostsList() {
   const [posts, setPosts] = useState([]);
@@ -24,13 +25,16 @@ export default function PostsList() {
 
   const storage = window.sessionStorage;
   let breadcrumb_links = JSON.parse(storage.getItem("breadcrumb_links"));
+  if (!breadcrumb_links) {
+    breadcrumb_links = [{ page: "Blog", route: "/blog" }];
+  }
   breadcrumb_links.push({ page: card.title, route: tag });
 
   useEffect(() => {
     //let _posts = blog_info[tag];
     async function update() {
-      let _posts = await blog_api.getPosts();
-      console.log(_posts);
+      let _posts = await blog_api.getPostsByLabel(card.label);
+      //console.log(_posts);
       if (_posts) {
         setPosts(_posts.items);
       }
@@ -46,14 +50,16 @@ export default function PostsList() {
         <Breadcrumbs links={breadcrumb_links} />
         <PageHeader title={card.title} description="Description." />
 
-        {posts.map((p, key) => (
-          <CardImage
-            key={key++}
-            tag={"/blog/article/" + p.id}
-            //img={"travels/" + p.image}
-            content={p.title}
-          />
-        ))}
+        {posts
+          ? posts.map((p, key) => (
+              <CardImage
+                key={key}
+                tag={"/blog/article/" + cryptography.encrypt(p.id)}
+                //img={"travels/" + p.image}
+                content={p.title}
+              />
+            ))
+          : null}
       </div>
       <Footer lang={lang} />
     </div>

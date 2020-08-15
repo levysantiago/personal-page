@@ -147,6 +147,11 @@ module.exports = {
         "People won't have time for you if you are always angry or complaining.",
       author: "Stephen Hawking",
     },
+    five: {
+      phrase:
+        "Enquanto não percebemos que possuímos algo, esse algo é inexistente.",
+      author: "Katsumi Tokuhisa",
+    },
   },
 
   cards: [
@@ -155,18 +160,21 @@ module.exports = {
       title: "Travels",
       route: "/blog/travels",
       img: "travels.png",
+      label: "viagens",
     },
     {
       id: 2,
       title: "Personal Growth",
       route: "/blog/personalgrowth",
       img: "personal_growth.png",
+      label: "crescimento pessoal",
     },
     {
       id: 3,
       title: "Hellow Tips",
       route: "/blog/hellowtips",
       img: "hellowtips_blog.png",
+      label: "hellowtips",
     },
   ],
 };
