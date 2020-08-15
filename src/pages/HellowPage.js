@@ -5,7 +5,7 @@ import PageHeader from "../components/PageHeader";
 import ListTips from "../components/ListTips";
 import Blockquote from "../components/Blockquote";
 import dict from "../language/info";
-import lang from "../language/en";
+import lang from "../language/pt";
 import Footer from "../components/Footer";
 import info from "../language/info";
 import Breadcrumbs from "../components/Breadcrumb";

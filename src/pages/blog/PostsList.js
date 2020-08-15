@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import CardImage from "../../components/CardImage";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
-import lang from "../../language/en";
+import lang from "../../language/pt";
 import blog_info from "../../language/blog_info";
 import info from "../../language/info";
 import Footer from "../../components/Footer";

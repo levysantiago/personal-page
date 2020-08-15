@@ -5,7 +5,7 @@ import PageHeader from "../components/PageHeader";
 import Blockquote from "../components/Blockquote";
 import Footer from "../components/Footer";
 import dict from "../language/info";
-import lang from "../language/en";
+import lang from "../language/pt";
 
 class ProjectsPage extends Component {
   state = {
@@ -15,9 +15,9 @@ class ProjectsPage extends Component {
         abstract: "",
         type: "project",
         link: "",
-        date: ""
-      }
-    ]
+        date: "",
+      },
+    ],
   };
 
   render() {

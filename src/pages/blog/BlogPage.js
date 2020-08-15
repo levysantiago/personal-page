@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import CardImage from "../../components/CardImage";
 import PageHeader from "../../components/PageHeader";
-import lang from "../../language/en";
+import lang from "../../language/pt";
 import routes_dict from "../../language/routes_dict";
 import info from "../../language/info";
 import Footer from "../../components/Footer";
@@ -27,7 +27,7 @@ export default function BlogPage() {
     <div>
       <NavBar blackStyle={true} lang={lang} />
       <div className="container row">
-        <PageHeader title="My Blog" description="" />
+        <PageHeader title={lang.blogpage.title} description="" />
 
         {info.cards.map((item) => {
           return (

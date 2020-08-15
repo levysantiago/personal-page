@@ -5,7 +5,7 @@ import PageHeader from "../components/PageHeader";
 import Blockquote from "../components/Blockquote";
 import Footer from "../components/Footer";
 import dict from "../language/info";
-import lang from "../language/en";
+import lang from "../language/pt";
 
 function ArticlesPage() {
   return (

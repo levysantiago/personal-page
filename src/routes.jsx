@@ -12,12 +12,12 @@ import dict from "./language/routes_dict.js";
 const Routes = (
   <Router>
     <Route path={dict.home.this} exact strict component={HomePage} />
-    {/* <Route
+    <Route
       path={dict.home.articles.this}
       exact
       strict
       component={ArticlesPage}
-    /> */}
+    />
     <Route
       path={dict.home.projects.this}
       exact

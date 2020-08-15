@@ -7,7 +7,7 @@ import ListArticles from "../components/ListArticles";
 import ListProjects from "../components/ListProjects";
 import Blockquote from "../components/Blockquote";
 import dict from "../language/info";
-import lang from "../language/en";
+import lang from "../language/pt";
 import Footer from "../components/Footer";
 
 class HomePage extends Component {
@@ -16,9 +16,9 @@ class HomePage extends Component {
       {
         title: "",
         content: "",
-        typed: false
-      }
-    ]
+        typed: false,
+      },
+    ],
   };
 
   setUpContent() {
@@ -26,13 +26,13 @@ class HomePage extends Component {
       {
         id: 1,
         title: lang.about.title,
-        tag: <Sobre lang={lang} />
+        tag: <Sobre lang={lang} />,
       },
       {
         id: 2,
         title: lang.languages.title,
         tag: <Graficos lang={lang} />,
-        typed: true
+        typed: true,
       },
       {
         id: 3,
@@ -45,7 +45,7 @@ class HomePage extends Component {
               .slice(Math.max(dict.articles.length - 2, 0))
               .reverse()}
           />
-        )
+        ),
       },
       {
         id: 4,
@@ -59,8 +59,8 @@ class HomePage extends Component {
               .reverse()}
           />
         ),
-        typed: true
-      }
+        typed: true,
+      },
     ];
 
     this.setState({ contents });
