@@ -12,13 +12,13 @@ class Graficos extends Component {
         <div className="hide-on-med-and-up">
           <div className="row">
             <Grafico title="C/C++" percent="80" color="#a6a6a6" />
-            <Grafico title="Java" percent="70" color="#ff5757" />
-            <Grafico title="Python" percent="70" color="#5271ff" />
+            <Grafico title="Javascript" percent="80" color="#fad12c" />
+            <Grafico title="Python" percent="80" color="#5271ff" />
           </div>
           <div className="row">
+            <Grafico title="Solidity" percent="70" color="#545454" />
             <Grafico title="PHP" percent="60" color="#8c52ff" />
-            <Grafico title="Javascript" percent="50" color="#fad12c" />
-            <Grafico title="Solidity" percent="40" color="#545454" />
+            <Grafico title="Java" percent="50" color="#ff5757" />
           </div>
           <div className="row">
             <Grafico title="R" percent="40" color="#38b6ff" />
@@ -35,11 +35,11 @@ class Graficos extends Component {
         <div className="hide-on-small-only">
           <div className="row">
             <Grafico title="C/C++" percent="80" color="#a6a6a6" />
-            <Grafico title="Java" percent="70" color="#ff5757" />
-            <Grafico title="Python" percent="70" color="#5271ff" />
+            <Grafico title="Javascript" percent="80" color="#fad12c" />
+            <Grafico title="Python" percent="80" color="#5271ff" />
+            <Grafico title="Solidity" percent="70" color="#545454" />
             <Grafico title="PHP" percent="60" color="#8c52ff" />
-            <Grafico title="Javascript" percent="50" color="#fad12c" />
-            <Grafico title="Solidity" percent="40" color="#545454" />
+            <Grafico title="Java" percent="50" color="#ff5757" />
           </div>
           <div className="row">
             <Grafico title="R" percent="40" color="#38b6ff" />

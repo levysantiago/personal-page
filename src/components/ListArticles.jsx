@@ -25,7 +25,7 @@ class ListArticles extends Component {
     return (
       <div className="row">
         {/*<h2>Publicações</h2>*/}
-        {list.map(a => (
+        {list.map((a) => (
           <Card
             key={a.key}
             title={a.title}

@@ -15,7 +15,7 @@ class Card extends Component {
       overflowY: "scroll",
       overflowX: "hidden",
       height: 250,
-      padding: 5
+      padding: 5,
     };
 
     if (type === "project") {
