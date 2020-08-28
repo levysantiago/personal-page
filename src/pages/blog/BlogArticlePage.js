@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 import routes_dict from "../../language/routes_dict";
 import info from "../../language/info";
 import Breadcrumbs from "../../components/Breadcrumb";
+import helpers from "../../lib/helpers";
 
 function BlogArticlePage({ match }) {
   const [article, setArticle] = useState(null);
@@ -52,17 +53,8 @@ function BlogArticlePage({ match }) {
       if (articleIdEncrypted) {
         const articleId = cryptography.decrypt(articleIdEncrypted);
         const _article = await blog_api.getArticle(articleId);
-        const date = new Date(_article.published);
-        const ye = new Intl.DateTimeFormat("pt", { year: "numeric" }).format(
-          date
-        );
-        const mo = new Intl.DateTimeFormat("pt", { month: "long" }).format(
-          date
-        );
-        const da = new Intl.DateTimeFormat("pt", { day: "2-digit" }).format(
-          date
-        );
-        _article.stringdate = `${mo} ${da}, ${ye}`;
+        _article.stringdate = helpers.formatDate(_article.published);
+
         setArticle(_article);
         fitImages();
         // const breadcrumb = breadcrumb_links;

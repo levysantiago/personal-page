@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import CardImage from "../../components/CardImage";
 import NavBar from "../../components/NavBar";
 import PageHeader from "../../components/PageHeader";
 import lang from "../../language/pt";
-import blog_info from "../../language/blog_info";
 import info from "../../language/info";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumb";
 import blog_api from "../../lib/blogapi";
 import cryptography from "../../lib/criptography";
+import PostCard from "../../components/PostCard";
+import helpers from "../../lib/helpers";
 
 export default function PostsList() {
   const [posts, setPosts] = useState([]);
@@ -34,7 +34,7 @@ export default function PostsList() {
     //let _posts = blog_info[tag];
     async function update() {
       let _posts = await blog_api.getPostsByLabel(card.label);
-      //console.log(_posts);
+      console.log(_posts);
       if (_posts) {
         setPosts(_posts.items);
       }
@@ -52,11 +52,13 @@ export default function PostsList() {
 
         {posts
           ? posts.map((p, key) => (
-              <CardImage
+              <PostCard
                 key={key}
                 tag={tag + "/article/" + cryptography.encrypt(p.id)}
-                //img={"travels/" + p.image}
-                content={p.title}
+                image={p.author.image.url}
+                date={helpers.formatDate(p.published)}
+                title={p.title}
+                author={p.author.displayName}
               />
             ))
           : null}
