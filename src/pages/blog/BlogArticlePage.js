@@ -31,6 +31,21 @@ function BlogArticlePage({ match }) {
     { page: "Artigo", route: "#" },
   ]);
 
+  function fitImages() {
+    let images = document.querySelectorAll(".separator > a > img");
+    if (images) {
+      images = Array.prototype.slice.call(images);
+      images.map((image) => {
+        console.log("Aqui");
+        console.log(image);
+        if (image.getAttribute("width") > 300) {
+          image.setAttribute("width", "80%");
+          image.setAttribute("height", "80%");
+        }
+      });
+    }
+  }
+
   useEffect(() => {
     async function getArticle() {
       const articleIdEncrypted = match.params.id;
@@ -49,6 +64,7 @@ function BlogArticlePage({ match }) {
         );
         _article.stringdate = `${mo} ${da}, ${ye}`;
         setArticle(_article);
+        fitImages();
         // const breadcrumb = breadcrumb_links;
         // breadcrumb.push({ page: _article.title, route: tag });
         // setBreadcrumb_links(breadcrumb);
