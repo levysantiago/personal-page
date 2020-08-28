@@ -59,6 +59,7 @@ export default function PostsList() {
                 date={helpers.formatDate(p.published)}
                 title={p.title}
                 author={p.author.displayName}
+                labels={p.labels}
               />
             ))
           : null}
