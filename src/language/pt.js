@@ -102,6 +102,7 @@ const lang = {
     hellowtips: "Hellow Tips",
     blog: "Blog",
   },
+
   /**
    * CONSTANTS
    */
@@ -112,6 +113,11 @@ const lang = {
     read: "Ler",
     moreArticles: "Veja mais publicações aqui",
     moreProjects: "Veja mais projetos aqui",
+  },
+
+  messages: {
+    gettingInfo: "Obtendo informações",
+    leaveAComment: "Deixe um comentário aqui",
   },
 };
 

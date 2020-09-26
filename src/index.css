@@ -63,7 +63,8 @@ img.materialboxed {
   margin-bottom: 10px;
 }
 
-p {
+p,
+.article-content {
   text-align: justify;
   color: rgba(32, 21, 18, 0.6);
   font-family: "Quicksand";

@@ -10,9 +10,12 @@ import routes_dict from "../../language/routes_dict";
 import info from "../../language/info";
 import Breadcrumbs from "../../components/Breadcrumb";
 import helpers from "../../lib/helpers";
+import { Row, Col, Container, Button } from "react-materialize";
+import Loader from "../../components/Loader";
 
 function BlogArticlePage({ match }) {
   const [article, setArticle] = useState(null);
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   const tag = location.pathname;
@@ -37,8 +40,6 @@ function BlogArticlePage({ match }) {
     if (images) {
       images = Array.prototype.slice.call(images);
       images.map((image) => {
-        console.log("Aqui");
-        console.log(image);
         if (image.getAttribute("width") > 300) {
           image.setAttribute("width", "80%");
           image.setAttribute("height", "80%");
@@ -52,10 +53,12 @@ function BlogArticlePage({ match }) {
       const articleIdEncrypted = match.params.id;
       if (articleIdEncrypted) {
         const articleId = cryptography.decrypt(articleIdEncrypted);
+        setLoading(true);
         const _article = await blog_api.getArticle(articleId);
         _article.stringdate = helpers.formatDate(_article.published);
 
         setArticle(_article);
+        setLoading(false);
         fitImages();
         // const breadcrumb = breadcrumb_links;
         // breadcrumb.push({ page: _article.title, route: tag });
@@ -69,19 +72,40 @@ function BlogArticlePage({ match }) {
   return (
     <div>
       <NavBar blackStyle={true} lang={lang} />
-      <div className="container row">
+      <Container>
         <Breadcrumbs links={breadcrumb_links} />
         <PageHeader title={title_object.name} />
-        {article ? (
-          <>
-            <h3 className="center">{article.title}</h3>
-            <p className="center" style={{ marginBottom: 40 }}>
-              {article.stringdate}, Levy
-            </p>
-            <div dangerouslySetInnerHTML={{ __html: article.content }}></div>
-          </>
-        ) : null}
-      </div>
+        <Row>
+          {loading ? (
+            <Col s={12}>
+              <Loader size={"medium"} message={lang.messages.gettingInfo} />
+            </Col>
+          ) : (
+            <div className={"article-content"}>
+              {article ? (
+                <>
+                  <h3 className="center">{article.title}</h3>
+                  <p className="center" style={{ marginBottom: 40 }}>
+                    {article.stringdate}, Levy
+                  </p>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: article.content }}
+                  ></div>
+                  <Button
+                    node={"a"}
+                    style={{ marginTop: "30px", background: "0d47a1" }}
+                    href={article.url}
+                    rel={"noopener noreferrer"}
+                    target={"_blank"}
+                  >
+                    {lang.messages.leaveAComment}
+                  </Button>
+                </>
+              ) : null}
+            </div>
+          )}
+        </Row>
+      </Container>
       <Footer lang={lang} />
     </div>
   );
