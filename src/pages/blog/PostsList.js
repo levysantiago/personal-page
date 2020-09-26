@@ -38,7 +38,7 @@ export default function PostsList() {
     async function update() {
       setLoading(true);
       let _posts = await blog_api.getPostsByLabel(card.label);
-      console.log(_posts);
+      //   console.log(_posts);
       if (_posts) {
         setPosts(_posts.items);
       }
