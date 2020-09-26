@@ -93,7 +93,7 @@ function BlogArticlePage({ match }) {
                   ></div>
                   <Button
                     node={"a"}
-                    style={{ marginTop: "30px", background: "0d47a1" }}
+                    style={{ marginTop: "30px", background: "#0b6173" }}
                     href={article.url}
                     rel={"noopener noreferrer"}
                     target={"_blank"}

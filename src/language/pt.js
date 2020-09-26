@@ -118,6 +118,8 @@ const lang = {
   messages: {
     gettingInfo: "Obtendo informações",
     leaveAComment: "Deixe um comentário aqui",
+    noPostsFound:
+      "Parece que ainda não existe nenhum post ainda para esta tag...",
   },
 };
 

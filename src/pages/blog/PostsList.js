@@ -11,7 +11,7 @@ import cryptography from "../../lib/criptography";
 import PostCard from "../../components/PostCard";
 import helpers from "../../lib/helpers";
 import Loader from "../../components/Loader";
-import { Col, Row } from "react-materialize";
+import { Col, Row, Button } from "react-materialize";
 
 export default function PostsList() {
   const [posts, setPosts] = useState([]);
@@ -73,7 +73,26 @@ export default function PostsList() {
               labels={p.labels}
             />
           ))
-        ) : null}
+        ) : (
+          <div className={"center"}>
+            <img
+              className={"responsive-img"}
+              src={require("../../assets/empty.svg")}
+              alt={"Sem posts"}
+              width={"400px"}
+            />
+            <p className="center" style={{ fontSize: "20px" }}>
+              {lang.messages.noPostsFound}
+            </p>
+            <Button
+              node="a"
+              href="/blog"
+              style={{ background: "#0b6173", marginTop: "30px" }}
+            >
+              Voltar para blog
+            </Button>
+          </div>
+        )}
       </div>
       <Footer lang={lang} />
     </div>
