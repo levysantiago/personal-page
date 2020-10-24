@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
 import CardImage from "../../components/CardImage";
 import PageHeader from "../../components/PageHeader";
@@ -7,10 +7,14 @@ import routes_dict from "../../language/routes_dict";
 import info from "../../language/info";
 import Footer from "../../components/Footer";
 import Blockquote from "../../components/Blockquote";
+import blog_api from "../../lib/blogapi";
+import ListBlogPosts from "../../components/ListBlogPosts";
 
 const storage = window.sessionStorage;
 
 export default function BlogPage() {
+  const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     storage.setItem(
       "breadcrumb_links",
@@ -21,24 +25,39 @@ export default function BlogPage() {
         },
       ])
     );
-  });
+  }, []);
+
+  useEffect(() => {
+    async function getPosts() {
+      const result = await blog_api.getPosts();
+      setPosts(result.items);
+    }
+
+    getPosts();
+  }, []);
 
   return (
     <div>
       <NavBar blackStyle={true} lang={lang} />
       <div className="container row">
         <PageHeader title={lang.blogpage.title} description="" />
+        <div className="col s12">
+          {info.cards.map((item) => {
+            return (
+              <CardImage
+                key={item.id}
+                img={item.img}
+                title={item.title}
+                tag={item.route}
+              />
+            );
+          })}
+        </div>
 
-        {info.cards.map((item) => {
-          return (
-            <CardImage
-              key={item.id}
-              img={item.img}
-              title={item.title}
-              tag={item.route}
-            />
-          );
-        })}
+        <div className="col s12" style={{ marginTop: "50px" }}>
+          <PageHeader title={lang.lastBlogPosts.title} description="" />
+          <ListBlogPosts list={posts} lang={lang} />
+        </div>
       </div>
 
       <div className="container">
