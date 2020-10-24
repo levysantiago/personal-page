@@ -68,6 +68,14 @@ const lang = {
       </article>
     ),
   },
+  blog: {
+    title: "Blog",
+    description: (
+      <article>
+        <p style={{ color: "white" }}></p>
+      </article>
+    ),
+  },
   articlespage: {
     title: "Artigos",
     description:
@@ -113,6 +121,7 @@ const lang = {
     read: "Ler",
     moreArticles: "Veja mais publicações aqui",
     moreProjects: "Veja mais projetos aqui",
+    morePosts: "Veja mais posts aqui",
   },
 
   messages: {

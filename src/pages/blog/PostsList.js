@@ -46,7 +46,7 @@ export default function PostsList() {
     }
 
     update();
-  }, [tag]);
+  }, [tag, card]);
 
   return (
     <div>
