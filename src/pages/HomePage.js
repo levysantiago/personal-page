@@ -80,7 +80,6 @@ class HomePage extends Component {
 
   async componentDidMount() {
     const result = await blog_api.getPosts();
-    result.items.push(result.items[0]);
     const reducedList = [result.items[0], result.items[1]];
     this.setState({ posts: reducedList });
 
