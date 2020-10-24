@@ -11,6 +11,7 @@ import lang from "../language/pt";
 import Footer from "../components/Footer";
 import blog_api from "../lib/blogapi";
 import ListBlogPosts from "../components/ListBlogPosts";
+import helpers from "../lib/helpers";
 
 class HomePage extends Component {
   state = {
@@ -23,6 +24,7 @@ class HomePage extends Component {
     ],
     posts: [],
     loading: true,
+    blockquote: helpers.getRandomBlockquote(),
   };
 
   setUpContent() {
@@ -98,16 +100,13 @@ class HomePage extends Component {
   }
 
   render() {
-    const { contents, loading } = this.state;
+    const { contents, blockquote } = this.state;
     return (
       <div>
         <MyParallax lang={lang} />
         <Contents contents={contents} />
         <div className="container">
-          <Blockquote
-            phrase={dict.blockquotes.one.phrase}
-            author={dict.blockquotes.one.author}
-          />
+          <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
         </div>
         <Footer lang={lang} />
       </div>

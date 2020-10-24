@@ -6,9 +6,15 @@ import Blockquote from "../components/Blockquote";
 import Footer from "../components/Footer";
 import dict from "../language/info";
 import lang from "../language/pt";
+import helpers from "../../lib/helpers";
 
 class TravelsPage extends Component {
+  state = {
+    blockquote: helpers.getRandomBlockquote(),
+  };
+
   render() {
+    const { blockquote } = this.state;
     return (
       <div>
         <NavBar blackStyle={true} lang={lang} />
@@ -23,10 +29,7 @@ class TravelsPage extends Component {
             list={dict.articles.reverse()}
             lang={lang}
           />
-          <Blockquote
-            phrase={dict.blockquotes.two.phrase}
-            author={dict.blockquotes.two.author}
-          />
+          <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
         </div>
         <Footer lang={lang} />
       </div>

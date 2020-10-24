@@ -9,13 +9,14 @@ import Footer from "../../components/Footer";
 import Blockquote from "../../components/Blockquote";
 import blog_api from "../../lib/blogapi";
 import ListBlogPosts from "../../components/ListBlogPosts";
-import Loader from "../../components/Loader";
+import helpers from "../../lib/helpers";
 
 const storage = window.sessionStorage;
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [blockquote] = useState(helpers.getRandomBlockquote());
 
   useEffect(() => {
     storage.setItem(
@@ -73,10 +74,7 @@ export default function BlogPage() {
       </div>
 
       <div className="container">
-        <Blockquote
-          phrase={info.blockquotes.five.phrase}
-          author={info.blockquotes.five.author}
-        />
+        <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
       </div>
 
       <Footer lang={lang} />

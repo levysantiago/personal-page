@@ -158,32 +158,32 @@ module.exports = {
     { key: 2, img: "dicas2.jpg" },
     { key: 1, img: "dicas1.jpg" },
   ],
-  blockquotes: {
-    one: {
+  blockquotes: [
+    {
       phrase:
         "Great things in business are never done by one person. They're done by a team of people.",
       author: "Steve Jobs",
     },
-    two: {
+    {
       phrase:
         "It’s fine to celebrate success, but it is more important to heed the lessons of failure.",
       author: "Bill Gates",
     },
-    three: {
+    {
       phrase: "Codes are a puzzle. A game, just like any other game.",
       author: "Alan Turing",
     },
-    four: {
+    {
       phrase:
         "People won't have time for you if you are always angry or complaining.",
       author: "Stephen Hawking",
     },
-    five: {
+    {
       phrase:
         "Enquanto não percebemos que possuímos algo, esse algo é inexistente.",
       author: "Katsumi Tokuhisa",
     },
-  },
+  ],
 
   cards: [
     {

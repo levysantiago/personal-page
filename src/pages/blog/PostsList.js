@@ -12,10 +12,12 @@ import PostCard from "../../components/PostCard";
 import helpers from "../../lib/helpers";
 import Loader from "../../components/Loader";
 import { Col, Row, Button } from "react-materialize";
+import Blockquote from "../../components/Blockquote";
 
 export default function PostsList() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [blockquote] = useState(helpers.getRandomBlockquote());
   const location = useLocation();
 
   const tag = location.pathname;
@@ -93,6 +95,7 @@ export default function PostsList() {
             </Button>
           </div>
         )}
+        <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
       </div>
       <Footer lang={lang} />
     </div>
