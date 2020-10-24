@@ -12,10 +12,12 @@ import Breadcrumbs from "../../components/Breadcrumb";
 import helpers from "../../lib/helpers";
 import { Row, Col, Container, Button } from "react-materialize";
 import Loader from "../../components/Loader";
+import Blockquote from "../../components/Blockquote";
 
 function BlogArticlePage({ match }) {
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [blockquote] = useState(helpers.getRandomBlockquote());
   const location = useLocation();
 
   const tag = location.pathname;
@@ -116,6 +118,7 @@ function BlogArticlePage({ match }) {
             </div>
           )}
         </Row>
+        <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
       </Container>
       <Footer lang={lang} />
     </div>

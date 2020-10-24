@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import PostCard from "./PostCard";
 import cryptography from "../lib/criptography";
 import helpers from "../lib/helpers";
+import Loader from "./Loader";
 
 class ListBlogPosts extends Component {
   moreProjectsComponent(home) {
     if (home) {
       const { lang } = this.props;
       return (
-        <div className="col s12">
+        <div className="col s12" style={{ marginTop: "50px" }}>
           <a
             href="/blog"
             className="center"
@@ -22,23 +23,27 @@ class ListBlogPosts extends Component {
   }
 
   render() {
-    const { home, list } = this.props;
+    const { home, list, loading, loadingMessage } = this.props;
 
     return (
       <div className="row">
-        {list.map((p, key) => {
-          return (
-            <PostCard
-              key={key}
-              tag={"blog/article/" + cryptography.encrypt(p.id)}
-              image={p.author.image.url}
-              date={helpers.formatDate(p.published)}
-              title={p.title}
-              author={p.author.displayName}
-              labels={p.labels}
-            />
-          );
-        })}
+        {loading ? (
+          <Loader size={"medium"} message={loadingMessage} />
+        ) : (
+          list.map((p, key) => {
+            return (
+              <PostCard
+                key={key}
+                tag={"blog/article/" + cryptography.encrypt(p.id)}
+                image={p.author.image.url}
+                date={helpers.formatDate(p.published)}
+                title={p.title}
+                author={p.author.displayName}
+                labels={p.labels}
+              />
+            );
+          })
+        )}
 
         {this.moreProjectsComponent(home)}
       </div>

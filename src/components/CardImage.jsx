@@ -10,7 +10,7 @@ class CardImage extends Component {
     }
 
     return (
-      <div className="col s12 m4">
+      <div className="col s12 m8 l6 xl4 offset-m2">
         <a href={tag}>
           <div className="card hoverable">
             <div className="card-image">

@@ -90,6 +90,10 @@ const lang = {
     title: "Life of Levy's",
     description: "",
   },
+  lastBlogPosts: {
+    title: "Posts Recentes",
+    description: "",
+  },
   hellowtipspage: {
     title: "Hellow Tips",
     description:

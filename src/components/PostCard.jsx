@@ -12,7 +12,7 @@ function PostCard(props) {
 
   return (
     <a href={tag}>
-      <div className="col s12 m8 l6">
+      <div className="col s12 m10 l6 offset-m1">
         <div className="card-panel z-depth-1">
           {/* AUTHOR */}
           <div className="row valign-wrapper">

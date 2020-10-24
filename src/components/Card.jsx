@@ -82,9 +82,17 @@ class Card extends Component {
       size = "12";
     }
 
-    return (
-      <div className={"col s12 m" + size}>{this.getComponentByType()}</div>
-    );
+    if (long) {
+      return (
+        <div className={"col s12 m" + size}>{this.getComponentByType()}</div>
+      );
+    } else {
+      return (
+        <div className={"col s12 m10 l6 offset-m1"}>
+          {this.getComponentByType()}
+        </div>
+      );
+    }
   }
 }
 

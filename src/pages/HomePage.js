@@ -11,6 +11,7 @@ import lang from "../language/pt";
 import Footer from "../components/Footer";
 import blog_api from "../lib/blogapi";
 import ListBlogPosts from "../components/ListBlogPosts";
+import helpers from "../lib/helpers";
 
 class HomePage extends Component {
   state = {
@@ -22,6 +23,8 @@ class HomePage extends Component {
       },
     ],
     posts: [],
+    loading: true,
+    blockquote: helpers.getRandomBlockquote(),
   };
 
   setUpContent() {
@@ -67,7 +70,15 @@ class HomePage extends Component {
       {
         id: 5,
         title: lang.blog.title,
-        tag: <ListBlogPosts home list={this.state.posts} lang={lang} />,
+        tag: (
+          <ListBlogPosts
+            home
+            list={this.state.posts}
+            lang={lang}
+            loading={this.state.loading}
+            loadingMessage={lang.messages.gettingInfo}
+          />
+        ),
       },
     ];
 
@@ -79,24 +90,23 @@ class HomePage extends Component {
   }
 
   async componentDidMount() {
+    this.setState({ loading: true });
     const result = await blog_api.getPosts();
     const reducedList = [result.items[0], result.items[1]];
     this.setState({ posts: reducedList });
+    this.setState({ loading: false });
 
     this.setUpContent();
   }
 
   render() {
-    const { contents } = this.state;
+    const { contents, blockquote } = this.state;
     return (
       <div>
         <MyParallax lang={lang} />
         <Contents contents={contents} />
         <div className="container">
-          <Blockquote
-            phrase={dict.blockquotes.one.phrase}
-            author={dict.blockquotes.one.author}
-          />
+          <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
         </div>
         <Footer lang={lang} />
       </div>

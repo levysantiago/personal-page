@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import PageHeader from "../components/PageHeader";
 import ListTips from "../components/ListTips";
 import Blockquote from "../components/Blockquote";
-import dict from "../language/info";
 import lang from "../language/pt";
 import Footer from "../components/Footer";
 import info from "../language/info";
 import Breadcrumbs from "../components/Breadcrumb";
+import helpers from "../lib/helpers";
 
 function HellowPage() {
   const location = useLocation();
+  const [blockquote] = useState(helpers.getRandomBlockquote());
 
   const tag = location.pathname;
   let card = info.cards.filter((card) => {
@@ -36,10 +37,7 @@ function HellowPage() {
           description2={lang.hellowtipspage.description2}
         />
         <ListTips />
-        <Blockquote
-          phrase={dict.blockquotes.four.phrase}
-          author={dict.blockquotes.four.author}
-        />
+        <Blockquote phrase={blockquote.phrase} author={blockquote.author} />
       </div>
       <Footer lang={lang} />
     </div>

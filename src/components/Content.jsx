@@ -9,7 +9,7 @@ class Content extends Component {
       titleColor,
       contentColor,
       backgroundColor,
-      background
+      background,
     } = this.props;
 
     return (
@@ -17,20 +17,20 @@ class Content extends Component {
         style={{
           background: background,
           backgroundColor: backgroundColor,
-          padding: "10px"
+          padding: "100px 10px 100px 10px",
         }}
       >
         <div className="container row">
           <h2
             style={{
-              color: titleColor
+              color: titleColor,
             }}
           >
             {title}
           </h2>
           <p
             style={{
-              color: contentColor
+              color: contentColor,
             }}
           >
             {content}

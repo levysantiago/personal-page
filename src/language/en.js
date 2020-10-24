@@ -102,6 +102,10 @@ const lang = {
     title: "My Blog",
     description: "Description",
   },
+  lastBlogPosts: {
+    title: "Recent Posts",
+    description: "",
+  },
   hellowtipspage: {
     title: "Hellow Tips",
     description:
