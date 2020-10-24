@@ -9,11 +9,13 @@ import Footer from "../../components/Footer";
 import Blockquote from "../../components/Blockquote";
 import blog_api from "../../lib/blogapi";
 import ListBlogPosts from "../../components/ListBlogPosts";
+import Loader from "../../components/Loader";
 
 const storage = window.sessionStorage;
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     storage.setItem(
@@ -29,8 +31,10 @@ export default function BlogPage() {
 
   useEffect(() => {
     async function getPosts() {
+      setLoading(true);
       const result = await blog_api.getPosts();
       setPosts(result.items);
+      setLoading(false);
     }
 
     getPosts();
@@ -54,9 +58,17 @@ export default function BlogPage() {
           })}
         </div>
 
-        <div className="col s12" style={{ marginTop: "50px" }}>
+        <div
+          className="col s12"
+          style={{ marginTop: "50px", marginBottom: "50px" }}
+        >
           <PageHeader title={lang.lastBlogPosts.title} description="" />
-          <ListBlogPosts list={posts} lang={lang} />
+          <ListBlogPosts
+            list={posts}
+            lang={lang}
+            loading={loading}
+            loadingMessage={lang.messages.gettingInfo}
+          />
         </div>
       </div>
 
