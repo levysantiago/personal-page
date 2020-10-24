@@ -183,6 +183,21 @@ module.exports = {
         "Enquanto não percebemos que possuímos algo, esse algo é inexistente.",
       author: "Katsumi Tokuhisa",
     },
+    {
+      phrase:
+        "Para caminhar 40 passos ou 400, o primeiro passo é igual. Diferente é a disposição.",
+      author: "Katsumi Tokuhisa",
+    },
+    {
+      phrase:
+        "You can not go back and make a brand new beginning. But you can start now and make a brand new ending.",
+      author: "Prince Ea",
+    },
+    {
+      phrase:
+        "We are not human beings having a spiritual experience, we are spiritual beings having a human experience.",
+      author: "Pierre Teihard de Chardin",
+    },
   ],
 
   cards: [
