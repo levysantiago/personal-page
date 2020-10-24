@@ -13,6 +13,10 @@ module.exports = {
   },
 
   byroute: {
+    "/blog": {
+      name: "Blog",
+      nameen: "Blog",
+    },
     "/blog/travels": {
       name: "Viagens",
       nameen: "Travels",

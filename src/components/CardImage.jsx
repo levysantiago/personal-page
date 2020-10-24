@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class CardImage extends Component {
   render() {
-    const { img, title, content, tag, onPostClick } = this.props;
+    const { img, title, content, tag } = this.props;
 
     let hide = "";
     if (!content) {

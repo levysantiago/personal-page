@@ -30,7 +30,7 @@ class ListProjects extends Component {
     return (
       <div className="row">
         {/*<h2>Projetos</h2>*/}
-        {list.map(p => (
+        {list.map((p) => (
           <Card
             key={p.key}
             title={p.title}

@@ -9,6 +9,8 @@ import Blockquote from "../components/Blockquote";
 import dict from "../language/info";
 import lang from "../language/pt";
 import Footer from "../components/Footer";
+import blog_api from "../lib/blogapi";
+import ListBlogPosts from "../components/ListBlogPosts";
 
 class HomePage extends Component {
   state = {
@@ -19,6 +21,7 @@ class HomePage extends Component {
         typed: false,
       },
     ],
+    posts: [],
   };
 
   setUpContent() {
@@ -61,12 +64,26 @@ class HomePage extends Component {
         ),
         typed: true,
       },
+      {
+        id: 5,
+        title: lang.blog.title,
+        tag: <ListBlogPosts home list={this.state.posts} lang={lang} />,
+      },
     ];
 
     this.setState({ contents });
   }
 
   componentWillMount() {
+    this.setUpContent();
+  }
+
+  async componentDidMount() {
+    const result = await blog_api.getPosts();
+    result.items.push(result.items[0]);
+    const reducedList = [result.items[0], result.items[1]];
+    this.setState({ posts: reducedList });
+
     this.setUpContent();
   }
 

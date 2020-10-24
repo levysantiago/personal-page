@@ -29,11 +29,21 @@ function BlogArticlePage({ match }) {
     card = card[0];
   }
 
-  const [breadcrumb_links, setBreadcrumb_links] = useState([
-    { page: "Blog", route: "/blog" },
-    { page: card.title, route: card.route },
-    { page: "Artigo", route: "#" },
-  ]);
+  let breadcrumbInitialState = [];
+  if (card.title) {
+    breadcrumbInitialState = [
+      { page: "Blog", route: "/blog" },
+      { page: card.title, route: card.route },
+      { page: "Artigo", route: "#" },
+    ];
+  } else {
+    breadcrumbInitialState = [
+      { page: "Blog", route: "/blog" },
+      { page: "Artigo", route: "#" },
+    ];
+  }
+
+  const [breadcrumb_links] = useState(breadcrumbInitialState);
 
   function fitImages() {
     let images = document.querySelectorAll(".separator > a > img");
@@ -44,6 +54,7 @@ function BlogArticlePage({ match }) {
           image.setAttribute("width", "80%");
           image.setAttribute("height", "80%");
         }
+        return "";
       });
     }
   }
@@ -67,7 +78,7 @@ function BlogArticlePage({ match }) {
     }
 
     getArticle();
-  }, []);
+  }, [match.params.id]);
 
   return (
     <div>
