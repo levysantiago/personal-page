@@ -224,5 +224,12 @@ module.exports = {
       img: "hellowtips_blog.png",
       label: "hellowtips",
     },
+    {
+      id: 4,
+      title: "Receitas",
+      route: "/blog/recipes",
+      img: "recipes.png",
+      label: "receitas",
+    },
   ],
 };

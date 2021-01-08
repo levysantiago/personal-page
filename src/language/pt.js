@@ -105,7 +105,7 @@ const lang = {
     title: "Sobre",
     contact: "Contato",
     description:
-      "Eu sou Levy. Hoje sou formado em Ciência da Computação pela UESC. Esta é a minha página pessoal onde apresento artigos, projetos e outros trabalhos.",
+      "Eu sou Levy. Hoje sou formado em Ciência da Computação pela UESC e mestrando na UFBA. Esta é a minha página pessoal onde apresento artigos, projetos meu blog e outros trabalhos.",
   },
   menu: {
     home: "Home",

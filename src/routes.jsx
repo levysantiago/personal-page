@@ -43,6 +43,12 @@ const Routes = (
       strict
       component={PostsList}
     />
+    <Route
+      path={dict.home.blog.recipes.this}
+      exact
+      strict
+      component={PostsList}
+    />
     <Route path={dict.home.blog.article.this} component={BlogArticlePage} />
   </Router>
 );

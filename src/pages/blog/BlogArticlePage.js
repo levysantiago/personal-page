@@ -51,10 +51,15 @@ function BlogArticlePage({ match }) {
     let images = document.querySelectorAll(".separator > a > img");
     if (images) {
       images = Array.prototype.slice.call(images);
-      images.map((image) => {
+      images.map((image, count) => {
         if (image.getAttribute("width") > 300) {
-          image.setAttribute("width", "80%");
-          image.setAttribute("height", "80%");
+          if (count > 0) {
+            image.setAttribute("width", "80%");
+            image.setAttribute("height", "80%");
+          } else {
+            image.setAttribute("width", "30%");
+            image.setAttribute("height", "30%");
+          }
         }
         return "";
       });

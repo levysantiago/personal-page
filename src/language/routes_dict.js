@@ -8,6 +8,7 @@ module.exports = {
       hellowtips: { this: "/blog/hellowtips" },
       travels: { this: "/blog/travels" },
       personalgrowth: { this: "/blog/personalgrowth" },
+      recipes: { this: "/blog/recipes" },
       article: { this: "*/article/:id" },
     },
   },
@@ -24,6 +25,10 @@ module.exports = {
     "/blog/personalgrowth": {
       name: "Crescimento Pessoal",
       nameen: "Personal Growth",
+    },
+    "/blog/recipes": {
+      name: "Receitas",
+      nameen: "Recipes",
     },
     "/blog/hellowtips": {
       name: "Hellow Tips",
