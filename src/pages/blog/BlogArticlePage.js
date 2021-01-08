@@ -53,12 +53,10 @@ function BlogArticlePage({ match }) {
       images = Array.prototype.slice.call(images);
       images.map((image, count) => {
         if (image.getAttribute("width") > 300) {
-          if (count > 0) {
-            image.setAttribute("width", "80%");
-            image.setAttribute("height", "80%");
-          } else {
-            image.setAttribute("width", "30%");
-            image.setAttribute("height", "30%");
+          image.setAttribute("width", "80%");
+          image.setAttribute("height", "80%");
+          if (count < 1) {
+            image.setAttribute("style", "max-width: 400px");
           }
         }
         return "";
