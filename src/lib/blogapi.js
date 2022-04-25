@@ -1,16 +1,9 @@
 import api from "./api";
-require("dotenv").config();
-const { REACT_APP_BLOG_ID: BLOG_ID, REACT_APP_API_KEY: API_KEY } = process.env;
 
 const blog_api = {
   getPosts: async () => {
     try {
-      const res = await api.get(
-        "https://www.googleapis.com/blogger/v3/blogs/" +
-          BLOG_ID +
-          "/posts?key=" +
-          API_KEY
-      );
+      const res = await api.get("/posts");
       return res.data;
     } catch (e) {
       console.log(e);
@@ -20,14 +13,7 @@ const blog_api = {
 
   getArticle: async (articleId) => {
     try {
-      const res = await api.get(
-        "https://www.googleapis.com/blogger/v3/blogs/" +
-          BLOG_ID +
-          "/posts/" +
-          articleId +
-          "?key=" +
-          API_KEY
-      );
+      const res = await api.get(`/posts/${articleId}`);
 
       return res.data;
     } catch (e) {
@@ -38,15 +24,7 @@ const blog_api = {
 
   getPostsByLabel: async (label) => {
     try {
-      const res = await api.get(
-        "https://www.googleapis.com/blogger/v3/blogs/" +
-          BLOG_ID +
-          "/posts/" +
-          "search?q=label:" +
-          label +
-          "&key=" +
-          API_KEY
-      );
+      const res = await api.get(`/posts/search?label=${label}`);
       return res.data;
     } catch (e) {
       console.log(e);
