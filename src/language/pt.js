@@ -9,13 +9,14 @@ const lang = {
     description: (
       <article>
         <p>
-          Eu sou Levy. Sou originariamente brasileiro. Considero-me uma pessoa
-          calma, amigável, curiosa e dedicada. Gosto de viajar, de aprender
-          coisas novas e de conhecer novas pessoas.
+          Eu sou Levy. De originalidade brasileira, sou fascinado pela área da
+          tecnologia, principalmente pelo desenvolvimento de sistemas. Também
+          gosto muito de aprender coisas novas e utilizar meu conhecimento para
+          contribuir com o avanço da tecnologia no mundo.
         </p>
         <br />
         <p>
-          Hoje sou bacharelado em Ciência da Computação na UESC -{" "}
+          Sou bacharelado em Ciência da Computação na UESC -{" "}
           <a
             href="http://www.uesc.br/"
             target="_blank"
@@ -23,16 +24,40 @@ const lang = {
           >
             Universidade Estadual de Santa Cruz
           </a>
-          . Faço parte do grupo LIF - Laboratório de Internet do Futuro, um
-          grupo iniciado na UESC que envolve tanto estudantes como professores.
-          Muitos dos meus projetos e publicações foram desenvolvidos juntamente
-          com este grupo. Atualmente estou trabalhando em um projeto que envolve
-          criação de contratos inteligentes utilizando a rede Ethereum.
+          . Fiz parte do grupo LIF - Laboratório de Internet do Futuro, um grupo
+          iniciado na UESC que envolve tanto estudantes como professores. Hoje
+          sou mestrando na UFBA -{" "}
+          <a
+            href="http://www.ufba.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Universidade Federal da Bahia
+          </a>{" "}
+          e também trabalho como <b>Freelancer</b>! Faço parte do grupo de
+          pesquisa GAUDI (Grupo de Algoritmos e Computação Distribuída). Muitos
+          dos meus projetos e publicações foram desenvolvidos juntamente com
+          estes dois grupos. Atualmente estou trabalhando em um projeto que
+          envolve criação de contratos inteligentes com Solidity em tempo de
+          execução.
         </p>
         <br />
         <p>
-          Tenho experiência em Programação Web, Internet das Coisas, Ontologias,
-          Blockchain e outras áreas e tecnologias.
+          Tenho experiência principalmente em{" "}
+          <b>Programação Backend com Node.js</b>, <b>Banco de dados</b>,
+          <b> Blockchain</b> (Tokens, NFTs, DEX, Web3), desenvolvimento de{" "}
+          <b>Contratos Inteligentes</b>, <b>DevOps configuração de Cloud</b> e{" "}
+          <b>GitHub/GitLab/BitBucket</b>. Também tenho conhecimento em
+          desenvolvimento Web com React.js, HTML, CSS, Styled Components,
+          trading em exchanges centralizadas e DEXs.
+        </p>
+        <br />
+        <p>
+          Curiosidades sobre mim? Sou vegetariano! Sim, me preocupo com várias
+          questões que agridem o meio ambiente e os animais. Procuro sempre
+          opções de produtos e alimentos naturais e veganos. Isto também me faz
+          pensar muito no impacto que determinados algoritmos de consenso de
+          plataformas blockchains fazem no mundo.
         </p>
         <br />
       </article>
@@ -84,7 +109,7 @@ const lang = {
   projectspage: {
     title: "Projetos",
     description:
-      "Nesta página são apresentados alguns dos projetos que desenvolvi para faculdade, bolsas e para necessidades pessoais. A maioria deles está no GitHub. Cada projeto contém o link para a página que o descreve.",
+      "Nesta página são apresentados alguns dos projetos que desenvolvi para faculdade, bolsas e para necessidades pessoais. A maioria deles está no GitHub. Cada projeto contém o link para a página que o descreve. Também já trabalhei em muitos outros projetos de empresas, projetos de desenvolvimento de tokens ERC20, NFTs, Backend de plataformas, dentre outros. Porém, não posso divulgar muitas informações sobre.",
   },
   blogpage: {
     title: "Life of Levy's",

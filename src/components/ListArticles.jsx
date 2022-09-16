@@ -12,7 +12,7 @@ class ListArticles extends Component {
             className="center"
             style={{ textDecoration: "underline" }}
           >
-            {lang.constants.moreArticles} >
+            {lang.constants.moreArticles}
           </a>
         </div>
       );

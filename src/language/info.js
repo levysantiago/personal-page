@@ -9,8 +9,7 @@ module.exports = {
       place: "Cruz das Almas, Bahia, Brasil",
       proceeding:
         "Anais Workshop da XVII Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 46-55",
-      link:
-        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
     },
     {
       key: 2,
@@ -21,8 +20,7 @@ module.exports = {
       place: "Cruz das Almas, Bahia, Brasil",
       proceeding:
         "Anais Workshop da XVII Educação e Informática Bahia-Alagoas-Sergipe (WEIBASE), p. 36-45",
-      link:
-        "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1m7rEnwgkHGoOUowkV6Vdm-x7T02h8TRI/view?usp=sharing",
     },
     {
       key: 3,
@@ -101,6 +99,15 @@ module.exports = {
       proceeding: "IEEE World Conference on Engineering Education (EDUNINE)",
       link: "https://ieeexplore.ieee.org/document/9149491",
     },
+    {
+      key: 11,
+      title: "Gifflar: a framework to generate smart contracts on the fly",
+      year: "2021",
+      place: "Toronto, Canada",
+      proceeding:
+        "31st Annual International Conference on Computer Science and Software",
+      link: "https://dl.acm.org/doi/abs/10.5555/3507788.3507820",
+    },
   ],
 
   projects: [
@@ -139,6 +146,15 @@ module.exports = {
       abstract:
         "Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov). Foram desenvolvidos três contratos, um para a Carteira de Vacinação, outro para Registro de Imóvel e por último para Comprovante de Matrícula. O único contrato implementado para teste e integrado com um Middleware foi o contrato para Comprovante de Matrícula, para este, foi criada uma página para mostrar a o funcionamento do contrato a partir do Middleware.",
       link: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    },
+    {
+      key: 5,
+      title: "Gifflar",
+      abstract2:
+        "This is a framework that allows you to develop systems able to create smart contracts on the fly based on different configurations.",
+      abstract:
+        "Um framework que permite a criação de sistemas capazes de gerar contratos inteligentes em tempo de execução. É um projeto ainda em desenvolvimento e passando por testes, correções e avaliações.",
+      link: "https://github.com/GifflarJS-Framework/core",
     },
   ],
   hellowtips: [

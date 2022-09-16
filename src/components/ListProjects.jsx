@@ -12,7 +12,7 @@ class ListProjects extends Component {
             className="center"
             style={{ textDecoration: "underline", color: "white" }}
           >
-            {lang.constants.moreProjects} >
+            {lang.constants.moreProjects}
           </a>
         </div>
       );

@@ -15,7 +15,7 @@ class ListBlogPosts extends Component {
             className="center"
             style={{ textDecoration: "underline" }}
           >
-            {lang.constants.morePosts} >
+            {lang.constants.morePosts}
           </a>
         </div>
       );
