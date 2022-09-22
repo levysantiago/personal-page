@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ArticlesPage from "./pages/ArticlesPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -10,7 +10,7 @@ import BlogArticlePage from "./pages/blog/BlogArticlePage";
 import dict from "./language/routes_dict.js";
 
 const Routes = (
-  <Router>
+  <HashRouter>
     <Route path={dict.home.this} exact strict component={HomePage} />
     <Route
       path={dict.home.articles.this}
@@ -50,7 +50,7 @@ const Routes = (
       component={PostsList}
     />
     <Route path={dict.home.blog.article.this} component={BlogArticlePage} />
-  </Router>
+  </HashRouter>
 );
 
 export default Routes;
