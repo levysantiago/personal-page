@@ -182,7 +182,7 @@ module.exports = {
     },
     {
       phrase:
-        "It’s fine to celebrate success, but it is more important to heed the lessons of failure.",
+        "It's fine to celebrate success, but it is more important to heed the lessons of failure.",
       author: "Bill Gates",
     },
     {
@@ -221,7 +221,7 @@ module.exports = {
       id: 1,
       title: "Viagens",
       title2: "Travels",
-      route: "/blog/travels",
+      route: "/#/blog/travels",
       img: "travels.png",
       label: "viagens",
     },
@@ -229,21 +229,21 @@ module.exports = {
       id: 2,
       title: "Crescimento Pessoal",
       title2: "Personal Growth",
-      route: "/blog/personalgrowth",
+      route: "/#/blog/personalgrowth",
       img: "personal_growth.png",
       label: "crescimento-pessoal",
     },
     {
       id: 3,
       title: "Hellow Tips",
-      route: "/blog/hellowtips",
+      route: "/#/blog/hellowtips",
       img: "hellowtips_blog.png",
       label: "hellowtips",
     },
     {
       id: 4,
       title: "Receitas",
-      route: "/blog/recipes",
+      route: "/#/blog/recipes",
       img: "recipes.png",
       label: "receitas",
     },

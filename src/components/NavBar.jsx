@@ -43,17 +43,17 @@ class NavBar extends Component {
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/articles">
+                <a style={this.blackLinkStyle(blackStyle)} href="/#/articles">
                   {lang.menu.articles}
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/projects">
+                <a style={this.blackLinkStyle(blackStyle)} href="/#/projects">
                   {lang.menu.projects}
                 </a>
               </li>
               <li>
-                <a style={this.blackLinkStyle(blackStyle)} href="/blog">
+                <a style={this.blackLinkStyle(blackStyle)} href="/#/blog">
                   {lang.menu.blog}
                 </a>
               </li>
@@ -68,17 +68,17 @@ class NavBar extends Component {
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/articles">
+            <a className="waves-effect waves-teal" href="/#/articles">
               {lang.menu.articles}
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/projects">
+            <a className="waves-effect waves-teal" href="/#/projects">
               {lang.menu.projects}
             </a>
           </li>
           <li>
-            <a className="waves-effect waves-teal" href="/blog">
+            <a className="waves-effect waves-teal" href="/#/blog">
               {lang.menu.blog}
             </a>
           </li>

@@ -22,7 +22,7 @@ function HellowPage() {
     card = card[0];
   }
 
-  let breadcrumb_links = [{ page: "Blog", route: "/blog" }];
+  let breadcrumb_links = [{ page: "Blog", route: "/#/blog" }];
   breadcrumb_links.push({ page: card.title, route: tag });
   console.log(card);
 

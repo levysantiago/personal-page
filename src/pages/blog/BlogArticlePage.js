@@ -34,13 +34,13 @@ function BlogArticlePage({ match }) {
   let breadcrumbInitialState = [];
   if (card.title) {
     breadcrumbInitialState = [
-      { page: "Blog", route: "/blog" },
+      { page: "Blog", route: "/#/blog" },
       { page: card.title, route: card.route },
       { page: "Artigo", route: "#" },
     ];
   } else {
     breadcrumbInitialState = [
-      { page: "Blog", route: "/blog" },
+      { page: "Blog", route: "/#/blog" },
       { page: "Artigo", route: "#" },
     ];
   }

@@ -11,7 +11,7 @@ class ListBlogPosts extends Component {
       return (
         <div className="col s12" style={{ marginTop: "50px" }}>
           <a
-            href="/blog"
+            href="/#/blog"
             className="center"
             style={{ textDecoration: "underline" }}
           >
@@ -34,7 +34,7 @@ class ListBlogPosts extends Component {
             return (
               <PostCard
                 key={key}
-                tag={"blog/article/" + cryptography.encrypt(p.id)}
+                tag={"#/blog/article/" + cryptography.encrypt(p.id)}
                 image={p.author.image.url}
                 date={helpers.formatDate(p.published)}
                 title={p.title}

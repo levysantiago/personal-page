@@ -20,7 +20,7 @@ export default function PostsList() {
   const [blockquote] = useState(helpers.getRandomBlockquote());
   const location = useLocation();
 
-  const tag = location.pathname;
+  const tag = `/#${location.pathname}`;
   let card = info.cards.filter((card) => {
     return card.route === tag;
   });
@@ -31,7 +31,7 @@ export default function PostsList() {
   const storage = window.sessionStorage;
   let breadcrumb_links = JSON.parse(storage.getItem("breadcrumb_links"));
   if (!breadcrumb_links) {
-    breadcrumb_links = [{ page: "Blog", route: "/blog" }];
+    breadcrumb_links = [{ page: "Blog", route: "/#/blog" }];
   }
   breadcrumb_links.push({ page: card.title, route: tag });
 
@@ -88,7 +88,7 @@ export default function PostsList() {
             </p>
             <Button
               node="a"
-              href="/blog"
+              href="/#/blog"
               style={{ background: "#0b6173", marginTop: "30px" }}
             >
               Voltar para blog
