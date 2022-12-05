@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container, Description, Title, TitleContinuation } from "./styles";
 
-const Professional: React.FC = () => {
+const ProfessionalLife: React.FC = () => {
   return (
     <Container>
       <Title>
@@ -20,4 +20,4 @@ const Professional: React.FC = () => {
   );
 };
 
-export default Professional;
+export default ProfessionalLife;
