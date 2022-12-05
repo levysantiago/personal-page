@@ -7,20 +7,13 @@ import {
   TitleContinuation,
 } from "./styles";
 
-interface IAboutProps {
-  title: string;
-  titleContinuation?: string;
-}
-
-const About: React.FC<IAboutProps> = (props: IAboutProps) => {
-  const { title, titleContinuation } = props;
-
+const About: React.FC = () => {
   return (
     <Container>
       <HtmlTagImg />
 
       <Title>
-        {title} <TitleContinuation>{titleContinuation}</TitleContinuation>
+        Um pouco <TitleContinuation>Sobre Levy</TitleContinuation>
       </Title>
 
       <Description>

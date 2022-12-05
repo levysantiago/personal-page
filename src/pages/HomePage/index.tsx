@@ -7,8 +7,8 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Navbar items={["Home", "Articles", "Projects"]}></Navbar>
-      <Banner title="Levy Santiago" />
-      <About title="Um pouco" titleContinuation="Sobre Levy" />
+      <Banner />
+      <About />
     </div>
   );
 };
