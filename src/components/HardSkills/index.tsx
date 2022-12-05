@@ -1,6 +1,16 @@
+import ImageQuad from "components/ImageQuad";
 import ProgressBar from "components/ProgressBar";
 import React from "react";
-import { Container, LeftContent, Title, TitleContinuation } from "./styles";
+import { languages } from "./content/languages";
+import { tools } from "./content/tools";
+import {
+  Container,
+  ContentContainer,
+  LeftContent,
+  RightContent,
+  Title,
+  TitleContinuation,
+} from "./styles";
 
 const HardSkills: React.FC = () => {
   return (
@@ -8,10 +18,24 @@ const HardSkills: React.FC = () => {
       <Title>
         Hard <TitleContinuation>Skills</TitleContinuation>
       </Title>
-
-      <LeftContent>
-        <ProgressBar title="Javascript" barWidthPercent="80%" />
-      </LeftContent>
+      <ContentContainer>
+        <LeftContent>
+          {languages.map((language) => {
+            return (
+              <ProgressBar
+                title={language.title}
+                barWidthPercent={language.progress}
+              />
+            );
+          })}
+        </LeftContent>
+        <RightContent>
+          {tools.map((tool) => {
+            return <ImageQuad src={tool.image} alt={tool.alt} />;
+          })}
+        </RightContent>
+      </ContentContainer>
+      ?
     </Container>
   );
 };

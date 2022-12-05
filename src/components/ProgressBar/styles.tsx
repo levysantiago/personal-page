@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const BaseBar = styled.div`
-  width: 100%;
+  width: 95%;
   height: 10px;
   border-radius: 100px;
   background-color: #3a0b5f;
   display: flex;
   align-items: center;
   padding: 0px 2px;
+  margin-bottom: 10px;
 `;
 
 export const InsideBar = styled.div(
@@ -26,4 +27,5 @@ export const Title = styled.span`
   line-height: 22px;
   text-align: left;
   color: #bf83ef;
+  margin-bottom: 10px;
 `;

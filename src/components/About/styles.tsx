@@ -7,6 +7,14 @@ export const Container = styled.div`
   background-color: #1a181b;
   padding: 100px 120px;
   position: relative;
+
+  @media (max-width: 1024px) {
+    padding: 50px 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 50px;
+  }
 `;
 
 export const Title = styled.span`
