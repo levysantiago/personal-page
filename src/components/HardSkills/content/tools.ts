@@ -5,18 +5,18 @@ export const tools = [
     alt: "Node.js image.",
   },
   {
-    title: "Node.js",
+    title: "Express.js",
     image: require("../../../assets/tools/expressjs.jpeg"),
-    alt: "Node.js image.",
+    alt: "Express.js image.",
   },
   {
-    title: "Node.js",
+    title: "Hardhat",
     image: require("../../../assets/tools/hardhat.jpeg"),
-    alt: "Node.js image.",
+    alt: "Hardhat image.",
   },
   {
-    title: "Node.js",
+    title: "Remix IDE",
     image: require("../../../assets/tools/remixide.jpeg"),
-    alt: "Node.js image.",
+    alt: "Remix IDE image.",
   },
 ];

@@ -31,7 +31,9 @@ const HardSkills: React.FC = () => {
         </LeftContent>
         <RightContent>
           {tools.map((tool) => {
-            return <ImageQuad src={tool.image} alt={tool.alt} />;
+            return (
+              <ImageQuad src={tool.image} alt={tool.alt} title={tool.title} />
+            );
           })}
         </RightContent>
       </ContentContainer>
