@@ -3,6 +3,7 @@ import Banner from "components/Banner";
 import HardSkills from "components/HardSkills";
 import Navbar from "components/Navbar";
 import Professional from "components/Professional";
+import SoftSkills from "components/SoftSkills";
 import React from "react";
 
 const HomePage: React.FC = () => {
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
       <About />
       <HardSkills />
       <Professional />
+      <SoftSkills />
     </div>
   );
 };

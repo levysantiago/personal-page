@@ -37,7 +37,6 @@ const HardSkills: React.FC = () => {
           })}
         </RightContent>
       </ContentContainer>
-      ?
     </Container>
   );
 };
