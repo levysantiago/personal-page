@@ -1,5 +1,10 @@
 import { GenericContainer } from "components/styles";
+import { ITheme } from "components/Theme";
 import styled from "styled-components";
+
+interface IHardSkillsProps {
+  theme: ITheme;
+}
 
 export const Container = styled(GenericContainer)`
   display: flex;
@@ -14,19 +19,23 @@ export const Container = styled(GenericContainer)`
   );
 `;
 
-export const Title = styled.span`
-  font-family: Arial;
+export const Title = styled.span(
+  (props: IHardSkillsProps) => `
+  font-family: ${props.theme?.fonts.title || "Arial"};
   font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: left;
-  color: #bf83ef;
+  color: ${props.theme?.colors.purbleLight || "#bf83ef"};
   margin-bottom: 30px;
-`;
+`
+);
 
-export const TitleContinuation = styled(Title)`
-  color: #1e1c1f;
-`;
+export const TitleContinuation = styled(Title)(
+  (props: IHardSkillsProps) => `
+  color: ${props.theme?.colors.black || "#1e1c1f"};
+`
+);
 
 export const ContentContainer = styled.div`
   display: flex;

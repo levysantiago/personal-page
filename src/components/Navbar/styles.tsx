@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { INavbarProps } from "./types/INavbarProps";
+import { ISideNavProps } from "./types/ISideNavProps";
 
 export const Container = styled.div(
   (props: INavbarProps) => `
   display: flex;
   justify-content: flex-end;
-  background-color: #1E1C1F;
+  background-color: ${props.theme?.colors.purpleDark2 || "#1e1c1f"};
   width: 100%;
 
   @media(max-width: 768px){
@@ -21,16 +22,16 @@ export const NavItem = styled.a(
   height: 60px;
   text-align: center;
   align-items: center;
-  font-family: Arial;
+  font-family: ${props.theme?.fonts.title || "Arial"};
   justify-content: center;
-  background-color: #1E1C1F;
-  color: #f3dbff;
+  background-color: ${props.theme?.colors.purpleDark2 || "#1e1c1f"};
+  color: ${props.theme?.colors.purpleGray || "#f3dbff"};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   
   &:hover{
-    background-color: #222023;
+    background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
   }
 
   @media(max-width: 1024px){
@@ -66,17 +67,17 @@ export const NavMenu = styled.a(
 );
 
 export const Sidenav = styled.div(
-  (props: { sideNavOpened: boolean }) => `
+  (props: ISideNavProps) => `
   display: none;
 
   @media (max-width: 768px) {
+    height: 100%;
     display: flex;
     visibility: ${props.sideNavOpened ? "visible" : "hidden"};
     flex-direction: column;
     width: ${props.sideNavOpened ? "50%" : "0px"};
-    height: 100%;
     transition: width 0.4s;
-    background-color: #222023;
+    background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
     position: absolute;
     top: 0px;
     left: 0px;
@@ -90,16 +91,16 @@ export const SidenavItem = styled.a(
   text-align: center;
   align-items: center;
   height: 60px;
-  font-family: Arial;
+  font-family: ${props.theme?.fonts.title || "Arial"};
   justify-content: center;
-  background-color: #1E1C1F;
-  color: #f3dbff;
+  background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
+  color: ${props.theme?.colors.purpleGray || "#f3dbff"};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   
   &:hover{
-    background-color: #29272B;
+    background-color: ${props.theme?.colors.purpleDark4 || "#29272B"};
   }
 `
 );

@@ -1,5 +1,10 @@
 import { GenericContainer } from "components/styles";
+import { ITheme } from "components/Theme";
 import styled from "styled-components";
+
+interface ISoftSkillsProps {
+  theme: ITheme;
+}
 
 export const Container = styled(GenericContainer)`
   display: flex;
@@ -20,15 +25,17 @@ export const CardsContainer = styled.div`
   justify-content: center;
 `;
 
-export const Title = styled.span`
-  font-family: Arial;
+export const Title = styled.span(
+  (props: ISoftSkillsProps) => `
+  font-family: ${props.theme.fonts.title};
   font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: left;
-  color: #88fef3;
+  color: ${props.theme.colors.greenLight};
   margin-bottom: 30px;
-`;
+`
+);
 
 export const TitleContinuation = styled(Title)`
   color: #1e1c1f;

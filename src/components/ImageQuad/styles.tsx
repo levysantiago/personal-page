@@ -1,7 +1,13 @@
+import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
-export const ImageContainer = styled.div`
-  background: #7724b8;
+interface IImageQuadProps {
+  theme: ITheme;
+}
+
+export const ImageContainer = styled.div(
+  (props: IImageQuadProps) => `
+  background: ${props.theme?.colors.purpleMedium2 || "#7724b8"};
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   width: 100px;
@@ -11,9 +17,11 @@ export const ImageContainer = styled.div`
   justify-content: center;
   margin: 10px 10px;
   position: relative;
-`;
+`
+);
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.div(
+  (props: IImageQuadProps) => `
   background: transparent;
   opacity: 0;
   border-radius: 6px;
@@ -28,17 +36,20 @@ export const InfoContainer = styled.div`
   justify-content: center;
 
   &:hover {
-    background: #7724b8;
+    background: ${props.theme?.colors.purpleMedium2 || "#7724b8"};
     opacity: 1;
   }
-`;
+`
+);
 
-export const Title = styled.span`
-  font-family: Arial;
+export const Title = styled.span(
+  (props: IImageQuadProps) => `
+  font-family: ${props.theme?.fonts.title || "Arial"};
   font-size: 12px;
   font-weight: 700;
-  color: #fafafa;
-`;
+  color: ${props.theme?.colors.white || "#fafafa"};
+`
+);
 
 export const Image = styled.img`
   width: 85px;

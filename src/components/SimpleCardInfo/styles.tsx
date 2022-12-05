@@ -1,6 +1,12 @@
+import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+interface ISimpleCardInfoProps {
+  theme: ITheme;
+}
+
+export const CardContainer = styled.div(
+  (props: ISimpleCardInfoProps) => `
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,20 +18,25 @@ export const CardContainer = styled.div`
   height: 120px;
   padding: 20px 30px;
   margin: 10px 10px;
-`;
+`
+);
 
-export const Title = styled.span`
-  font-family: "Roboto-Medium";
+export const Title = styled.span(
+  (props: ISimpleCardInfoProps) => `
+  font-family: ${props.theme.fonts.title2};
   font-size: 14px;
   font-weight: 700;
-  color: #88fef3;
+  color: ${props.theme.colors.greenLight};
   margin-bottom: 10px;
-`;
+`
+);
 
-export const Description = styled.span`
-  font-family: "Roboto-Light";
+export const Description = styled.span(
+  (props: ISimpleCardInfoProps) => `
+  font-family: ${props.theme.fonts.description};
   font-size: 12px;
   font-weight: 700;
-  color: #fafafa;
+  color: ${props.theme.colors.white};
   text-align: center;
-`;
+`
+);
