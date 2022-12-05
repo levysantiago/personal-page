@@ -1,10 +1,9 @@
+import { GenericContainer } from "components/styles";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(GenericContainer)`
   display: flex;
   flex-direction: column;
-  padding: 100px 120px;
-  position: relative;
   background: linear-gradient(
     275.38deg,
     #bf83ee 3.12%,
@@ -13,14 +12,6 @@ export const Container = styled.div`
     #6f25aa 77.17%,
     #4c117a 100%
   );
-
-  @media (max-width: 1024px) {
-    padding: 50px 100px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 50px 50px;
-  }
 `;
 
 export const Title = styled.span`

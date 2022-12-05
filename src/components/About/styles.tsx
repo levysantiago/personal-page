@@ -1,20 +1,11 @@
+import { GenericContainer } from "components/styles";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(GenericContainer)`
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #1a181b;
-  padding: 100px 120px;
-  position: relative;
-
-  @media (max-width: 1024px) {
-    padding: 50px 100px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 50px 50px;
-  }
 `;
 
 export const Title = styled.span`
