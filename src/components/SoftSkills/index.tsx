@@ -10,9 +10,10 @@ const SoftSkills: React.FC = () => {
         Soft <TitleContinuation>Skills</TitleContinuation>
       </Title>
       <CardsContainer>
-        {softskills.map((skill) => {
+        {softskills.map((skill, key) => {
           return (
             <SimpleCardInfo
+              key={key}
               title={skill.title}
               description={skill.description}
             />

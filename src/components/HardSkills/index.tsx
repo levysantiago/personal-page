@@ -20,9 +20,10 @@ const HardSkills: React.FC = () => {
       </Title>
       <ContentContainer>
         <LeftContent>
-          {languages.map((language) => {
+          {languages.map((language, key) => {
             return (
               <ProgressBar
+                key={key}
                 title={language.title}
                 barWidthPercent={language.progress}
               />
@@ -30,9 +31,14 @@ const HardSkills: React.FC = () => {
           })}
         </LeftContent>
         <RightContent>
-          {tools.map((tool) => {
+          {tools.map((tool, key) => {
             return (
-              <ImageQuad src={tool.image} alt={tool.alt} title={tool.title} />
+              <ImageQuad
+                key={key}
+                src={tool.image}
+                alt={tool.alt}
+                title={tool.title}
+              />
             );
           })}
         </RightContent>
