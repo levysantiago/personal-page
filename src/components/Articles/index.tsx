@@ -15,6 +15,7 @@ const Articles: React.FC = () => {
             <ArticleCard
               key={key}
               title={article.title}
+              link={article.link}
               items={article.items}
             />
           );

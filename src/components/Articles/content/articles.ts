@@ -1,6 +1,7 @@
 export const articles = [
   {
     title: "Gifflar: A framework to generate smart contracts on the fly",
+    link: "https://dl.acm.org/doi/abs/10.5555/3507788.3507820",
     items: [
       { title: "Local", description: "Toronto, Canada" },
       { title: "Ano", description: "2021" },
@@ -14,6 +15,7 @@ export const articles = [
   {
     title:
       "Blockchain applied to academic environments as a way to ensure educational process quality control",
+    link: "https://ieeexplore.ieee.org/document/9149491",
     items: [
       { title: "Local", description: "Bogota, Cundinamarca, Colombia" },
       { title: "Ano", description: "2020" },

@@ -16,11 +16,12 @@ interface IItems {
 
 interface IProps {
   title: string;
+  link: string;
   items: IItems[];
 }
 
 const ArticleCard: React.FC<IProps> = (props: IProps) => {
-  const { title, items } = props;
+  const { title, link, items } = props;
 
   return (
     <CardContainer>
@@ -34,7 +35,9 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
         );
       })}
       <ReadLinkContainer>
-        <ReadLink href="#">Ler artigo</ReadLink>
+        <ReadLink href={link} target="_blank" rel="noopener noreferer">
+          Ler artigo
+        </ReadLink>
       </ReadLinkContainer>
     </CardContainer>
   );
