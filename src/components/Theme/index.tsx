@@ -18,6 +18,7 @@ const theme = {
     greenMedium: "#13615D",
     greenLight: "#88FEF3",
     orangeLight: "#FFFA7E",
+    orangeDarkTransparent: "rgba(84, 56, 6, 0.8);",
     orangeMediumTransparent: "rgba(134, 99, 37, 0.43);",
   },
   fonts: {

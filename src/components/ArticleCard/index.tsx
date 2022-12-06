@@ -4,6 +4,8 @@ import {
   ItemDescription,
   ItemsContainer,
   ItemTitle,
+  ReadLink,
+  ReadLinkContainer,
   Title,
 } from "./styles";
 
@@ -31,6 +33,9 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
           </ItemsContainer>
         );
       })}
+      <ReadLinkContainer>
+        <ReadLink href="#">Ler artigo</ReadLink>
+      </ReadLinkContainer>
     </CardContainer>
   );
 };
