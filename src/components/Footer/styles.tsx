@@ -17,6 +17,10 @@ export const Container = styled(GenericContainer)(
 `
 );
 
+export const RelativeDiv = styled.div`
+  position: relative;
+`;
+
 export const Title = styled.span(
   (props: IProps) => `
   color: ${props.theme.colors.purpleMedium};
@@ -35,7 +39,8 @@ export const HtmlTagImg = styled.img.attrs({
 })`
   width: 50px;
   position: absolute;
-  top: -13px;
+  top: -43px;
+  left: -25px;
 `;
 
 export const AnchorsContainer = styled.div``;

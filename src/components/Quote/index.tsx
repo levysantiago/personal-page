@@ -20,7 +20,8 @@ const Quote: React.FC = () => {
         <QuoteContainer>
           <VerticalLine />
           <Phrase>
-            {quotes[randomNumber].phrase} <br /> - {quotes[randomNumber].author}
+            {`"${quotes[randomNumber].phrase}"`} <br /> -{" "}
+            {quotes[randomNumber].author}
           </Phrase>
         </QuoteContainer>
         <QuoteImgReverse />

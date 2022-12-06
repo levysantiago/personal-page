@@ -51,4 +51,8 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: start;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;

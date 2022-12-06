@@ -13,7 +13,7 @@ export const CardContainer = styled.div(
   flex-direction: column;
   justify-items: center;
   background-color: ${props.theme.colors.purpleMedium3};
-  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent}
+  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   border-radius: 4px;
   width: 180px;
   height: 240px;

@@ -8,7 +8,7 @@ interface IImageQuadProps {
 export const ImageContainer = styled.div(
   (props: IImageQuadProps) => `
   background: ${props.theme?.colors.purpleMedium2};
-  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent}
+  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   border-radius: 6px;
   width: 100px;
   height: 100px;

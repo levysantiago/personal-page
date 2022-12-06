@@ -4,13 +4,17 @@ import {
   AnchorsContainer,
   Container,
   HtmlTagImg,
+  RelativeDiv,
   Title,
 } from "./styles";
 
 const Footer: React.FC = () => {
   return (
     <Container>
-      <HtmlTagImg />
+      <RelativeDiv>
+        <HtmlTagImg />
+      </RelativeDiv>
+
       <Title>Levy Santiago</Title>
 
       <AnchorsContainer>

@@ -12,8 +12,8 @@ export const CardContainer = styled.div(
   align-items: center;
   flex-direction: column;
   justify-items: center;
-  background: ${props.theme.colors.greenDarkTransparent}
-  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent}
+  background: ${props.theme.colors.greenDarkTransparent};
+  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   border-radius: 4px;
   width: 180px;
   height: 120px;

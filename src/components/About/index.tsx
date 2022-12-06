@@ -3,6 +3,7 @@ import {
   Container,
   Description,
   HtmlTagImg,
+  RelativeDiv,
   Title,
   TitleContinuation,
 } from "./styles";
@@ -10,7 +11,9 @@ import {
 const About: React.FC = () => {
   return (
     <Container>
-      <HtmlTagImg />
+      <RelativeDiv>
+        <HtmlTagImg />
+      </RelativeDiv>
 
       <Title>
         Um pouco <TitleContinuation>Sobre Levy</TitleContinuation>

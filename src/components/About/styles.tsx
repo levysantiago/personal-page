@@ -19,6 +19,10 @@ export const Container = styled(GenericContainer)(
 `
 );
 
+export const RelativeDiv = styled.div`
+  position: relative;
+`;
+
 export const Title = styled(ResponsiveTitle)(
   (props: IAboutProps) => `
   font-family: ${props.theme.fonts.title || "Arial"};
@@ -42,7 +46,12 @@ export const HtmlTagImg = styled.img.attrs({
 })`
   width: 50px;
   position: absolute;
-  top: -13px;
+  top: -113px;
+  left: -25px;
+
+  @media (max-width: 1024px) {
+    top: -63px;
+  }
 `;
 
 export const Description = styled(ResponsiveDescription)(

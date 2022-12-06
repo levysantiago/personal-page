@@ -79,6 +79,7 @@ export const Sidenav = styled.div(
   display: none;
 
   @media (max-width: 768px) {
+    z-index: 1;
     height: 100%;
     display: flex;
     visibility: ${props.sideNavOpened ? "visible" : "hidden"};
