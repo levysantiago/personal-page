@@ -1,9 +1,17 @@
+import { ITheme } from "components/Theme";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
-import { INavbarProps } from "./types/INavbarProps";
-import { ISideNavProps } from "./types/ISideNavProps";
+
+interface IProps {
+  theme: ITheme;
+}
+
+interface ISideNavProps extends IProps {
+  sideNavOpened: boolean;
+}
 
 export const Container = styled.div(
-  (props: INavbarProps) => `
+  (props: IProps) => `
   display: flex;
   justify-content: flex-end;
   background-color: ${props.theme?.colors.purpleDark2};
@@ -15,8 +23,8 @@ export const Container = styled.div(
 `
 );
 
-export const NavItem = styled.a(
-  (props: INavbarProps) => `
+export const NavItem = styled(HashLink).attrs({ smooth: true })(
+  (props: IProps) => `
   display: flex;
   width: 120px;
   height: 60px;
@@ -29,8 +37,10 @@ export const NavItem = styled.a(
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
   
   &:hover{
+    color: ${props.theme.colors.purpleMedium};
     background-color: ${props.theme?.colors.purpleDark3};
   }
 
@@ -51,11 +61,10 @@ export const MenuIcon = styled.img.attrs({
   width: 34px;
 `;
 
-export const NavMenu = styled.a(
-  (props: INavbarProps) => `
+export const NavMenu = styled.a.attrs({ href: "#" })`
   display: none;
-  
-  @media(max-width: 768px){
+
+  @media (max-width: 768px) {
     display: flex;
     width: 120px;
     height: 60px;
@@ -63,8 +72,7 @@ export const NavMenu = styled.a(
     align-items: center;
     justify-content: center;
   }
-`
-);
+`;
 
 export const Sidenav = styled.div(
   (props: ISideNavProps) => `
@@ -85,8 +93,8 @@ export const Sidenav = styled.div(
 `
 );
 
-export const SidenavItem = styled.a(
-  (props: INavbarProps) => `
+export const SidenavItem = styled(HashLink).attrs({ smooth: true })(
+  (props: IProps) => `
   display: flex;
   text-align: center;
   align-items: center;
@@ -98,8 +106,10 @@ export const SidenavItem = styled.a(
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
   
   &:hover{
+    color: ${props.theme.colors.purpleMedium};
     background-color: ${props.theme?.colors.purpleDark4};
   }
 `

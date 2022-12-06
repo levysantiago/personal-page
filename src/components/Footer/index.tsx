@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   Anchor,
   AnchorsContainer,
@@ -14,13 +14,13 @@ const Footer: React.FC = () => {
       <Title>Levy Santiago</Title>
 
       <AnchorsContainer>
-        <Anchor>Sobre</Anchor>
-        <Anchor>Hard Skills</Anchor>
-        <Anchor>Vida Profissional</Anchor>
-        <Anchor>Soft Skills</Anchor>
-        <Anchor>Vida Acadêmica</Anchor>
-        <Anchor>Artigos Publicados</Anchor>
-        <Anchor>Meus Projetos</Anchor>
+        <Anchor to="#about">Sobre</Anchor>
+        <Anchor to="#hard-skills">Hard Skills</Anchor>
+        <Anchor to="#professional-life">Vida Profissional</Anchor>
+        <Anchor to="#soft-skills">Soft Skills</Anchor>
+        <Anchor to="#academic-life">Vida Acadêmica</Anchor>
+        <Anchor to="#articles">Artigos Publicados</Anchor>
+        <Anchor to="#projects">Meus Projetos</Anchor>
       </AnchorsContainer>
     </Container>
   );

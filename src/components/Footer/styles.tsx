@@ -1,6 +1,7 @@
 import { GenericContainer } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
+import { HashLink } from "react-router-hash-link";
 
 interface IProps {
   theme: ITheme;
@@ -39,7 +40,7 @@ export const HtmlTagImg = styled.img.attrs({
 
 export const AnchorsContainer = styled.div``;
 
-export const Anchor = styled.span(
+export const Anchor = styled(HashLink).attrs({ smooth: true })(
   (props: IProps) => `
   display: block;
   text-align: center;
@@ -47,9 +48,10 @@ export const Anchor = styled.span(
   font-family: ${props.theme.fonts.title2};
   color: ${props.theme.colors.white};
   cursor: pointer;
+  text-decoration: none;
 
   &:hover{
-    color: ${props.theme.colors.purpleMedium}
+    color: ${props.theme.colors.purpleMedium};
   }
 `
 );

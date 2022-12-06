@@ -16,16 +16,32 @@ const HomePage: React.FC = () => {
   return (
     <Theme>
       <div>
-        <Navbar items={["Home", "Articles", "Projects"]}></Navbar>
+        <Navbar />
         <Banner />
-        <About />
-        <HardSkills />
-        <ProfessionalLife />
-        <SoftSkills />
-        <AcademicLife />
-        <Articles />
-        <Projects />
-        <Quote />
+        <div id="about">
+          <About />
+        </div>
+        <div id="hard-skills">
+          <HardSkills />
+        </div>
+        <div id="professional-life">
+          <ProfessionalLife />
+        </div>
+        <div id="soft-skills">
+          <SoftSkills />
+        </div>
+        <div id="academic-life">
+          <AcademicLife />
+        </div>
+        <div id="articles">
+          <Articles />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="quote">
+          <Quote />
+        </div>
         <Footer />
       </div>
     </Theme>

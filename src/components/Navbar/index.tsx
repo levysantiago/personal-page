@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { navItems } from "./content/navItems";
 import {
   Container,
   MenuIcon,
@@ -7,7 +8,11 @@ import {
   Sidenav,
   SidenavItem,
 } from "./styles";
-import { INavbarProps } from "./types/INavbarProps";
+
+export interface INavbarProps {
+  fontColor?: string;
+  backgroundColor?: string;
+}
 
 const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
   const [sideNavOpened, setSideNavOpened] = useState(false);
@@ -30,13 +35,15 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
     }
   }, []);
 
-  const { items } = props;
-
   return (
     <Container>
       {/* For big screen devices */}
-      {items.map((item, key) => {
-        return <NavItem key={key}>{item}</NavItem>;
+      {navItems.map((item, key) => {
+        return (
+          <NavItem to={item.route} key={key}>
+            {item.title}
+          </NavItem>
+        );
       })}
 
       {/* For small screen devices */}
@@ -48,8 +55,12 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
         <MenuIcon />
       </NavMenu>
       <Sidenav id="sidenav" {...{ sideNavOpened }}>
-        {items.map((item, key) => {
-          return <SidenavItem key={key}>{item}</SidenavItem>;
+        {navItems.map((item, key) => {
+          return (
+            <SidenavItem to={item.route} key={key}>
+              {item.title}
+            </SidenavItem>
+          );
         })}
       </Sidenav>
     </Container>

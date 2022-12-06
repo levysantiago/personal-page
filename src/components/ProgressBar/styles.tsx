@@ -1,13 +1,16 @@
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
-interface IProgressBarProps {
-  barWidthPercent?: string;
+interface IProps {
   theme: ITheme;
 }
 
+interface IProgressBarProps extends IProps {
+  barWidthPercent: string | undefined;
+}
+
 export const BaseBar = styled.div(
-  (props: IProgressBarProps) => `
+  (props: IProps) => `
   width: 95%;
   height: 10px;
   border-radius: 100px;
@@ -29,7 +32,7 @@ export const InsideBar = styled.div(
 );
 
 export const Title = styled.span(
-  (props: IProgressBarProps) => `
+  (props: IProps) => `
   font-family: ${props.theme.fonts.text};
   font-size: 20px;
   font-weight: 700;
