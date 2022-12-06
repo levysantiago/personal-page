@@ -34,7 +34,7 @@ export const VerticalLine = styled.div(
   background-color: ${props.theme.colors.purpleDark};
   height: 60px;
   width: 8px;
-  margin-right: 5px;
+  margin-right: 8px;
 
   @media(max-width: 768px){
     display: none;

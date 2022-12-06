@@ -1,4 +1,5 @@
 import * as React from "react";
+import { quotes } from "./content/quotes";
 import {
   Container,
   Phrase,
@@ -10,6 +11,8 @@ import {
 } from "./styles";
 
 const Quote: React.FC = () => {
+  const randomNumber = Math.floor(Math.random() * quotes.length);
+
   return (
     <Container>
       <QuoteSuperContainer>
@@ -17,9 +20,7 @@ const Quote: React.FC = () => {
         <QuoteContainer>
           <VerticalLine />
           <Phrase>
-            “Para caminhar 40 passos ou 400, o primeiro passo é igual. Diferente
-            é a disposição.”
-            <br />- Katsumi Tokuhisa
+            {quotes[randomNumber].phrase} <br /> - {quotes[randomNumber].author}
           </Phrase>
         </QuoteContainer>
         <QuoteImgReverse />
