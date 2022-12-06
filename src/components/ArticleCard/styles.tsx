@@ -1,3 +1,4 @@
+import { ResponsiveCardTitle, ResponsiveSmallText } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -19,11 +20,18 @@ export const CardContainer = styled.div(
   position: relative;
 
   @media(max-width: 768px){
-    min-width: 100%;
+    width: 300px;
+    min-width: auto;
     height: 110px;
   }
 
   @media(max-width: 500px){
+    height: 140px;
+  }
+
+  @media(max-width: 400px){
+    width: 200px;
+    min-width: auto;
     height: 140px;
   }
 
@@ -60,6 +68,7 @@ export const ReadLink = styled.a(
   color: ${props.theme.colors.white};
   text-decoration: none;
   font-family: ${props.theme.fonts.title2};
+  font-size: 14px;
   opacity: 0;
 
   &:hover{
@@ -68,7 +77,7 @@ export const ReadLink = styled.a(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveCardTitle)(
   (props: IProps) => `
   font-family: ${props.theme.fonts.title2};
   font-size: 14px;
@@ -81,29 +90,34 @@ export const Title = styled.span(
 
 export const ItemsContainer = styled.div(
   (props: IProps) => `
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
+  overflow: hidden;
   text-overflow: ellipsis;
   color: ${props.theme.colors.white};
 `
 );
 
-export const ItemTitle = styled.span(
+export const ItemTitle = styled(ResponsiveSmallText)(
   (props: IProps) => `
   font-family: ${props.theme.fonts.title2};
-  font-size: 14px;
   font-weight: 700;
   color: ${props.theme.colors.white};
-  margin-bottom: 10px;`
+  margin-bottom: 5px;
+  margin-right: 4px;
+  `
 );
 
-export const ItemDescription = styled.span(
+export const ItemDescription = styled(ResponsiveSmallText)(
   (props: IProps) => `
   font-family: ${props.theme.fonts.description};
-  font-size: 14px;
   font-weight: 700;
   color: ${props.theme.colors.white};
-  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
   white-space: nowrap;
   `
 );

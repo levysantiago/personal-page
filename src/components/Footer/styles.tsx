@@ -44,11 +44,12 @@ export const Anchor = styled(HashLink).attrs({ smooth: true })(
   (props: IProps) => `
   display: block;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: ${props.theme.fonts.title2};
   color: ${props.theme.colors.white};
   cursor: pointer;
   text-decoration: none;
+  font-size: 14px;
 
   &:hover{
     color: ${props.theme.colors.purpleMedium};

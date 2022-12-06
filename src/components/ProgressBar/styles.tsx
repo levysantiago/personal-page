@@ -1,3 +1,4 @@
+import { ResponsiveTopic } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -31,10 +32,9 @@ export const InsideBar = styled.div(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveTopic)(
   (props: IProps) => `
   font-family: ${props.theme.fonts.text};
-  font-size: 20px;
   font-weight: 700;
   line-height: 22px;
   text-align: left;

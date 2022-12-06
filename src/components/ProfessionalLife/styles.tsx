@@ -1,4 +1,8 @@
-import { GenericContainer } from "components/styles";
+import {
+  GenericContainer,
+  ResponsiveDescription,
+  ResponsiveTitle,
+} from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -15,10 +19,9 @@ export const Container = styled(GenericContainer)(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveTitle)(
   (props: IProfessionalLifeProps) => `
   font-family: ${props.theme.fonts.title};
-  font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: center;
@@ -33,10 +36,9 @@ export const TitleContinuation = styled(Title)(
 `
 );
 
-export const Description = styled.span(
+export const Description = styled(ResponsiveDescription)(
   (props: IProfessionalLifeProps) => `
   font-family: ${props.theme.fonts.text};
-  font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;

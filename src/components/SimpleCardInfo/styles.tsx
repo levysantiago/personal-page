@@ -1,3 +1,4 @@
+import { ResponsiveCardTitle, ResponsiveSmallText } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -21,20 +22,18 @@ export const CardContainer = styled.div(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveCardTitle)(
   (props: ISimpleCardInfoProps) => `
   font-family: ${props.theme.fonts.title2};
-  font-size: 14px;
   font-weight: 700;
   color: ${props.theme.colors.greenLight};
   margin-bottom: 10px;
 `
 );
 
-export const Description = styled.span(
+export const Description = styled(ResponsiveSmallText)(
   (props: ISimpleCardInfoProps) => `
   font-family: ${props.theme.fonts.description};
-  font-size: 12px;
   font-weight: 700;
   color: ${props.theme.colors.white};
   text-align: center;

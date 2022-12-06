@@ -1,4 +1,4 @@
-import { GenericContainer } from "components/styles";
+import { GenericContainer, ResponsiveTitle } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -14,10 +14,9 @@ export const Container = styled(GenericContainer)(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveTitle)(
   (props: IHardSkillsProps) => `
   font-family: ${props.theme?.fonts.title};
-  font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: left;

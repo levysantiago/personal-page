@@ -1,4 +1,4 @@
-import { GenericContainer } from "components/styles";
+import { GenericContainer, ResponsiveDescription } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -49,6 +49,11 @@ export const QuoteImg = styled.img.attrs({
   position: absolute;
   top: 0px;
   left: -50px;
+
+  @media (max-width: 350px) {
+    top: -20px;
+    left: -10px;
+  }
 `;
 
 export const QuoteImgReverse = styled.img.attrs({
@@ -59,9 +64,14 @@ export const QuoteImgReverse = styled.img.attrs({
   transform: rotate(180deg);
   right: -50px;
   bottom: 0px;
+
+  @media (max-width: 350px) {
+    bottom: -20px;
+    right: -10px;
+  }
 `;
 
-export const Phrase = styled.span(
+export const Phrase = styled(ResponsiveDescription)(
   (props: IProps) => `
   font-family: ${props.theme.fonts.text};
   color: ${props.theme.colors.white};

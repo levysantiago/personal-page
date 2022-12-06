@@ -103,7 +103,7 @@ export const SidenavItem = styled(HashLink).attrs({ smooth: true })(
   justify-content: center;
   background-color: ${props.theme?.colors.purpleDark3};
   color: ${props.theme?.colors.purpleGray};
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;

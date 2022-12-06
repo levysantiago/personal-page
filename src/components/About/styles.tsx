@@ -1,4 +1,8 @@
-import { GenericContainer } from "components/styles";
+import {
+  GenericContainer,
+  ResponsiveDescription,
+  ResponsiveTitle,
+} from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 
@@ -15,10 +19,9 @@ export const Container = styled(GenericContainer)(
 `
 );
 
-export const Title = styled.span(
+export const Title = styled(ResponsiveTitle)(
   (props: IAboutProps) => `
   font-family: ${props.theme.fonts.title || "Arial"};
-  font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: center;
@@ -42,10 +45,9 @@ export const HtmlTagImg = styled.img.attrs({
   top: -13px;
 `;
 
-export const Description = styled.span(
+export const Description = styled(ResponsiveDescription)(
   (props: IAboutProps) => `
   font-family: ${props.theme.fonts.text || "Roboto-Regular"};
-  font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;

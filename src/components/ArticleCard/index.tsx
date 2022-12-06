@@ -29,7 +29,7 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
       {items.map((item, key) => {
         return (
           <ItemsContainer key={key}>
-            <ItemTitle>{item.title}: </ItemTitle>
+            <ItemTitle>{`${item.title}: `}</ItemTitle>
             <ItemDescription>{item.description}</ItemDescription>
           </ItemsContainer>
         );
