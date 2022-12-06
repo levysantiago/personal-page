@@ -1,6 +1,7 @@
 import About from "components/About";
 import AcademicLife from "components/AcademicLife";
 import Banner from "components/Banner";
+import Footer from "components/Footer";
 import HardSkills from "components/HardSkills";
 import Navbar from "components/Navbar";
 import ProfessionalLife from "components/ProfessionalLife";
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
         <SoftSkills />
         <AcademicLife />
         <Quote />
+        <Footer />
       </div>
     </Theme>
   );
