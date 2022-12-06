@@ -6,17 +6,13 @@ interface IProps {
   theme: ITheme;
 }
 
-export const Container = styled(GenericContainer)`
+export const Container = styled(GenericContainer)(
+  (props: IProps) => `
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    275.36deg,
-    #ffee55 0%,
-    #ffc900 33.33%,
-    #ffac1d 71.36%,
-    #a86d08 100%
-  );
-`;
+  background: ${props.theme.colors.orangeGradient}
+`
+);
 
 export const Title = styled.span(
   (props: IProps) => `

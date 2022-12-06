@@ -5,6 +5,7 @@ const theme = {
   colors: {
     white: "#fafafa",
     black: "#1A181B",
+    blackShadowTransparent: "rgba(0, 0, 0, 0.25)",
     purpleMedium: "#A24EE4",
     purpleMedium2: "#7724B8",
     purpleMedium3: "#3E2C46",
@@ -15,12 +16,15 @@ const theme = {
     purpleDark4: "#29272B",
     purbleLight: "#BF83EF",
     purpleGray: "#f3dbff",
+    purpleGradient: `linear-gradient(275.38deg,#bf83ee 3.12%,#9249cc 28.35%,#7a33b3 50.67%,#6f25aa 77.17%,#4c117a 100%);`,
     greenMedium: "#13615D",
     greenLight: "#88FEF3",
+    greenDarkTransparent: "rgba(19, 97, 93, 0.43);",
     orangeLight: "#FFFA7E",
     orangeMedium: "#FFAC1D",
     orangeDarkTransparent: "rgba(84, 56, 6, 0.8);",
     orangeMediumTransparent: "rgba(134, 99, 37, 0.43);",
+    orangeGradient: `linear-gradient(275.36deg,#ffee55 0%,#ffc900 33.33%,#ffac1d 71.36%,#a86d08 100%);`,
   },
   fonts: {
     title: "Arial",

@@ -1,20 +1,16 @@
 export const projects = [
   {
     title: "Gifflar",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book...`,
+    description: `Um framework que permite a criação de sistemas capazes de gerar contratos inteligentes 
+    em tempo de execução. É um projeto ainda em desenvolvimento e passando por testes, correções e avaliações.`,
     readMoreLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/GifflarJS-Framework/core",
   },
   {
-    title: "Gifflar",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book...`,
+    title: "BlockEGovMe",
+    description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) 
+    que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
     readMoreLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
   },
 ];

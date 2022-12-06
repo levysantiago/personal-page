@@ -6,34 +6,29 @@ interface IHardSkillsProps {
   theme: ITheme;
 }
 
-export const Container = styled(GenericContainer)`
+export const Container = styled(GenericContainer)(
+  (props: IHardSkillsProps) => `
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    275.38deg,
-    #bf83ee 3.12%,
-    #9249cc 28.35%,
-    #7a33b3 50.67%,
-    #6f25aa 77.17%,
-    #4c117a 100%
-  );
-`;
+  background: ${props.theme.colors.purpleGradient}
+`
+);
 
 export const Title = styled.span(
   (props: IHardSkillsProps) => `
-  font-family: ${props.theme?.fonts.title || "Arial"};
+  font-family: ${props.theme?.fonts.title};
   font-size: 25px;
   font-weight: 700;
   line-height: 33px;
   text-align: left;
-  color: ${props.theme?.colors.purbleLight || "#bf83ef"};
+  color: ${props.theme?.colors.purbleLight};
   margin-bottom: 30px;
 `
 );
 
 export const TitleContinuation = styled(Title)(
   (props: IHardSkillsProps) => `
-  color: ${props.theme?.colors.black || "#1e1c1f"};
+  color: ${props.theme?.colors.black};
 `
 );
 

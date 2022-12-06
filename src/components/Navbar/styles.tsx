@@ -6,7 +6,7 @@ export const Container = styled.div(
   (props: INavbarProps) => `
   display: flex;
   justify-content: flex-end;
-  background-color: ${props.theme?.colors.purpleDark2 || "#1e1c1f"};
+  background-color: ${props.theme?.colors.purpleDark2};
   width: 100%;
 
   @media(max-width: 768px){
@@ -22,16 +22,16 @@ export const NavItem = styled.a(
   height: 60px;
   text-align: center;
   align-items: center;
-  font-family: ${props.theme?.fonts.title || "Arial"};
+  font-family: ${props.theme?.fonts.title};
   justify-content: center;
-  background-color: ${props.theme?.colors.purpleDark2 || "#1e1c1f"};
-  color: ${props.theme?.colors.purpleGray || "#f3dbff"};
+  background-color: ${props.theme?.colors.purpleDark2};
+  color: ${props.theme?.colors.purpleGray};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   
   &:hover{
-    background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
+    background-color: ${props.theme?.colors.purpleDark3};
   }
 
   @media(max-width: 1024px){
@@ -77,7 +77,7 @@ export const Sidenav = styled.div(
     flex-direction: column;
     width: ${props.sideNavOpened ? "50%" : "0px"};
     transition: width 0.4s;
-    background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
+    background-color: ${props.theme?.colors.purpleDark3};
     position: absolute;
     top: 0px;
     left: 0px;
@@ -91,16 +91,16 @@ export const SidenavItem = styled.a(
   text-align: center;
   align-items: center;
   height: 60px;
-  font-family: ${props.theme?.fonts.title || "Arial"};
+  font-family: ${props.theme?.fonts.title};
   justify-content: center;
-  background-color: ${props.theme?.colors.purpleDark3 || "#222023"};
-  color: ${props.theme?.colors.purpleGray || "#f3dbff"};
+  background-color: ${props.theme?.colors.purpleDark3};
+  color: ${props.theme?.colors.purpleGray};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   
   &:hover{
-    background-color: ${props.theme?.colors.purpleDark4 || "#29272B"};
+    background-color: ${props.theme?.colors.purpleDark4};
   }
 `
 );

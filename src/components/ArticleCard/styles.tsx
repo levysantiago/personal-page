@@ -10,7 +10,7 @@ export const CardContainer = styled.div(
   padding: 20px 30px;
   border-radius: 6px;
   background: ${props.theme.colors.orangeMediumTransparent};
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   width: 40%;
   height: 100px;
   min-width: 400px;

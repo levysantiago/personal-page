@@ -27,9 +27,11 @@ export const Title = styled.span(
 `
 );
 
-export const TitleContinuation = styled(Title)`
-  color: #a24ee4;
-`;
+export const TitleContinuation = styled(Title)(
+  (props: IAcademicLifeProps) => `
+  color: ${props.theme.colors.purpleMedium};
+`
+);
 
 export const Description = styled.span(
   (props: IAcademicLifeProps) => `

@@ -7,8 +7,8 @@ interface IImageQuadProps {
 
 export const ImageContainer = styled.div(
   (props: IImageQuadProps) => `
-  background: ${props.theme?.colors.purpleMedium2 || "#7724b8"};
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+  background: ${props.theme?.colors.purpleMedium2};
+  box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent}
   border-radius: 6px;
   width: 100px;
   height: 100px;
@@ -36,7 +36,7 @@ export const InfoContainer = styled.div(
   justify-content: center;
 
   &:hover {
-    background: ${props.theme?.colors.purpleMedium2 || "#7724b8"};
+    background: ${props.theme?.colors.purpleMedium2};
     opacity: 1;
   }
 `
@@ -44,10 +44,10 @@ export const InfoContainer = styled.div(
 
 export const Title = styled.span(
   (props: IImageQuadProps) => `
-  font-family: ${props.theme?.fonts.title || "Arial"};
+  font-family: ${props.theme?.fonts.title};
   font-size: 12px;
   font-weight: 700;
-  color: ${props.theme?.colors.white || "#fafafa"};
+  color: ${props.theme?.colors.white};
 `
 );
 
