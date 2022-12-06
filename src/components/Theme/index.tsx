@@ -17,7 +17,8 @@ const theme = {
     purpleGray: "#f3dbff",
     greenMedium: "#13615D",
     greenLight: "#88FEF3",
-    yellowLight: "#FFFA7E",
+    orangeLight: "#FFFA7E",
+    orangeMediumTransparent: "rgba(134, 99, 37, 0.43);",
   },
   fonts: {
     title: "Arial",

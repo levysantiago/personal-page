@@ -1,5 +1,6 @@
 import About from "components/About";
 import AcademicLife from "components/AcademicLife";
+import Articles from "components/Articles";
 import Banner from "components/Banner";
 import Footer from "components/Footer";
 import HardSkills from "components/HardSkills";
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
         <ProfessionalLife />
         <SoftSkills />
         <AcademicLife />
+        <Articles />
         <Quote />
         <Footer />
       </div>
