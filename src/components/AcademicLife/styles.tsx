@@ -41,7 +41,14 @@ export const Description = styled(ResponsiveDescription)(
   font-family: ${props.theme?.fonts.text};
   font-weight: 400;
   line-height: 22px;
-  text-align: center;
+  text-align: justify;
+  margin-top: 20px;
   color: ${props.theme?.colors.white};
+`
+);
+
+export const HighlightedDescription = styled(Description)(
+  (props: IAcademicLifeProps) => `
+  color: ${props.theme.colors.purpleMedium};
 `
 );

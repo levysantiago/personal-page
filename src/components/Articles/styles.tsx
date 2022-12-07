@@ -38,3 +38,17 @@ export const CardsContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
 `;
+
+export const Link = styled.a.attrs({
+  target: "_blank",
+  rel: "noopener noreferer",
+})(
+  (props: IProps) => `
+  font-family: ${props.theme.fonts.text};
+  color: ${props.theme.colors.black};
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+`
+);

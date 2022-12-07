@@ -1,7 +1,13 @@
 import ArticleCard from "components/ArticleCard";
 import * as React from "react";
 import { articles } from "./content/articles";
-import { CardsContainer, Container, Title, TitleContinuation } from "./styles";
+import {
+  CardsContainer,
+  Container,
+  Link,
+  Title,
+  TitleContinuation,
+} from "./styles";
 
 const Articles: React.FC = () => {
   return (
@@ -21,6 +27,7 @@ const Articles: React.FC = () => {
           );
         })}
       </CardsContainer>
+      <Link href="https://bit.ly/3hcCeSX">Ver mais publicações</Link>
     </Container>
   );
 };

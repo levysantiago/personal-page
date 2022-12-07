@@ -25,4 +25,29 @@ export const articles = [
       },
     ],
   },
+  {
+    title: "IoTCocoa-an IoT platform to assist gourmet cocoa production.",
+    link: "https://ieeexplore.ieee.org/abstract/document/8937903",
+    items: [
+      { title: "Local", description: "Bogota, Cundinamarca, Colombia" },
+      { title: "Ano", description: "2019" },
+      {
+        title: "Em",
+        description:
+          "IEEE Latin-American Conference on Communications (LATINCOM)",
+      },
+    ],
+  },
+  {
+    title: "I2oTology-Tracking-Oriented Ontology.",
+    link: "https://ceur-ws.org/Vol-2228/short5.pdf",
+    items: [
+      { title: "Local", description: "Bogota, Cundinamarca, Colombia" },
+      { title: "Ano", description: "2019" },
+      {
+        title: "Em",
+        description: "ONTOBRAS",
+      },
+    ],
+  },
 ];
