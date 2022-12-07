@@ -2,14 +2,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # My Personal Page
 
-## Master branch
+This is my personal page project. In this project I'm using React.js, Typescript.
 
-The master branch is connected to the Digital Ocean server. So only update to the master when you are pretty sure about the changes you made.
+Node.js version: v16.17.0
 
-| Updated            | Where         | Page                         | Date       |
-| ------------------ | ------------- | ---------------------------- | ---------- |
-| :heavy_check_mark: | Digital Ocean | https://www.levysantiago.com | 23/10/2020 |
+# Getting started
 
-## Dev branch
+## Installing dependencies
 
-Use this branch to do all the updating changes, and when ready, do the pull request to update the master.
+```
+$ npm install
+```
+
+or
+
+```
+$ yarn install
+```
