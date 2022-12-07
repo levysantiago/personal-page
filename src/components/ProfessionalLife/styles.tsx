@@ -43,5 +43,13 @@ export const Description = styled(ResponsiveDescription)(
   line-height: 22px;
   text-align: center;
   color: ${props.theme.colors.white};
+  margin-bottom: 20px;
+  text-align: justify;
+`
+);
+
+export const HighlightedDescription = styled(Description)(
+  (props: IProfessionalLifeProps) => `
+  color: ${props.theme.colors.purpleMedium};
 `
 );

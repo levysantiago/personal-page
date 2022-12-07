@@ -50,14 +50,14 @@ const About: React.FC = () => {
       </Description>
 
       <Description>
-        Durante o mestrado, também trabalhei em algumas empresas voltadas para a
-        área de Blockchain. Hoje tenho experiência principalmente em Programação
-        Backend com Node.js, Banco de dados,{" "}
+        Durante a graduação e mestrado, também trabalhei em algumas empresas
+        voltadas para a área de Blockchain. Hoje tenho experiência
+        principalmente em Programação Backend com Node.js, Banco de dados,{" "}
         <HighlightedDescription>
           Blockchain (Tokens, NFTs, DEX, Web3)
         </HighlightedDescription>
-        , desenvolvimento de Contratos Inteligentes, DevOps configuração de
-        Cloud e GitHub/GitLab/BitBucket. Também tenho conhecimento em
+        , desenvolvimento de Contratos Inteligentes (SmC), DevOps configuração
+        de Cloud e GitHub/GitLab/BitBucket. Também tenho conhecimento em
         desenvolvimento Web com React.js, HTML, CSS, Styled Components, trading
         em exchanges centralizadas e DEXs.
       </Description>
