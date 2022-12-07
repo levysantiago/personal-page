@@ -24,8 +24,16 @@ const ProjectCard: React.FC<IProps> = ({
     <CardContainer>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      {readMoreLink ? <ReadMoreLink>Ler mais</ReadMoreLink> : null}
-      {githubLink ? <GithubIcon /> : null}
+      {readMoreLink ? (
+        <a href={githubLink} target="_blank" rel="noopener noreferer">
+          <ReadMoreLink>Ler mais</ReadMoreLink>
+        </a>
+      ) : null}
+      {githubLink ? (
+        <a href={githubLink} target="_blank" rel="noopener noreferer">
+          <GithubIcon />
+        </a>
+      ) : null}
     </CardContainer>
   );
 };

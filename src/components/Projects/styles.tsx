@@ -39,7 +39,7 @@ export const Description = styled.span(
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  text-align: center;
+  text-align: justify;
   color: ${props.theme.colors.white};
   margin-bottom: 50px;
 `

@@ -26,10 +26,10 @@ export const articles = [
     ],
   },
   {
-    title: "IoTCocoa-an IoT platform to assist gourmet cocoa production.",
+    title: "IoTCocoa: an IoT platform to assist gourmet cocoa production.",
     link: "https://ieeexplore.ieee.org/abstract/document/8937903",
     items: [
-      { title: "Local", description: "Bogota, Cundinamarca, Colombia" },
+      { title: "Local", description: "Salvador, Brasil" },
       { title: "Ano", description: "2019" },
       {
         title: "Em",
@@ -39,11 +39,11 @@ export const articles = [
     ],
   },
   {
-    title: "I2oTology-Tracking-Oriented Ontology.",
+    title: "I2oTology: Tracking-Oriented Ontology.",
     link: "https://ceur-ws.org/Vol-2228/short5.pdf",
     items: [
-      { title: "Local", description: "Bogota, Cundinamarca, Colombia" },
-      { title: "Ano", description: "2019" },
+      { title: "Local", description: "São paulo, Brasil" },
+      { title: "Ano", description: "2018" },
       {
         title: "Em",
         description: "ONTOBRAS",
