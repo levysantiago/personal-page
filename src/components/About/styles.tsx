@@ -59,7 +59,14 @@ export const Description = styled(ResponsiveDescription)(
   font-family: ${props.theme.fonts.text || "Roboto-Regular"};
   font-weight: 400;
   line-height: 22px;
-  text-align: center;
   color: ${props.theme.colors.white || "#fafafa"};
+  margin-bottom: 20px;
+  text-align: justify;
+`
+);
+
+export const HighlightedDescription = styled(Description)(
+  (props: IAboutProps) => `
+  color: ${props.theme.colors.purpleMedium};
 `
 );

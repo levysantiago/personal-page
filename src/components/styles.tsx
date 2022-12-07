@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { ITheme } from "./Theme";
+
+interface IProps {
+  theme: ITheme;
+}
 
 export const GenericContainer = styled.div`
   padding: 100px 120px;
@@ -95,3 +100,17 @@ export const ResponsiveSmallText = styled.span`
     font-size: 12px;
   }
 `;
+
+export const Link = styled.a.attrs({
+  target: "_blank",
+  rel: "noopener noreferer",
+})(
+  (props: IProps) => `
+  color: ${props.theme.colors.greenLight2};
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+`
+);

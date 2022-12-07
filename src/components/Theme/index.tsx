@@ -19,6 +19,7 @@ const theme = {
     purpleGradient: `linear-gradient(275.38deg,#bf83ee 3.12%,#9249cc 28.35%,#7a33b3 50.67%,#6f25aa 77.17%,#4c117a 100%);`,
     greenMedium: "#13615D",
     greenLight: "#88FEF3",
+    greenLight2: "#58cbd2",
     greenDarkTransparent: "rgba(19, 97, 93, 0.43);",
     orangeLight: "#FFFA7E",
     orangeMedium: "#FFAC1D",
