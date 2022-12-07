@@ -36,30 +36,32 @@ const About: React.FC = () => {
         </Link>
         . Fiz parte do grupo LIF - Laboratório de Internet do Futuro, um grupo
         iniciado na UESC que envolve tanto estudantes como professores. Hoje sou
-        mestrando na{" "}
+        aluno de mestrado na{" "}
         <Link href="https://www.ufba.br/">
           UFBA - Universidade Federal da Bahia
         </Link>{" "}
-        e também trabalho como{" "}
-        <HighlightedDescription>Freelancer</HighlightedDescription>! Faço parte
-        do grupo de pesquisa GAUDI (Grupo de Algoritmos e Computação
-        Distribuída). Muitos dos meus projetos e publicações foram desenvolvidos
-        juntamente com estes dois grupos. Atualmente estou trabalhando em um
-        projeto que envolve criação de contratos inteligentes com Solidity em
-        tempo de execução.
+        e também trabalho como Freelancer! Faço parte do grupo de pesquisa GAUDI
+        (Grupo de Algoritmos e Computação Distribuída). Muitos dos meus projetos
+        e publicações foram desenvolvidos juntamente com estes dois grupos.{" "}
+        <HighlightedDescription>
+          Atualmente no mestrado estou trabalhando em um projeto que envolve
+          criação de um framework para contratos inteligentes (SmCs) com
+          Solidity
+        </HighlightedDescription>
+        .
       </Description>
 
       <Description>
         Durante a graduação e mestrado, também trabalhei em algumas empresas
-        voltadas para a área de Blockchain. Hoje tenho experiência
-        principalmente em Programação Backend com Node.js, Banco de dados,{" "}
+        voltadas para a área de Blockchain. Hoje tenho{" "}
         <HighlightedDescription>
-          Blockchain (Tokens, NFTs, DEX, Web3)
+          experiência principalmente em Programação Backend com Node.js, Banco
+          de dados, Blockchain (Tokens, NFTs, DEX, Web3) , desenvolvimento de
+          Contratos Inteligentes, DevOps configuração de Cloud e
+          GitHub/GitLab/BitBucket
         </HighlightedDescription>
-        , desenvolvimento de Contratos Inteligentes (SmC), DevOps configuração
-        de Cloud e GitHub/GitLab/BitBucket. Também tenho conhecimento em
-        desenvolvimento Web com React.js, HTML, CSS, Styled Components, trading
-        em exchanges centralizadas e DEXs.
+        . Também tenho conhecimento em desenvolvimento Web com React.js, HTML,
+        CSS, Styled Components, trading em exchanges centralizadas e DEXs.
       </Description>
 
       <Description>

@@ -1,4 +1,7 @@
-import * as React from "react";
+import NetworkButtons from "components/NetworkButtons";
+import { ITheme } from "components/Theme";
+import React from "react";
+import { withTheme } from "styled-components";
 import {
   Container,
   Description,
@@ -7,7 +10,13 @@ import {
   TitleContinuation,
 } from "./styles";
 
-const ProfessionalLife: React.FC = () => {
+interface IProfessionalLifeProps {
+  theme?: ITheme;
+}
+
+const ProfessionalLife: React.FC<IProfessionalLifeProps> = ({
+  theme,
+}: IProfessionalLifeProps) => {
   return (
     <Container>
       <Title>
@@ -18,67 +27,47 @@ const ProfessionalLife: React.FC = () => {
         Grande parte do meu conhecimento prático foi obtido dentro das empresas
         em que trabalhei. Eu iniciei minha vida profissional trabalhando
         voluntariamente em uma empresa na área de blockchain na{" "}
-        <HighlightedDescription>criação/testes de SmCs</HighlightedDescription>,
-        assim como o{" "}
         <HighlightedDescription>
-          desenvolvimento de uma DApp
+          criação/testes de SmCs, assim como o desenvolvimento de uma DApp para
+          integração com estes SmCs
         </HighlightedDescription>{" "}
-        para integração com estes SmCs utilizando{" "}
-        <HighlightedDescription>React.js</HighlightedDescription> para o
-        front-end e{" "}
-        <HighlightedDescription>
-          Web3.js, Metamask, Truffle.js, Mocha.js, RemixIDE
-        </HighlightedDescription>{" "}
-        e outras ferramentas para desenvolvimento e testes dos SmCs. Este também
-        foi o primeiro momento em que comecei a entender a dinâmica do mercado e
-        organização empresarial.
+        utilizando React.js para o front-end e Web3.js, Metamask, Truffle.js,
+        Mocha.js, RemixIDE e outras ferramentas para desenvolvimento e testes
+        dos SmCs. Este também foi o primeiro momento em que comecei a entender a
+        dinâmica do mercado e organização empresarial.
       </Description>
 
       <Description>
         Durante um período do mestrado, trabalhei em outra empresa onde tive
-        contato com mais conceitos da área, envolvendo{" "}
-        <HighlightedDescription>
-          criação/testes de tokens
-        </HighlightedDescription>{" "}
-        (Security, Utility, Hybrid, etc.),{" "}
-        <HighlightedDescription>NFTs, DEXs, DApps</HighlightedDescription>,
-        estratégias de trading , etc. Da mesma forma, adquiri maior conhecimento
-        em desenvolvimento back-end (Node.js) e front-end (React.js), banco de
+        contato com mais conceitos da área, envolvendo criação/testes de tokens
+        (Security, Utility, Hybrid, etc.), NFTs, DEXs, DApps, estratégias de
+        trading , etc. Da mesma forma, adquiri maior conhecimento em
+        desenvolvimento back-end (Node.js) e front-end (React.js), banco de
         dados (SQL e NoSQL) configuração de clouds, gerenciamento de domínios,
-        SSL, hospedagem, etc. Porém, uma das experiências mais importantes para
-        mim, foi a possibilidade de{" "}
-        <HighlightedDescription>liderar uma equipe</HighlightedDescription>. Foi
-        a primeira oportunidade que tive de{" "}
+        SSL, hospedagem, etc.{" "}
         <HighlightedDescription>
-          compartilhar o meu conhecimento
-        </HighlightedDescription>
-        , liderar e{" "}
-        <HighlightedDescription>participar de decisões</HighlightedDescription>{" "}
-        de grande impacto na empresa .
+          Porém, uma das experiências mais importantes para mim, foi a
+          possibilidade de liderar uma equipe. Foi a primeira oportunidade que
+          tive de compartilhar o meu conhecimento
+        </HighlightedDescription>{" "}
+        , liderar e participar de decisões de grande impacto na empresa .
       </Description>
 
       <Description>
-        A partir de 2022 comecei a trabalhar como{" "}
-        <HighlightedDescription>freelancer</HighlightedDescription>, pretendo
+        A partir de 2022 comecei a trabalhar como freelancer, pretendo
         participar de forma mais ativa dentro da comunidade blockchain, não só
-        contribuindo com o{" "}
+        contribuindo com o desenvolvimento de novas aplicações , como também{" "}
         <HighlightedDescription>
-          desenvolvimento de novas aplicações
-        </HighlightedDescription>
-        , como também{" "}
-        <HighlightedDescription>
-          compartilhando o conhecimento
+          compartilhando o conhecimento para que nós possamos evoluir para um
+          outro nível onde saímos da zona de conforto e buscamos novos desafios
         </HighlightedDescription>{" "}
-        para que nós possamos{" "}
-        <HighlightedDescription>
-          evoluir para um outro nível
-        </HighlightedDescription>{" "}
-        onde saímos da zona de conforto e buscamos novos desafios (dentro da
-        blockchain "novos desafios" é o que não falta). Fique a vontade para me
-        seguir e entrar em contato no Linkedin, GitHub, etc.
+        (dentro da blockchain "novos desafios" é o que não falta). Fique a
+        vontade para me seguir e entrar em contato no Linkedin, GitHub, etc.
       </Description>
+
+      <NetworkButtons />
     </Container>
   );
 };
 
-export default ProfessionalLife;
+export default withTheme(ProfessionalLife);

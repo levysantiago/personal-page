@@ -1,3 +1,4 @@
+import NetworkButtons from "components/NetworkButtons";
 import React from "react";
 import {
   Anchor,
@@ -26,6 +27,8 @@ const Footer: React.FC = () => {
         <Anchor to="#articles">Artigos Publicados</Anchor>
         <Anchor to="#projects">Meus Projetos</Anchor>
       </AnchorsContainer>
+
+      <NetworkButtons />
     </Container>
   );
 };
