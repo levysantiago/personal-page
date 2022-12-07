@@ -25,6 +25,7 @@ const theme = {
     orangeDarkTransparent: "rgba(84, 56, 6, 0.8);",
     orangeMediumTransparent: "rgba(134, 99, 37, 0.43);",
     orangeGradient: `linear-gradient(275.36deg,#ffee55 0%,#ffc900 33.33%,#ffac1d 71.36%,#a86d08 100%);`,
+    greenGradient: `linear-gradient(275.36deg,#8afff4 0%,#58cbd2 36.98%,#3998df 66.15%,#0b66aa 100%);`,
   },
   fonts: {
     title: "Arial",

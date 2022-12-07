@@ -6,17 +6,13 @@ interface ISoftSkillsProps {
   theme: ITheme;
 }
 
-export const Container = styled(GenericContainer)`
+export const Container = styled(GenericContainer)(
+  (props: ISoftSkillsProps) => `
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    275.36deg,
-    #8afff4 0%,
-    #58cbd2 36.98%,
-    #3998df 66.15%,
-    #0b66aa 100%
-  );
-`;
+  background: ${props.theme.colors.greenGradient}
+`
+);
 
 export const CardsContainer = styled.div`
   display: flex;
