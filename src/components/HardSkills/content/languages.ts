@@ -4,6 +4,10 @@ export const languages = [
     progress: "80%",
   },
   {
+    title: "TypeScript",
+    progress: "80%",
+  },
+  {
     title: "Solidity",
     progress: "80%",
   },
