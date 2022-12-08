@@ -2,7 +2,7 @@
   "name": "personal-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://levyssantiago.herokuapp.com",
+  "homepage": "https://levyssantiago.com",
   "dependencies": {
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
