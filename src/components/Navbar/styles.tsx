@@ -55,7 +55,7 @@ export const NavItem = styled(HashLink).attrs({ smooth: true })(
 );
 
 export const MenuIcon = styled.img.attrs({
-  src: require("../../assets/menu.svg"),
+  src: require("../../assets/menu.svg").default,
   alt: "Menu icon",
 })`
   width: 34px;

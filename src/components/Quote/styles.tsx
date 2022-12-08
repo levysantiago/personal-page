@@ -43,7 +43,7 @@ export const VerticalLine = styled.div(
 );
 
 export const QuoteImg = styled.img.attrs({
-  src: require("../../assets/quote.svg"),
+  src: require("../../assets/quote.svg").default,
   alt: "A quote icon.",
 })`
   position: absolute;
@@ -57,7 +57,7 @@ export const QuoteImg = styled.img.attrs({
 `;
 
 export const QuoteImgReverse = styled.img.attrs({
-  src: require("../../assets/quote.svg"),
+  src: require("../../assets/quote.svg").default,
   alt: "A quote icon.",
 })`
   position: absolute;

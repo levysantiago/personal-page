@@ -1,5 +1,4 @@
 import NetworkButtons from "components/NetworkButtons";
-import { ITheme } from "components/Theme";
 import React from "react";
 import { withTheme } from "styled-components";
 import {
@@ -10,13 +9,7 @@ import {
   TitleContinuation,
 } from "./styles";
 
-interface IProfessionalLifeProps {
-  theme?: ITheme;
-}
-
-const ProfessionalLife: React.FC<IProfessionalLifeProps> = ({
-  theme,
-}: IProfessionalLifeProps) => {
+const ProfessionalLife: React.FC = () => {
   return (
     <Container>
       <Title>

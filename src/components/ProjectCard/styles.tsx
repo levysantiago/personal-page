@@ -57,7 +57,7 @@ export const ReadMoreLink = styled(ResponsiveSmallText)(
 );
 
 export const WebsiteIcon = styled.img.attrs({
-  src: require("../../assets/websiteIcon.svg"),
+  src: require("../../assets/websiteIcon.svg").default,
   alt: "Website icon.",
 })`
   width: 50px;
@@ -66,7 +66,7 @@ export const WebsiteIcon = styled.img.attrs({
 `;
 
 export const GithubIcon = styled.img.attrs({
-  src: require("../../assets/githubIcon.svg"),
+  src: require("../../assets/githubIcon.svg").default,
   alt: "Github icon.",
 })`
   width: 30px;

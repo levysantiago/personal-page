@@ -34,7 +34,7 @@ export const Title = styled.span(
 );
 
 export const HtmlTagImg = styled.img.attrs({
-  src: require("../../assets/htmlTag.svg"),
+  src: require("../../assets/htmlTag.svg").default,
   alt: "HTML tag icon.",
 })`
   width: 50px;

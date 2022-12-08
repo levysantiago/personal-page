@@ -15,7 +15,7 @@ const NetworkButtons: React.FC = ({ theme }: IProps) => {
         title={"LinkedIn"}
         backgroundColor={theme?.colors.blueLinkedin || ""}
         titleColor={theme?.colors.white || ""}
-        iconSrc={require("../../assets/linkedin.svg")}
+        iconSrc={require("../../assets/linkedin.svg").default}
         iconAlt={"Linkedin icon."}
         link={"https://www.linkedin.com/in/levy-santiago-88a807162/"}
         isExternalLink={true}
@@ -24,7 +24,7 @@ const NetworkButtons: React.FC = ({ theme }: IProps) => {
         title={"GitHub"}
         backgroundColor={theme?.colors.white || ""}
         titleColor={theme?.colors.black || ""}
-        iconSrc={require("../../assets/github.svg")}
+        iconSrc={require("../../assets/github.svg").default}
         iconAlt={"Github icon."}
         link={"https://github.com/Levysantiago"}
         isExternalLink={true}
@@ -33,7 +33,7 @@ const NetworkButtons: React.FC = ({ theme }: IProps) => {
         title={"Email"}
         backgroundColor={theme?.colors.purpleMedium3 || ""}
         titleColor={theme?.colors.white || ""}
-        iconSrc={require("../../assets/email.svg")}
+        iconSrc={require("../../assets/email.svg").default}
         iconAlt={"Github icon."}
         link={"mailto:levyssantiago@gmail.com"}
         isExternalLink={false}

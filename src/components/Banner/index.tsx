@@ -6,7 +6,7 @@ const Banner: React.FC = () => {
 
   const images = {
     true: require("../../assets/profile/me.jpg"),
-    false: require("../../assets/profile/avatar.svg"),
+    false: require("../../assets/profile/avatar.svg").default,
   };
 
   const changeImage = () => {
