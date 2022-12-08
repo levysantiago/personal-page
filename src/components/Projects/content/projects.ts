@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "Personal page",
+    description: `Este projeto diz respeito a esta página que você está acessando. 
+    Ela foi desenvolvida com React.js, TypeScript, Styled Components e outras ferramentas. 
+    Também estou utilizando IPFS (Sistema de Arquivos Interplanetário) para 
+    hospedagem deste site, legal não é mesmo?`,
+    readMoreLink: "https://github.com/Levysantiago/personal-page",
+    githubLink: "https://github.com/Levysantiago/personal-page",
+  },
+  {
     title: "Gifflar",
     description: `Um framework que permite a criação de sistemas capazes de gerar contratos inteligentes 
     em tempo de execução. É um projeto ainda em desenvolvimento e passando por testes, correções e avaliações.`,
