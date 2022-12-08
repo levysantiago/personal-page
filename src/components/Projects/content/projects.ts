@@ -19,7 +19,15 @@ export const projects = [
     title: "BlockEGovMe",
     description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) 
     que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
-    readMoreLink: "https://github.com/GifflarJS-Framework/core",
+    readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
     githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+  },
+  {
+    title: "Ethereum DApp Model",
+    description: `Neste repositório eu ensino de forma básica como iniciar com o
+    desenvolvimento de contratos inteligentes criando também uma DApp para integrar
+    com estes contratos utilizando React.js.`,
+    readMoreLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
+    githubLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
   },
 ];
