@@ -24,7 +24,7 @@ const ButtonIcon: React.FC<IButtonIconProps> = ({
     <a
       href={link}
       target={isExternalLink ? "_blank" : ""}
-      rel={isExternalLink ? "noopener noreferer" : ""}
+      rel={isExternalLink ? "noopener noreferrer" : ""}
       style={{ textDecoration: "none" }}
     >
       <Container backgroundColor={backgroundColor}>

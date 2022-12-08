@@ -103,7 +103,7 @@ export const ResponsiveSmallText = styled.span`
 
 export const Link = styled.a.attrs({
   target: "_blank",
-  rel: "noopener noreferer",
+  rel: "noopener noreferrer",
 })(
   (props: IProps) => `
   color: ${props.theme.colors.greenLight2};

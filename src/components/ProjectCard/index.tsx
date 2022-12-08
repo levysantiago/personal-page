@@ -25,12 +25,12 @@ const ProjectCard: React.FC<IProps> = ({
       <Title>{title}</Title>
       <Description>{description}</Description>
       {readMoreLink ? (
-        <a href={githubLink} target="_blank" rel="noopener noreferer">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <ReadMoreLink>Ler mais</ReadMoreLink>
         </a>
       ) : null}
       {githubLink ? (
-        <a href={githubLink} target="_blank" rel="noopener noreferer">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <GithubIcon />
         </a>
       ) : null}

@@ -35,7 +35,7 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
         );
       })}
       <ReadLinkContainer>
-        <ReadLink href={link} target="_blank" rel="noopener noreferer">
+        <ReadLink href={link} target="_blank" rel="noopener noreferrer">
           Ler artigo
         </ReadLink>
       </ReadLinkContainer>

@@ -41,7 +41,7 @@ export const CardsContainer = styled.div`
 
 export const Link = styled.a.attrs({
   target: "_blank",
-  rel: "noopener noreferer",
+  rel: "noopener noreferrer",
 })(
   (props: IProps) => `
   font-family: ${props.theme.fonts.text};
