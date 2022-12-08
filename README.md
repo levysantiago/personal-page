@@ -6,7 +6,7 @@ This is my personal page project. In this project I'm using React.js, Typescript
 
 Node.js version: v16.17.0
 
-Want to know something cool? This project is hosted in the IPFS (InterPlanetary File System)!
+Want to know something cool? This project is hosted on the IPFS (InterPlanetary File System)!
 
 # Getting started
 
