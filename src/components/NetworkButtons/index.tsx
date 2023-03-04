@@ -17,7 +17,7 @@ const NetworkButtons: React.FC = ({ theme }: IProps) => {
         titleColor={theme?.colors.white || ""}
         iconSrc={require("../../assets/linkedin.svg").default}
         iconAlt={"Linkedin icon."}
-        link={"https://www.linkedin.com/in/levy-santiago-88a807162/"}
+        link={"https://www.linkedin.com/in/levysantiago/"}
         isExternalLink={true}
       />
       <ButtonIcon
