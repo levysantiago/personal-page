@@ -9,7 +9,7 @@ import {
   TextContentContainer,
   Text,
 } from "./styles";
-import React, { useState } from "react";
+import React from "react";
 
 const Banner: React.FC = () => {
   return (

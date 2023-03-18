@@ -17,7 +17,7 @@ const theme = {
     purbleLight: "#BF83EF",
     purpleGray: "#f3dbff",
     purpleGradient: `linear-gradient(275.38deg,#bf83ee 3.12%,#9249cc 28.35%,#7a33b3 50.67%,#6f25aa 77.17%,#4c117a 100%);`,
-    greenMedium: "#13615D",
+    greenMedium: "#31F645",
     greenLight: "#88FEF3",
     greenLight2: "#58cbd2",
     greenDarkTransparent: "rgba(19, 97, 93, 0.43);",
@@ -29,6 +29,8 @@ const theme = {
     greenGradient: `linear-gradient(275.36deg,#8afff4 0%,#58cbd2 36.98%,#3998df 66.15%,#0b66aa 100%);`,
     blueLinkedin: "#2868B2",
     blueMedium: "#4A7DFF",
+    orangeIconBlock: "rgba(206, 173, 0, 0.08);",
+    greenIconBlock: "rgba(49, 246, 69, 0.08);",
   },
   fonts: {
     title: "Arial",
