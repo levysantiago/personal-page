@@ -1,4 +1,14 @@
-import { Container, ImgContainer, ProfileImg, Title } from "./styles";
+import {
+  Container,
+  ImgContainer,
+  ProfileImg,
+  Title,
+  TitleHighlight,
+  HelloIcon,
+  TitleContainer,
+  TextContentContainer,
+  Text,
+} from "./styles";
 import React, { useState } from "react";
 
 const Banner: React.FC = () => {
@@ -14,17 +24,22 @@ const Banner: React.FC = () => {
   };
 
   return (
-    <>
-      <Container>
-        <ImgContainer onClick={changeImage}>
-          <ProfileImg
-            src={images[imageSelected.toString()]}
-            alt="Levy's image."
-          />
-        </ImgContainer>
-        <Title>Levy Santiago</Title>
-      </Container>
-    </>
+    <Container>
+      <ImgContainer onClick={changeImage}>
+        <ProfileImg />
+      </ImgContainer>
+      <TextContentContainer>
+        <TitleContainer>
+          <HelloIcon />
+          <Title>
+            Olá, eu sou <TitleHighlight>Levy</TitleHighlight>!
+          </Title>
+        </TitleContainer>
+        <Text>Sou desenvolvedor de sistemas e criador de conteúdo.</Text>
+
+        <Text>Quer saber mais? Vem comigo!</Text>
+      </TextContentContainer>
+    </Container>
   );
 };
 
