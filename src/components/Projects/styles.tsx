@@ -48,9 +48,8 @@ export const Description = styled.span(
 export const CardsContainer = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: start;
 
   @media (max-width: 768px) {
     justify-content: center;

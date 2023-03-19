@@ -8,7 +8,7 @@ interface IProps {
 
 export const Container = styled(GenericContainer)(
   (props: IProps) => `
-  background-color: ${props.theme.colors.purpleMedium};
+  background-color: #366AEF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ export const QuoteContainer = styled.div`
 
 export const VerticalLine = styled.div(
   (props: IProps) => `
-  background-color: ${props.theme.colors.purpleDark};
+  background-color: #133BA1;
   height: 60px;
   width: 8px;
   margin-right: 8px;
