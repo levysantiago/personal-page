@@ -23,6 +23,7 @@ export const QuoteSuperContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export const QuoteContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -50,7 +51,7 @@ export const QuoteImg = styled.img.attrs({
   top: 0px;
   left: -50px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 650px) {
     top: -20px;
     left: -10px;
   }
@@ -65,7 +66,7 @@ export const QuoteImgReverse = styled.img.attrs({
   right: -50px;
   bottom: 0px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 650px) {
     bottom: -20px;
     right: -10px;
   }
