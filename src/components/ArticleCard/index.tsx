@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   CardContainer,
+  ExternalLinkIcon,
   ItemDescription,
   ItemsContainer,
   ItemTitle,
@@ -36,7 +37,7 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
       })}
       <ReadLinkContainer>
         <ReadLink href={link} target="_blank" rel="noopener noreferrer">
-          Ler artigo
+          <ExternalLinkIcon /> Ler artigo
         </ReadLink>
       </ReadLinkContainer>
     </CardContainer>

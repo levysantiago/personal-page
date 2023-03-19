@@ -1,6 +1,7 @@
+import styled from "styled-components";
 import { ResponsiveCardTitle, ResponsiveSmallText } from "components/styles";
 import { ITheme } from "components/Theme";
-import styled from "styled-components";
+import external_link_icon from "../../assets/external-link.svg";
 
 interface IProps {
   theme: ITheme;
@@ -12,39 +13,27 @@ export const CardContainer = styled.div(
   border-radius: 6px;
   background: ${props.theme.colors.orangeMediumTransparent};
   box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
+  border: 2px solid ${props.theme.colors.orangeMediumTransparent};
   width: 40%;
-  height: 100px;
+  height: 110px;
   min-width: 400px;
   max-width: 500px;
   margin: 10px 10px;
   position: relative;
 
   @media(max-width: 768px){
-    width: 300px;
-    min-width: auto;
+    width: 100%;
+    min-width: 300px;
     height: 110px;
   }
 
   @media(max-width: 500px){
+    min-width: 200px;
     height: 140px;
   }
 
   @media(max-width: 400px){
-    width: 200px;
-    min-width: auto;
     height: 140px;
-  }
-
-  &:hover{
-    #readDiv {
-      padding: 10px 0px;
-      height: 20px;
-    }
-
-    #readDiv > a {
-      opacity: 1;
-      transition: opacity 1s;
-    }
   }
 `
 );
@@ -52,30 +41,35 @@ export const CardContainer = styled.div(
 export const ReadLinkContainer = styled.div.attrs({ id: "readDiv" })(
   (props: IProps) => `
   width: 100%;
-  height: 0px;
-  background-color: ${props.theme.colors.orangeDarkTransparent};
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  transition: height 0.3s;
   border-radius: 6px;
   text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
 `
 );
 
 export const ReadLink = styled.a(
   (props: IProps) => `
-  color: ${props.theme.colors.white};
+  color: ${props.theme.colors.orangeLight};
   text-decoration: none;
   font-family: ${props.theme.fonts.title2};
   font-size: 14px;
-  opacity: 0;
 
   &:hover{
-    color: ${props.theme.colors.orangeLight};
+    text-decoration: underline;
   }
 `
 );
+
+export const ExternalLinkIcon = styled.img.attrs({
+  src: external_link_icon,
+  alt: "External link icon",
+})`
+  width: 12px;
+`;
 
 export const Title = styled(ResponsiveCardTitle)(
   (props: IProps) => `
