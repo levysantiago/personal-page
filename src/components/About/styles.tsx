@@ -21,11 +21,31 @@ export const Container = styled(GenericContainer)(
   flex-direction: column;
   background-color: ${props.theme.colors.black || "#1a181b"};
   gap: 30px;
+  position: relative;
 `
 );
 
 export const RelativeDiv = styled.div`
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: -12px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const HtmlTagImg = styled.img.attrs({
+  src: require("../../assets/htmlTag.svg").default,
+  alt: "HTML tag icon.",
+})`
+  width: 50px;
+  top: -12px;
+  left: 0px;
+
+  @media (max-width: 1024px) {
+    top: -63px;
+  }
 `;
 
 export const Title = styled(ResponsiveTitle)(
@@ -61,20 +81,6 @@ export const TitleContinuation = styled(Title)(
 `
 );
 
-export const HtmlTagImg = styled.img.attrs({
-  src: require("../../assets/htmlTag.svg").default,
-  alt: "HTML tag icon.",
-})`
-  width: 50px;
-  position: absolute;
-  top: -113px;
-  left: -25px;
-
-  @media (max-width: 1024px) {
-    top: -63px;
-  }
-`;
-
 export const Description = styled(ResponsiveDescription)(
   (props: IAboutProps) => `
   font-family: ${props.theme.fonts.text || "Roboto-Regular"};
@@ -100,23 +106,6 @@ export const LevysdevPicture = styled.img.attrs({
 })`
   border-radius: 100%;
   width: 200px;
-`;
-
-export const PictureTextContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 650px) {
-    flex-direction: column;
-    gap: 20px;
-  }
-`;
-
-export const SubTitleDescriptionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 20px;
 `;
 
 export const AcademyIconBlock = styled(IconBlock).attrs(
