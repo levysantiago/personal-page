@@ -1,6 +1,7 @@
+import styled from "styled-components";
 import { ResponsiveCardTitle, ResponsiveSmallText } from "components/styles";
 import { ITheme } from "components/Theme";
-import styled from "styled-components";
+import { ReactComponent as external_link } from "../../assets/external-link.svg";
 
 interface IProps {
   theme: ITheme;
@@ -64,13 +65,14 @@ export const BadgeList = styled.div`
 export const Badge = styled.div(
   (props: IProps) => `
   border-radius: 100px;
-  width: 50px;
+  width: auto;
   height: 12px;
   background-color: ${props.theme.colors.blueDark2};
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2px 10px;
+  white-space: nowrap;
 `
 );
 
@@ -102,10 +104,33 @@ export const Description = styled(ResponsiveSmallText)(
 `
 );
 
+export const ExternalLink = styled.a.attrs({
+  target: "_blank",
+  rel: "noopener noreferrer",
+})`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  position: absolute;
+  bottom: 12px;
+`;
+
+export const ExternalLinkIcon = styled(external_link)(
+  (props: IProps) => `
+  width: 12px;
+
+  path {
+    stroke: ${props.theme.colors.orangeMedium};
+  }
+`
+);
+
 export const ReadMoreLink = styled(ResponsiveSmallText)(
   (props: IProps) => `
-  font-family: ${props.theme.fonts.description};
-  font-weight: 700;
+  font-family: "Roboto-Medium";
+  font-weight: 500;
   color: ${props.theme.colors.orangeMedium};
   text-align: center;
   cursor: pointer;
@@ -123,14 +148,4 @@ export const WebsiteIcon = styled.img.attrs({
   width: 50px;
   position: absolute;
   top: -13px;
-`;
-
-export const GithubIcon = styled.img.attrs({
-  src: require("../../assets/githubIcon.svg").default,
-  alt: "Github icon.",
-})`
-  width: 30px;
-  position: absolute;
-  bottom: 10px;
-  right: 30px;
 `;

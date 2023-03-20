@@ -33,15 +33,14 @@ export const NavItem = styled(HashLink).attrs({ smooth: true })(
   font-family: ${props.theme?.fonts.title};
   justify-content: center;
   background-color: ${props.theme?.colors.purpleDark2};
-  color: ${props.theme?.colors.purpleGray};
+  color: ${props.theme?.colors.blueLight};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
   
   &:hover{
-    color: ${props.theme.colors.purpleMedium};
-    background-color: ${props.theme?.colors.purpleDark3};
+    color: ${props.theme.colors.blueMedium};
   }
 
   @media(max-width: 1024px){
@@ -103,14 +102,14 @@ export const SidenavItem = styled(HashLink).attrs({ smooth: true })(
   font-family: ${props.theme?.fonts.title};
   justify-content: center;
   background-color: ${props.theme?.colors.purpleDark3};
-  color: ${props.theme?.colors.purpleGray};
+  color: ${props.theme?.colors.blueLight};
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
   
   &:hover{
-    color: ${props.theme.colors.purpleMedium};
+    color: ${props.theme.colors.blueMedium};
     background-color: ${props.theme?.colors.purpleDark4};
   }
 `

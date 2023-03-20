@@ -29,7 +29,7 @@ export const Title = styled.span(
 
 export const TitleContinuation = styled(Title)(
   (props: IProps) => `
-  color: ${props.theme.colors.purpleMedium};
+  color: ${props.theme.colors.blueMedium};
 `
 );
 

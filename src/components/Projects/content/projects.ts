@@ -1,3 +1,5 @@
+import gifflar_img from "../../../assets/project-imgs/gifflar.jpg";
+
 export const projects = [
   {
     title: "Personal page",
@@ -7,6 +9,8 @@ export const projects = [
     hospedagem deste site, legal não é mesmo?`,
     readMoreLink: "https://github.com/Levysantiago/personal-page",
     githubLink: "https://github.com/Levysantiago/personal-page",
+    banner: gifflar_img,
+    badges: ["typescript", "reactjs", "styled-components", "IPFS"],
   },
   {
     title: "Gifflar",
@@ -14,6 +18,8 @@ export const projects = [
     em tempo de execução. É um projeto ainda em desenvolvimento e passando por testes, correções e avaliações.`,
     readMoreLink: "https://github.com/GifflarJS-Framework/core",
     githubLink: "https://github.com/GifflarJS-Framework/core",
+    banner: gifflar_img,
+    badges: ["typescript", "nodejs", "web3", "tsyringe", "solc", "jest"],
   },
   {
     title: "BlockEGovMe",
@@ -21,6 +27,21 @@ export const projects = [
     que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
     readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
     githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    banner: gifflar_img,
+    badges: [
+      "javascript",
+      "reactjs",
+      "nodejs",
+      "expressjs",
+      "solidity",
+      "web3",
+      "solc",
+      "mysql",
+      "ganache",
+      "solc",
+      "mocha",
+      "metamask",
+    ],
   },
   {
     title: "Ethereum DApp Model",
@@ -29,5 +50,17 @@ export const projects = [
     com estes contratos utilizando React.js.`,
     readMoreLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
     githubLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
+    banner: gifflar_img,
+    badges: [
+      "javascript",
+      "reactjs",
+      "solidity",
+      "metamask",
+      "ganache",
+      "remix-ide",
+      "solc",
+      "mocha",
+      "infura",
+    ],
   },
 ];

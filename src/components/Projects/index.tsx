@@ -34,6 +34,8 @@ const Projects: React.FC = () => {
               description={project.description}
               readMoreLink={project.readMoreLink}
               githubLink={project.githubLink}
+              banner={project.banner}
+              badges={project.badges}
             />
           );
         })}
