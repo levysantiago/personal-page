@@ -1,3 +1,10 @@
+import personal_page from "../../../assets/project-imgs/personal-page.jpeg";
+import gifflar_img from "../../../assets/project-imgs/gifflar.jpeg";
+import boarding_pass from "../../../assets/project-imgs/boarding-pass.jpeg";
+import blockegovme from "../../../assets/project-imgs/blockegovme.jpeg";
+import ethereum_react_model from "../../../assets/project-imgs/ethereum-react-model.jpeg";
+import music_player from "../../../assets/project-imgs/music-player.jpeg";
+
 export const projects = [
   {
     title: "Personal page",
@@ -7,6 +14,8 @@ export const projects = [
     hospedagem deste site, legal não é mesmo?`,
     readMoreLink: "https://github.com/Levysantiago/personal-page",
     githubLink: "https://github.com/Levysantiago/personal-page",
+    banner: personal_page,
+    badges: ["typescript", "reactjs", "styled-components", "IPFS"],
   },
   {
     title: "Gifflar",
@@ -14,6 +23,30 @@ export const projects = [
     em tempo de execução. É um projeto ainda em desenvolvimento e passando por testes, correções e avaliações.`,
     readMoreLink: "https://github.com/GifflarJS-Framework/core",
     githubLink: "https://github.com/GifflarJS-Framework/core",
+    banner: gifflar_img,
+    badges: ["typescript", "nodejs", "web3", "tsyringe", "solc", "jest"],
+  },
+  {
+    title: "Boarding-Pass",
+    description: `Este projeto é uma extensão do desafio #boraCodar lançado pela 
+    Rocketseat. Neste projeto eu adicionei mais algumas páginas para selecionar voo, 
+    escolher assento, inserir dados do passageiro e mostrar o cartão de embarque o 
+    qual foi criado para o desafio da Rocketseat.`,
+    readMoreLink: "https://github.com/Levysantiago/boarding-pass",
+    githubLink: "https://github.com/Levysantiago/boarding-pass",
+    banner: boarding_pass,
+    badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
+  },
+  {
+    title: "Music Player",
+    description: `Este projeto foi feito durante o desafio #boraCodar da Rocketseat.
+    Trata-se de um player de música. Neste player adicionei as funcionalidades de 
+    dar play, pause, pular para próxima música, voltar para a anterior, selecionar 
+    uma música, adiantar ou voltar o progresso da música pela barra de progresso.`,
+    readMoreLink: "https://github.com/levysantiago/desafio-music-player",
+    githubLink: "https://github.com/levysantiago/desafio-music-player",
+    banner: music_player,
+    badges: ["typescript", "react.js", "styled-components"],
   },
   {
     title: "BlockEGovMe",
@@ -21,6 +54,21 @@ export const projects = [
     que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
     readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
     githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    banner: blockegovme,
+    badges: [
+      "javascript",
+      "reactjs",
+      "nodejs",
+      "expressjs",
+      "solidity",
+      "web3",
+      "solc",
+      "mysql",
+      "ganache",
+      "solc",
+      "mocha",
+      "metamask",
+    ],
   },
   {
     title: "Ethereum DApp Model",
@@ -29,5 +77,17 @@ export const projects = [
     com estes contratos utilizando React.js.`,
     readMoreLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
     githubLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
+    banner: ethereum_react_model,
+    badges: [
+      "javascript",
+      "reactjs",
+      "solidity",
+      "metamask",
+      "ganache",
+      "remix-ide",
+      "solc",
+      "mocha",
+      "infura",
+    ],
   },
 ];

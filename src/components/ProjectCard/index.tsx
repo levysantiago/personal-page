@@ -1,40 +1,63 @@
 import * as React from "react";
 import {
+  Badge,
+  BadgeList,
+  BadgeTitle,
   CardContainer,
+  CardContainerBorder,
   Description,
-  GithubIcon,
+  ExternalLink,
+  ExternalLinkIcon,
+  ImageHeader,
+  ImageHeaderContainer,
   ReadMoreLink,
   Title,
 } from "./styles";
 
 interface IProps {
   title: string;
+  banner: string;
   description: string;
   readMoreLink?: string;
   githubLink?: string;
+  badges: string[];
 }
 
 const ProjectCard: React.FC<IProps> = ({
   title,
+  banner,
   description,
   readMoreLink,
   githubLink,
+  badges,
 }: IProps) => {
   return (
-    <CardContainer>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-      {readMoreLink ? (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <ReadMoreLink>Ler mais</ReadMoreLink>
-        </a>
-      ) : null}
-      {githubLink ? (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <GithubIcon />
-        </a>
-      ) : null}
-    </CardContainer>
+    <CardContainerBorder>
+      <CardContainer>
+        <ImageHeaderContainer>
+          <ImageHeader src={banner} />
+        </ImageHeaderContainer>
+
+        <BadgeList>
+          {badges.map((badge) => {
+            return (
+              <Badge>
+                <BadgeTitle>{badge}</BadgeTitle>
+              </Badge>
+            );
+          })}
+        </BadgeList>
+
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+        {readMoreLink ? (
+          <ExternalLink href={githubLink}>
+            <ExternalLinkIcon />
+            <ReadMoreLink>Ver projeto</ReadMoreLink>
+          </ExternalLink>
+        ) : null}
+      </CardContainer>
+    </CardContainerBorder>
   );
 };
 

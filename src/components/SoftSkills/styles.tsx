@@ -10,7 +10,7 @@ export const Container = styled(GenericContainer)(
   (props: ISoftSkillsProps) => `
   display: flex;
   flex-direction: column;
-  background: ${props.theme.colors.greenGradient}
+  background: ${props.theme.colors.blueGradient}
 `
 );
 
@@ -28,7 +28,7 @@ export const Title = styled.span(
   font-weight: 700;
   line-height: 33px;
   text-align: left;
-  color: ${props.theme.colors.greenLight};
+  color: ${props.theme.colors.blueLight};
   margin-bottom: 30px;
 `
 );

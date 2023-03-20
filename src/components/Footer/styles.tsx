@@ -23,7 +23,7 @@ export const RelativeDiv = styled.div`
 
 export const Title = styled.span(
   (props: IProps) => `
-  color: ${props.theme.colors.purpleMedium};
+  color: ${props.theme.colors.blueMedium};
   font-family: "LeagueGothic-Regular";
   font-size: 30px;
   font-weight: 400;
@@ -57,7 +57,7 @@ export const Anchor = styled(HashLink).attrs({ smooth: true })(
   font-size: 14px;
 
   &:hover{
-    color: ${props.theme.colors.purpleMedium};
+    color: ${props.theme.colors.blueLight};
   }
 `
 );

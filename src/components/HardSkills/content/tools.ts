@@ -10,9 +10,34 @@ export const tools = [
     alt: "Express.js image.",
   },
   {
+    title: "Nest.js",
+    image: require("../../../assets/tools/nestjs.jpeg"),
+    alt: "Nest.js image.",
+  },
+  {
     title: "MongoDB",
     image: require("../../../assets/tools/mongodb.jpeg"),
     alt: "MongoDB image.",
+  },
+  {
+    title: "MySQL",
+    image: require("../../../assets/tools/mysql.jpeg"),
+    alt: "MySQL image.",
+  },
+  {
+    title: "React.js",
+    image: require("../../../assets/tools/reactjs.jpeg"),
+    alt: "React.js image.",
+  },
+  {
+    title: "Styled Components",
+    image: require("../../../assets/tools/styled-components.jpeg"),
+    alt: "Styled Components image.",
+  },
+  {
+    title: "Figma",
+    image: require("../../../assets/tools/figma.jpeg"),
+    alt: "Figma image.",
   },
   {
     title: "Web3.js",

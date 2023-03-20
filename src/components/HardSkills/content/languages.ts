@@ -1,11 +1,11 @@
 export const languages = [
   {
     title: "JavaScript",
-    progress: "80%",
+    progress: "90%",
   },
   {
     title: "TypeScript",
-    progress: "80%",
+    progress: "90%",
   },
   {
     title: "Solidity",
@@ -14,10 +14,6 @@ export const languages = [
   {
     title: "Python",
     progress: "70%",
-  },
-  {
-    title: "C/C++",
-    progress: "60%",
   },
   {
     title: "HTML",

@@ -34,6 +34,7 @@ export const InfoContainer = styled.div(
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   &:hover {
     background: ${props.theme?.colors.purpleMedium2};

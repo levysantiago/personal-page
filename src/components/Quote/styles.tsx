@@ -8,7 +8,7 @@ interface IProps {
 
 export const Container = styled(GenericContainer)(
   (props: IProps) => `
-  background-color: ${props.theme.colors.purpleMedium};
+  background-color: #366AEF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,7 @@ export const QuoteSuperContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export const QuoteContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -31,7 +32,7 @@ export const QuoteContainer = styled.div`
 
 export const VerticalLine = styled.div(
   (props: IProps) => `
-  background-color: ${props.theme.colors.purpleDark};
+  background-color: #133BA1;
   height: 60px;
   width: 8px;
   margin-right: 8px;
@@ -50,7 +51,7 @@ export const QuoteImg = styled.img.attrs({
   top: 0px;
   left: -50px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 650px) {
     top: -20px;
     left: -10px;
   }
@@ -65,7 +66,7 @@ export const QuoteImgReverse = styled.img.attrs({
   right: -50px;
   bottom: 0px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 650px) {
     bottom: -20px;
     right: -10px;
   }

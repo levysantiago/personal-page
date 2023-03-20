@@ -12,7 +12,7 @@ export const CardContainer = styled.div(
   align-items: center;
   flex-direction: column;
   justify-items: center;
-  background: ${props.theme.colors.greenDarkTransparent};
+  background: ${props.theme.colors.blueDarkTransparent};
   box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   border-radius: 4px;
   width: 180px;
@@ -26,7 +26,7 @@ export const Title = styled(ResponsiveCardTitle)(
   (props: ISimpleCardInfoProps) => `
   font-family: ${props.theme.fonts.title2};
   font-weight: 700;
-  color: ${props.theme.colors.greenLight};
+  color: ${props.theme.colors.blueLight};
   margin-bottom: 10px;
 `
 );

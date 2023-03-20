@@ -25,8 +25,17 @@ const NetworkButtons: React.FC = ({ theme }: IProps) => {
         backgroundColor={theme?.colors.white || ""}
         titleColor={theme?.colors.black || ""}
         iconSrc={require("../../assets/github.svg").default}
-        iconAlt={"Github icon."}
+        iconAlt={"GitHub icon."}
         link={"https://github.com/Levysantiago"}
+        isExternalLink={true}
+      />
+      <ButtonIcon
+        title={"Instagram"}
+        backgroundColor={theme?.colors.redInstagram || ""}
+        titleColor={theme?.colors.white || ""}
+        iconSrc={require("../../assets/insta.svg").default}
+        iconAlt={"Instagram icon."}
+        link={"https://instagram.com/levysdev"}
         isExternalLink={true}
       />
       <ButtonIcon
