@@ -4,6 +4,7 @@ import boarding_pass from "../../../assets/project-imgs/boarding-pass.jpeg";
 import blockegovme from "../../../assets/project-imgs/blockegovme.jpeg";
 import ethereum_react_model from "../../../assets/project-imgs/ethereum-react-model.jpeg";
 import music_player from "../../../assets/project-imgs/music-player.jpeg";
+import textme from "../../../assets/project-imgs/textme.jpeg";
 
 export const projects = [
   {
@@ -38,6 +39,17 @@ export const projects = [
     badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
   },
   {
+    title: "TextMe",
+    description: `Este projeto é um chat de mensagens web. É um projeto que 
+    ainda está sendo aperfeiçoado e foi criado durante meu estudo em utilizar
+    websocket com NestJS. Ele foi feito num design semelhante ao de um aplicativo 
+    e busca ser bem simples de ser utilizado.`,
+    readMoreLink: "https://github.com/levysantiago/text-me",
+    githubLink: "https://github.com/levysantiago/text-me",
+    banner: textme,
+    badges: ["typescript", "reactjs", "nestjs", "emotionjs", "zod"],
+  },
+  {
     title: "Music Player",
     description: `Este projeto foi feito durante o desafio #boraCodar da Rocketseat.
     Trata-se de um player de música. Neste player adicionei as funcionalidades de 
@@ -46,7 +58,7 @@ export const projects = [
     readMoreLink: "https://github.com/levysantiago/desafio-music-player",
     githubLink: "https://github.com/levysantiago/desafio-music-player",
     banner: music_player,
-    badges: ["typescript", "react.js", "styled-components"],
+    badges: ["typescript", "reactjs", "styled-components"],
   },
   {
     title: "BlockEGovMe",
