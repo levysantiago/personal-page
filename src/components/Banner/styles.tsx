@@ -1,7 +1,6 @@
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
 import hello_icon from "../../assets/hello.svg";
-import arrows_down_icon from "../../assets/arrows-down.svg";
 import profile_img from "../../assets/profile/me.jpeg";
 
 interface IProps {
