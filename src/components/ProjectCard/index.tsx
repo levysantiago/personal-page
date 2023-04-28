@@ -39,9 +39,9 @@ const ProjectCard: React.FC<IProps> = ({
         </ImageHeaderContainer>
 
         <BadgeList>
-          {badges.map((badge) => {
+          {badges.map((badge, index) => {
             return (
-              <Badge>
+              <Badge key={`project-card-badge-${index}`}>
                 <BadgeTitle>{badge}</BadgeTitle>
               </Badge>
             );
