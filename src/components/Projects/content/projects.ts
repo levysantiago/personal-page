@@ -4,6 +4,8 @@ import boarding_pass from "../../../assets/project-imgs/boarding-pass.jpeg";
 import blockegovme from "../../../assets/project-imgs/blockegovme.jpeg";
 import music_player from "../../../assets/project-imgs/music-player.jpeg";
 import textme from "../../../assets/project-imgs/textme.jpeg";
+import habits from "../../../assets/project-imgs/habits.jpeg";
+import notifications_service from "../../../assets/project-imgs/notifications-service.jpeg";
 
 export const projects = [
   {
@@ -24,7 +26,7 @@ export const projects = [
     readMoreLink: "https://github.com/GifflarJS-Framework/core",
     githubLink: "https://github.com/GifflarJS-Framework/core",
     banner: gifflar_img,
-    badges: ["typescript", "nodejs", "web3", "tsyringe", "solc", "jest"],
+    badges: ["typescript", "nodejs", "tsyringe", "web3", "solidity", "jest"],
   },
   {
     title: "Boarding-Pass",
@@ -60,6 +62,26 @@ export const projects = [
     badges: ["typescript", "reactjs", "styled-components"],
   },
   {
+    title: "Habits",
+    description: `Este projeto foi criado durante a Next Level Week (NLW) Setup da Rocketseat.
+    Trata-se de uma aplicação para controlar os hábitos diários, podendo checar e visualizar os 
+    hábitos que de cada dia. Para esta aplicação foi criada uma versão
+    web com React.js e também um aplicativo com React Native.`,
+    readMoreLink: "https://github.com/Levysantiago/habits-client-web",
+    githubLink: "https://github.com/Levysantiago/habits-client-web",
+    banner: habits,
+    badges: ["typescript", "reactjs", "react-native", "tailwindcss", "fastify", "prisma", "sqlite"],
+  },
+  {
+    title: "Notifications Service",
+    description: `Um microsserviço para notificação de mensagens via push utilizando Nest.js, 
+    Prisma, SQlite. Este projeto foi criado durante o evento do Ignite Lab da Rocketseat.`,
+    readMoreLink: "https://github.com/levysantiago/notifications-service",
+    githubLink: "https://github.com/levysantiago/notifications-service",
+    banner: notifications_service,
+    badges: ["typescript", "nestjs", "prisma", "sqlite", "jest"],
+  },
+  {
     title: "BlockEGovMe",
     description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) 
     que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
@@ -81,24 +103,4 @@ export const projects = [
       "metamask",
     ],
   },
-  // {
-  //   title: "Ethereum DApp Model",
-  //   description: `Neste repositório eu ensino de forma básica como iniciar com o
-  //   desenvolvimento de contratos inteligentes criando também uma DApp para integrar
-  //   com estes contratos utilizando React.js.`,
-  //   readMoreLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
-  //   githubLink: "https://github.com/Levysantiago/ethereum-dapp-react-model",
-  //   banner: ethereum_react_model,
-  //   badges: [
-  //     "javascript",
-  //     "reactjs",
-  //     "solidity",
-  //     "metamask",
-  //     "ganache",
-  //     "remix-ide",
-  //     "solc",
-  //     "mocha",
-  //     "infura",
-  //   ],
-  // },
 ];
