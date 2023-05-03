@@ -48,7 +48,7 @@ export const projects = [
     readMoreLink: "https://github.com/levysantiago/text-me",
     githubLink: "https://github.com/levysantiago/text-me",
     banner: textme,
-    badges: ["typescript", "reactjs", "nestjs", "emotionjs", "zod"],
+    badges: ["typescript", "reactjs", "nestjs","prisma", "sqlite", "zod", "emotionjs"],
   },
   {
     title: "Music Player",
