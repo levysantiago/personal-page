@@ -1,7 +1,7 @@
 import personal_page from "../../../assets/project-imgs/personal-page.jpeg";
 import gifflar_img from "../../../assets/project-imgs/gifflar.jpeg";
 import boarding_pass from "../../../assets/project-imgs/boarding-pass.jpeg";
-import blockegovme from "../../../assets/project-imgs/blockegovme.jpeg";
+import buymeachocolate from "../../../assets/project-imgs/buymeachocolate.jpeg";
 import music_player from "../../../assets/project-imgs/music-player.jpeg";
 import textme from "../../../assets/project-imgs/textme.jpeg";
 import habits from "../../../assets/project-imgs/habits.jpeg";
@@ -29,15 +29,16 @@ export const projects = [
     badges: ["typescript", "nodejs", "tsyringe", "web3", "solidity", "jest"],
   },
   {
-    title: "Boarding-Pass",
-    description: `Este projeto é uma extensão do desafio #boraCodar lançado pela 
-    Rocketseat. Neste projeto eu adicionei mais algumas páginas para selecionar voo, 
-    escolher assento, inserir dados do passageiro e mostrar o cartão de embarque o 
-    qual foi criado para o desafio da Rocketseat.`,
-    readMoreLink: "https://github.com/Levysantiago/boarding-pass",
-    githubLink: "https://github.com/Levysantiago/boarding-pass",
-    banner: boarding_pass,
-    badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
+    title: "Buy Me a Chocolate",
+    description: `Baseado no projeto Buy Me a Coffee, o Buy Me a Chocolate é uma 
+    plataforma que permite apoiar outras pessoas doando 
+    dinheiro através do token CHOC. Permitindo trocar os CHOC tokens
+    recebidos pelo dinheiro depositado no contrato inteligente, que no caso é
+    na criptomoeda BNB.`,
+    readMoreLink: "https://github.com/levysantiago/buy-me-a-chocolate",
+    githubLink: "https://github.com/levysantiago/buy-me-a-chocolate",
+    banner: buymeachocolate,
+    badges: ["typescript", "reactjs", "blockchain","web3js", "ethersjs", "bsc", "metamask", "IPFS", "fleek", "styled-components"],
   },
   {
     title: "TextMe",
@@ -49,6 +50,17 @@ export const projects = [
     githubLink: "https://github.com/levysantiago/text-me",
     banner: textme,
     badges: ["typescript", "reactjs", "nestjs","prisma", "sqlite", "zod", "emotionjs"],
+  },
+  {
+    title: "Boarding-Pass",
+    description: `Este projeto é uma extensão do desafio #boraCodar lançado pela 
+    Rocketseat. Neste projeto eu adicionei mais algumas páginas para selecionar voo, 
+    escolher assento, inserir dados do passageiro e mostrar o cartão de embarque o 
+    qual foi criado para o desafio da Rocketseat.`,
+    readMoreLink: "https://github.com/Levysantiago/boarding-pass",
+    githubLink: "https://github.com/Levysantiago/boarding-pass",
+    banner: boarding_pass,
+    badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
   },
   {
     title: "Music Player",
@@ -81,26 +93,26 @@ export const projects = [
     banner: notifications_service,
     badges: ["typescript", "nestjs", "prisma", "sqlite", "jest"],
   },
-  {
-    title: "BlockEGovMe",
-    description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) 
-    que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
-    readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-    githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-    banner: blockegovme,
-    badges: [
-      "javascript",
-      "reactjs",
-      "nodejs",
-      "expressjs",
-      "solidity",
-      "web3",
-      "solc",
-      "mysql",
-      "ganache",
-      "solc",
-      "mocha",
-      "metamask",
-    ],
-  },
+  // {
+  //   title: "BlockEGovMe",
+  //   description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC) 
+  //   que visa a implementação de contratos inteligentes para o Governo Eletrônico (E-Gov).`,
+  //   readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+  //   githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+  //   banner: blockegovme,
+  //   badges: [
+  //     "javascript",
+  //     "reactjs",
+  //     "nodejs",
+  //     "expressjs",
+  //     "solidity",
+  //     "web3",
+  //     "solc",
+  //     "mysql",
+  //     "ganache",
+  //     "solc",
+  //     "mocha",
+  //     "metamask",
+  //   ],
+  // },
 ];
