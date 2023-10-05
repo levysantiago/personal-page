@@ -34,6 +34,7 @@ const theme = {
     redInstagram: "#ED4B64",
     orangeIconBlock: "rgba(206, 173, 0, 0.08);",
     greenIconBlock: "rgba(49, 246, 69, 0.08);",
+    purpleIconBlock: "rgba(154, 74, 255, 0.08);",
     blueIconBlock: "rgba(74, 125, 255, 0.08);",
   },
   fonts: {
