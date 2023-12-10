@@ -5,6 +5,7 @@ import {
   BadgeTitle,
   CardContainer,
   CardContainerBorder,
+  CardContainerBorderOver,
   Description,
   ExternalLink,
   ExternalLinkIcon,
@@ -32,7 +33,9 @@ const ProjectCard: React.FC<IProps> = ({
   badges,
 }: IProps) => {
   return (
-    <CardContainerBorder>
+    <CardContainerBorder href={githubLink}>
+      <CardContainerBorderOver />
+
       <CardContainer>
         <ImageHeaderContainer>
           <ImageHeader src={banner} />

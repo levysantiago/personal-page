@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ResponsiveCardTitle, ResponsiveSmallText } from "components/styles";
 import { ITheme } from "components/Theme";
 import { ReactComponent as external_link } from "../../assets/external-link.svg";
@@ -7,8 +7,20 @@ interface IProps {
   theme: ITheme;
 }
 
-export const CardContainerBorder = styled.div(
-  (props: IProps) => `
+export const CardContainerBorderOver = styled.div`
+  background: linear-gradient(275.38deg, #10328A 3.12%, #2655CD 28.35%, #396BEA 55.09%, #507FF7 77.17%, #799EFD 100%);
+  position: absolute;
+  inset: 0px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.5s;
+`
+
+export const CardContainerBorder = styled.a.attrs({
+  target: "_blank",
+  rel: "noopener noreferrer",
+})(
+  (props: IProps) => css`
   background: linear-gradient(275.38deg, #799EFD 3.12%, #507FF7 28.35%, #396BEA 55.09%, #2655CD 77.17%, #10328A 100%);
   box-shadow: 2px 4px 6px ${props.theme.colors.blackShadowTransparent};
   border-radius: 4px;
@@ -19,11 +31,17 @@ export const CardContainerBorder = styled.div(
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover{
+    ${CardContainerBorderOver}{
+      opacity: 1;
+    }
+  }
 `
 );
 
 export const CardContainer = styled.div(
-  (props: IProps) => `
+  (props: IProps) => css`
   display: flex;
   align-items: center;
   justify-items: center;
@@ -33,6 +51,8 @@ export const CardContainer = styled.div(
   border-radius: 4px;
   inset: 2px;
   background-color: ${props.theme.colors.blueDark};
+
+  
 `
 );
 
