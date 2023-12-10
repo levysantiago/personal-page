@@ -8,6 +8,7 @@ import { ITheme } from "components/Theme";
 import styled from "styled-components";
 import briefcase_icon from "../../assets/briefcase.svg";
 import rocket_icon from "../../assets/rocket.svg";
+import play_icon from "../../assets/play.svg";
 
 interface IProfessionalLifeProps {
   theme: ITheme;
@@ -70,5 +71,13 @@ export const RocketBlock = styled(IconBlock).attrs(
     blockColor: props.theme.colors.greenIconBlock,
     iconSrc: rocket_icon,
     iconAlt: "Rocket icon",
+  })
+)``;
+
+export const PlayBlock = styled(IconBlock).attrs(
+  (props: IProfessionalLifeProps) => ({
+    blockColor: props.theme.colors.purpleIconBlock,
+    iconSrc: play_icon,
+    iconAlt: "Play icon",
   })
 )``;

@@ -14,6 +14,7 @@ import {
   Title,
   TitleContinuation,
 } from "./styles";
+import { Link } from "components/styles";
 
 const About: React.FC = () => {
   return (
@@ -47,20 +48,17 @@ const About: React.FC = () => {
 
       <SideTopic
         imageElement={<ProfissionIconBlock />}
-        title={`Dev Freelancer Fullstack BE-Heavy`}
+        title={`Blockchain Developer`}
         descriptionElement={
           <Description>
             Hoje trabalho como{" "}
             <HighlightedDescription>
-              Dev Freelancer Fullstack JavaScript
+              Blockchain Developer
             </HighlightedDescription>{" "}
-            e também sou{" "}
-            <HighlightedDescription>
-              Mentor de programação
-            </HighlightedDescription>
-            . Tenho experiência principalmente em Programação Backend e de
-            Contratos Inteligentes com Solidity. Também tenho bom conhecimento
-            em Frontend.
+            na <Link href="https://blockchainwebservices.com.br/">Bitfy</Link>{" "}
+            e também compartilho conteúdo nas redes sociais.
+            Tenho experiência principalmente em Programação Backend e de
+            Aplicações Blockchain.
           </Description>
         }
       />
