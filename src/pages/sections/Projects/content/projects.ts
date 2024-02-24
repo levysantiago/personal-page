@@ -12,8 +12,8 @@ export const projects = [
     title: "Personal page",
     description: `Este projeto diz respeito a esta página que você está acessando. 
     Ela foi desenvolvida com React.js, TypeScript, Styled Components e outras ferramentas. 
-    Também estou utilizando IPFS (Sistema de Arquivos Interplanetário) para 
-    hospedagem deste site, legal não é mesmo?`,
+    Também uso o IPFS (Sistema de Arquivos Interplanetário) para 
+    hospedagem deste site.`,
     readMoreLink: "https://github.com/Levysantiago/personal-page",
     githubLink: "https://github.com/Levysantiago/personal-page",
     banner: personal_page,
@@ -31,9 +31,9 @@ export const projects = [
   {
     title: "Buy Me a Chocolate",
     description: `Baseado no projeto Buy Me a Coffee, o Buy Me a Chocolate é uma 
-    plataforma que permite apoiar outras pessoas doando 
-    dinheiro através do token CHOC. Permitindo trocar os CHOC tokens
-    recebidos pelo dinheiro depositado no contrato inteligente, que no caso é
+    DApp que permite apoiar outras pessoas doando 
+    dinheiro usando o token CHOC. Permitindo trocar os CHOCs
+    recebidos pelo dinheiro depositado no smart contract, que no caso é
     na criptomoeda BNB.`,
     readMoreLink: "https://github.com/levysantiago/buy-me-a-chocolate",
     githubLink: "https://github.com/levysantiago/buy-me-a-chocolate",
@@ -53,10 +53,9 @@ export const projects = [
   },
   {
     title: "Boarding-Pass",
-    description: `Este projeto é uma extensão do desafio #boraCodar lançado pela 
-    Rocketseat. Neste projeto eu adicionei mais algumas páginas para selecionar voo, 
-    escolher assento, inserir dados do passageiro e mostrar o cartão de embarque o 
-    qual foi criado para o desafio da Rocketseat.`,
+    description: `Este projeto é uma extensão do desafio #boraCodar da 
+    Rocketseat. Neste projeto adicionei mais algumas páginas para selecionar voo, 
+    escolher assento, inserir dados do passageiro e mostrar o cartão de embarque.`,
     readMoreLink: "https://github.com/Levysantiago/boarding-pass",
     githubLink: "https://github.com/Levysantiago/boarding-pass",
     banner: boarding_pass,
@@ -64,9 +63,8 @@ export const projects = [
   },
   {
     title: "Music Player",
-    description: `Este projeto foi feito durante o desafio #boraCodar da Rocketseat.
-    Trata-se de um player de música. Neste player adicionei as funcionalidades de 
-    dar play, pause, pular para próxima música, voltar para a anterior, selecionar 
+    description: `Trata-se de um player de música. Neste player adicionei as funcionalidades de 
+    dar play, pause, pular para próxima música, voltar, selecionar 
     uma música, adiantar ou voltar o progresso da música pela barra de progresso.`,
     readMoreLink: "https://github.com/levysantiago/desafio-music-player",
     githubLink: "https://github.com/levysantiago/desafio-music-player",
@@ -75,8 +73,8 @@ export const projects = [
   },
   {
     title: "Habits",
-    description: `Este projeto foi criado durante a Next Level Week (NLW) Setup da Rocketseat.
-    Trata-se de uma aplicação para controlar os hábitos diários, podendo checar e visualizar os 
+    description: `Este projeto foi criado durante a NLW da Rocketseat.
+    É uma aplicação para controlar os hábitos diários, podendo checar e visualizar os 
     hábitos que de cada dia. Para esta aplicação foi criada uma versão
     web com React.js e também um aplicativo com React Native.`,
     readMoreLink: "https://github.com/Levysantiago/habits-client-web",
@@ -87,7 +85,7 @@ export const projects = [
   {
     title: "Notifications Service",
     description: `Um microsserviço para notificação de mensagens via push utilizando Nest.js, 
-    Prisma, SQlite. Este projeto foi criado durante o evento do Ignite Lab da Rocketseat.`,
+    Prisma, SQLite. Este projeto foi criado durante o evento do Ignite Lab da Rocketseat.`,
     readMoreLink: "https://github.com/levysantiago/notifications-service",
     githubLink: "https://github.com/levysantiago/notifications-service",
     banner: notifications_service,
