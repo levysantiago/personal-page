@@ -5,8 +5,8 @@ import {
 } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
-import share_icon from "../../assets/share.svg";
-import microphone_icon from "../../assets/microphone.svg";
+import share_icon from "../../../assets/share.svg";
+import microphone_icon from "../../../assets/microphone.svg";
 import { IconBlock } from "components/IconBlock";
 
 interface IAcademicLifeProps {

@@ -1,11 +1,11 @@
-import personal_page from "../../../assets/project-imgs/personal-page.jpeg";
-import gifflar_img from "../../../assets/project-imgs/gifflar.jpeg";
-import boarding_pass from "../../../assets/project-imgs/boarding-pass.jpeg";
-import buymeachocolate from "../../../assets/project-imgs/buymeachocolate.jpeg";
-import music_player from "../../../assets/project-imgs/music-player.jpeg";
-import textme from "../../../assets/project-imgs/textme.jpeg";
-import habits from "../../../assets/project-imgs/habits.jpeg";
-import notifications_service from "../../../assets/project-imgs/notifications-service.jpeg";
+import personal_page from "../../../../assets/project-imgs/personal-page.jpeg";
+import gifflar_img from "../../../../assets/project-imgs/gifflar.jpeg";
+import boarding_pass from "../../../../assets/project-imgs/boarding-pass.jpeg";
+import buymeachocolate from "../../../../assets/project-imgs/buymeachocolate.jpeg";
+import music_player from "../../../../assets/project-imgs/music-player.jpeg";
+import textme from "../../../../assets/project-imgs/textme.jpeg";
+import habits from "../../../../assets/project-imgs/habits.jpeg";
+import notifications_service from "../../../../assets/project-imgs/notifications-service.jpeg";
 
 export const projects = [
   {
