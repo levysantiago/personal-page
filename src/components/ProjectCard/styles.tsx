@@ -110,7 +110,7 @@ export const Title = styled(ResponsiveCardTitle)(
   font-family: ${props.theme.fonts.title2};
   font-weight: 700;
   color: ${props.theme.colors.blueMedium};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `
 );
 
