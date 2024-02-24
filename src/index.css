@@ -22,6 +22,16 @@
   src: url("./assets/fonts/Roboto-Medium.ttf");
 }
 
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PassionOne-Regular";
+  src: url("./assets/fonts/PassionOne-Regular.ttf");
+}
+
 * {
   margin: 0px;
   padding: 0px;

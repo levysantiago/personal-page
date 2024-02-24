@@ -20,7 +20,7 @@ const About: React.FC = () => {
   return (
     <Container>
       <Title>
-        Um pouco <TitleContinuation>Sobre Levy</TitleContinuation>
+        Um pouco <TitleContinuation>Sobre mim</TitleContinuation>
       </Title>
 
       <SideTopic
@@ -33,9 +33,9 @@ const About: React.FC = () => {
         }
         description={`Prazer em te conhecer, meu nome é Levy, mas muitos me chamam de
             Levy's. Sou de originalidade brasileira, sou fascinado pela área da
-            tecnologia, principalmente pelo desenvolvimento de sistemas. Estou sempre 
-            aprendendo coisas novas, desenvolvendo projetos e compartilhando conhecimento 
-            com a comunidade.`}
+            tecnologia, principalmente por programação. Estou sempre 
+            aprendendo coisas novas, desenvolvendo projetos e compartilhando conteúdo 
+            com a comunidade. Hoje meu foco é em Backend e Blockchain.`}
       />
 
       <SideTopic
@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <HighlightedDescription>
               Blockchain Developer
             </HighlightedDescription>{" "}
-            na <Link href="https://blockchainwebservices.com.br/">Bitfy BWS</Link>{" "}
+            na <Link href="https://blockchainwebservices.com.br/">BWS (Blockchain Web Services)</Link>{" "}
             e também compartilho conteúdo nas redes sociais.
             Tenho experiência principalmente em Programação Backend e de
             Aplicações Blockchain.
