@@ -24,7 +24,7 @@ const Banner: React.FC = () => {
             Olá, eu sou <TitleHighlight>Levy</TitleHighlight>!
           </Title>
         </TitleContainer>
-        <Text>Sou desenvolvedor de sistemas e criador de conteúdo.</Text>
+        <Text>Sou dev Backend + Blockchain e criador de conteúdo.</Text>
 
         <Text>Quer saber mais? Vem comigo!</Text>
       </TextContentContainer>

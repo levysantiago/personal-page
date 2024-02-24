@@ -26,19 +26,15 @@ const ProfessionalLife: React.FC = () => {
         title={`Boarding`}
         descriptionElement={
           <Description>
-            Eu iniciei minha vida profissional trabalhando voluntariamente em
-            uma empresa na área de blockchain na criação/testes de SmCs, assim
-            como no desenvolvimento de uma DApp para integração com estes SmCs
+            Iniciei minha vida profissional trabalhando voluntariamente em
+            uma empresa na área de Blockchain na criação/testes de SmCs (Smart Contracts), também
+            na criação de DApp para integrar com estes SmCs
             utilizando <HighlightedDescription>React.js</HighlightedDescription>{" "}
             para o front-end e{" "}
             <HighlightedDescription>Web3.js</HighlightedDescription>,{" "}
             <HighlightedDescription>Metamask</HighlightedDescription>,{" "}
-            <HighlightedDescription>Truffle.js</HighlightedDescription>,{" "}
-            <HighlightedDescription>Mocha.js</HighlightedDescription>,{" "}
-            <HighlightedDescription>RemixIDE</HighlightedDescription> e outras
-            ferramentas para desenvolvimento e testes dos SmCs. Este também foi
-            o primeiro momento em que comecei a entender a dinâmica do mercado e
-            organização empresarial.
+            <HighlightedDescription>Truffle.js</HighlightedDescription>,{" "} e outras
+            ferramentas para criação e testes de SmCs. 
           </Description>
         }
       />
@@ -48,21 +44,20 @@ const ProfessionalLife: React.FC = () => {
         title={`Boosting`}
         descriptionElement={
           <Description>
-            Durante um período do mestrado, trabalhei em outra empresa onde tive
-            contato com mais conceitos da área, envolvendo criação/testes de{" "}
+            Durante o mestrado, trabalhei em outra empresa, ainda na área de Blockchain, onde tive
+            a oportunidade de desenvolver mais projetos envolvendo {" "}
             <HighlightedDescription>
               tokens, NFTs, DEXs, DApps
             </HighlightedDescription>
-            , etc na área de Blockchain. Da mesma forma, adquiri maior conhecimento em desenvolvimento
-            back-end (<HighlightedDescription>Node.js</HighlightedDescription>)
-            e front-end (
+            , etc. Também adquiri maior conhecimento em 
+            backend (<HighlightedDescription>Node.js</HighlightedDescription>)
+            e frontend (
             <HighlightedDescription>React.js</HighlightedDescription>), banco de
-            dados (<HighlightedDescription>SQL e NoSQL</HighlightedDescription>)
-            configuração de clouds, gerenciamento de domínios, SSL, hospedagem,
-            etc. Porém, uma das experiências mais importantes para mim, foi a
-            possibilidade de liderar uma equipe.{" "}
+            dados (<HighlightedDescription>SQL e NoSQL</HighlightedDescription>),
+            clouds, hospedagem,
+            etc. Além disso, fui responsável por liderar uma equipe,{" "}
             <HighlightedDescription>
-              Foi a primeira oportunidade que tive de compartilhar o meu
+              foi a primeira oportunidade que tive de compartilhar o meu
               conhecimento, liderar e participar de decisões de grande impacto
               na empresa
             </HighlightedDescription>
@@ -76,19 +71,14 @@ const ProfessionalLife: React.FC = () => {
         title={`Freelancer & Digital Creator`}
         descriptionElement={
           <Description>
-            A partir de 2022 comecei a trabalhar como freelancer,{" "}
+            Após sair da última empresa, continuei trabalhando como freelancer{" "}
             <HighlightedDescription>
               e a participar de forma mais ativa dentro da comunidade de
               devs
-            </HighlightedDescription>
-            , não só contribuindo com o desenvolvimento de novas aplicações,
-            como também compartilhando o conhecimento para que nós possamos{" "}
-            <HighlightedDescription>
-              evoluir juntos para um outro nível
             </HighlightedDescription>{" "}
-            onde saímos da zona de conforto e buscamos novos desafios. E
-            principalmente, never stop learning. Este momento foi essencial
-            para evoluir ainda mais minhas <HighlightedDescription>Hard Skills</HighlightedDescription> e
+            contribuindo com o desenvolvimento de novas aplicações,
+            e também compartilhando conhecimento. Isso foi essencial
+            para aprimorar minhas <HighlightedDescription>Hard Skills</HighlightedDescription> e
             {" "}<HighlightedDescription>Soft Skills</HighlightedDescription>, o que
             fez surgir a próxima oportunidade e cargo atual.
           </Description>
@@ -97,18 +87,18 @@ const ProfessionalLife: React.FC = () => {
 
       <SideTopic
         imageElement={<RocketBlock />}
-        title={`Blockchain Developer na Bitfy (cargo atual)`}
+        title={`Blockchain Developer na BWS (cargo atual)`}
         descriptionElement={
           <Description>
             Em outubro de 2023 comecei a trabalhar na
-            {" "}<Link href="https://blockchainwebservices.com.br/">Bifty</Link> como {" "}
+            {" "}<Link href="https://blockchainwebservices.com.br/">BWS</Link> como {" "}
             <HighlightedDescription>
               Blockchain Developer
             </HighlightedDescription>
             {" "} na criação de soluções com a tecnologia blockchain,
             a tecnologia de foco na minha carreira. Nesta empresa eu sou responsável
             por desenvolver APIs, aplicações e infraestruturas blockchain,
-            pesquisar e desenvolver novas soluções em blockchain. Fique a vontade para me seguir
+            pesquisar e desenvolver novas soluções em blockchain. Sinta-se à vontade para me seguir
             e entrar em contato no Linkedin, GitHub, Instagram, etc.
           </Description>
         }

@@ -1,16 +1,17 @@
-import About from "components/About";
-import AcademicLife from "components/AcademicLife";
-import Articles from "components/Articles";
+import About from "pages/sections/About";
+import AcademicLife from "pages/sections/AcademicLife";
+import Articles from "pages/sections/Articles";
 import Banner from "components/Banner";
 import Footer from "components/Footer";
-import HardSkills from "components/HardSkills";
+import HardSkills from "pages/sections/HardSkills";
 import Navbar from "components/Navbar";
-import ProfessionalLife from "components/ProfessionalLife";
-import Projects from "components/Projects";
-import Quote from "components/Quote";
-import SoftSkills from "components/SoftSkills";
+import ProfessionalLife from "pages/sections/ProfessionalLife";
+import Projects from "pages/sections/Projects";
+import Quote from "pages/sections/Quote";
+import SoftSkills from "pages/sections/SoftSkills";
 import Theme from "components/Theme";
 import React from "react";
+import BahiaDevs from "pages/sections/BahiaDevs";
 
 const HomePage: React.FC = () => {
   return (
@@ -24,20 +25,23 @@ const HomePage: React.FC = () => {
         <div id="hard-skills">
           <HardSkills />
         </div>
-        <div id="professional-life">
-          <ProfessionalLife />
+        <div id="projects">
+          <Projects />
         </div>
         <div id="soft-skills">
           <SoftSkills />
         </div>
-        <div id="academic-life">
-          <AcademicLife />
+        <div id="professional-life">
+          <ProfessionalLife />
+        </div>
+        <div id="bahia-devs">
+          <BahiaDevs />
         </div>
         <div id="articles">
           <Articles />
         </div>
-        <div id="projects">
-          <Projects />
+        <div id="academic-life">
+          <AcademicLife />
         </div>
         <div id="quote">
           <Quote />

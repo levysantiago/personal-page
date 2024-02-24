@@ -6,9 +6,9 @@ import {
 } from "components/styles";
 import { ITheme } from "components/Theme";
 import styled from "styled-components";
-import briefcase_icon from "../../assets/briefcase.svg";
-import rocket_icon from "../../assets/rocket.svg";
-import play_icon from "../../assets/play.svg";
+import briefcase_icon from "../../../assets/briefcase.svg";
+import rocket_icon from "../../../assets/rocket.svg";
+import play_icon from "../../../assets/play.svg";
 
 interface IProfessionalLifeProps {
   theme: ITheme;

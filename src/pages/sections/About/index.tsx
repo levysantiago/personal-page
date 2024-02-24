@@ -20,7 +20,7 @@ const About: React.FC = () => {
   return (
     <Container>
       <Title>
-        Um pouco <TitleContinuation>Sobre Levy</TitleContinuation>
+        Um pouco <TitleContinuation>Sobre mim</TitleContinuation>
       </Title>
 
       <SideTopic
@@ -31,19 +31,19 @@ const About: React.FC = () => {
             <HighlightedSubTitle>levysdev</HighlightedSubTitle>!
           </SubTitle>
         }
-        description={`Prazer em te conhecer, me chamo Levy, mas muitos me chamam de
+        description={`Prazer em te conhecer, meu nome é Levy, mas muitos me chamam de
             Levy's. Sou de originalidade brasileira, sou fascinado pela área da
-            tecnologia, principalmente pelo desenvolvimento de sistemas. Também
-            gosto muito de aprender novos conteúdos e utilizar meu conhecimento
-            para contribuir com o avanço da tecnologia no mundo.`}
+            tecnologia, principalmente por programação. Estou sempre 
+            aprendendo coisas novas, desenvolvendo projetos e compartilhando conteúdo 
+            com a comunidade. Hoje meu foco é em Backend e Blockchain.`}
       />
 
       <SideTopic
         imageElement={<AcademyIconBlock />}
         title={`Formação Acadêmica`}
         description={`Sou bacharelado em Ciência da Computação na UESC (Universidade
-            Estadual de Santa Cruz). Hoje sou aluno de mestrado na UFBA
-            (Universidade Federal da Bahia).`}
+            Estadual de Santa Cruz). E possuo mestrado em Ciência da Computação com foco em
+             Blockchain na UFBA (Universidade Federal da Bahia).`}
       />
 
       <SideTopic
@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <HighlightedDescription>
               Blockchain Developer
             </HighlightedDescription>{" "}
-            na <Link href="https://blockchainwebservices.com.br/">Bitfy</Link>{" "}
+            na <Link href="https://blockchainwebservices.com.br/">BWS (Blockchain Web Services)</Link>{" "}
             e também compartilho conteúdo nas redes sociais.
             Tenho experiência principalmente em Programação Backend e de
             Aplicações Blockchain.

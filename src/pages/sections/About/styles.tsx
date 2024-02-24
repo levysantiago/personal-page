@@ -5,9 +5,9 @@ import {
   ResponsiveTitle,
   ResponsiveTopic,
 } from "components/styles";
-import levysdev_picture from "../../assets/profile/levysdev.jpeg";
-import academy_hat_icon from "../../assets/academy-hat.svg";
-import tags_icon from "../../assets/tags-icon.svg";
+import levysdev_picture from "../../../assets/profile/levysdev.jpeg";
+import academy_hat_icon from "../../../assets/academy-hat.svg";
+import tags_icon from "../../../assets/tags-icon.svg";
 import { IconBlock } from "components/IconBlock";
 import { ITheme } from "components/Theme";
 
@@ -36,7 +36,7 @@ export const RelativeDiv = styled.div`
 `;
 
 export const HtmlTagImg = styled.img.attrs({
-  src: require("../../assets/htmlTag.svg").default,
+  src: require("../../../assets/htmlTag.svg").default,
   alt: "HTML tag icon.",
 })`
   width: 50px;

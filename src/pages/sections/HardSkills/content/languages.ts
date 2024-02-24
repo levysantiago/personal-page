@@ -12,8 +12,8 @@ export const languages = [
     progress: "80%",
   },
   {
-    title: "Python",
-    progress: "70%",
+    title: "Golang",
+    progress: "30%",
   },
   {
     title: "HTML",

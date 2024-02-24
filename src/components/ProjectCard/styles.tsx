@@ -124,7 +124,7 @@ export const Description = styled(ResponsiveSmallText)(
 `
 );
 
-export const ExternalLink = styled.a.attrs({
+export const ExternalLink = styled.span.attrs({
   target: "_blank",
   rel: "noopener noreferrer",
 })`
