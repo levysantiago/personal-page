@@ -15,29 +15,9 @@ export const tools = [
     alt: "Nest.js image.",
   },
   {
-    title: "MongoDB",
-    image: require("../../../assets/tools/mongodb.jpeg"),
-    alt: "MongoDB image.",
-  },
-  {
-    title: "MySQL",
-    image: require("../../../assets/tools/mysql.jpeg"),
-    alt: "MySQL image.",
-  },
-  {
-    title: "React.js",
-    image: require("../../../assets/tools/reactjs.jpeg"),
-    alt: "React.js image.",
-  },
-  {
-    title: "Styled Components",
-    image: require("../../../assets/tools/styled-components.jpeg"),
-    alt: "Styled Components image.",
-  },
-  {
-    title: "Figma",
-    image: require("../../../assets/tools/figma.jpeg"),
-    alt: "Figma image.",
+    title: "Fastify",
+    image: require("../../../assets/tools/fastify.jpeg"),
+    alt: "Fastify.js image.",
   },
   {
     title: "Web3.js",
@@ -55,23 +35,83 @@ export const tools = [
     alt: "Hardhat image.",
   },
   {
-    title: "Remix IDE",
-    image: require("../../../assets/tools/remixide.jpeg"),
-    alt: "Remix IDE image.",
+    title: "Truffle",
+    image: require("../../../assets/tools/truffle.jpeg"),
+    alt: "Truffle image.",
   },
   {
-    title: "Git",
-    image: require("../../../assets/tools/git.jpeg"),
-    alt: "Git image.",
+    title: "Ethereum",
+    image: require("../../../assets/tools/ethereum.jpeg"),
+    alt: "Ethereum image.",
   },
   {
-    title: "Digital Ocean",
-    image: require("../../../assets/tools/digitalocean.jpeg"),
-    alt: "Digital Ocean image.",
+    title: "Binance Smart Chain",
+    image: require("../../../assets/tools/bsc.jpeg"),
+    alt: "Binance Smart Chain image.",
   },
   {
-    title: "Google Cloud",
-    image: require("../../../assets/tools/googlecloud.jpeg"),
-    alt: "Google Cloud image.",
+    title: "TRON",
+    image: require("../../../assets/tools/tron.jpeg"),
+    alt: "Tron image.",
   },
+  {
+    title: "Polygon",
+    image: require("../../../assets/tools/polygon.jpeg"),
+    alt: "Polygon image.",
+  },
+  {
+    title: "MongoDB",
+    image: require("../../../assets/tools/mongodb.jpeg"),
+    alt: "MongoDB image.",
+  },
+  {
+    title: "MySQL",
+    image: require("../../../assets/tools/mysql.jpeg"),
+    alt: "MySQL image.",
+  },
+  {
+    title: "PostgreSQL",
+    image: require("../../../assets/tools/postgres.jpeg"),
+    alt: "PostgreSQL image.",
+  },
+  {
+    title: "Redis",
+    image: require("../../../assets/tools/redis.jpeg"),
+    alt: "Redis image.",
+  },
+  // {
+  //   title: "React.js",
+  //   image: require("../../../assets/tools/reactjs.jpeg"),
+  //   alt: "React.js image.",
+  // },
+  // {
+  //   title: "Styled Components",
+  //   image: require("../../../assets/tools/styled-components.jpeg"),
+  //   alt: "Styled Components image.",
+  // },
+  // {
+  //   title: "Figma",
+  //   image: require("../../../assets/tools/figma.jpeg"),
+  //   alt: "Figma image.",
+  // },
+  // {
+  //   title: "Remix IDE",
+  //   image: require("../../../assets/tools/remixide.jpeg"),
+  //   alt: "Remix IDE image.",
+  // },
+  // {
+  //   title: "Git",
+  //   image: require("../../../assets/tools/git.jpeg"),
+  //   alt: "Git image.",
+  // },
+  // {
+  //   title: "Digital Ocean",
+  //   image: require("../../../assets/tools/digitalocean.jpeg"),
+  //   alt: "Digital Ocean image.",
+  // },
+  // {
+  //   title: "Google Cloud",
+  //   image: require("../../../assets/tools/googlecloud.jpeg"),
+  //   alt: "Google Cloud image.",
+  // },
 ];

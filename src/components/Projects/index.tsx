@@ -14,15 +14,11 @@ const Projects: React.FC = () => {
   return (
     <Container>
       <Title>
-        Meus <TitleContinuation>Projetos</TitleContinuation>
+        Meu <TitleContinuation>Portfólio</TitleContinuation>
       </Title>
 
       <Description>
-        Muitos dos projetos que desenvolvi foram projetos privados, por isso,
-        por enquanto você verá somente alguns projetos que puderam ser
-        compartilhados. Entretanto, estou trabalhando em diversos projetos
-        pessoais que serão open-source. Conforme estes projetos forem criados,
-        eles irão entrar nesta lista.
+        Dentre os diversos projetos que trabalhei, estes são alguns dos projetos que posso compartilhar com vocês.
       </Description>
 
       <CardsContainer>

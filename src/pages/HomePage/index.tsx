@@ -24,20 +24,20 @@ const HomePage: React.FC = () => {
         <div id="hard-skills">
           <HardSkills />
         </div>
-        <div id="professional-life">
-          <ProfessionalLife />
+        <div id="projects">
+          <Projects />
         </div>
         <div id="soft-skills">
           <SoftSkills />
         </div>
-        <div id="academic-life">
-          <AcademicLife />
+        <div id="professional-life">
+          <ProfessionalLife />
         </div>
         <div id="articles">
           <Articles />
         </div>
-        <div id="projects">
-          <Projects />
+        <div id="academic-life">
+          <AcademicLife />
         </div>
         <div id="quote">
           <Quote />

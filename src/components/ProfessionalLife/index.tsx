@@ -27,7 +27,7 @@ const ProfessionalLife: React.FC = () => {
         descriptionElement={
           <Description>
             Eu iniciei minha vida profissional trabalhando voluntariamente em
-            uma empresa na área de blockchain na criação/testes de SmCs, assim
+            uma empresa na área de Blockchain na criação/testes de SmCs, assim
             como no desenvolvimento de uma DApp para integração com estes SmCs
             utilizando <HighlightedDescription>React.js</HighlightedDescription>{" "}
             para o front-end e{" "}
@@ -48,21 +48,20 @@ const ProfessionalLife: React.FC = () => {
         title={`Boosting`}
         descriptionElement={
           <Description>
-            Durante um período do mestrado, trabalhei em outra empresa onde tive
-            contato com mais conceitos da área, envolvendo criação/testes de{" "}
+            Durante o mestrado, trabalhei em outra empresa, ainda na área de Blockchain, onde tive
+            a oportunidade de desenvolver mais projetos envolvendo {" "}
             <HighlightedDescription>
               tokens, NFTs, DEXs, DApps
             </HighlightedDescription>
-            , etc na área de Blockchain. Da mesma forma, adquiri maior conhecimento em desenvolvimento
-            back-end (<HighlightedDescription>Node.js</HighlightedDescription>)
-            e front-end (
+            , etc. Também adquiri maior conhecimento em desenvolvimento
+            backend (<HighlightedDescription>Node.js</HighlightedDescription>)
+            e frontend (
             <HighlightedDescription>React.js</HighlightedDescription>), banco de
-            dados (<HighlightedDescription>SQL e NoSQL</HighlightedDescription>)
-            configuração de clouds, gerenciamento de domínios, SSL, hospedagem,
-            etc. Porém, uma das experiências mais importantes para mim, foi a
-            possibilidade de liderar uma equipe.{" "}
+            dados (<HighlightedDescription>SQL e NoSQL</HighlightedDescription>),
+            clouds, hospedagem,
+            etc. Além disso, fui responsável por liderar uma equipe,{" "}
             <HighlightedDescription>
-              Foi a primeira oportunidade que tive de compartilhar o meu
+              foi a primeira oportunidade que tive de compartilhar o meu
               conhecimento, liderar e participar de decisões de grande impacto
               na empresa
             </HighlightedDescription>
@@ -76,18 +75,13 @@ const ProfessionalLife: React.FC = () => {
         title={`Freelancer & Digital Creator`}
         descriptionElement={
           <Description>
-            A partir de 2022 comecei a trabalhar como freelancer,{" "}
+            A partir de 2022 comecei a trabalhar como freelancer{" "}
             <HighlightedDescription>
               e a participar de forma mais ativa dentro da comunidade de
               devs
             </HighlightedDescription>
-            , não só contribuindo com o desenvolvimento de novas aplicações,
-            como também compartilhando o conhecimento para que nós possamos{" "}
-            <HighlightedDescription>
-              evoluir juntos para um outro nível
-            </HighlightedDescription>{" "}
-            onde saímos da zona de conforto e buscamos novos desafios. E
-            principalmente, never stop learning. Este momento foi essencial
+            contribuindo com o desenvolvimento de novas aplicações,
+            e também compartilhando o conhecimento. Este momento foi essencial
             para evoluir ainda mais minhas <HighlightedDescription>Hard Skills</HighlightedDescription> e
             {" "}<HighlightedDescription>Soft Skills</HighlightedDescription>, o que
             fez surgir a próxima oportunidade e cargo atual.
