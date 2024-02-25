@@ -11,8 +11,9 @@ interface IFormatContentProps {
 export function formatContent({ message, components }: IFormatContentProps) {
   let undecoratedText = "";
   const listOfComponents: React.JSX.Element[] = [];
+  let i = 0;
 
-  for (let i = 0; i < message.length; i++) {
+  for (i = 0; i < message.length; i++) {
     if (message[i] === "<") {
       // saving undecorated text before tag
       listOfComponents.push(
