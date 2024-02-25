@@ -1,16 +1,25 @@
 import SimpleCardInfo from "components/SimpleCardInfo";
 import * as React from "react";
-import { softskills } from "./content/softskills";
+import { content } from "./content/softskills";
 import { CardsContainer, Container, Title, TitleContinuation } from "./styles";
+import { useLanguage } from "components/contexts/LanguageContext";
+import { formatContent } from "util/content-formatter";
 
 const SoftSkills: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <Title>
-        Soft <TitleContinuation>Skills</TitleContinuation>
+        {formatContent({
+          message: content[lang].title,
+          components: {
+            HighlightComponent: TitleContinuation,
+          },
+        })}
       </Title>
       <CardsContainer>
-        {softskills.map((skill, key) => {
+        {content[lang].softSkills.map((skill, key) => {
           return (
             <SimpleCardInfo
               key={key}

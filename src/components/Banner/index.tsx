@@ -12,6 +12,7 @@ import {
   Text,
 } from "./styles";
 import React from "react";
+import { formatContent } from "util/content-formatter";
 
 const Banner: React.FC = () => {
   const { lang } = useLanguage();
@@ -25,7 +26,10 @@ const Banner: React.FC = () => {
         <TitleContainer>
           <HelloIcon />
           <Title>
-            {content[lang].titleInit} <TitleHighlight>Levy</TitleHighlight>!
+            {formatContent({
+              message: content[lang].titleInit,
+              components: { HighlightComponent: TitleHighlight },
+            })}
           </Title>
         </TitleContainer>
         <Text>{content[lang].subtitle}</Text>

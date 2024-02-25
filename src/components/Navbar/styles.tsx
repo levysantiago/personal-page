@@ -11,16 +11,16 @@ interface ISideNavProps extends IProps {
 }
 
 export const Container = styled.div(
-  (props: IProps) => `
-  display: flex;
-  justify-content: flex-end;
-  background-color: ${props.theme?.colors.purpleDark2};
-  width: 100%;
+  (props: IProps) => css`
+    display: flex;
+    justify-content: flex-end;
+    background-color: ${props.theme?.colors.purpleDark2};
+    width: 100%;
 
-  @media(max-width: 768px){
-    justify-content: flex-start;
-  }
-`
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+  `
 );
 
 export const NavItem = styled(HashLink).attrs({ smooth: true })(
@@ -132,23 +132,50 @@ export const Sidenav = styled.div(
 );
 
 export const SidenavItem = styled(HashLink).attrs({ smooth: true })(
-  (props: IProps) => `
-  display: flex;
-  text-align: center;
-  align-items: center;
-  height: 60px;
-  font-family: ${props.theme?.fonts.title};
-  justify-content: center;
-  background-color: ${props.theme?.colors.purpleDark3};
-  color: ${props.theme?.colors.blueLight};
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  
-  &:hover{
-    color: ${props.theme.colors.blueMedium};
-    background-color: ${props.theme?.colors.purpleDark4};
-  }
-`
+  (props: IProps) => css`
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 60px;
+    font-family: ${props.theme?.fonts.title};
+    justify-content: center;
+    background-color: ${props.theme?.colors.purpleDark3};
+    color: ${props.theme?.colors.blueLight};
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: ${props.theme.colors.blueMedium};
+      background-color: ${props.theme?.colors.purpleDark4};
+    }
+  `
+);
+
+export const SidenavItemLang = styled.a(
+  (props: IProps) => css`
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      height: 60px;
+      width: 120px;
+      font-family: ${props.theme?.fonts.title};
+      justify-content: center;
+      color: ${props.theme?.colors.blueLight};
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0px 5px;
+
+      &:hover {
+        color: ${props.theme.colors.blueMedium};
+        background-color: ${props.theme?.colors.purpleDark4};
+      }
+    }
+  `
 );

@@ -1,6 +1,5 @@
 import ArticleCard from "components/ArticleCard";
 import * as React from "react";
-import { articles } from "./content/articles";
 import {
   CardsContainer,
   Container,
@@ -8,26 +7,37 @@ import {
   Title,
   TitleContinuation,
 } from "./styles";
+import { formatContent } from "util/content-formatter";
+import { content } from "./content";
+import { useLanguage } from "components/contexts/LanguageContext";
 
 const Articles: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <Title>
-        Publicações <TitleContinuation>Acadêmicas</TitleContinuation>
+        {formatContent({
+          message: content[lang].title,
+          components: {
+            HighlightComponent: TitleContinuation,
+          },
+        })}
       </Title>
       <CardsContainer>
-        {articles.map((article, key) => {
+        {content[lang].articles.map((article, key) => {
           return (
             <ArticleCard
               key={key}
               title={article.title}
               link={article.link}
               items={article.items}
+              readMoreText={content[lang].readArticle}
             />
           );
         })}
       </CardsContainer>
-      <Link href="https://bit.ly/3hcCeSX">Ver mais publicações</Link>
+      <Link href="https://bit.ly/3hcCeSX">{content[lang].seeMoreText}</Link>
     </Container>
   );
 };

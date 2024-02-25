@@ -1,5 +1,4 @@
 import ProjectCard from "components/ProjectCard";
-import { projects } from "./content/projects";
 import * as React from "react";
 
 import {
@@ -9,20 +8,28 @@ import {
   Title,
   TitleContinuation,
 } from "./styles";
+import { formatContent } from "util/content-formatter";
+import { useLanguage } from "components/contexts/LanguageContext";
+import { content } from "./content/indedx";
 
 const Projects: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <Title>
-        Meu <TitleContinuation>Portfólio</TitleContinuation>
+        {formatContent({
+          message: content[lang].title,
+          components: {
+            HighlightComponent: TitleContinuation,
+          },
+        })}
       </Title>
 
-      <Description>
-        Dentre os diversos projetos que trabalhei, estes são alguns dos projetos que posso compartilhar com vocês.
-      </Description>
+      <Description>{content[lang].description}</Description>
 
       <CardsContainer>
-        {projects.map((project, key) => {
+        {content[lang].projects.map((project, key) => {
           return (
             <ProjectCard
               key={key}
@@ -30,6 +37,7 @@ const Projects: React.FC = () => {
               description={project.description}
               readMoreLink={project.readMoreLink}
               githubLink={project.githubLink}
+              readMoreText={content[lang].readMoreText}
               banner={project.banner}
               badges={project.badges}
             />

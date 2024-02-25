@@ -25,15 +25,24 @@ const About: React.FC = () => {
   return (
     <Container>
       <Title>
-        Um pouco <TitleContinuation>Sobre mim</TitleContinuation>
+        {formatContent({
+          message: content[lang].title,
+          components: {
+            HighlightComponent: TitleContinuation,
+          },
+        })}
       </Title>
 
       <SideTopic
         imageElement={<LevysdevPicture />}
         titleElement={
           <SubTitle>
-            {content[lang].titleInit}
-            <HighlightedSubTitle>levysdev</HighlightedSubTitle>!
+            {formatContent({
+              message: content[lang].subtitle,
+              components: {
+                HighlightComponent: HighlightedSubTitle,
+              },
+            })}
           </SubTitle>
         }
         description={content[lang].description}
@@ -57,16 +66,6 @@ const About: React.FC = () => {
                 LinkComponent: Link,
               },
             })}
-            {/* Hoje trabalho como{" "}
-            <HighlightedDescription>
-              Blockchain Developer
-            </HighlightedDescription>{" "}
-            na{" "}
-            <Link href="https://blockchainwebservices.com.br/">
-              BWS (Blockchain Web Services)
-            </Link>{" "}
-            e também compartilho conteúdo nas redes sociais. Tenho experiência
-            principalmente em Programação Backend e de Aplicações Blockchain. */}
           </Description>
         }
       />

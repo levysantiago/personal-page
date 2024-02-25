@@ -8,8 +8,12 @@ import {
   RelativeDiv,
   Title,
 } from "./styles";
+import { navItems } from "components/Navbar/content/navItems";
+import { useLanguage } from "components/contexts/LanguageContext";
 
 const Footer: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <RelativeDiv>
@@ -19,13 +23,9 @@ const Footer: React.FC = () => {
       <Title>Levy Santiago</Title>
 
       <AnchorsContainer>
-        <Anchor to="#about">Sobre</Anchor>
-        <Anchor to="#hard-skills">Hard Skills</Anchor>
-        <Anchor to="#professional-life">Vida Profissional</Anchor>
-        <Anchor to="#soft-skills">Soft Skills</Anchor>
-        <Anchor to="#academic-life">Vida Acadêmica</Anchor>
-        <Anchor to="#articles">Artigos Publicados</Anchor>
-        <Anchor to="#projects">Meus Projetos</Anchor>
+        {navItems[lang].map((item) => {
+          return <Anchor to={item.route}>{item.title}</Anchor>;
+        })}
       </AnchorsContainer>
 
       <NetworkButtons />

@@ -9,63 +9,52 @@ import {
   Title,
   TitleContinuation,
 } from "./styles";
+import { useLanguage } from "components/contexts/LanguageContext";
+import { content } from "./content";
+import { formatContent } from "util/content-formatter";
 
 const AcademicLife: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <Title>
-        Vida <TitleContinuation>Acadêmica</TitleContinuation>
+        {formatContent({
+          message: content[lang].title,
+          components: {
+            HighlightComponent: TitleContinuation,
+          },
+        })}
       </Title>
 
       <SideTopic
         imageElement={<ShareBlock />}
-        title="Academia x Mercado"
+        title={content[lang].sections[0].title}
         descriptionElement={
           <Description>
-            É difícil de acreditar, mas eu gosto tanto do mercado quanto da área
-            acadêmica. Desde a graduação eu participo de projetos científicos e,
-            por isso, já publiquei vários artigos científicos junto com meu
-            grupo de pesquisa nas áreas de Internet das Coisas, engenharia de
-            software e Blockchain.{" "}
-            <HighlightedDescription>
-              Me fascina a ideia de compartilhar seu conhecimento com outras
-              pessoas na intenção de fazer a tecnologia evoluir.
-            </HighlightedDescription>
+            {formatContent({
+              message: content[lang].sections[0].description,
+              components: {
+                HighlightComponent: HighlightedDescription,
+              },
+            })}
           </Description>
         }
       />
 
-      <BlockQuote
-        description={`Ao compartilhar seu conhecimento, 
-        outra pessoa pode utilizar sua ideia para criar 
-        algo totalmente novo seguindo uma abordagem que 
-        você não tinha enxergado antes, da mesma forma, 
-        essa pessoa não chegaria nesta nova abordagem se 
-        você não tivesse compartilhado.`}
-      />
+      <BlockQuote description={content[lang].blockQuoteDescription} />
 
       <SideTopic
         imageElement={<ShareBlock />}
-        title="Networking e Comunicação"
+        title={content[lang].sections[1].title}
         descriptionElement={
           <Description>
-            Durante minha vida acadêmica, tive a oportunidade de apresentar
-            artigos em conferências em locais diferentes, nacionais e
-            internacionais. Também já auxiliei na organização de um minicurso de
-            programação básica em Solidity, também apresentei em conferências
-            virtuais como na{" "}
-            <HighlightedDescription>SBES (CBSoft 2021)</HighlightedDescription>{" "}
-            e na{" "}
-            <HighlightedDescription>CASCON X EVOKE 2021</HighlightedDescription>{" "}
-            patrocinada pela IBM, esta última internacional. São experiências
-            que, além de conhecer outras pessoas e trabalhos diferentes, foi
-            possível exercitar a comunicação, o que foi essencial para projetos
-            que vieram no futuro.{" "}
-            <HighlightedDescription>
-              Por isso, considero que a academia ajudou no meu desenvolvimento
-              profissional, assim como o inverso
-            </HighlightedDescription>
-            .
+            {formatContent({
+              message: content[lang].sections[1].description,
+              components: {
+                HighlightComponent: HighlightedDescription,
+              },
+            })}
           </Description>
         }
       />

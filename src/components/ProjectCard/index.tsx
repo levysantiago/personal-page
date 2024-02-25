@@ -20,6 +20,7 @@ interface IProps {
   banner: string;
   description: string;
   readMoreLink?: string;
+  readMoreText: string;
   githubLink?: string;
   badges: string[];
 }
@@ -29,6 +30,7 @@ const ProjectCard: React.FC<IProps> = ({
   banner,
   description,
   readMoreLink,
+  readMoreText,
   githubLink,
   badges,
 }: IProps) => {
@@ -56,7 +58,7 @@ const ProjectCard: React.FC<IProps> = ({
         {readMoreLink ? (
           <ExternalLink>
             <ExternalLinkIcon />
-            <ReadMoreLink>Ver projeto</ReadMoreLink>
+            <ReadMoreLink>{readMoreText}</ReadMoreLink>
           </ExternalLink>
         ) : null}
       </CardContainer>

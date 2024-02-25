@@ -1,5 +1,6 @@
 const pt = {
-  titleInit: "Bem vindo(a) ao mundo ",
+  title: "Um pouco <highlight>Sobre mim</highlight>",
+  subtitle: "Bem vindo(a) ao mundo <highlight>levysdev</highlight>",
   description: `Prazer em te conhecer, meu nome é Levy, mas muitos me chamam de
     Levy's. Sou de originalidade brasileira, sou fascinado pela área da
     tecnologia, principalmente por programação. Estou sempre 
@@ -18,7 +19,8 @@ const pt = {
 };
 
 const en = {
-  titleInit: "Welcome to the world of ",
+  title: "A little bit <highlight>About Me</highlight>",
+  subtitle: "Welcome to the world of <highlight>levysdev</highlight>",
   description: `Nice to meet you, my name is Levy, but my friends call me Levy's. 
     I'm originally from Brazil, I'm fascinated by technology, especially 
     programming. I'm always learning new things, developing projects and sharing content 

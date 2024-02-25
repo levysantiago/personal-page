@@ -9,6 +9,7 @@ import {
   NavMenu,
   Sidenav,
   SidenavItem,
+  SidenavItemLang,
 } from "./styles";
 import { useLanguage } from "components/contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
@@ -83,6 +84,10 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
       >
         <MenuIcon />
       </NavMenu>
+      <SidenavItemLang onClick={changeLangPath}>
+        <LangIcon />
+        {lang.toUpperCase()}
+      </SidenavItemLang>
       <Sidenav id="sidenav" {...{ sideNavOpened }}>
         {navItems[lang].map((item, key) => {
           return (
