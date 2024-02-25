@@ -11,10 +11,8 @@ interface IFormatContentProps {
 export function formatContent({ message, components }: IFormatContentProps) {
   let undecoratedText = "";
   const listOfComponents: React.JSX.Element[] = [];
-  let i = 0;
-  let j = 0;
 
-  for (i = 0; i < message.length; i++) {
+  for (let i = 0; i < message.length; i++) {
     if (message[i] === "<") {
       // saving undecorated text before tag
       listOfComponents.push(
@@ -23,29 +21,30 @@ export function formatContent({ message, components }: IFormatContentProps) {
       undecoratedText = "";
 
       let tagName = "";
-      j = i + 1;
+      // jumping "<"
+      i++;
 
       // Read tag name
-      while (message[j] !== ">" && message[j] !== " ") {
-        tagName += message[j++];
+      while (message[i] !== ">" && message[i] !== " ") {
+        tagName += message[i++];
       }
-      j++;
-      console.log(tagName);
+      // jumping ">" or space
+      i++;
 
       switch (tagName) {
         case "highlight": {
-          let textToFormat = "";
           // read text to be formatted
-          while (message[j] !== "<") {
-            textToFormat += message[j++];
+          let textToFormat = "";
+          while (message[i] !== "<") {
+            textToFormat += message[i++];
           }
 
           // jumping j to end of tag
-          while (message[j] !== ">") j++;
+          while (message[i] !== ">") i++;
 
           if (components.HighlightComponent) {
             listOfComponents.push(
-              <components.HighlightComponent key={`formatted-text-${j}`}>
+              <components.HighlightComponent key={`formatted-text-${i}`}>
                 {textToFormat}
               </components.HighlightComponent>
             );
@@ -55,32 +54,32 @@ export function formatContent({ message, components }: IFormatContentProps) {
 
         case "link": {
           // jumping j to href link
-          while (message[j] !== '"') j++;
+          while (message[i] !== '"') i++;
           //jump the quotes
-          j++;
+          i++;
 
           // Read link
           let linkText = "";
-          while (message[j] !== '"') {
-            linkText += message[j++];
+          while (message[i] !== '"') {
+            linkText += message[i++];
           }
           // jump quotes and '>'
-          j += 2;
+          i += 2;
 
           // read text to be formatted
           let textToFormat = "";
-          while (message[j] !== "<") {
-            textToFormat += message[j++];
+          while (message[i] !== "<") {
+            textToFormat += message[i++];
           }
 
           // jumping j to end of tag
-          while (message[j] !== ">") j++;
+          while (message[i] !== ">") i++;
 
           if (components.LinkComponent) {
             listOfComponents.push(
               <components.LinkComponent
                 href={`${linkText}`}
-                key={`formatted-text-${j}`}
+                key={`formatted-text-${i}`}
               >
                 {textToFormat}
               </components.LinkComponent>
@@ -89,9 +88,6 @@ export function formatContent({ message, components }: IFormatContentProps) {
           break;
         }
       }
-
-      // starting i from j stopped
-      i = j;
     } else {
       undecoratedText += message[i];
     }

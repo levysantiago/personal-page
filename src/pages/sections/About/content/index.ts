@@ -11,7 +11,7 @@ const pt = {
     Estadual de Santa Cruz). E possuo mestrado em Ciência da Computação com foco em
     Blockchain na UFBA (Universidade Federal da Bahia).`,
   positionSectionDescription: `Hoje trabalho como 
-            <highlight>Blockchain Developer</highlight> na
+            <highlight>Blockchain Developer</highlight> na 
             <link href="https://blockchainwebservices.com.br/">BWS (Blockchain Web Services)</link> 
             e também compartilho conteúdo nas redes sociais. Tenho experiência
             principalmente em Programação Backend e de Aplicações Blockchain.`,
