@@ -15,8 +15,13 @@ import {
   TitleContinuation,
 } from "./styles";
 import { Link } from "components/styles";
+import { content } from "./content";
+import { useLanguage } from "components/contexts/LanguageContext";
+import { formatContent } from "util/content-formatter";
 
 const About: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <Title>
@@ -27,23 +32,17 @@ const About: React.FC = () => {
         imageElement={<LevysdevPicture />}
         titleElement={
           <SubTitle>
-            Bem vindo(a) ao mundo{" "}
+            {content[lang].titleInit}
             <HighlightedSubTitle>levysdev</HighlightedSubTitle>!
           </SubTitle>
         }
-        description={`Prazer em te conhecer, meu nome é Levy, mas muitos me chamam de
-            Levy's. Sou de originalidade brasileira, sou fascinado pela área da
-            tecnologia, principalmente por programação. Estou sempre 
-            aprendendo coisas novas, desenvolvendo projetos e compartilhando conteúdo 
-            com a comunidade. Hoje meu foco é em Backend e Blockchain.`}
+        description={content[lang].description}
       />
 
       <SideTopic
         imageElement={<AcademyIconBlock />}
-        title={`Formação Acadêmica`}
-        description={`Sou bacharelado em Ciência da Computação na UESC (Universidade
-            Estadual de Santa Cruz). E possuo mestrado em Ciência da Computação com foco em
-             Blockchain na UFBA (Universidade Federal da Bahia).`}
+        title={content[lang].academicSectionTitle}
+        description={content[lang].academicSectionDescription}
       />
 
       <SideTopic
@@ -51,14 +50,23 @@ const About: React.FC = () => {
         title={`Blockchain Developer`}
         descriptionElement={
           <Description>
-            Hoje trabalho como{" "}
+            {formatContent({
+              message: content[lang].positionSectionDescription,
+              components: {
+                HighlightComponent: HighlightedDescription,
+                LinkComponent: Link,
+              },
+            })}
+            {/* Hoje trabalho como{" "}
             <HighlightedDescription>
               Blockchain Developer
             </HighlightedDescription>{" "}
-            na <Link href="https://blockchainwebservices.com.br/">BWS (Blockchain Web Services)</Link>{" "}
-            e também compartilho conteúdo nas redes sociais.
-            Tenho experiência principalmente em Programação Backend e de
-            Aplicações Blockchain.
+            na{" "}
+            <Link href="https://blockchainwebservices.com.br/">
+              BWS (Blockchain Web Services)
+            </Link>{" "}
+            e também compartilho conteúdo nas redes sociais. Tenho experiência
+            principalmente em Programação Backend e de Aplicações Blockchain. */}
           </Description>
         }
       />

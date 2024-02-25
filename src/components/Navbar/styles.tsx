@@ -1,6 +1,6 @@
 import { ITheme } from "components/Theme";
 import { HashLink } from "react-router-hash-link";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface IProps {
   theme: ITheme;
@@ -24,34 +24,72 @@ export const Container = styled.div(
 );
 
 export const NavItem = styled(HashLink).attrs({ smooth: true })(
-  (props: IProps) => `
-  display: flex;
-  width: 120px;
-  height: 60px;
-  text-align: center;
-  align-items: center;
-  font-family: ${props.theme?.fonts.title};
-  justify-content: center;
-  background-color: ${props.theme?.colors.purpleDark2};
-  color: ${props.theme?.colors.blueLight};
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  
-  &:hover{
-    color: ${props.theme.colors.blueMedium};
-  }
+  (props: IProps) => css`
+    display: flex;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    font-family: ${props.theme?.fonts.title};
+    justify-content: center;
+    background-color: ${props.theme?.colors.purpleDark2};
+    color: ${props.theme?.colors.blueLight};
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 
-  @media(max-width: 1024px){
-    font-size: 14px;
-  }
+    &:hover {
+      color: ${props.theme.colors.blueMedium};
+    }
 
-  @media(max-width: 768px){
-    display: none;
-  }
-`
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  `
 );
+
+export const NavItemLang = styled.a(
+  (props: IProps) => css`
+    display: flex;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    font-family: ${props.theme?.fonts.title};
+    justify-content: center;
+    background-color: ${props.theme?.colors.purpleDark2};
+    color: ${props.theme?.colors.blueLight};
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: ${props.theme.colors.blueMedium};
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  `
+);
+
+export const LangIcon = styled.img.attrs({
+  src: require("../../assets/lang.svg").default,
+  alt: "Language icon, click to change it",
+})`
+  width: 25px;
+  margin-right: 5px;
+`;
 
 export const MenuIcon = styled.img.attrs({
   src: require("../../assets/menu.svg").default,

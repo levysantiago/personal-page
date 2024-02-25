@@ -1,3 +1,5 @@
+import { useLanguage } from "components/contexts/LanguageContext";
+import { content } from "./content";
 import {
   Container,
   ImgContainer,
@@ -12,6 +14,8 @@ import {
 import React from "react";
 
 const Banner: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <ImgContainer>
@@ -21,12 +25,12 @@ const Banner: React.FC = () => {
         <TitleContainer>
           <HelloIcon />
           <Title>
-            Olá, eu sou <TitleHighlight>Levy</TitleHighlight>!
+            {content[lang].titleInit} <TitleHighlight>Levy</TitleHighlight>!
           </Title>
         </TitleContainer>
-        <Text>Sou dev Backend + Blockchain e criador de conteúdo.</Text>
+        <Text>{content[lang].subtitle}</Text>
 
-        <Text>Quer saber mais? Vem comigo!</Text>
+        <Text>{content[lang].subtitle2}</Text>
       </TextContentContainer>
     </Container>
   );

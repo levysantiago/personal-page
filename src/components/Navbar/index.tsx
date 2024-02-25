@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import { navItems } from "./content/navItems";
 import {
   Container,
+  LangIcon,
   MenuIcon,
   NavItem,
+  NavItemLang,
   NavMenu,
   Sidenav,
   SidenavItem,
 } from "./styles";
+import { useLanguage } from "components/contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 export interface INavbarProps {
   fontColor?: string;
@@ -15,7 +19,23 @@ export interface INavbarProps {
 }
 
 const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
+  const { lang } = useLanguage();
   const [sideNavOpened, setSideNavOpened] = useState(false);
+  const navigate = useNavigate();
+
+  const changeLangPath = () => {
+    if (lang === "en") {
+      navigate({
+        pathname: "/pt",
+        hash: "#",
+      });
+    } else {
+      navigate({
+        pathname: "/en",
+        hash: "#",
+      });
+    }
+  };
 
   useEffect(() => {
     const ref = document.getElementById("sidenav");
@@ -38,13 +58,22 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
   return (
     <Container>
       {/* For big screen devices */}
-      {navItems.map((item, key) => {
-        return (
-          <NavItem to={item.route} key={key}>
-            {item.title}
-          </NavItem>
-        );
-      })}
+      {
+        <>
+          {navItems[lang].map((item, key) => {
+            return (
+              <NavItem to={item.route} key={key}>
+                {item.title}
+              </NavItem>
+            );
+          })}
+
+          <NavItemLang onClick={changeLangPath}>
+            <LangIcon />
+            {lang.toUpperCase()}
+          </NavItemLang>
+        </>
+      }
 
       {/* For small screen devices */}
       <NavMenu
@@ -55,7 +84,7 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
         <MenuIcon />
       </NavMenu>
       <Sidenav id="sidenav" {...{ sideNavOpened }}>
-        {navItems.map((item, key) => {
+        {navItems[lang].map((item, key) => {
           return (
             <SidenavItem to={item.route} key={key}>
               {item.title}
