@@ -19,6 +19,7 @@ interface IProps {
   title: string;
   link: string;
   items: IItems[];
+  readMoreText: string;
 }
 
 const ArticleCard: React.FC<IProps> = (props: IProps) => {
@@ -37,7 +38,7 @@ const ArticleCard: React.FC<IProps> = (props: IProps) => {
       })}
       <ReadLinkContainer>
         <ReadLink href={link} target="_blank" rel="noopener noreferrer">
-          <ExternalLinkIcon /> Ler artigo
+          <ExternalLinkIcon /> {props.readMoreText}
         </ReadLink>
       </ReadLinkContainer>
     </CardContainer>

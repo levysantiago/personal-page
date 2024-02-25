@@ -1,4 +1,4 @@
-export const navItems = [
+const pt = [
   {
     title: "Sobre",
     route: "#about",
@@ -20,3 +20,31 @@ export const navItems = [
     route: "#articles",
   },
 ];
+
+const en = [
+  {
+    title: "About",
+    route: "#about",
+  },
+  {
+    title: "Hard Skills",
+    route: "#hard-skills",
+  },
+  {
+    title: "Portfolio",
+    route: "#projects",
+  },
+  {
+    title: "Soft Skills",
+    route: "#soft-skills",
+  },
+  {
+    title: "Articles",
+    route: "#articles",
+  },
+];
+
+export const navItems = {
+  pt,
+  en,
+};
