@@ -44,7 +44,7 @@ const lang = {
         <br />
         <p>
           Tenho experiência principalmente em{" "}
-          <b>Programação Backend com Node.js</b>, <b>Banco de dados</b>,
+          <b>Programação Back-End com Node.js</b>, <b>Banco de dados</b>,
           <b> Blockchain</b> (Tokens, NFTs, DEX, Web3), desenvolvimento de{" "}
           <b>Contratos Inteligentes</b>, <b>DevOps configuração de Cloud</b> e{" "}
           <b>GitHub/GitLab/BitBucket</b>. Também tenho conhecimento em
@@ -109,7 +109,7 @@ const lang = {
   projectspage: {
     title: "Projetos",
     description:
-      "Nesta página são apresentados alguns dos projetos que desenvolvi para faculdade, bolsas e para necessidades pessoais. A maioria deles está no GitHub. Cada projeto contém o link para a página que o descreve. Também já trabalhei em muitos outros projetos de empresas, projetos de desenvolvimento de tokens ERC20, NFTs, Backend de plataformas, dentre outros. Porém, não posso divulgar muitas informações sobre.",
+      "Nesta página são apresentados alguns dos projetos que desenvolvi para faculdade, bolsas e para necessidades pessoais. A maioria deles está no GitHub. Cada projeto contém o link para a página que o descreve. Também já trabalhei em muitos outros projetos de empresas, projetos de desenvolvimento de tokens ERC20, NFTs, Back-End de plataformas, dentre outros. Porém, não posso divulgar muitas informações sobre.",
   },
   blogpage: {
     title: "Life of Levy's",
