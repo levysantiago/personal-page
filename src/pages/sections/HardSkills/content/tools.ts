@@ -20,6 +20,26 @@ export const tools = [
     alt: "Fastify.js image.",
   },
   {
+    title: "MongoDB",
+    image: require("../../../../assets/tools/mongodb.jpeg"),
+    alt: "MongoDB image.",
+  },
+  {
+    title: "MySQL",
+    image: require("../../../../assets/tools/mysql.jpeg"),
+    alt: "MySQL image.",
+  },
+  {
+    title: "PostgreSQL",
+    image: require("../../../../assets/tools/postgres.jpeg"),
+    alt: "PostgreSQL image.",
+  },
+  {
+    title: "Redis",
+    image: require("../../../../assets/tools/redis.jpeg"),
+    alt: "Redis image.",
+  },
+  {
     title: "Web3.js",
     image: require("../../../../assets/tools/web3js.jpg"),
     alt: "Web3.js image.",
@@ -58,26 +78,6 @@ export const tools = [
     title: "Polygon",
     image: require("../../../../assets/tools/polygon.jpeg"),
     alt: "Polygon image.",
-  },
-  {
-    title: "MongoDB",
-    image: require("../../../../assets/tools/mongodb.jpeg"),
-    alt: "MongoDB image.",
-  },
-  {
-    title: "MySQL",
-    image: require("../../../../assets/tools/mysql.jpeg"),
-    alt: "MySQL image.",
-  },
-  {
-    title: "PostgreSQL",
-    image: require("../../../../assets/tools/postgres.jpeg"),
-    alt: "PostgreSQL image.",
-  },
-  {
-    title: "Redis",
-    image: require("../../../../assets/tools/redis.jpeg"),
-    alt: "Redis image.",
   },
   // {
   //   title: "React.js",

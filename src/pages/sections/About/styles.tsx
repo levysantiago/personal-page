@@ -25,6 +25,12 @@ export const Container = styled(GenericContainer)(
 `
 );
 
+export const CenterContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
 export const RelativeDiv = styled.div`
   position: absolute;
   width: 100%;

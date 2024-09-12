@@ -12,26 +12,27 @@ const pt = {
   title: "Vida <highlight>Profissional</highlight>",
   sections: [
     {
-      title: "Boarding",
+      title: "Full-Stack & Solidity QA na GravelCoin (voluntário)",
       imageSrc: briefcase_icon,
       imageAlt: "Briefcase icon",
       backgroundColor: colors.blueIconBlock,
-      description: `Iniciei minha vida profissional trabalhando voluntariamente em
-            uma empresa na área de Blockchain na criação/testes de SmCs (Smart Contracts), também
-            na criação de DApp para integrar com estes SmCs utilizando <highlight>React.js</highlight> 
-            para o front-end e <highlight>Web3.js</highlight>, <highlight>Metamask</highlight>,
-            <highlight>Truffle.js</highlight>, e outras ferramentas para criação e testes de SmCs. `,
+      description: `Iniciei minha vida profissional trabalhando em
+            uma empresa na área de Blockchain. Eu fui responsável por testar a qualidade
+            de contratos inteligentes utilizando ferramentas como <highlight>Mocha.js</highlight> e <highlight>Chai.js</highlight>. Também
+            trabalhei no desenvolvimento de uma aplicação para integrada à Blockchain utilizando
+            <highlight>React.js</highlight>, <highlight>Express.js</highlight>, <highlight>MySQL</highlight>, dentre outros. Em Blockchain
+            trabalhei com <highlight>Solidity</highlight>, <highlight>Truffle.js</highlight>, <highlight>Web3.js</highlight>, dentre outros.`,
     },
     {
-      title: "Boosting",
+      title: "Back-End Developer na Softrends",
       imageSrc: briefcase_icon,
       imageAlt: "Briefcase icon",
       backgroundColor: colors.blueIconBlock,
-      description: `Durante o mestrado, trabalhei em outra empresa, ainda na área de Blockchain, onde tive
-            a oportunidade de desenvolver mais projetos envolvendo 
-            <highlight>tokens, NFTs, DEXs, DApps</highlight>, etc. Também adquiri maior conhecimento em 
-            backend (<highlight>Node.js</highlight>) e frontend (<highlight>React.js</highlight>), banco de dados (<highlight>SQL e NoSQL</highlight>),
-            clouds, hospedagem, etc. Além disso, fui responsável por liderar uma equipe,
+      description: `Durante o mestrado, trabalhei na Softrends, ainda na área de Blockchain. Nesta empresa eu fui responsável
+            principalmente por toda a infraestrutura de Back-End da empresa e de contratos inteligentes. Como Back-End trabalhei
+            com <highlight>Node.js</highlight>, <highlight>Express.js</highlight>, <highlight>Adonis.js</highlight>, 
+            <highlight>Nest.js</highlight>, bancos de dados <highlight>SQL e NoSQL</highlight>, clouds, hospedagem, etc. 
+            Além disso, fui responsável por liderar uma equipe pequena de devs Back-End,
             <highlight>foi a primeira oportunidade que tive de compartilhar o meu conhecimento, liderar e participar de 
             decisões de grande impacto na empresa</highlight>.`,
     },
@@ -40,22 +41,24 @@ const pt = {
       imageSrc: play_icon,
       imageAlt: "Play icon",
       backgroundColor: colors.purpleIconBlock,
-      description: `Após sair da última empresa, continuei trabalhando como freelancer
+      description: `Após sair da Softrends, continuei trabalhando como freelancer
             <highlight>e a participar de forma mais ativa dentro da comunidade de devs</highlight>
             contribuindo com o desenvolvimento de novas aplicações, e também compartilhando conhecimento. Isso foi essencial
-            para aprimorar minhas <highlight>Hard Skills</highlight> e <highlight>Soft Skills</highlight>, o que
-            fez surgir a próxima oportunidade e cargo atual.`,
+            para o aprimoramento minhas <highlight>Hard Skills</highlight> e <highlight>Soft Skills</highlight> e atualmente
+            continuo me desenvolvendo e compartilhando meus aprendizados com a comunidade.`,
     },
     {
-      title: "Blockchain Developer na BWS (cargo atual)",
-      imageSrc: rocket_icon,
-      imageAlt: "Rocket icon",
-      backgroundColor: colors.greenIconBlock,
-      description: `Em outubro de 2023 comecei a trabalhar na <link href="https://blockchainwebservices.com.br/">BWS</Link> como 
-            <highlight>Blockchain Developer</highlight> na criação de soluções com a tecnologia blockchain,
-            a tecnologia de foco na minha carreira. Nesta empresa eu sou responsável por desenvolver APIs, aplicações e infraestruturas blockchain,
-            pesquisar e desenvolver novas soluções em blockchain. Sinta-se à vontade para me seguir
-            e entrar em contato no Linkedin, GitHub, Instagram, etc.`,
+      title: "Blockchain Developer na BWS",
+      // imageSrc: rocket_icon,
+      // imageAlt: "Rocket icon",
+      // backgroundColor: colors.greenIconBlock,
+      imageSrc: briefcase_icon,
+      imageAlt: "Briefcase icon",
+      backgroundColor: colors.blueIconBlock,
+      description: `Nesta empresa tive o cargo de 
+            <highlight>Blockchain Developer</highlight>, mas também promovi diversas colaborações como dev Back-End. Ou seja, continuei trabalhando na criação de soluções com a tecnologia blockchain mas,
+            ainda assim, colaborei na criação de APIs e aprimorei algumas APIs legadas aplicando técnicas de padrões de projeto,
+            Domain Driven Design, e outras, o que otimizou o processo de manutenção e criação de novas funcionalidades.`,
     },
   ],
 };
@@ -64,24 +67,24 @@ const en = {
   title: "<highlight>Profissional</highlight> Life",
   sections: [
     {
-      title: "Boarding",
+      title: "Full-Stack & Solidity QA na GravelCoin (volunteer)",
       imageSrc: briefcase_icon,
       imageAlt: "Briefcase icon",
       backgroundColor: colors.blueIconBlock,
-      description: `I started my professional life working voluntarily at a company in the Blockchain area, 
-        creating/testing SmCs (Smart Contracts), also creating a DApp to integrate with these SmCs using <highlight>React.js</highlight> 
-        para o front-end e <highlight>Web3.js</highlight>, <highlight>Metamask</highlight>, <highlight>Truffle.js</highlight>, and 
-        other tools for creating and testing SmCs.`,
+      description: `I started my professional life working at a company in the Blockchain area. I was responsible for testing the quality
+        of smart contracts using tools as <highlight>Mocha.js</highlight> and <highlight>Chai.js</highlight>. I also worked in the 
+        development of an application integrated to Blockchain using <highlight>React.js</highlight>, <highlight>Express.js</highlight>, <highlight>MySQL</highlight>, 
+        and other technologies. As Blockchain dev I worked with <highlight>Solidity</highlight>, <highlight>Truffle.js</highlight>, <highlight>Web3.js</highlight>, and others.`,
     },
     {
-      title: "Boosting",
+      title: "Back-End Developer at Softrends",
       imageSrc: briefcase_icon,
       imageAlt: "Briefcase icon",
       backgroundColor: colors.blueIconBlock,
-      description: `During my master's degree, I worked at another company, still in the Blockchain area, where 
-        I had the opportunity to develop more projects involving <highlight>tokens, NFTs, DEXs, DApps</highlight>, etc. 
-        I also acquired greater knowledge in backend (<highlight>Node.js</highlight>) and frontend (<highlight>React.js</highlight>), database 
-        (<highlight>SQL and NoSQL</highlight>), clouds , hosting, etc. Furthermore, I was responsible for leading a team, 
+      description: `During my master's degree, I worked at Softrends, still in the Blockchain area. There I was responsible mainly 
+        for the whole Back-End infrastructure of the company and smart contracts development. As a Back-End dev, I worked with <highlight>Node.js</highlight>,
+        <highlight>Express.js</highlight>, <highlight>Adonis.js</highlight>, <highlight>Nest.js</highlight>, databases <highlight>SQL and NoSQL</highlight>, 
+        clouds, hosting, etc. I was also responsible for leading a small Back-End team, 
         <highlight>it was the first opportunity I had to share my knowledge, lead and participate in decisions of 
         great impact on the company</highlight>.`,
     },
@@ -90,20 +93,23 @@ const en = {
       imageSrc: play_icon,
       imageAlt: "Play icon",
       backgroundColor: colors.purpleIconBlock,
-      description: `After leaving the last company, I continued working as a freelancer <highlight>and participating 
+      description: `After leaving Softrends, I continued working as a freelancer <highlight>and participating 
       more actively within the dev community</highlight> contributing to the development of new applications, and also 
       sharing knowledge. This was essential to improve my <highlight>Hard Skills</highlight> and 
-      <highlight>Soft Skills</highlight>, which led to the next opportunity and current position.`,
+      <highlight>Soft Skills</highlight> and currently I continue improving these skills and sharing my experience with the community.`,
     },
     {
-      title: "Blockchain Developer na BWS (cargo atual)",
-      imageSrc: rocket_icon,
-      imageAlt: "Rocket icon",
-      backgroundColor: colors.greenIconBlock,
-      description: `In October 2023 I started working at <link href="https://blockchainwebservices.com.br/">BWS</Link> 
-      as <highlight>Blockchain Developer</highlight> creating solutions with blockchain technology, the technology of 
-      focus in my career. In this company I am responsible for developing APIs, applications and blockchain infrastructures, 
-      researching and developing new blockchain solutions. Feel free to follow and contact me on Linkedin, GitHub, Instagram, etc.`,
+      title: "Blockchain Developer at BWS",
+      // imageSrc: rocket_icon,
+      // imageAlt: "Rocket icon",
+      // backgroundColor: colors.greenIconBlock,
+      imageSrc: briefcase_icon,
+      imageAlt: "Briefcase icon",
+      backgroundColor: colors.blueIconBlock,
+      description: `In this company was hired as a Blockchain developer, but I also provided many collaborations as a Back-End dev.
+          That is, I continued working on creating solutions with blockchain technology but, even so, I collaborated in the creation 
+          of APIs and improved some legacy APIs by applying design pattern techniques, Domain Driven Design, and others, which optimized 
+          the process of maintenance and creation of new functionalities.`,
     },
   ],
 };

@@ -3,7 +3,6 @@ import gifflar_img from "../../../../assets/project-imgs/gifflar.jpeg";
 import boarding_pass from "../../../../assets/project-imgs/boarding-pass.jpeg";
 import buymeachocolate from "../../../../assets/project-imgs/buymeachocolate.jpeg";
 import textme from "../../../../assets/project-imgs/textme.jpeg";
-import blockegovme from "../../../../assets/project-imgs/blockegovme.jpeg";
 
 export const en = {
   title: "My <highlight>Portfolio</highlight>",
@@ -66,37 +65,37 @@ export const en = {
       ],
     },
     {
-      title: "BlockEGovMe",
-      description: `This was an Academic project at the State University of Santa Cruz (UESC) 
-      that consisted of creating smart contracts for Electronic Government (E-Gov) using Solidity.`,
-      readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-      githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-      banner: blockegovme,
-      badges: [
-        "javascript",
-        "reactjs",
-        "nodejs",
-        "expressjs",
-        "solidity",
-        "web3",
-        "solc",
-        "mysql",
-        "ganache",
-        "solc",
-        "mocha",
-        "metamask",
-      ],
-    },
-    {
       title: "Boarding-Pass",
       description: `This project simulates the purchase of airline tickets by selecting the 
       flight and seats, then generating your "boarding-pass". In this project I used 
-      Nest.js in the backend and Prisma ORM for database integration.`,
+      Nest.js in the Back-End and Prisma ORM for database integration.`,
       readMoreLink: "https://github.com/Levysantiago/boarding-pass",
       githubLink: "https://github.com/Levysantiago/boarding-pass",
       banner: boarding_pass,
       badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
     },
+    // {
+    //   title: "BlockEGovMe",
+    //   description: `This was an Academic project at the State University of Santa Cruz (UESC) 
+    //   that consisted of creating smart contracts for Electronic Government (E-Gov) using Solidity.`,
+    //   readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    //   githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    //   banner: blockegovme,
+    //   badges: [
+    //     "javascript",
+    //     "reactjs",
+    //     "nodejs",
+    //     "expressjs",
+    //     "solidity",
+    //     "web3",
+    //     "solc",
+    //     "mysql",
+    //     "ganache",
+    //     "solc",
+    //     "mocha",
+    //     "metamask",
+    //   ],
+    // },
     // {
     //   title: "Music Player",
     //   description: `It is a music player. In this player I added the features to play, pause,

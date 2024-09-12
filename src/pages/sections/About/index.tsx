@@ -2,6 +2,7 @@ import { SideTopic } from "components/SideTopic";
 import React from "react";
 import {
   AcademyIconBlock,
+  CenterContent,
   Container,
   Description,
   HighlightedDescription,
@@ -18,6 +19,7 @@ import { Link } from "components/styles";
 import { content } from "./content";
 import { useLanguage } from "components/contexts/LanguageContext";
 import { formatContent } from "util/content-formatter";
+import NetworkButtons from "components/NetworkButtons";
 
 const About: React.FC = () => {
   const { lang } = useLanguage();
@@ -56,7 +58,7 @@ const About: React.FC = () => {
 
       <SideTopic
         imageElement={<ProfissionIconBlock />}
-        title={`Blockchain Developer`}
+        title={`Back-End & Blockchain Developer`}
         descriptionElement={
           <Description>
             {formatContent({
@@ -69,6 +71,10 @@ const About: React.FC = () => {
           </Description>
         }
       />
+
+      <CenterContent>
+        <NetworkButtons />
+      </CenterContent>
 
       <RelativeDiv>
         <HtmlTagImg />

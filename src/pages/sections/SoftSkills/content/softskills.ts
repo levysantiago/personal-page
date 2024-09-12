@@ -3,7 +3,7 @@ const pt = {
   softSkills: [
     {
       title: "Leadership",
-      description: `Já liderei uma equipe pequena de devs no setor de backend responsável pela 
+      description: `Já liderei uma equipe pequena de devs no setor de Back-End responsável pela 
     integração com smart contracts. Eu gosto de fazer parte da evolução de outros devs.`,
     },
     {
@@ -44,7 +44,7 @@ const en = {
   softSkills: [
     {
       title: "Leadership",
-      description: `I have already led a small backend team responsible for 
+      description: `I have already led a small Back-End team responsible for 
       smart contracts integration. I like being part of the evolution of other devs.`,
     },
     {

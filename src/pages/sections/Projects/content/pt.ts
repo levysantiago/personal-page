@@ -3,7 +3,6 @@ import gifflar_img from "../../../../assets/project-imgs/gifflar.jpeg";
 import boarding_pass from "../../../../assets/project-imgs/boarding-pass.jpeg";
 import buymeachocolate from "../../../../assets/project-imgs/buymeachocolate.jpeg";
 import textme from "../../../../assets/project-imgs/textme.jpeg";
-import blockegovme from "../../../../assets/project-imgs/blockegovme.jpeg";
 
 export const pt = {
   title: "Meu <highlight>Portfólio</highlight>",
@@ -72,36 +71,36 @@ export const pt = {
       ],
     },
     {
-      title: "BlockEGovMe",
-      description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC)
-      que consistiu no criação de contratos inteligentes para o Governo Eletrônico (E-Gov) utilizando Solidity.`,
-      readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-      githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
-      banner: blockegovme,
-      badges: [
-        "javascript",
-        "reactjs",
-        "nodejs",
-        "expressjs",
-        "solidity",
-        "web3",
-        "solc",
-        "mysql",
-        "ganache",
-        "solc",
-        "mocha",
-        "metamask",
-      ],
-    },
-    {
       title: "Boarding-Pass",
       description: `Este projeto simula a compra de passagens aéreas selecionando o voo e assentos gerando por fim o seu "boarding-pass".
-      Neste projeto eu utilizei Nest.js no backend e Prisma ORM para integração com banco de dados.`,
+      Neste projeto eu utilizei Nest.js no Back-End e Prisma ORM para integração com banco de dados.`,
       readMoreLink: "https://github.com/Levysantiago/boarding-pass",
       githubLink: "https://github.com/Levysantiago/boarding-pass",
       banner: boarding_pass,
       badges: ["typescript", "nodejs", "nestjs", "prisma", "reactjs", "axios"],
     },
+    // {
+    //   title: "BlockEGovMe",
+    //   description: `Este foi um projeto de Iniciação Científica da Universidade Estadual de Santa Cruz (UESC)
+    //   que consistiu no criação de contratos inteligentes para o Governo Eletrônico (E-Gov) utilizando Solidity.`,
+    //   readMoreLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    //   githubLink: "https://github.com/Levysantiago/smartcontracts-for-egov",
+    //   banner: blockegovme,
+    //   badges: [
+    //     "javascript",
+    //     "reactjs",
+    //     "nodejs",
+    //     "expressjs",
+    //     "solidity",
+    //     "web3",
+    //     "solc",
+    //     "mysql",
+    //     "ganache",
+    //     "solc",
+    //     "mocha",
+    //     "metamask",
+    //   ],
+    // },
     // {
     //   title: "Music Player",
     //   description: `Trata-se de um player de música. Neste player adicionei as funcionalidades de
