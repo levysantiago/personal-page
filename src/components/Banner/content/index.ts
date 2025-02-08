@@ -1,12 +1,12 @@
 const pt = {
-  titleInit: "Olá, eu sou <highlight>Levy</highlight>!",
-  subtitle: "Sou dev Back-End + Blockchain e criador de conteúdo.",
+  titleInit: "Olá dev! Prazer, sou o <highlight>Levy's</highlight>!",
+  subtitle: "Sou dev Back-end e criador de conteúdo.",
   subtitle2: "Quer saber mais? Vem comigo!",
 };
 
 const en = {
-  titleInit: "Hello, I am <highlight>Levy</highlight>!",
-  subtitle: "I'm a Back-End + Blockchain dev and content creator.",
+  titleInit: "Hi dev! Nice to meet you, I'm <highlight>Levy's</highlight>!",
+  subtitle: "I'm a Back-end dev and content creator.",
   subtitle2: "Want to know more? Come with me!",
 };
 

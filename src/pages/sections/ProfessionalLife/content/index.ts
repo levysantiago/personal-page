@@ -48,7 +48,7 @@ const pt = {
             continuo me desenvolvendo e compartilhando meus aprendizados com a comunidade.`,
     },
     {
-      title: "Blockchain Developer na BWS",
+      title: "Blockchain Developer",
       // imageSrc: rocket_icon,
       // imageAlt: "Rocket icon",
       // backgroundColor: colors.greenIconBlock,
@@ -59,6 +59,17 @@ const pt = {
             <highlight>Blockchain Developer</highlight>, mas também promovi diversas colaborações como dev Back-End. Ou seja, continuei trabalhando na criação de soluções com a tecnologia blockchain mas,
             ainda assim, colaborei na criação de APIs e aprimorei algumas APIs legadas aplicando técnicas de padrões de projeto,
             Domain Driven Design, e outras, o que otimizou o processo de manutenção e criação de novas funcionalidades.`,
+    },
+    {
+      title: "Back-end Developer na Rocketseat",
+      imageSrc: rocket_icon,
+      imageAlt: "Rocket icon",
+      backgroundColor: colors.greenIconBlock,
+      // imageSrc: briefcase_icon,
+      // imageAlt: "Briefcase icon",
+      // backgroundColor: colors.blueIconBlock,
+      description: `Atualmente, atuo como Back-end Developer na <link href="https://rocketseat.com.br">Rocketseat</link>, ajudando a impulsionar a carreira de milhares de desenvolvedores. 
+      Contribuo para o desenvolvimento das plataformas de ensino e para a criação de soluções que aprimoram a experiência dos(as) alunos(as).`,
     },
   ],
 };
@@ -99,7 +110,7 @@ const en = {
       <highlight>Soft Skills</highlight> and currently I continue improving these skills and sharing my experience with the community.`,
     },
     {
-      title: "Blockchain Developer at BWS",
+      title: "Blockchain Developer",
       // imageSrc: rocket_icon,
       // imageAlt: "Rocket icon",
       // backgroundColor: colors.greenIconBlock,
@@ -110,6 +121,17 @@ const en = {
           That is, I continued working on creating solutions with blockchain technology but, even so, I collaborated in the creation 
           of APIs and improved some legacy APIs by applying design pattern techniques, Domain Driven Design, and others, which optimized 
           the process of maintenance and creation of new functionalities.`,
+    },
+    {
+      title: "Back-end Developer na Rocketseat",
+      imageSrc: rocket_icon,
+      imageAlt: "Rocket icon",
+      backgroundColor: colors.greenIconBlock,
+      // imageSrc: briefcase_icon,
+      // imageAlt: "Briefcase icon",
+      // backgroundColor: colors.blueIconBlock,
+      description: `I currently work as a Back-end Developer at <link href="https://rocketseat.com.br">Rocketseat</link>, helping to boost the careers of thousands of developers. 
+      I contribute to the development of educational platforms and the creation of solutions that enhance the student experience.`,
     },
   ],
 };

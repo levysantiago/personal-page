@@ -13,7 +13,7 @@ export const en = {
     {
       title: "Personal page",
       description: `This project concerns this page you are accessing. It was developed with React.js, 
-      TypeScript, Styled Components and other tools. I also use IPFS (Interplanetary File System) to host this site.`,
+      TypeScript, Styled Components and other tools.`,
       readMoreLink: "https://github.com/Levysantiago/personal-page",
       githubLink: "https://github.com/Levysantiago/personal-page",
       banner: personal_page,

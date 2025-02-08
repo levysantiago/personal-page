@@ -13,9 +13,7 @@ export const pt = {
     {
       title: "Personal page",
       description: `Este projeto diz respeito a esta página que você está acessando. 
-    Ela foi desenvolvida com React.js, TypeScript, Styled Components e outras ferramentas. 
-    Também uso o IPFS (Sistema de Arquivos Interplanetário) para 
-    hospedagem deste site.`,
+    Ela foi desenvolvida com React.js, TypeScript, Styled Components e outras ferramentas.`,
       readMoreLink: "https://github.com/Levysantiago/personal-page",
       githubLink: "https://github.com/Levysantiago/personal-page",
       banner: personal_page,
