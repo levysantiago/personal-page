@@ -10,6 +10,7 @@ import academy_hat_icon from "../../../assets/academy-hat.svg";
 import tags_icon from "../../../assets/tags-icon.svg";
 import { IconBlock } from "components/IconBlock";
 import { ITheme } from "components/Theme";
+import rocketseatSvg from "assets/rocketseat.svg"
 
 interface IAboutProps {
   theme: ITheme;
@@ -129,3 +130,7 @@ export const ProfissionIconBlock = styled(IconBlock).attrs(
     iconAlt: "HTML tags icon",
   })
 )``;
+
+export const RocketseatImg = styled.img.attrs({src: rocketseatSvg})`
+  width: 90px;
+`;

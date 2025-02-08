@@ -11,6 +11,7 @@ import {
   LevysdevPicture,
   ProfissionIconBlock,
   RelativeDiv,
+  RocketseatImg,
   SubTitle,
   Title,
   TitleContinuation,
@@ -57,8 +58,8 @@ const About: React.FC = () => {
       />
 
       <SideTopic
-        imageElement={<ProfissionIconBlock />}
-        title={`Back-End & Blockchain Developer`}
+        imageElement={<RocketseatImg />}
+        title={`Back-end Developer na Rocketseat`}
         descriptionElement={
           <Description>
             {formatContent({
