@@ -11,7 +11,6 @@ import Quote from "pages/sections/Quote";
 import SoftSkills from "pages/sections/SoftSkills";
 import Theme from "components/Theme";
 import React from "react";
-import BahiaDevs from "pages/sections/BahiaDevs";
 
 const HomePage: React.FC = () => {
   return (
@@ -33,9 +32,6 @@ const HomePage: React.FC = () => {
         </div>
         <div id="professional-life">
           <ProfessionalLife />
-        </div>
-        <div id="bahia-devs">
-          <BahiaDevs />
         </div>
         <div id="articles">
           <Articles />
