@@ -1,3 +1,5 @@
+import { useLanguage } from "components/contexts/LanguageContext";
+import { content } from "./content";
 import {
   Container,
   ImgContainer,
@@ -10,8 +12,11 @@ import {
   Text,
 } from "./styles";
 import React from "react";
+import { formatContent } from "util/content-formatter";
 
 const Banner: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <Container>
       <ImgContainer>
@@ -21,12 +26,15 @@ const Banner: React.FC = () => {
         <TitleContainer>
           <HelloIcon />
           <Title>
-            Olá, eu sou <TitleHighlight>Levy</TitleHighlight>!
+            {formatContent({
+              message: content[lang].titleInit,
+              components: { HighlightComponent: TitleHighlight },
+            })}
           </Title>
         </TitleContainer>
-        <Text>Sou desenvolvedor de sistemas e criador de conteúdo.</Text>
+        <Text>{content[lang].subtitle}</Text>
 
-        <Text>Quer saber mais? Vem comigo!</Text>
+        <Text>{content[lang].subtitle2}</Text>
       </TextContentContainer>
     </Container>
   );

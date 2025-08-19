@@ -110,7 +110,7 @@ export const Title = styled(ResponsiveCardTitle)(
   font-family: ${props.theme.fonts.title2};
   font-weight: 700;
   color: ${props.theme.colors.blueMedium};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `
 );
 
@@ -124,7 +124,7 @@ export const Description = styled(ResponsiveSmallText)(
 `
 );
 
-export const ExternalLink = styled.a.attrs({
+export const ExternalLink = styled.span.attrs({
   target: "_blank",
   rel: "noopener noreferrer",
 })`
