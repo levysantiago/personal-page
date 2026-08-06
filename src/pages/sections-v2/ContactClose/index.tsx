@@ -1,11 +1,10 @@
 import * as React from "react";
 import { useLanguage } from "components/contexts/LanguageContext";
 import { useReveal } from "components/RevealOnScroll";
-import { EMAIL, LINKEDIN_URL } from "../socialLinks";
+import { LINKEDIN_URL } from "../socialLinks";
 import { content } from "./content";
 import {
   Actions,
-  GhostButton,
   Heading,
   HeadingAccent,
   Paragraph,
@@ -30,10 +29,9 @@ const ContactClose: React.FC = () => {
         <Paragraph>{c.paragraph}</Paragraph>
       </div>
       <Actions>
-        <PrimaryButton href={`mailto:${EMAIL}`}>{c.emailLabel}</PrimaryButton>
-        <GhostButton href={LINKEDIN_URL} target="_blank" rel="noopener">
+        <PrimaryButton href={LINKEDIN_URL} target="_blank" rel="noopener">
           {c.linkedinLabel}
-        </GhostButton>
+        </PrimaryButton>
       </Actions>
     </Section>
   );

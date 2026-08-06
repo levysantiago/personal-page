@@ -3,7 +3,6 @@ export const en = {
   headingAccent: "solid",
   headingSuffix: " together.",
   paragraph:
-    "Open to freelance back-end and AI work. The fastest way to reach me is email.",
-  emailLabel: "Email me",
+    "Open to freelance back-end and AI work. The fastest way to reach me is LinkedIn.",
   linkedinLabel: "LinkedIn",
 };
