@@ -84,8 +84,13 @@ export const LangDivider = styled.span(
   `
 );
 
-export const LangInactive = styled.a(
+export const LangInactive = styled.button(
   (props: IProps) => css`
+    appearance: none;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    padding: 0;
     color: ${props.theme.colors.neutralRamp[500]};
     text-decoration: none;
     white-space: nowrap;

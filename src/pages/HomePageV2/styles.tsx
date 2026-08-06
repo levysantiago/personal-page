@@ -24,6 +24,24 @@ export const Page = styled.div(
         transparent 60%
       ),
       ${props.theme.colors.bg};
+
+    *:focus {
+      outline: none;
+    }
+
+    *:focus-visible {
+      outline: 2px solid ${props.theme.colors.accent};
+      outline-offset: 2px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: ${props.theme.colors.text};
+    }
   `
 );
 

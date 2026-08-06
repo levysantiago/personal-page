@@ -12,6 +12,7 @@ export const Wrapper = styled.div(
   (props: IWrapperProps) => css`
     position: relative;
     width: ${props.$width};
+    max-width: 100%;
     height: ${props.$height};
     border-radius: ${props.$radius};
     overflow: hidden;

@@ -15,6 +15,10 @@ export const Section = styled.section`
   gap: 56px;
   align-items: center;
 
+  & > * {
+    min-width: 0;
+  }
+
   @media (max-width: 880px) {
     grid-template-columns: 1fr;
   }
@@ -149,6 +153,8 @@ export const PortraitCol = styled.div(
   (props: IRevealProps) => css`
     ${revealStyles(props)}
     position: relative;
+    width: min(400px, calc(100vw - 48px));
+    max-width: 400px;
     justify-self: end;
 
     @media (max-width: 880px) {
