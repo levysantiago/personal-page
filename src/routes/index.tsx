@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
+import HomePageV2 from "../pages/HomePageV2";
 import { LanguageContextProvider } from "components/contexts/LanguageContext";
 import { routesDict } from "./content/routes-dict";
 
@@ -8,8 +8,8 @@ const MyRoutes = (
   <HashRouter>
     <LanguageContextProvider>
       <Routes>
-        <Route path={routesDict.home.this} element={<HomePage />} />
-        <Route path={`${routesDict.home.this}/:lang`} element={<HomePage />} />
+        <Route path={routesDict.home.this} element={<HomePageV2 />} />
+        <Route path={`${routesDict.home.this}/:lang`} element={<HomePageV2 />} />
       </Routes>
     </LanguageContextProvider>
   </HashRouter>
