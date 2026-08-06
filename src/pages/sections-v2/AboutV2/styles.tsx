@@ -52,6 +52,7 @@ export const Lead = styled.p(
     font-weight: 500;
     font-size: 21px;
     line-height: 1.5;
+    color: ${props.theme.colors.text};
     margin: 0 0 18px;
   `
 );
@@ -88,9 +89,12 @@ export const FactTerm = styled.dt(
   `
 );
 
-export const FactValue = styled.dd`
-  margin: 0;
-`;
+export const FactValue = styled.dd(
+  (props: IProps) => css`
+    color: ${props.theme.colors.text};
+    margin: 0;
+  `
+);
 
 export const StatusValue = styled(FactValue)(
   (props: IProps) => css`

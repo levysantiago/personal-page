@@ -86,6 +86,7 @@ export const Summary = styled.summary(
     align-items: baseline;
     padding: 18px 0;
     position: relative;
+    color: ${props.theme.colors.text};
     ${!props.$isFirst &&
     css`
       border-top: 1px solid
@@ -126,6 +127,7 @@ export const RoleTitle = styled.span(
     font-family: ${props.theme.fonts.heading};
     font-size: 21px;
     font-weight: 500;
+    color: ${props.theme.colors.text};
   `
 );
 
@@ -155,6 +157,7 @@ export const RoleBody = styled.div(
     color: color-mix(in srgb, ${props.theme.colors.text} 78%, transparent);
 
     p {
+      color: inherit;
       margin: 0;
     }
   `
