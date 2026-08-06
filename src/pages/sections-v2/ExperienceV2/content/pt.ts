@@ -7,39 +7,11 @@ export const pt = {
       company: "Rocketseat",
       dateRange: "Fevereiro de 2025 - Julho de 2026",
       current: true,
-      sections: [
-        {
-          title: "Features e Serviços",
-          bullets: [
-            "Desenvolvi novas features, serviços internos e soluções integradas a IA, cobrindo todo o ciclo de vida desde o planejamento até a implementação. Trabalhei com JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash e Docker.",
-            "Usei regularmente ferramentas de desenvolvimento assistido por IA, como Cursor, Claude Code, OpenCode, T3 Code e Conductor, além de MCPs, skills e workflows estruturados de planejamento.",
-            "Contribuí diretamente para o planejamento técnico e de produto de novas features.",
-            "Desenvolvi integrações e projetos em colaboração com empresas parceiras.",
-            "Construí dashboards internos para dar visibilidade a métricas operacionais e apoiar outros times na análise de resultados e na tomada de decisões orientadas por dados.",
-            "Propus e implementei uma estratégia de documentação de serviços, expandindo o contexto disponível para Engenharia, Produto e para os agentes de IA usados ao longo do processo de desenvolvimento.",
-          ],
-        },
-        {
-          title: "IA e Automação",
-          bullets: [
-            "Construí um serviço baseado em agentes de IA para avaliar projetos práticos de código. Os agentes analisavam código, validavam requisitos, forneciam feedback e atribuíam notas por meio de um workflow multi-agente, com diferentes modelos usados em cada etapa.",
-            "Desenvolvi um framework de avaliação para monitorar e avaliar a performance de agentes de IA.",
-            "Criei automações com IA para otimizar processos internos e reduzir trabalho manual em diferentes áreas da empresa. Usei bibliotecas e frameworks como OpenAI e Vercel AI SDK para construir soluções de IA.",
-          ],
-        },
-        {
-          title: "Qualidade e correção de bugs",
-          bullets: [
-            "Reestruturei a suíte de testes automatizados de um sistema legado, atualizando e reorganizando os testes existentes.",
-            "Defini padrões para a evolução contínua da suíte de testes, incluindo a criação de uma skill específica do projeto para orientar implementações futuras.",
-          ],
-        },
-        {
-          title: "Marketing e Developer Relations",
-          bullets: [
-            "Participei de iniciativas de Marketing produzindo vídeos em estilo UGC para campanhas e eventos ao vivo, compartilhando experiências relacionadas a carreiras em desenvolvimento de software e temas técnicos.",
-          ],
-        },
+      bullets: [
+        "Sistemas backend: construí features de produção e serviços internos com Node.js, TypeScript, PostgreSQL, Redis, QStash e Docker.",
+        "Engenharia de IA: projetei workflows multi-agente para revisão de código, validação de requisitos, geração de feedback e atribuição de notas.",
+        "Qualidade de plataforma: reestruturei uma suíte de testes legada, defini padrões de testes e melhorei a documentação técnica para humanos e agentes de IA.",
+        "Ferramentas operacionais: entreguei dashboards internos e automações que reduziram trabalho manual e ampliaram a visibilidade de métricas de produto.",
       ],
     },
     {
@@ -48,12 +20,9 @@ export const pt = {
       dateRange: "Outubro de 2023 - Setembro de 2024",
       current: false,
       bullets: [
-        "Desenvolvimento de APIs integradas a diferentes redes blockchain, incluindo Ethereum, Polygon, Tron, Cosmos e Ripple, usando principalmente Nest.js.",
-        "Aplicação de Domain Driven Design (DDD) para melhorar a infraestrutura e abstração das APIs.",
-        "Melhorias na arquitetura interna das APIs para otimizar o processo de manutenção e criação de novas funcionalidades.",
-        "Melhorias no aumento da cobertura de testes das APIs com Jest.",
-        "Configuração de CI de testes das APIs no GitHub.",
-        "Desenvolvimento e testes de Smart Contracts com Solidity usando Foundry.",
+        "Arquitetura de APIs: construí e mantive APIs Nest.js integradas a múltiplas redes blockchain.",
+        "Modelagem de domínio: apliquei DDD para melhorar infraestrutura, abstrações e manutenibilidade das APIs.",
+        "Confiabilidade: aumentei cobertura de testes com Jest e configurei CI no GitHub para pipelines de teste das APIs.",
       ],
     },
     {
@@ -62,12 +31,9 @@ export const pt = {
       dateRange: "Junho de 2022 - Outubro de 2023",
       current: false,
       bullets: [
-        "Desenvolvimento de aplicações robustas, com back-end em Nest.js e Fastify e front-end em React.js, gerenciando todo o ciclo do produto desde a ideação, passando pelo desenvolvimento, até o deploy final.",
-        "Criação e configuração de bancos SQL e NoSQL, também usando ORMs como Prisma e TypeORM para executar queries.",
-        "Configuração de máquinas em cloud em plataformas como GCP, Godaddy e Digital Ocean, usando NGINX.",
-        "Integração de APIs com blockchain usando Web3.js e Ethers.js.",
-        "Desenvolvimento de smart contracts planejados e adaptados aos requisitos dos projetos.",
-        "Desenvolvimento de aplicações front-end com React.js.",
+        "Backend de produto: entreguei APIs em Nest.js e Fastify da ideação ao deploy para produtos completos de clientes.",
+        "Camada de dados: modelei bancos SQL e NoSQL com Prisma e TypeORM.",
+        "Deploy: provisionei máquinas em cloud e servi aplicações com NGINX na GCP e Digital Ocean.",
       ],
     },
     {
@@ -76,14 +42,10 @@ export const pt = {
       dateRange: "Junho de 2020 - Junho de 2022",
       current: false,
       bullets: [
-        "Inicialmente trabalhei como Full-Stack Developer e Blockchain Developer. Comecei como o primeiro desenvolvedor do time e, após novas contratações, passei a ser responsável especificamente pelas partes de Back-End, Blockchain e DevOps.",
-        "Desenvolvimento e manutenção de aplicações Back-End robustas com frameworks JavaScript/TypeScript como Express.js e Adonis.js, bancos SQL e NoSQL, APIs REST, controle de autenticação, emails com serviços SMTP, WebSocket e mais.",
-        "Aplicação de técnicas de qualidade de software, como princípios SOLID, para melhorar a manutenção, segurança e portabilidade de serviços e funcionalidades.",
-        "Configuração de máquinas em cloud como GCP, Digital Ocean, Godaddy e outras, usando principalmente NGINX para servir as aplicações.",
-        "Liderança de um pequeno time de desenvolvedores Back-End, participando diretamente da ideação, planejamento, definição de tecnologias, divisão e atribuição de tarefas e desenvolvimento das aplicações.",
-        "Integração com plataformas blockchain como Ethereum e Binance Smart Chain usando Web3.js e Ethers.js.",
-        "Desenvolvimento de smart contracts com Solidity usando padrões como ERC20 (Tokens), ERC721 (NFTs), Proxy e contratos personalizados aplicando técnicas de otimização.",
-        "Design e desenvolvimento de aplicações front-end com Figma e React.js, criando componentes customizados com Styled Components.",
+        "Ownership backend: evoluí de primeiro desenvolvedor para responsável por back-end, DevOps e blockchain.",
+        "Desenvolvimento de APIs: construí APIs REST com Express.js e Adonis.js, cobrindo autenticação, email SMTP, WebSockets e bancos SQL/NoSQL.",
+        "Liderança técnica: liderei um pequeno time back-end no planejamento, escolhas técnicas, divisão de tarefas e entrega.",
+        "Qualidade de serviço: apliquei princípios SOLID e configurei infraestrutura cloud com NGINX para serviços em produção.",
       ],
     },
     {
@@ -92,10 +54,8 @@ export const pt = {
       dateRange: "Dezembro de 2018 - Dezembro de 2019",
       current: false,
       bullets: [
-        "Trabalhei voluntariamente no projeto da empresa, realizando testes automáticos nos smart contracts criados pela empresa e iniciando o desenvolvimento de uma plataforma web para venda do token.",
-        "Desenvolvimento de uma aplicação Back-End com Express.js e banco MySQL para uma plataforma de venda de token.",
-        "Validação com testes automáticos e correções de funcionalidades de smart contracts criados em Solidity usando Mocha.js, Chai.js, Jest e Truffle.",
-        "Design e desenvolvimento de uma plataforma front-end com React.js e criação de componentes customizados com Styled Components.",
+        "Base backend: construí uma API em Express.js e MySQL para uma plataforma de venda de token.",
+        "Quality assurance: testei e corrigi smart contracts em Solidity com Mocha.js, Chai.js, Jest e Truffle.",
       ],
     },
   ],

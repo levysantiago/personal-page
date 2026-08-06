@@ -7,39 +7,11 @@ export const en = {
       company: "Rocketseat",
       dateRange: "February 2025 - July 2026",
       current: true,
-      sections: [
-        {
-          title: "Features and Services",
-          bullets: [
-            "Developed new features, internal services, and AI-integrated solutions, covering the entire lifecycle from planning to implementation. Worked with JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash, and Docker.",
-            "Regularly used AI-assisted development tools such as Cursor, Claude Code, OpenCode, T3 Code, and Conductor, as well as MCPs, skills, and structured planning workflows.",
-            "Contributed directly to the technical and product planning of new features.",
-            "Developed integrations and projects in collaboration with partner companies.",
-            "Built internal dashboards to provide visibility into operational metrics and support other teams in analyzing results and making data-driven decisions.",
-            "Proposed and implemented a service documentation strategy, expanding the context available to Engineering, Product, and the AI agents used throughout the development process.",
-          ],
-        },
-        {
-          title: "AI and Automation",
-          bullets: [
-            "Built an AI-agent-based service for evaluating practical coding projects. The agents analyzed code, validated requirements, provided feedback, and assigned scores through a multi-agent workflow, with different models used at each stage.",
-            "Developed an evaluation framework to monitor and assess the performance of AI agents.",
-            "Created AI-powered automations to streamline internal processes and reduce manual work across different areas of the company. Used libraries and frameworks such as OpenAI and the Vercel AI SDK to build AI solutions.",
-          ],
-        },
-        {
-          title: "Quality Assurance and Bug Fixing",
-          bullets: [
-            "Restructured the automated test suite of a legacy system by updating and reorganizing the existing tests.",
-            "Defined standards for the continued evolution of the test suite, including the creation of a project-specific skill to guide future implementations.",
-          ],
-        },
-        {
-          title: "Marketing and Developer Relations",
-          bullets: [
-            "Participated in Marketing initiatives by producing UGC-style videos for campaigns and live events, sharing experiences related to software development careers and technical topics.",
-          ],
-        },
+      bullets: [
+        "Backend systems: built production features and internal services with Node.js, TypeScript, PostgreSQL, Redis, QStash and Docker.",
+        "AI engineering: designed multi-agent workflows for code review, requirement validation, feedback generation and scoring.",
+        "Platform quality: restructured a legacy test suite, defined testing standards and improved engineering documentation for humans and AI agents.",
+        "Operational tools: delivered internal dashboards and automations that reduced manual work and improved visibility into product metrics.",
       ],
     },
     {
@@ -48,12 +20,9 @@ export const en = {
       dateRange: "October 2023 - September 2024",
       current: false,
       bullets: [
-        "Development of APIs integrated with different blockchain networks, including Ethereum, Polygon, Tron, Cosmos, and Ripple, using mainly Nest.js.",
-        "Application of Domain Driven Design (DDD) to improve the API infrastructure and abstraction.",
-        "Improvements in the internal architecture of APIs in order to optimize the maintenance process and creation of new functionalities.",
-        "Improvements on the increase of testing coverage of the APIs with Jest.",
-        "Configuration of Test CI of the APIs on GitHub.",
-        "Development and tests of Smart Contracts with Solidity using Foundry.",
+        "API architecture: built and maintained Nest.js APIs integrated with multiple blockchain networks.",
+        "Domain modeling: applied DDD to improve API infrastructure, abstractions and long-term maintainability.",
+        "Reliability: increased Jest test coverage and configured GitHub CI for API test pipelines.",
       ],
     },
     {
@@ -62,12 +31,9 @@ export const en = {
       dateRange: "June 2022 - October 2023",
       current: false,
       bullets: [
-        "Development of robust applications, with back-end systems in Nest.js and Fastify and front-end applications in React.js, managing the entire product cycle from ideation through development to final deployment.",
-        "Databases creation and configuration with SQL and NoSQL databases, also using ORMs such as Prisma and TypeORM to execute queries.",
-        "Configuration of cloud machines on platforms such as GCP, Godaddy, and Digital Ocean, using NGINX.",
-        "Integration of APIs with blockchain using Web3.js and Ethers.js.",
-        "Developed smart contracts planned and adapted to project requirements.",
-        "Development of front-end applications with React.js.",
+        "Product backend: delivered Nest.js and Fastify APIs from ideation to deployment for complete client products.",
+        "Data layer: modeled SQL and NoSQL databases with Prisma and TypeORM.",
+        "Deployment: provisioned cloud machines and served applications with NGINX on GCP and Digital Ocean.",
       ],
     },
     {
@@ -76,14 +42,10 @@ export const en = {
       dateRange: "June 2020 - June 2022",
       current: false,
       bullets: [
-        "Initially worked as a Full-Stack Developer and Blockchain Developer. Started as the first developer on the team and, after new hires, became responsible specifically for Back-End, Blockchain and DevOps parts.",
-        "Development and maintenance of robust Back-End applications with JavaScript/TypeScript frameworks such as Express.js and Adonis.js, SQL and NoSQL databases, REST APIs, authentication control, emails with SMTP services, WebSocket, and more.",
-        "Application of software quality techniques such as SOLID principles to improve the maintenance, security and portability of services and functionalities.",
-        "Configuration of cloud machines such as GCP, Digital Ocean, Godaddy, and others, using mainly NGINX to serve the applications.",
-        "Leadership of a small team of Back-End developers, participating directly in project ideation, planning, definition of technologies, task division and assignment, and application development.",
-        "Integration with blockchain platforms like Ethereum and Binance Smart Chain using Web3.js and Ethers.js.",
-        "Development of smart contracts with Solidity using standards such as ERC20 (Tokens), ERC721 (NFTs), Proxy and personalized contracts applying optimization techniques.",
-        "Design and development of front-end applications with Figma and React.js, creating custom components with Styled Components.",
+        "Backend ownership: evolved from first developer to owner of back-end, DevOps and blockchain responsibilities.",
+        "API development: built REST APIs with Express.js and Adonis.js, covering auth, SMTP email, WebSockets and SQL/NoSQL databases.",
+        "Technical leadership: led a small back-end team through planning, technology choices, task division and delivery.",
+        "Service quality: applied SOLID principles and configured cloud infrastructure with NGINX for production services.",
       ],
     },
     {
@@ -92,10 +54,8 @@ export const en = {
       dateRange: "December 2018 - December 2019",
       current: false,
       bullets: [
-        "Worked voluntarily on the company's project, carrying out automatic tests on smart contracts created by the company and starting the development of a web platform for selling the token.",
-        "Development of a Back-End application with Express.js and MySQL database for a token sale platform.",
-        "Validation with automatic tests and corrections of smart contract functionalities created in Solidity using Mocha.js, Chai.js, Jest and Truffle.",
-        "Design and development of a front-end platform with React.js and creation of custom components with Styled Components.",
+        "Backend foundation: built an Express.js and MySQL API for a token sale platform.",
+        "Quality assurance: tested and corrected Solidity smart contracts with Mocha.js, Chai.js, Jest and Truffle.",
       ],
     },
   ],
