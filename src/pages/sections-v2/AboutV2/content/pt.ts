@@ -4,7 +4,7 @@ export const pt = {
   paragraph1:
     "Costumo trabalhar perto de times de produto e engenharia, transformando ideias em sistemas manuteníveis com planejamento claro, decisões técnicas pragmáticas e entrega confiável.",
   paragraph2:
-    "Valorizo muito comunicação, ownership e resolução de problemas. Gosto de liderar times pequenos, compartilhar contexto cedo e ajudar as pessoas a avançarem com confiança sem perder atenção à qualidade do código.",
+    "Valorizo muito comunicação, ownership e resolução de problemas. Também acredito que novas features de produto devem ser documentadas com contexto suficiente para ajudar os times a manter, evoluir e usar essas entregas com confiança.",
   facts: {
     locationLabel: "Localização",
     location: "Bahia, Brasil",

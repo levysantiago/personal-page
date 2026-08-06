@@ -4,7 +4,7 @@ export const en = {
   paragraph1:
     "I usually work close to product and engineering teams, turning ideas into maintainable systems with clear planning, pragmatic technical decisions and reliable delivery.",
   paragraph2:
-    "I care a lot about communication, ownership and problem solving. I like leading small teams, sharing context early and helping people move with confidence while keeping attention on code quality.",
+    "I care a lot about communication, ownership and problem solving. I also believe new product features should be documented with enough context to help teams maintain, evolve and use them with confidence.",
   facts: {
     locationLabel: "Location",
     location: "Bahia, Brazil",
