@@ -34,7 +34,7 @@ const projects: IProjectV2[] = [
 ];
 
 export const en = {
-  heading: "Projects",
+  heading: "Personal Projects",
   seeAll: "See all projects →",
   codeLabel: "Code",
   liveLabel: "Live",
