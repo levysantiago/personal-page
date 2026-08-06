@@ -5,15 +5,6 @@ import { IProjectV2 } from "./types";
 
 const projects: IProjectV2[] = [
   {
-    title: "Boarding-Pass",
-    description:
-      "Flight booking flow with seat selection and boarding-pass generation, built on a Nest.js API.",
-    tags: ["Nest.js", "Prisma"],
-    githubUrl: "https://github.com/Levysantiago/boarding-pass",
-    imageSrc: boardingPassImage,
-    imageAlt: "Boarding-Pass project screenshot",
-  },
-  {
     title: "TextMe",
     description:
       "Real-time web chat with a Nest.js and Prisma back-end over WebSockets, including OpenAI API integration.",
@@ -21,6 +12,15 @@ const projects: IProjectV2[] = [
     githubUrl: "https://github.com/levysantiago/text-me",
     imageSrc: textMeImage,
     imageAlt: "TextMe project screenshot",
+  },
+  {
+    title: "Boarding-Pass",
+    description:
+      "Flight booking flow with seat selection and boarding-pass generation, built on a Nest.js API.",
+    tags: ["Nest.js", "Prisma"],
+    githubUrl: "https://github.com/Levysantiago/boarding-pass",
+    imageSrc: boardingPassImage,
+    imageAlt: "Boarding-Pass project screenshot",
   },
   {
     title: "Gifflar",
