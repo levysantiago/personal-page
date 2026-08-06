@@ -1,5 +1,6 @@
 import * as React from "react";
 import NocturneTheme from "components/NocturneTheme";
+import NavbarV2 from "components/NavbarV2";
 import { Content, Mesh, Page } from "./styles";
 
 const HomePageV2: React.FC = () => {
@@ -7,7 +8,9 @@ const HomePageV2: React.FC = () => {
     <NocturneTheme>
       <Page>
         <Mesh />
-        <Content />
+        <Content>
+          <NavbarV2 />
+        </Content>
       </Page>
     </NocturneTheme>
   );
