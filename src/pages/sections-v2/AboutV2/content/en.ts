@@ -1,10 +1,10 @@
 export const en = {
   heading: "About <highlight>me</highlight>",
-  lead: "Hello 👋, I'm a back-end Node.js engineer with experience designing robust APIs and AI solutions.",
+  lead: "Hello 👋, I'm a back-end Node.js engineer with 6+ years of experience building APIs, backend services and AI-powered systems.",
   paragraph1:
-    "BSc in Computer Science from Santa Cruz State University (UESC) and MSc in Computer Science from the Federal University of Bahia (UFBA).",
+    "I usually work close to product and engineering teams, turning ideas into maintainable systems with clear planning, pragmatic technical decisions and reliable delivery.",
   paragraph2:
-    "I also enjoy sharing what I learn with the developer community, writing and recording about programming and technology.",
+    "I care a lot about communication, ownership and problem solving. I like leading small teams, sharing context early and helping people move with confidence while keeping attention on code quality.",
   facts: {
     locationLabel: "Location",
     location: "Bahia, Brazil",

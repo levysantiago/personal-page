@@ -1,10 +1,10 @@
 export const pt = {
   heading: "Sobre <highlight>mim</highlight>",
-  lead: "Olá 👋, sou engenheiro back-end Node.js com experiência projetando APIs robustas e soluções de IA.",
+  lead: "Olá 👋, sou engenheiro back-end Node.js com mais de 6 anos de experiência construindo APIs, serviços backend e sistemas com IA.",
   paragraph1:
-    "Bacharelado em Ciência da Computação pela Universidade Estadual de Santa Cruz (UESC) e mestrado em Ciência da Computação pela Universidade Federal da Bahia (UFBA).",
+    "Costumo trabalhar perto de times de produto e engenharia, transformando ideias em sistemas manuteníveis com planejamento claro, decisões técnicas pragmáticas e entrega confiável.",
   paragraph2:
-    "Também gosto de compartilhar o que aprendo com a comunidade dev, escrevendo e gravando conteúdo sobre programação e tecnologia.",
+    "Valorizo muito comunicação, ownership e resolução de problemas. Gosto de liderar times pequenos, compartilhar contexto cedo e ajudar as pessoas a avançarem com confiança sem perder atenção à qualidade do código.",
   facts: {
     locationLabel: "Localização",
     location: "Bahia, Brasil",
