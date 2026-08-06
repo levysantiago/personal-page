@@ -22,7 +22,7 @@ import {
   TagRow,
 } from "./styles";
 
-const PROJECTS_INDEX_URL = "https://github.com/levysantiago?tab=repositories";
+const PROJECTS_INDEX_URL = "https://github.com/levysantiago";
 
 const ProjectsV2: React.FC = () => {
   const { lang } = useLanguage();
