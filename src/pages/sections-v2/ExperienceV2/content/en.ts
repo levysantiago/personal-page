@@ -10,7 +10,7 @@ export const en = {
       bullets: [
         "Backend systems: built production features and internal services with Node.js, TypeScript, PostgreSQL, Redis, QStash and Docker.",
         "AI engineering: designed multi-agent workflows for code review, requirement validation, feedback generation and scoring.",
-        "Platform quality: restructured a legacy test suite, defined testing standards and improved engineering documentation for humans and AI agents.",
+        "Platform quality: restructured a legacy automated test suite, defined testing standards and created a project-specific skill to guide future implementations.",
         "Operational tools: delivered internal dashboards and automations that reduced manual work and improved visibility into product metrics.",
       ],
     },

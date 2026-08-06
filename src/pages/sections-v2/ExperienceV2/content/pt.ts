@@ -10,7 +10,7 @@ export const pt = {
       bullets: [
         "Sistemas backend: construí features de produção e serviços internos com Node.js, TypeScript, PostgreSQL, Redis, QStash e Docker.",
         "Engenharia de IA: projetei workflows multi-agente para revisão de código, validação de requisitos, geração de feedback e atribuição de notas.",
-        "Qualidade de plataforma: reestruturei uma suíte de testes legada, defini padrões de testes e melhorei a documentação técnica para humanos e agentes de IA.",
+        "Qualidade de plataforma: reestruturei uma suíte de testes automatizados legada, defini padrões de testes e criei uma skill específica do projeto para orientar futuras implementações.",
         "Ferramentas operacionais: entreguei dashboards internos e automações que reduziram trabalho manual e ampliaram a visibilidade de métricas de produto.",
       ],
     },
