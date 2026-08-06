@@ -26,7 +26,7 @@ export const en = {
       accent: "green" as const,
       title: "AI systems",
       description:
-        "Multi-agent workflows, RAG, MCP and evaluation frameworks in production.",
+        "Production AI systems using multi-agent workflows, RAG, MCP tooling, evaluation pipelines and internal automation.",
     },
     {
       icon: "database" as const,

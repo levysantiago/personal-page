@@ -26,7 +26,7 @@ export const pt = {
       accent: "green" as const,
       title: "Sistemas de IA",
       description:
-        "Workflows multi-agente, RAG, MCP e frameworks de avaliação em produção.",
+        "Sistemas de IA em produção usando workflows multi-agente, RAG, ferramentas MCP, pipelines de avaliação e automações internas.",
     },
     {
       icon: "database" as const,
