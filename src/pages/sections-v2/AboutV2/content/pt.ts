@@ -18,7 +18,8 @@ export const pt = {
       icon: "plugsConnected" as const,
       accent: "accent" as const,
       title: "APIs & serviços",
-      description: "REST APIs, DDD, testes e CI com Nest.js, Fastify e Express.",
+      description:
+        "APIs REST em produção com Nest.js e Fastify, guiadas por DDD, testes automatizados e CI.",
     },
     {
       icon: "brain" as const,

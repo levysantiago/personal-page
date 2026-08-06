@@ -19,7 +19,7 @@ export const en = {
       accent: "accent" as const,
       title: "APIs & services",
       description:
-        "REST APIs, DDD, testing and CI with Nest.js, Fastify and Express.",
+        "Production REST APIs with Nest.js and Fastify, shaped by DDD, automated testing and CI.",
     },
     {
       icon: "brain" as const,
