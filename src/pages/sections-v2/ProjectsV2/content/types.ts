@@ -3,5 +3,7 @@ export interface IProjectV2 {
   description: string;
   tags: string[];
   githubUrl: string;
+  imageSrc: string;
+  imageAlt: string;
   liveUrl?: string;
 }

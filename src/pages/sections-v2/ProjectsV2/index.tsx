@@ -46,6 +46,8 @@ const ProjectsV2: React.FC = () => {
                 height="180px"
                 radius="0px"
                 label={c.imageLabel}
+                src={project.imageSrc}
+                alt={project.imageAlt}
               />
               <CardBody>
                 <CardTitle>{project.title}</CardTitle>

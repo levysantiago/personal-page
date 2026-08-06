@@ -1,3 +1,6 @@
+import boardingPassImage from "../../../../assets/project-imgs/boarding-pass.jpeg";
+import gifflarImage from "../../../../assets/project-imgs/gifflar.jpeg";
+import textMeImage from "../../../../assets/project-imgs/textme.jpeg";
 import { IProjectV2 } from "./types";
 
 const projects: IProjectV2[] = [
@@ -7,6 +10,8 @@ const projects: IProjectV2[] = [
       "Fluxo de compra de passagens com seleção de assentos e geração de boarding-pass, com API em Nest.js.",
     tags: ["Nest.js", "Prisma"],
     githubUrl: "https://github.com/Levysantiago/boarding-pass",
+    imageSrc: boardingPassImage,
+    imageAlt: "Captura de tela do projeto Boarding-Pass",
   },
   {
     title: "TextMe",
@@ -14,6 +19,8 @@ const projects: IProjectV2[] = [
       "Chat web em tempo real com back end em Nest.js e Prisma via WebSockets.",
     tags: ["Nest.js", "Prisma"],
     githubUrl: "https://github.com/levysantiago/text-me",
+    imageSrc: textMeImage,
+    imageAlt: "Captura de tela do projeto TextMe",
   },
   {
     title: "Gifflar",
@@ -21,6 +28,8 @@ const projects: IProjectV2[] = [
       "Framework do meu mestrado para gerar smart contracts em tempo de execução a partir de TypeScript.",
     tags: ["TypeScript", "Node.js"],
     githubUrl: "https://github.com/GifflarJS-Framework/core",
+    imageSrc: gifflarImage,
+    imageAlt: "Captura de tela do projeto Gifflar",
   },
 ];
 
