@@ -7,19 +7,39 @@ export const en = {
       company: "Rocketseat",
       dateRange: "February 2025 - July 2026",
       current: true,
-      bullets: [
-        "Features and Services: developed new features, internal services, and AI-integrated solutions, covering the entire lifecycle from planning to implementation. Worked with JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash, and Docker.",
-        "Regularly used AI-assisted development tools such as Cursor, Claude Code, OpenCode, T3 Code, and Conductor, as well as MCPs, skills, and structured planning workflows.",
-        "Contributed directly to the technical and product planning of new features.",
-        "Developed integrations and projects in collaboration with partner companies.",
-        "Built internal dashboards to provide visibility into operational metrics and support other teams in analyzing results and making data-driven decisions.",
-        "Proposed and implemented a service documentation strategy, expanding the context available to Engineering, Product, and the AI agents used throughout the development process.",
-        "AI and Automation: built an AI-agent-based service for evaluating practical coding projects. The agents analyzed code, validated requirements, provided feedback, and assigned scores through a multi-agent workflow, with different models used at each stage.",
-        "Developed an evaluation framework to monitor and assess the performance of AI agents.",
-        "Created AI-powered automations to streamline internal processes and reduce manual work across different areas of the company. Used libraries and frameworks such as OpenAI and the Vercel AI SDK to build AI solutions.",
-        "Quality Assurance and Bug Fixing: restructured the automated test suite of a legacy system by updating and reorganizing the existing tests.",
-        "Defined standards for the continued evolution of the test suite, including the creation of a project-specific skill to guide future implementations.",
-        "Marketing and Developer Relations: participated in Marketing initiatives by producing UGC-style videos for campaigns and live events, sharing experiences related to software development careers and technical topics.",
+      sections: [
+        {
+          title: "Features and Services",
+          bullets: [
+            "Developed new features, internal services, and AI-integrated solutions, covering the entire lifecycle from planning to implementation. Worked with JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash, and Docker.",
+            "Regularly used AI-assisted development tools such as Cursor, Claude Code, OpenCode, T3 Code, and Conductor, as well as MCPs, skills, and structured planning workflows.",
+            "Contributed directly to the technical and product planning of new features.",
+            "Developed integrations and projects in collaboration with partner companies.",
+            "Built internal dashboards to provide visibility into operational metrics and support other teams in analyzing results and making data-driven decisions.",
+            "Proposed and implemented a service documentation strategy, expanding the context available to Engineering, Product, and the AI agents used throughout the development process.",
+          ],
+        },
+        {
+          title: "AI and Automation",
+          bullets: [
+            "Built an AI-agent-based service for evaluating practical coding projects. The agents analyzed code, validated requirements, provided feedback, and assigned scores through a multi-agent workflow, with different models used at each stage.",
+            "Developed an evaluation framework to monitor and assess the performance of AI agents.",
+            "Created AI-powered automations to streamline internal processes and reduce manual work across different areas of the company. Used libraries and frameworks such as OpenAI and the Vercel AI SDK to build AI solutions.",
+          ],
+        },
+        {
+          title: "Quality Assurance and Bug Fixing",
+          bullets: [
+            "Restructured the automated test suite of a legacy system by updating and reorganizing the existing tests.",
+            "Defined standards for the continued evolution of the test suite, including the creation of a project-specific skill to guide future implementations.",
+          ],
+        },
+        {
+          title: "Marketing and Developer Relations",
+          bullets: [
+            "Participated in Marketing initiatives by producing UGC-style videos for campaigns and live events, sharing experiences related to software development careers and technical topics.",
+          ],
+        },
       ],
     },
     {

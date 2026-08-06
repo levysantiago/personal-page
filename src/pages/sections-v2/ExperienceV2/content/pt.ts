@@ -7,19 +7,39 @@ export const pt = {
       company: "Rocketseat",
       dateRange: "Fevereiro de 2025 - Julho de 2026",
       current: true,
-      bullets: [
-        "Features e Serviços: desenvolvi novas features, serviços internos e soluções integradas a IA, cobrindo todo o ciclo de vida desde o planejamento até a implementação. Trabalhei com JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash e Docker.",
-        "Usei regularmente ferramentas de desenvolvimento assistido por IA, como Cursor, Claude Code, OpenCode, T3 Code e Conductor, além de MCPs, skills e workflows estruturados de planejamento.",
-        "Contribuí diretamente para o planejamento técnico e de produto de novas features.",
-        "Desenvolvi integrações e projetos em colaboração com empresas parceiras.",
-        "Construí dashboards internos para dar visibilidade a métricas operacionais e apoiar outros times na análise de resultados e na tomada de decisões orientadas por dados.",
-        "Propus e implementei uma estratégia de documentação de serviços, expandindo o contexto disponível para Engenharia, Produto e para os agentes de IA usados ao longo do processo de desenvolvimento.",
-        "IA e Automação: construí um serviço baseado em agentes de IA para avaliar projetos práticos de código. Os agentes analisavam código, validavam requisitos, forneciam feedback e atribuíam notas por meio de um workflow multi-agente, com diferentes modelos usados em cada etapa.",
-        "Desenvolvi um framework de avaliação para monitorar e avaliar a performance de agentes de IA.",
-        "Criei automações com IA para otimizar processos internos e reduzir trabalho manual em diferentes áreas da empresa. Usei bibliotecas e frameworks como OpenAI e Vercel AI SDK para construir soluções de IA.",
-        "Qualidade e correção de bugs: reestruturei a suíte de testes automatizados de um sistema legado, atualizando e reorganizando os testes existentes.",
-        "Defini padrões para a evolução contínua da suíte de testes, incluindo a criação de uma skill específica do projeto para orientar implementações futuras.",
-        "Marketing e Developer Relations: participei de iniciativas de Marketing produzindo vídeos em estilo UGC para campanhas e eventos ao vivo, compartilhando experiências relacionadas a carreiras em desenvolvimento de software e temas técnicos.",
+      sections: [
+        {
+          title: "Features e Serviços",
+          bullets: [
+            "Desenvolvi novas features, serviços internos e soluções integradas a IA, cobrindo todo o ciclo de vida desde o planejamento até a implementação. Trabalhei com JavaScript, TypeScript, Node.js, PostgreSQL, Redis, QStash e Docker.",
+            "Usei regularmente ferramentas de desenvolvimento assistido por IA, como Cursor, Claude Code, OpenCode, T3 Code e Conductor, além de MCPs, skills e workflows estruturados de planejamento.",
+            "Contribuí diretamente para o planejamento técnico e de produto de novas features.",
+            "Desenvolvi integrações e projetos em colaboração com empresas parceiras.",
+            "Construí dashboards internos para dar visibilidade a métricas operacionais e apoiar outros times na análise de resultados e na tomada de decisões orientadas por dados.",
+            "Propus e implementei uma estratégia de documentação de serviços, expandindo o contexto disponível para Engenharia, Produto e para os agentes de IA usados ao longo do processo de desenvolvimento.",
+          ],
+        },
+        {
+          title: "IA e Automação",
+          bullets: [
+            "Construí um serviço baseado em agentes de IA para avaliar projetos práticos de código. Os agentes analisavam código, validavam requisitos, forneciam feedback e atribuíam notas por meio de um workflow multi-agente, com diferentes modelos usados em cada etapa.",
+            "Desenvolvi um framework de avaliação para monitorar e avaliar a performance de agentes de IA.",
+            "Criei automações com IA para otimizar processos internos e reduzir trabalho manual em diferentes áreas da empresa. Usei bibliotecas e frameworks como OpenAI e Vercel AI SDK para construir soluções de IA.",
+          ],
+        },
+        {
+          title: "Qualidade e correção de bugs",
+          bullets: [
+            "Reestruturei a suíte de testes automatizados de um sistema legado, atualizando e reorganizando os testes existentes.",
+            "Defini padrões para a evolução contínua da suíte de testes, incluindo a criação de uma skill específica do projeto para orientar implementações futuras.",
+          ],
+        },
+        {
+          title: "Marketing e Developer Relations",
+          bullets: [
+            "Participei de iniciativas de Marketing produzindo vídeos em estilo UGC para campanhas e eventos ao vivo, compartilhando experiências relacionadas a carreiras em desenvolvimento de software e temas técnicos.",
+          ],
+        },
       ],
     },
     {

@@ -160,6 +160,22 @@ export const RoleBody = styled.div(
   `
 );
 
+export const RoleSection = styled.div`
+  & + & {
+    margin-top: 22px;
+  }
+`;
+
+export const RoleSectionTitle = styled.h3(
+  (props: IProps) => css`
+    font-family: ${props.theme.fonts.heading};
+    font-size: 15.5px;
+    font-weight: 500;
+    color: ${props.theme.colors.green};
+    margin: 0 0 10px;
+  `
+);
+
 export const RoleList = styled.ul`
   display: flex;
   flex-direction: column;

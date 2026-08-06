@@ -16,11 +16,29 @@ import {
   RoleDates,
   RoleList,
   RoleListItem,
+  RoleSection,
+  RoleSectionTitle,
   RoleTitle,
   Section,
   Summary,
   Timeline,
 } from "./styles";
+
+interface IRoleSectionContent {
+  title: string;
+  bullets: string[];
+}
+
+interface IRoleDetailsContent {
+  bullets?: string[];
+  sections?: IRoleSectionContent[];
+}
+
+function hasSections(role: IRoleDetailsContent): role is {
+  sections: IRoleSectionContent[];
+} {
+  return Array.isArray(role.sections);
+}
 
 function formatBullet(bullet: string) {
   const separatorIndex = bullet.indexOf(": ");
@@ -63,11 +81,28 @@ const ExperienceV2: React.FC = () => {
                 <RoleDates>{role.dateRange}</RoleDates>
               </Summary>
               <RoleBody>
-                <RoleList>
-                  {role.bullets.map((bullet) => (
-                    <RoleListItem key={bullet}>{formatBullet(bullet)}</RoleListItem>
-                  ))}
-                </RoleList>
+                {hasSections(role) ? (
+                  role.sections.map((section) => (
+                    <RoleSection key={section.title}>
+                      <RoleSectionTitle>{section.title}</RoleSectionTitle>
+                      <RoleList>
+                        {section.bullets.map((bullet) => (
+                          <RoleListItem key={bullet}>
+                            <RoleBulletText>{bullet}</RoleBulletText>
+                          </RoleListItem>
+                        ))}
+                      </RoleList>
+                    </RoleSection>
+                  ))
+                ) : (
+                  <RoleList>
+                    {role.bullets?.map((bullet) => (
+                      <RoleListItem key={bullet}>
+                        {formatBullet(bullet)}
+                      </RoleListItem>
+                    ))}
+                  </RoleList>
+                )}
               </RoleBody>
             </Role>
           ))}
