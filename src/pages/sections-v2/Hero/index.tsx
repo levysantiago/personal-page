@@ -1,9 +1,9 @@
 import * as React from "react";
-import { GithubLogo, LinkedinLogo, EnvelopeSimple } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { useLanguage } from "components/contexts/LanguageContext";
 import ImagePlaceholder from "components/ImagePlaceholder";
 import { useReveal } from "components/RevealOnScroll";
-import { GITHUB_URL, LINKEDIN_URL, EMAIL } from "../socialLinks";
+import { GITHUB_URL, LINKEDIN_URL } from "../socialLinks";
 import { content } from "./content";
 import {
   Accent,
@@ -49,7 +49,9 @@ const Hero: React.FC = () => {
         </Heading>
         <Body>{c.body}</Body>
         <Actions>
-          <PrimaryButton href={`mailto:${EMAIL}`}>{c.primaryCta}</PrimaryButton>
+          <PrimaryButton href={LINKEDIN_URL} target="_blank" rel="noopener">
+            {c.primaryCta}
+          </PrimaryButton>
           <GhostButton href={GITHUB_URL} target="_blank" rel="noopener">
             {c.secondaryCta}
           </GhostButton>
@@ -60,9 +62,6 @@ const Hero: React.FC = () => {
           </SocialLink>
           <SocialLink href={LINKEDIN_URL} target="_blank" rel="noopener" aria-label="LinkedIn">
             <LinkedinLogo size={20} />
-          </SocialLink>
-          <SocialLink href={`mailto:${EMAIL}`} aria-label="Email">
-            <EnvelopeSimple size={20} />
           </SocialLink>
         </SocialRow>
       </TextCol>
