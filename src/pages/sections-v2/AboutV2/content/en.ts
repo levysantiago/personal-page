@@ -19,7 +19,7 @@ export const en = {
       accent: "accent" as const,
       title: "APIs & services",
       description:
-        "Production-grade APIs and backend services built with TypeScript and Node.js, using frameworks such as NestJS and Fastify, with a focus on maintainability, reliability, and continuous delivery.",
+        "Production-grade APIs and backend services built with TypeScript and Node.js, using frameworks such as NestJS, with a focus on maintainability, reliability, and continuous delivery.",
     },
     {
       icon: "brain" as const,
