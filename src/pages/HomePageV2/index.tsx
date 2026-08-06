@@ -4,6 +4,7 @@ import NavbarV2 from "components/NavbarV2";
 import AboutV2 from "pages/sections-v2/AboutV2";
 import ExperienceV2 from "pages/sections-v2/ExperienceV2";
 import Hero from "pages/sections-v2/Hero";
+import ProjectsV2 from "pages/sections-v2/ProjectsV2";
 import StatStrip from "pages/sections-v2/StatStrip";
 import TechnologiesV2 from "pages/sections-v2/TechnologiesV2";
 import { Content, Mesh, Page } from "./styles";
@@ -20,6 +21,7 @@ const HomePageV2: React.FC = () => {
           <AboutV2 />
           <ExperienceV2 />
           <TechnologiesV2 />
+          <ProjectsV2 />
         </Content>
       </Page>
     </NocturneTheme>
