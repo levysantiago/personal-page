@@ -31,9 +31,9 @@ export const en = {
     {
       icon: "database" as const,
       accent: "accent" as const,
-      title: "Data & infra",
+      title: "AI-Assisted Engineering",
       description:
-        "PostgreSQL, Redis, Docker and cloud deployments behind NGINX.",
+        "Software development accelerated by Claude Code, Cursor, OpenCode, T3 Code, and Conductor, supported by MCPs, reusable skills, and structured planning workflows.",
     },
   ],
 };
