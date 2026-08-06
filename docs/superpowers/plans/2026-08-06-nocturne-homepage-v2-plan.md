@@ -98,7 +98,7 @@ running in the background for later tasks.
 - [ ] **Step 4: Commit**
 
 ```bash
-git add package.json yarn.lock public/index.html
+git add package.json public/index.html
 git commit -m "chore: add phosphor icons and Inter font for Nocturne homepage v2"
 ```
 
