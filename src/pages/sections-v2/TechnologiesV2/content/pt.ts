@@ -1,9 +1,11 @@
 export const pt = {
   heading: "Tecnologias",
+  otherHeading: "Outras experiências",
   groups: [
     {
       icon: "code" as const,
       label: "Core",
+      tone: "focus" as const,
       tags: [
         { label: "TypeScript", variant: "accent" as const },
         { label: "Node.js", variant: "accent" as const },
@@ -17,6 +19,7 @@ export const pt = {
     {
       icon: "sparkle" as const,
       label: "IA",
+      tone: "focus" as const,
       tags: [
         { label: "OpenAI", variant: "outline" as const },
         { label: "Vercel AI SDK", variant: "outline" as const },
@@ -29,6 +32,7 @@ export const pt = {
     {
       icon: "database" as const,
       label: "Dados",
+      tone: "focus" as const,
       tags: [
         { label: "PostgreSQL", variant: "outline" as const },
         { label: "MySQL", variant: "outline" as const },
@@ -37,15 +41,44 @@ export const pt = {
         { label: "SQLite", variant: "outline" as const },
       ],
     },
+  ],
+  otherGroups: [
     {
       icon: "cloud" as const,
-      label: "Infra",
+      label: "DevOps",
+      tone: "other" as const,
       tags: [
-        { label: "Docker", variant: "outline" as const },
-        { label: "Google Cloud", variant: "outline" as const },
-        { label: "Digital Ocean", variant: "outline" as const },
-        { label: "Amazon S3", variant: "outline" as const },
-        { label: "NGINX", variant: "outline" as const },
+        { label: "Docker", variant: "muted" as const },
+        { label: "Google Cloud", variant: "muted" as const },
+        { label: "Digital Ocean", variant: "muted" as const },
+        { label: "Amazon S3", variant: "muted" as const },
+        { label: "NGINX", variant: "muted" as const },
+        { label: "Outros", variant: "muted" as const },
+      ],
+    },
+    {
+      icon: "code" as const,
+      label: "Frontend",
+      tone: "other" as const,
+      tags: [
+        { label: "JavaScript", variant: "muted" as const },
+        { label: "TypeScript", variant: "muted" as const },
+        { label: "React.js", variant: "muted" as const },
+      ],
+    },
+    {
+      icon: "plugsConnected" as const,
+      label: "Blockchain",
+      tone: "other" as const,
+      tags: [
+        { label: "Solidity", variant: "muted" as const },
+        { label: "Tokens", variant: "muted" as const },
+        { label: "NFTs", variant: "muted" as const },
+        { label: "DEX", variant: "muted" as const },
+        { label: "Web3.js", variant: "muted" as const },
+        { label: "Ethers.js", variant: "muted" as const },
+        { label: "Hardhat", variant: "muted" as const },
+        { label: "Truffle", variant: "muted" as const },
       ],
     },
   ],

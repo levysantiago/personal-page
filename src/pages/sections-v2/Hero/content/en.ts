@@ -7,7 +7,7 @@ export const en = {
   headingJoin: " and ",
   headingAi: "AI",
   headingSuffix: ".",
-  body: "Node.js and TypeScript, six-plus years in production systems — and, lately, AI agent workflows that do real work. Freelancing from Ilhéus, Brazil.",
+  body: "Node.js and TypeScript, six-plus years in production systems, and lately, AI agent workflows that do real work. Freelancing from Bahia, Brazil.",
   primaryCta: "Get in touch",
   secondaryCta: "View GitHub",
   portraitLabel: "Photo of Levy",

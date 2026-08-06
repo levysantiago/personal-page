@@ -1,18 +1,17 @@
 export const en = {
   heading: "About <highlight>me</highlight>",
-  lead: "Hello 👋 — I'm a back-end Node.js engineer with experience designing robust APIs and AI solutions.",
+  lead: "Hello 👋, I'm a back-end Node.js engineer with experience designing robust APIs and AI solutions.",
   paragraph1:
     "BSc in Computer Science from Santa Cruz State University (UESC) and MSc in Computer Science from the Federal University of Bahia (UFBA).",
   paragraph2:
-    "I also enjoy sharing what I learn with the developer community — writing and recording about programming and technology.",
+    "I also enjoy sharing what I learn with the developer community, writing and recording about programming and technology.",
   facts: {
     locationLabel: "Location",
-    location: "Ilhéus, Bahia, Brazil",
+    location: "Bahia, Brazil",
     languagesLabel: "Languages",
     languages: "Portuguese, English",
     statusLabel: "Status",
-    status: "Available for freelance",
-    emailLabel: "Email",
+    status: "Open to work",
   },
   cards: [
     {

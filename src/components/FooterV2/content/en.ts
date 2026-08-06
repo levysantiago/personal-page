@@ -1,3 +1,3 @@
 export const en = {
-  locationLine: "Levy Santiago — Ilhéus, Bahia, Brazil",
+  locationLine: "Levy Santiago, Bahia, Brazil",
 };

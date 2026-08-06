@@ -4,5 +4,6 @@ export const en = {
   headingSuffix: " together.",
   paragraph:
     "Open to freelance back-end and AI work. The fastest way to reach me is email.",
+  emailLabel: "Email me",
   linkedinLabel: "LinkedIn",
 };

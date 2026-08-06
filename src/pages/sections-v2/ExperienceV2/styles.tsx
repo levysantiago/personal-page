@@ -100,6 +100,11 @@ export const Summary = styled.summary(
     &::marker {
       content: "";
     }
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
   `
 );
 

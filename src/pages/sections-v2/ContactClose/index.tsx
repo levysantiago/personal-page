@@ -30,7 +30,7 @@ const ContactClose: React.FC = () => {
         <Paragraph>{c.paragraph}</Paragraph>
       </div>
       <Actions>
-        <PrimaryButton href={`mailto:${EMAIL}`}>{EMAIL}</PrimaryButton>
+        <PrimaryButton href={`mailto:${EMAIL}`}>{c.emailLabel}</PrimaryButton>
         <GhostButton href={LINKEDIN_URL} target="_blank" rel="noopener">
           {c.linkedinLabel}
         </GhostButton>

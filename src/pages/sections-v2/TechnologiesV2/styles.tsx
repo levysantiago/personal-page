@@ -40,15 +40,27 @@ export const Grid = styled.div`
 `;
 
 export const GroupLabel = styled.p(
-  (props: IProps) => css`
+  (props: IProps & { $tone: "focus" | "other" }) => css`
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 13px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: ${props.theme.colors.green};
+    color: ${props.$tone === "focus"
+      ? props.theme.colors.green
+      : props.theme.colors.neutralRamp[500]};
     margin: 0 0 14px;
+  `
+);
+
+export const OtherHeading = styled.p(
+  (props: IProps) => css`
+    font-family: ${props.theme.fonts.heading};
+    font-weight: 500;
+    font-size: 18px;
+    color: ${props.theme.colors.neutralRamp[500]};
+    margin: 40px 0 20px;
   `
 );
 
@@ -59,7 +71,7 @@ export const TagRow = styled.div`
 `;
 
 export const Tag = styled.span(
-  (props: IProps & { $variant: "accent" | "outline" }) => css`
+  (props: IProps & { $variant: "accent" | "outline" | "muted" }) => css`
     display: inline-flex;
     align-items: center;
     font-size: 11px;
@@ -70,6 +82,11 @@ export const Tag = styled.span(
       ? css`
           background: ${props.theme.colors.accentRamp[800]};
           color: ${props.theme.colors.accentRamp[100]};
+        `
+      : props.$variant === "muted"
+      ? css`
+          border: 1px solid ${props.theme.colors.neutralRamp[700]};
+          color: ${props.theme.colors.neutralRamp[400]};
         `
       : css`
           border: 1px solid ${props.theme.colors.accent};

@@ -102,16 +102,6 @@ export const StatusValue = styled(FactValue)(
   `
 );
 
-export const EmailLink = styled.a(
-  (props: IProps) => css`
-    color: ${props.theme.colors.text};
-
-    &:hover {
-      color: ${props.theme.colors.green};
-    }
-  `
-);
-
 export const Cards = styled.div`
   display: flex;
   flex-direction: column;

@@ -3,7 +3,6 @@ import { Brain, Database, PlugsConnected } from "@phosphor-icons/react";
 import { useLanguage } from "components/contexts/LanguageContext";
 import { useReveal } from "components/RevealOnScroll";
 import { formatContent } from "util/content-formatter";
-import { EMAIL } from "../socialLinks";
 import { content } from "./content";
 import {
   Card,
@@ -11,7 +10,6 @@ import {
   CardIcon,
   Cards,
   CardTitle,
-  EmailLink,
   FactTerm,
   Facts,
   FactValue,
@@ -55,10 +53,6 @@ const AboutV2: React.FC = () => {
             <FactValue>{c.facts.languages}</FactValue>
             <FactTerm>{c.facts.statusLabel}</FactTerm>
             <StatusValue>{c.facts.status}</StatusValue>
-            <FactTerm>{c.facts.emailLabel}</FactTerm>
-            <FactValue>
-              <EmailLink href={`mailto:${EMAIL}`}>{EMAIL}</EmailLink>
-            </FactValue>
           </Facts>
         </div>
         <Cards>
