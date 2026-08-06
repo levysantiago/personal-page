@@ -154,16 +154,55 @@ export const RoleDates = styled.span(
 export const RoleBody = styled.div(
   (props: IProps) => css`
     padding: 0 0 24px;
-    max-width: 70ch;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 100ch;
     font-size: 15.5px;
     color: color-mix(in srgb, ${props.theme.colors.text} 78%, transparent);
+  `
+);
 
-    p {
-      color: inherit;
-      margin: 0;
+export const RoleList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
+
+export const RoleListItem = styled.li(
+  (props: IProps) => css`
+    position: relative;
+    padding-left: 18px;
+    color: color-mix(in srgb, ${props.theme.colors.text} 78%, transparent);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: color-mix(
+        in srgb,
+        ${props.theme.colors.green} 72%,
+        ${props.theme.colors.accent}
+      );
+      box-shadow: 0 0 0 3px
+        color-mix(in srgb, ${props.theme.colors.green} 10%, transparent);
     }
+  `
+);
+
+export const RoleBulletText = styled.span(
+  (props: IProps) => css`
+    color: color-mix(in srgb, ${props.theme.colors.text} 78%, transparent);
+  `
+);
+
+export const RoleBulletHighlight = styled.strong(
+  (props: IProps) => css`
+    color: ${props.theme.colors.green};
+    font-weight: 500;
   `
 );

@@ -10,13 +10,34 @@ import {
   Inner,
   Role,
   RoleBody,
+  RoleBulletHighlight,
+  RoleBulletText,
   RoleCompany,
   RoleDates,
+  RoleList,
+  RoleListItem,
   RoleTitle,
   Section,
   Summary,
   Timeline,
 } from "./styles";
+
+function formatBullet(bullet: string) {
+  const separatorIndex = bullet.indexOf(": ");
+
+  if (separatorIndex === -1) {
+    return <RoleBulletText>{bullet}</RoleBulletText>;
+  }
+
+  return (
+    <RoleBulletText>
+      <RoleBulletHighlight>
+        {bullet.slice(0, separatorIndex + 1)}
+      </RoleBulletHighlight>{" "}
+      {bullet.slice(separatorIndex + 2)}
+    </RoleBulletText>
+  );
+}
 
 const ExperienceV2: React.FC = () => {
   const { lang } = useLanguage();
@@ -42,9 +63,11 @@ const ExperienceV2: React.FC = () => {
                 <RoleDates>{role.dateRange}</RoleDates>
               </Summary>
               <RoleBody>
-                {role.bullets.map((bullet) => (
-                  <p key={bullet}>{bullet}</p>
-                ))}
+                <RoleList>
+                  {role.bullets.map((bullet) => (
+                    <RoleListItem key={bullet}>{formatBullet(bullet)}</RoleListItem>
+                  ))}
+                </RoleList>
               </RoleBody>
             </Role>
           ))}
