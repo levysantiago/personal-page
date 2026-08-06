@@ -89,6 +89,8 @@ export const pt = {
         { label: "JavaScript", variant: "muted" as const },
         { label: "TypeScript", variant: "muted" as const },
         { label: "React.js", variant: "muted" as const },
+        { label: "HTML", variant: "muted" as const },
+        { label: "CSS", variant: "muted" as const },
       ],
     },
     {
