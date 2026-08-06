@@ -1,4 +1,5 @@
 import * as React from "react";
+import FooterV2 from "components/FooterV2";
 import NocturneTheme from "components/NocturneTheme";
 import NavbarV2 from "components/NavbarV2";
 import AboutV2 from "pages/sections-v2/AboutV2";
@@ -24,6 +25,7 @@ const HomePageV2: React.FC = () => {
           <TechnologiesV2 />
           <ProjectsV2 />
           <ContactClose />
+          <FooterV2 />
         </Content>
       </Page>
     </NocturneTheme>
