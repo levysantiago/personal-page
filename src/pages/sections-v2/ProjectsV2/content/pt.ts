@@ -16,8 +16,8 @@ const projects: IProjectV2[] = [
   {
     title: "TextMe",
     description:
-      "Chat web em tempo real com back end em Nest.js e Prisma via WebSockets.",
-    tags: ["Nest.js", "Prisma"],
+      "Chat web em tempo real com back-end em Nest.js e Prisma via WebSockets, incluindo integração com a OpenAI API.",
+    tags: ["Nest.js", "Prisma", "OpenAI API"],
     githubUrl: "https://github.com/levysantiago/text-me",
     imageSrc: textMeImage,
     imageAlt: "Captura de tela do projeto TextMe",
