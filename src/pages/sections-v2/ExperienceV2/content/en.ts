@@ -9,7 +9,7 @@ export const en = {
       current: true,
       bullets: [
         "Backend systems: built production features and internal services with Node.js, TypeScript, PostgreSQL, Redis, QStash and Docker.",
-        "AI engineering: designed multi-agent workflows for code review, requirement validation, feedback generation and scoring.",
+        "AI engineering: designed and built a multi-agent workflow for code review, requirement validation, feedback generation and scoring.",
         "Platform quality: restructured a legacy automated test suite, defined testing standards and created a project-specific skill to guide future implementations.",
         "Operational tools: delivered internal dashboards and automations that reduced manual work and improved visibility into product metrics.",
       ],
@@ -21,7 +21,7 @@ export const en = {
       current: false,
       bullets: [
         "API architecture: built and maintained Nest.js APIs integrated with multiple blockchain networks.",
-        "Domain modeling: applied DDD to improve API infrastructure, abstractions and long-term maintainability.",
+        "Domain modeling: applied DDD and other patterns to improve internal infrastructure, abstractions and API maintainability.",
         "Reliability: increased Jest test coverage and configured GitHub CI for API test pipelines.",
       ],
     },
@@ -43,9 +43,9 @@ export const en = {
       current: false,
       bullets: [
         "Backend ownership: evolved from first developer to owner of back-end, DevOps and blockchain responsibilities.",
-        "API development: built REST APIs with Express.js and Adonis.js, covering auth, SMTP email, WebSockets and SQL/NoSQL databases.",
+        "API development: built REST APIs with Express.js, Adonis.js, Nest.js and other frameworks, covering auth, SMTP email, WebSocket, cache, blockchain, SQL/NoSQL databases and other integrations.",
         "Technical leadership: led a small back-end team through planning, technology choices, task division and delivery.",
-        "Service quality: applied SOLID principles and configured cloud infrastructure with NGINX for production services.",
+        "Service quality: applied SOLID principles and other patterns, test suites, documentation and configured cloud infrastructure with NGINX for production services.",
       ],
     },
     {
@@ -55,7 +55,7 @@ export const en = {
       current: false,
       bullets: [
         "Backend foundation: built an Express.js and MySQL API for a token sale platform.",
-        "Quality assurance: tested and corrected Solidity smart contracts with Mocha.js, Chai.js, Jest and Truffle.",
+        "Quality assurance: built a test suite and fixed Solidity smart contracts with Mocha.js, Chai.js, Jest and Truffle.",
       ],
     },
   ],

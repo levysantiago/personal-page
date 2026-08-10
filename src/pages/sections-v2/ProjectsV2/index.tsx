@@ -10,6 +10,7 @@ import {
   CardDescription,
   CardLink,
   CardTitle,
+  Description,
   Grid,
   Header,
   Heading,
@@ -38,6 +39,7 @@ const ProjectsV2: React.FC = () => {
             {c.seeAll}
           </SeeAllLink>
         </Header>
+        <Description>{c.description}</Description>
         <Grid>
           {c.projects.map((project) => (
             <Card key={project.title}>

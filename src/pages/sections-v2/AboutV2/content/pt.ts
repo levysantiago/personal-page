@@ -19,7 +19,7 @@ export const pt = {
       accent: "accent" as const,
       title: "APIs & serviços",
       description:
-        "APIs e serviços backend de nível produtivo com TypeScript e Node.js, usando frameworks como NestJS, com foco em manutenibilidade, confiabilidade e entrega contínua.",
+        "APIs e serviços backend em produção com TypeScript e Node.js, usando frameworks como NestJS, com foco em manutenibilidade, confiabilidade e entrega contínua.",
     },
     {
       icon: "brain" as const,

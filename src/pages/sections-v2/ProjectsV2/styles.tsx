@@ -44,7 +44,7 @@ export const Header = styled.div`
   align-items: baseline;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 `;
 
 export const Heading = styled.h2(
@@ -61,6 +61,15 @@ export const SeeAllLink = styled.a(
   (props: IProps) => css`
     font-size: 15px;
     color: ${props.theme.colors.green};
+  `
+);
+
+export const Description = styled.p(
+  (props: IProps) => css`
+    margin: 0 0 32px;
+    max-width: 60ch;
+    font-size: 15.5px;
+    color: color-mix(in srgb, ${props.theme.colors.text} 76%, transparent);
   `
 );
 

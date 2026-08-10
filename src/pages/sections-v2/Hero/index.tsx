@@ -3,14 +3,13 @@ import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { useLanguage } from "components/contexts/LanguageContext";
 import ImagePlaceholder from "components/ImagePlaceholder";
 import { useReveal } from "components/RevealOnScroll";
+import mePhoto from "assets/profile/me.jpeg";
 import { GITHUB_URL, LINKEDIN_URL } from "../socialLinks";
 import { content } from "./content";
 import {
-  Accent,
   Actions,
   Body,
   GhostButton,
-  Green,
   Heading,
   Kicker,
   KickerRule,
@@ -40,12 +39,6 @@ const Hero: React.FC = () => {
           {c.headingLine1}
           <br />
           {c.headingLine2}
-          <br />
-          {c.headingPrefix}
-          <Accent>{c.headingApis}</Accent>
-          {c.headingJoin}
-          <Green>{c.headingAi}</Green>
-          {c.headingSuffix}
         </Heading>
         <Body>{c.body}</Body>
         <Actions>
@@ -68,7 +61,14 @@ const Hero: React.FC = () => {
 
       <PortraitCol ref={portraitReveal.ref} $visible={portraitReveal.isVisible}>
         <PortraitOutline />
-        <ImagePlaceholder width="400px" height="480px" radius="16px" label={c.portraitLabel} />
+        <ImagePlaceholder
+          width="400px"
+          height="480px"
+          radius="16px"
+          label={c.portraitLabel}
+          src={mePhoto}
+          alt={c.portraitLabel}
+        />
       </PortraitCol>
     </Section>
   );

@@ -24,7 +24,7 @@ const NavbarV2: React.FC = () => {
   return (
     <Container>
       <Brand>
-        Levy
+        levysdev
         <BrandDot>.</BrandDot>
       </Brand>
 

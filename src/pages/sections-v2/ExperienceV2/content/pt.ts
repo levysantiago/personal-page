@@ -9,7 +9,7 @@ export const pt = {
       current: true,
       bullets: [
         "Sistemas backend: construí features de produção e serviços internos com Node.js, TypeScript, PostgreSQL, Redis, QStash e Docker.",
-        "Engenharia de IA: projetei workflows multi-agente para revisão de código, validação de requisitos, geração de feedback e atribuição de notas.",
+        "Engenharia de IA: projetei e desenvolvi workflow multi-agente para revisão de código, validação de requisitos, geração de feedback e atribuição de notas.",
         "Qualidade de plataforma: reestruturei uma suíte de testes automatizados legada, defini padrões de testes e criei uma skill específica do projeto para orientar futuras implementações.",
         "Ferramentas operacionais: entreguei dashboards internos e automações que reduziram trabalho manual e ampliaram a visibilidade de métricas de produto.",
       ],
@@ -21,7 +21,7 @@ export const pt = {
       current: false,
       bullets: [
         "Arquitetura de APIs: construí e mantive APIs Nest.js integradas a múltiplas redes blockchain.",
-        "Modelagem de domínio: apliquei DDD para melhorar infraestrutura, abstrações e manutenibilidade das APIs.",
+        "Modelagem de domínio: apliquei DDD e outros padrões para melhorar infraestrutura interna, abstrações e manutenibilidade das APIs.",
         "Confiabilidade: aumentei cobertura de testes com Jest e configurei CI no GitHub para pipelines de teste das APIs.",
       ],
     },
@@ -43,9 +43,9 @@ export const pt = {
       current: false,
       bullets: [
         "Ownership backend: evoluí de primeiro desenvolvedor para responsável por back-end, DevOps e blockchain.",
-        "Desenvolvimento de APIs: construí APIs REST com Express.js e Adonis.js, cobrindo autenticação, email SMTP, WebSockets e bancos SQL/NoSQL.",
+        "Desenvolvimento de APIs: construí APIs REST com Express.js, Adonis.js, Nest.js e outros frameworks, cobrindo autenticação, email SMTP, WebSocket, Cache, Blockchain, bancos SQL/NoSQL e outras integrações.",
         "Liderança técnica: liderei um pequeno time back-end no planejamento, escolhas técnicas, divisão de tarefas e entrega.",
-        "Qualidade de serviço: apliquei princípios SOLID e configurei infraestrutura cloud com NGINX para serviços em produção.",
+        "Qualidade de serviço: apliquei princípios SOLID e outros padrões, suíte de testes, documentações e configurei infraestrutura cloud com NGINX para serviços em produção.",
       ],
     },
     {
@@ -55,7 +55,7 @@ export const pt = {
       current: false,
       bullets: [
         "Base backend: construí uma API em Express.js e MySQL para uma plataforma de venda de token.",
-        "Quality assurance: testei e corrigi smart contracts em Solidity com Mocha.js, Chai.js, Jest e Truffle.",
+        "Quality assurance: criei uma suíte de testes e corrigi smart contracts em Solidity com Mocha.js, Chai.js, Jest e Truffle.",
       ],
     },
   ],

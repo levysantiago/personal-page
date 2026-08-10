@@ -70,18 +70,6 @@ export const Heading = styled.h1(
   `
 );
 
-export const Accent = styled.span(
-  (props: IProps) => css`
-    color: ${props.theme.colors.accent};
-  `
-);
-
-export const Green = styled.span(
-  (props: IProps) => css`
-    color: ${props.theme.colors.green};
-  `
-);
-
 export const Body = styled.p(
   (props: IProps) => css`
     font-size: 17.5px;

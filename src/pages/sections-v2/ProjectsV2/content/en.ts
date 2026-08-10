@@ -35,7 +35,9 @@ const projects: IProjectV2[] = [
 
 export const en = {
   heading: "Personal Projects",
-  seeAll: "See all projects →",
+  description:
+    "Among the different projects I've worked on, these are some of the personal projects I can share with you here.",
+  seeAll: "See other personal projects →",
   codeLabel: "Code",
   liveLabel: "Live",
   imageLabel: "Screenshot",
