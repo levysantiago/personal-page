@@ -1,7 +1,7 @@
 import * as React from "react";
-import { EnvelopeSimple, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { useLanguage } from "components/contexts/LanguageContext";
-import { EMAIL, GITHUB_URL, LINKEDIN_URL } from "pages/sections-v2/socialLinks";
+import { GITHUB_URL, LINKEDIN_URL } from "pages/sections-v2/socialLinks";
 import { content } from "./content";
 import { Container, IconLink, IconRow, Inner } from "./styles";
 
@@ -29,9 +29,6 @@ const FooterV2: React.FC = () => {
             aria-label="LinkedIn"
           >
             <LinkedinLogo size={18} />
-          </IconLink>
-          <IconLink href={`mailto:${EMAIL}`} aria-label="Email">
-            <EnvelopeSimple size={18} />
           </IconLink>
         </IconRow>
       </Inner>
