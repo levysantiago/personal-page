@@ -66,13 +66,13 @@
 - Produces: `@phosphor-icons/react` importable from any new component; Inter
   font family available globally as `"Inter"`.
 
-- [ ] **Step 1: Install the icon package**
+- [x] **Step 1: Install the icon package**
 
 ```bash
 yarn add @phosphor-icons/react
 ```
 
-- [ ] **Step 2: Add the Inter font link to `public/index.html`**
+- [x] **Step 2: Add the Inter font link to `public/index.html`**
 
 In `public/index.html`, add these two lines right after the existing
 `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" ... />`
@@ -86,7 +86,7 @@ tag (around line 26):
 />
 ```
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors (this task adds no TypeScript).
@@ -95,7 +95,7 @@ Run: `yarn start`, open `http://localhost:3000/#/`, open devtools Network tab,
 confirm `Inter` font files load with no 404s. Stop the dev server or leave it
 running in the background for later tasks.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add package.json public/index.html
@@ -116,7 +116,7 @@ git commit -m "chore: add phosphor icons and Inter font for Nocturne homepage v2
 - Consumed by: every `sections-v2/*/styles.tsx` and `NavbarV2`/`FooterV2`
   styles file via `interface IProps { theme: INocturneTheme }`.
 
-- [ ] **Step 1: Create the theme file**
+- [x] **Step 1: Create the theme file**
 
 ```tsx
 import * as React from "react";
@@ -168,12 +168,12 @@ const NocturneTheme: React.FC<{ children: React.ReactElement }> = ({
 export default NocturneTheme;
 ```
 
-- [ ] **Step 2: Verify**
+- [x] **Step 2: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/components/NocturneTheme
@@ -202,7 +202,7 @@ git commit -m "feat: add isolated NocturneTheme provider for homepage v2"
 - Produces: named exports `GITHUB_URL`, `LINKEDIN_URL`, `EMAIL` (all `string`)
   from `pages/sections-v2/socialLinks`.
 
-- [ ] **Step 1: Create `socialLinks.ts`**
+- [x] **Step 1: Create `socialLinks.ts`**
 
 ```ts
 export const GITHUB_URL = "https://github.com/levysantiago";
@@ -210,7 +210,7 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/levysantiago";
 export const EMAIL = "levyssantiago@gmail.com";
 ```
 
-- [ ] **Step 2: Create `ImagePlaceholder/styles.tsx`**
+- [x] **Step 2: Create `ImagePlaceholder/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -263,7 +263,7 @@ export const Placeholder = styled.div(
 );
 ```
 
-- [ ] **Step 3: Create `ImagePlaceholder/index.tsx`**
+- [x] **Step 3: Create `ImagePlaceholder/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -304,7 +304,7 @@ const ImagePlaceholder: React.FC<IImagePlaceholderProps> = ({
 export default ImagePlaceholder;
 ```
 
-- [ ] **Step 4: Create `RevealOnScroll/styles.tsx`**
+- [x] **Step 4: Create `RevealOnScroll/styles.tsx`**
 
 ```tsx
 import { css } from "styled-components";
@@ -326,7 +326,7 @@ export const revealStyles = (props: IRevealProps) => css`
 `;
 ```
 
-- [ ] **Step 5: Create `RevealOnScroll/index.tsx`**
+- [x] **Step 5: Create `RevealOnScroll/index.tsx`**
 
 ```tsx
 import { useEffect, useRef, useState } from "react";
@@ -368,12 +368,12 @@ export function useReveal<T extends HTMLElement>() {
 }
 ```
 
-- [ ] **Step 6: Verify**
+- [x] **Step 6: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add src/components/ImagePlaceholder src/components/RevealOnScroll src/pages/sections-v2/socialLinks.ts
@@ -398,7 +398,7 @@ git commit -m "feat: add ImagePlaceholder, useReveal hook and social link consta
   dot overlay, `Content` a plain `position: relative` wrapper for everything
   else (nav, sections, footer).
 
-- [ ] **Step 1: Create `HomePageV2/styles.tsx`**
+- [x] **Step 1: Create `HomePageV2/styles.tsx`**
 
 ```tsx
 import styled, { css, keyframes } from "styled-components";
@@ -459,7 +459,7 @@ export const Content = styled.div`
 `;
 ```
 
-- [ ] **Step 2: Create `HomePageV2/index.tsx`**
+- [x] **Step 2: Create `HomePageV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -480,7 +480,7 @@ const HomePageV2: React.FC = () => {
 export default HomePageV2;
 ```
 
-- [ ] **Step 3: Swap the route in `src/routes/index.tsx`**
+- [x] **Step 3: Swap the route in `src/routes/index.tsx`**
 
 Replace the whole file:
 
@@ -508,7 +508,7 @@ export default MyRoutes;
 This removes the `HomePage` import from this file only; `src/pages/HomePage/`
 and all of `src/pages/sections/*` are untouched on disk.
 
-- [ ] **Step 4: Verify**
+- [x] **Step 4: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -518,7 +518,7 @@ Expected: a dark page (`#12131f`-ish base) with the soft purple/green radial
 glow and a faint drifting dot mesh, no console errors. Nothing else renders
 yet — that's expected.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/pages/HomePageV2 src/routes/index.tsx
@@ -540,7 +540,7 @@ git commit -m "feat: add HomePageV2 skeleton and route / to it"
   (`{ lang: "en" | "pt" }`), `INocturneTheme` from `components/NocturneTheme`.
 - Produces: default export `NavbarV2: React.FC` (no props).
 
-- [ ] **Step 1: Create `NavbarV2/content/navItems.ts`**
+- [x] **Step 1: Create `NavbarV2/content/navItems.ts`**
 
 ```ts
 const en = [
@@ -560,7 +560,7 @@ const pt = [
 export const navItemsV2 = { en, pt };
 ```
 
-- [ ] **Step 2: Create `NavbarV2/styles.tsx`**
+- [x] **Step 2: Create `NavbarV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -663,7 +663,7 @@ export const LangInactive = styled.a(
 );
 ```
 
-- [ ] **Step 3: Create `NavbarV2/index.tsx`**
+- [x] **Step 3: Create `NavbarV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -724,7 +724,7 @@ const NavbarV2: React.FC = () => {
 export default NavbarV2;
 ```
 
-- [ ] **Step 4: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 4: Render it in `HomePageV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -748,7 +748,7 @@ const HomePageV2: React.FC = () => {
 export default HomePageV2;
 ```
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -761,7 +761,7 @@ labels switch to Portuguese, toggle now shows EN as the clickable one. Resize
 below 1020px: the four section links disappear, brand and language toggle
 remain.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/components/NavbarV2 src/pages/HomePageV2/index.tsx
@@ -797,7 +797,7 @@ spans and explicit line breaks: split the heading into small fields
 and colored `<span>`s directly in `index.tsx`, instead of trying to encode
 markup inside a translated string.
 
-- [ ] **Step 1: Create `Hero/content/en.ts`**
+- [x] **Step 1: Create `Hero/content/en.ts`**
 
 ```ts
 export const en = {
@@ -816,7 +816,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `Hero/content/pt.ts`**
+- [x] **Step 2: Create `Hero/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -835,7 +835,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `Hero/content/index.ts`**
+- [x] **Step 3: Create `Hero/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -844,7 +844,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `Hero/styles.tsx`**
+- [x] **Step 4: Create `Hero/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -1017,7 +1017,7 @@ export const PortraitOutline = styled.div(
 );
 ```
 
-- [ ] **Step 5: Create `Hero/index.tsx`**
+- [x] **Step 5: Create `Hero/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -1100,7 +1100,7 @@ const Hero: React.FC = () => {
 export default Hero;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -1126,7 +1126,7 @@ const HomePageV2: React.FC = () => {
 export default HomePageV2;
 ```
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -1139,7 +1139,7 @@ Scroll down and back up — text and portrait fade/slide in once, on first
 scroll into view. Switch to `/#/pt`: heading/body/buttons switch to
 Portuguese. Resize below 880px: portrait moves above the text, single column.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/Hero src/pages/HomePageV2/index.tsx
@@ -1161,7 +1161,7 @@ git commit -m "feat: add Hero section to homepage v2"
 **Interfaces:**
 - Produces: default export `StatStrip: React.FC`.
 
-- [ ] **Step 1: Create `StatStrip/content/en.ts`**
+- [x] **Step 1: Create `StatStrip/content/en.ts`**
 
 ```ts
 export const en = {
@@ -1173,7 +1173,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `StatStrip/content/pt.ts`**
+- [x] **Step 2: Create `StatStrip/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -1185,7 +1185,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `StatStrip/content/index.ts`**
+- [x] **Step 3: Create `StatStrip/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -1194,7 +1194,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `StatStrip/styles.tsx`**
+- [x] **Step 4: Create `StatStrip/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -1253,7 +1253,7 @@ export const Label = styled.span(
 );
 ```
 
-- [ ] **Step 5: Create `StatStrip/index.tsx`**
+- [x] **Step 5: Create `StatStrip/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -1286,12 +1286,12 @@ const StatStrip: React.FC = () => {
 export default StatStrip;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add the import `import StatStrip from "pages/sections-v2/StatStrip";` and
 render `<StatStrip />` right after `<Hero />`.
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -1301,7 +1301,7 @@ three baseline-aligned stat pairs (`6+`, `MSc`, `4` in green, two-line grey
 labels), 1px dividers top and bottom. Below 640px, stats stack to one column.
 PT-BR shows the translated labels.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/StatStrip src/pages/HomePageV2/index.tsx
@@ -1325,7 +1325,7 @@ git commit -m "feat: add StatStrip section to homepage v2"
 - Produces: default export `AboutV2: React.FC`. Root `<section id="about">`
   matches `NavbarV2`'s `#about` anchor.
 
-- [ ] **Step 1: Create `AboutV2/content/en.ts`**
+- [x] **Step 1: Create `AboutV2/content/en.ts`**
 
 This section's heading needs one highlighted word and nothing else (no line
 break), so — unlike Hero — it uses the existing `formatContent` +
@@ -1371,7 +1371,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `AboutV2/content/pt.ts`**
+- [x] **Step 2: Create `AboutV2/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -1411,7 +1411,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `AboutV2/content/index.ts`**
+- [x] **Step 3: Create `AboutV2/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -1420,7 +1420,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `AboutV2/styles.tsx`**
+- [x] **Step 4: Create `AboutV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -1571,7 +1571,7 @@ export const CardBody = styled.p(
 );
 ```
 
-- [ ] **Step 5: Create `AboutV2/index.tsx`**
+- [x] **Step 5: Create `AboutV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -1659,12 +1659,12 @@ const AboutV2: React.FC = () => {
 export default AboutV2;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add `import AboutV2 from "pages/sections-v2/AboutV2";` and render
 `<AboutV2 />` after `<StatStrip />`.
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -1676,7 +1676,7 @@ colored bottom border (purple, green, purple). Section fades in on scroll.
 Below 880px, cards stack under the text column. PT-BR shows translated
 copy and "Sobre mim".
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/AboutV2 src/pages/HomePageV2/index.tsx
@@ -1698,7 +1698,7 @@ git commit -m "feat: add AboutV2 section to homepage v2"
 **Interfaces:**
 - Produces: default export `ExperienceV2: React.FC`. Root `<section id="experience">`.
 
-- [ ] **Step 1: Create `ExperienceV2/content/en.ts`**
+- [x] **Step 1: Create `ExperienceV2/content/en.ts`**
 
 ```ts
 export const en = {
@@ -1750,7 +1750,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `ExperienceV2/content/pt.ts`**
+- [x] **Step 2: Create `ExperienceV2/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -1802,7 +1802,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `ExperienceV2/content/index.ts`**
+- [x] **Step 3: Create `ExperienceV2/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -1811,7 +1811,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `ExperienceV2/styles.tsx`**
+- [x] **Step 4: Create `ExperienceV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -1962,7 +1962,7 @@ export const RoleBody = styled.div(
 );
 ```
 
-- [ ] **Step 5: Create `ExperienceV2/index.tsx`**
+- [x] **Step 5: Create `ExperienceV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -2024,12 +2024,12 @@ const ExperienceV2: React.FC = () => {
 export default ExperienceV2;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add `import ExperienceV2 from "pages/sections-v2/ExperienceV2";` and render
 `<ExperienceV2 />` after `<AboutV2 />`.
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -2040,7 +2040,7 @@ dot + glow, the other three collapsed with grey dots and a top divider.
 Click each summary row to expand/collapse; multiple can be open at once.
 PT-BR shows translated bullets and hint text.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/ExperienceV2 src/pages/HomePageV2/index.tsx
@@ -2062,7 +2062,7 @@ git commit -m "feat: add ExperienceV2 section to homepage v2"
 **Interfaces:**
 - Produces: default export `TechnologiesV2: React.FC`. Root `<section id="tech">`.
 
-- [ ] **Step 1: Create `TechnologiesV2/content/en.ts`**
+- [x] **Step 1: Create `TechnologiesV2/content/en.ts`**
 
 ```ts
 export const en = {
@@ -2119,7 +2119,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `TechnologiesV2/content/pt.ts`**
+- [x] **Step 2: Create `TechnologiesV2/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -2176,7 +2176,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `TechnologiesV2/content/index.ts`**
+- [x] **Step 3: Create `TechnologiesV2/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -2185,7 +2185,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `TechnologiesV2/styles.tsx`**
+- [x] **Step 4: Create `TechnologiesV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -2269,7 +2269,7 @@ export const Tag = styled.span(
 );
 ```
 
-- [ ] **Step 5: Create `TechnologiesV2/index.tsx`**
+- [x] **Step 5: Create `TechnologiesV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -2321,12 +2321,12 @@ const TechnologiesV2: React.FC = () => {
 export default TechnologiesV2;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add `import TechnologiesV2 from "pages/sections-v2/TechnologiesV2";` and
 render `<TechnologiesV2 />` after `<ExperienceV2 />`.
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -2336,7 +2336,7 @@ a green uppercase label + icon and wrapping tag rows; TypeScript and Node.js
 render as filled/accent tags, everything else outlined. Below 640px, groups
 stack to one column. PT-BR shows "IA" and "Dados" group labels.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/TechnologiesV2 src/pages/HomePageV2/index.tsx
@@ -2368,7 +2368,7 @@ of the existing projects have a distinct live URL, so `liveUrl` is omitted
 for all three here; it stays optional on the type so a future project with a
 live URL just needs to add the field).
 
-- [ ] **Step 1: Create `ProjectsV2/content/types.ts`**
+- [x] **Step 1: Create `ProjectsV2/content/types.ts`**
 
 ```ts
 export interface IProjectV2 {
@@ -2380,7 +2380,7 @@ export interface IProjectV2 {
 }
 ```
 
-- [ ] **Step 2: Create `ProjectsV2/content/en.ts`**
+- [x] **Step 2: Create `ProjectsV2/content/en.ts`**
 
 ```ts
 import { IProjectV2 } from "./types";
@@ -2416,7 +2416,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 3: Create `ProjectsV2/content/pt.ts`**
+- [x] **Step 3: Create `ProjectsV2/content/pt.ts`**
 
 ```ts
 import { IProjectV2 } from "./types";
@@ -2452,7 +2452,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 4: Create `ProjectsV2/content/index.ts`**
+- [x] **Step 4: Create `ProjectsV2/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -2461,7 +2461,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 5: Create `ProjectsV2/styles.tsx`**
+- [x] **Step 5: Create `ProjectsV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -2615,7 +2615,7 @@ export const LiveLink = styled(CardLink)(
 );
 ```
 
-- [ ] **Step 6: Create `ProjectsV2/index.tsx`**
+- [x] **Step 6: Create `ProjectsV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -2694,12 +2694,12 @@ const ProjectsV2: React.FC = () => {
 export default ProjectsV2;
 ```
 
-- [ ] **Step 7: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 7: Render it in `HomePageV2/index.tsx`**
 
 Add `import ProjectsV2 from "pages/sections-v2/ProjectsV2";` and render
 `<ProjectsV2 />` after `<TechnologiesV2 />`.
 
-- [ ] **Step 8: Verify**
+- [x] **Step 8: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -2712,7 +2712,7 @@ since none of these projects have one yet). Grid drops to 2 then 1 column as
 the viewport narrows. PT-BR shows translated descriptions and "Ver todos os
 projetos →" / "Código".
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/pages/sections-v2/ProjectsV2 src/pages/HomePageV2/index.tsx
@@ -2740,7 +2740,7 @@ an explicit line break — `formatContent` only handles the former, so this
 uses the same small-fields-composed-in-JSX pattern as Hero rather than
 `formatContent`.
 
-- [ ] **Step 1: Create `ContactClose/content/en.ts`**
+- [x] **Step 1: Create `ContactClose/content/en.ts`**
 
 ```ts
 export const en = {
@@ -2752,7 +2752,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `ContactClose/content/pt.ts`**
+- [x] **Step 2: Create `ContactClose/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -2764,7 +2764,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `ContactClose/content/index.ts`**
+- [x] **Step 3: Create `ContactClose/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -2773,7 +2773,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `ContactClose/styles.tsx`**
+- [x] **Step 4: Create `ContactClose/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -2873,7 +2873,7 @@ export const GhostButton = styled(ButtonBase)(
 );
 ```
 
-- [ ] **Step 5: Create `ContactClose/index.tsx`**
+- [x] **Step 5: Create `ContactClose/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -2920,12 +2920,12 @@ const ContactClose: React.FC = () => {
 export default ContactClose;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add `import ContactClose from "pages/sections-v2/ContactClose";` and render
 `<ContactClose />` after `<ProjectsV2 />`.
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -2936,7 +2936,7 @@ outlined buttons (email address, LinkedIn). Below 720px, buttons stack under
 the heading instead of beside it. PT-BR shows "Vamos construir algo / sólido
 juntos."
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/pages/sections-v2/ContactClose src/pages/HomePageV2/index.tsx
@@ -2960,7 +2960,7 @@ git commit -m "feat: add ContactClose section to homepage v2"
   `pages/sections-v2/socialLinks`.
 - Produces: default export `FooterV2: React.FC`.
 
-- [ ] **Step 1: Create `FooterV2/content/en.ts`**
+- [x] **Step 1: Create `FooterV2/content/en.ts`**
 
 ```ts
 export const en = {
@@ -2968,7 +2968,7 @@ export const en = {
 };
 ```
 
-- [ ] **Step 2: Create `FooterV2/content/pt.ts`**
+- [x] **Step 2: Create `FooterV2/content/pt.ts`**
 
 ```ts
 export const pt = {
@@ -2976,7 +2976,7 @@ export const pt = {
 };
 ```
 
-- [ ] **Step 3: Create `FooterV2/content/index.ts`**
+- [x] **Step 3: Create `FooterV2/content/index.ts`**
 
 ```ts
 import { en } from "./en";
@@ -2985,7 +2985,7 @@ import { pt } from "./pt";
 export const content = { en, pt };
 ```
 
-- [ ] **Step 4: Create `FooterV2/styles.tsx`**
+- [x] **Step 4: Create `FooterV2/styles.tsx`**
 
 ```tsx
 import styled, { css } from "styled-components";
@@ -3029,7 +3029,7 @@ export const IconLink = styled.a`
 `;
 ```
 
-- [ ] **Step 5: Create `FooterV2/index.tsx`**
+- [x] **Step 5: Create `FooterV2/index.tsx`**
 
 ```tsx
 import * as React from "react";
@@ -3066,7 +3066,7 @@ const FooterV2: React.FC = () => {
 export default FooterV2;
 ```
 
-- [ ] **Step 6: Render it in `HomePageV2/index.tsx`**
+- [x] **Step 6: Render it in `HomePageV2/index.tsx`**
 
 Add `import FooterV2 from "components/FooterV2";` and render `<FooterV2 />`
 as the last child, after `<ContactClose />`. The full `HomePageV2/index.tsx`
@@ -3110,7 +3110,7 @@ const HomePageV2: React.FC = () => {
 export default HomePageV2;
 ```
 
-- [ ] **Step 7: Verify**
+- [x] **Step 7: Verify**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -3120,7 +3120,7 @@ the left, GitHub/LinkedIn/email icons on the right, 1px divider above. All
 nine pieces of the page (nav, hero, stat strip, about, experience,
 technologies, projects, contact close, footer) are now present in order.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/components/FooterV2 src/pages/HomePageV2/index.tsx
@@ -3138,7 +3138,7 @@ This task has no new code — it's the full manual verification pass replacing
 what would otherwise be an integration test suite (see Global Constraints on
 why this repo doesn't have one).
 
-- [ ] **Step 1: Type-check and build**
+- [x] **Step 1: Type-check and build**
 
 Run: `yarn tsc --noEmit`
 Expected: no errors.
@@ -3147,13 +3147,13 @@ Run: `yarn build`
 Expected: production build completes with no errors (warnings about unused
 CRA defaults are pre-existing and fine).
 
-- [ ] **Step 2: Old homepage is truly untouched**
+- [x] **Step 2: Old homepage is truly untouched**
 
 Run: `git diff main -- src/pages/HomePage src/pages/sections src/components/Navbar src/components/Footer src/components/Theme`
 (replace `main` with whatever base branch/commit this work started from)
 Expected: empty diff — none of these files changed.
 
-- [ ] **Step 3: Visual QA — English, desktop width (~1280px)**
+- [x] **Step 3: Visual QA — English, desktop width (~1280px)**
 
 `yarn start`, open `http://localhost:3000/#/`. Walk top to bottom:
 nav sticky + blurred on scroll; hero copy/buttons/social icons/portrait
@@ -3164,7 +3164,7 @@ tab; contact close buttons; footer. Confirm every internal nav link
 (`About`/`Experience`/`Technologies`/`Projects`, and the `Levy.` brand)
 smooth-scrolls to the right section.
 
-- [ ] **Step 4: Visual QA — Portuguese**
+- [x] **Step 4: Visual QA — Portuguese**
 
 Click the `PT-BR` toggle in the nav (or the footer isn't a language toggle —
 use the nav). URL becomes `/#/pt`. Confirm every section's copy switches to
@@ -3172,7 +3172,7 @@ the Portuguese text written in Tasks 6–13, with no leftover English strings
 and no broken `<highlight>`-style markup showing as literal text. Toggle back
 to `EN` and confirm it returns cleanly.
 
-- [ ] **Step 5: Responsive QA**
+- [x] **Step 5: Responsive QA**
 
 Using devtools responsive mode, check these breakpoints:
 - **~1024px**: nav section-links still visible (hide below 1020px).
@@ -3185,7 +3185,7 @@ Using devtools responsive mode, check these breakpoints:
   groups stack to 1 column.
 Confirm no horizontal scrollbar appears at any width down to 360px.
 
-- [ ] **Step 6: Interaction QA**
+- [x] **Step 6: Interaction QA**
 
 - `prefers-reduced-motion: reduce` (devtools → Rendering → Emulate CSS media
   feature): reload, confirm sections appear immediately with no fade/slide
@@ -3195,7 +3195,7 @@ Confirm no horizontal scrollbar appears at any width down to 360px.
   footer icons) gets a visible 2px accent focus ring, and the tab order is
   top-to-bottom, left-to-right.
 
-- [ ] **Step 7: Fix anything found, then final commit**
+- [x] **Step 7: Fix anything found, then final commit**
 
 If any check above fails, fix it in the relevant task's files (styles.tsx,
 index.tsx, or content files) and re-run the relevant checks above before
